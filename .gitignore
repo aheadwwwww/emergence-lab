@@ -12,3 +12,15 @@ curiosity-map.png
 # Gateway internal
 .openclaw/
 
+
+# Cloned repos (re-clone as needed)
+/github_explore/openclaw
+/lenia
+/github_explore/build-your-own-x
+
+# Generated experiment outputs
+/lenia_run
+/lenia_run2
+/curiosity-reactiondiff
+/curiosity-sandpile
+
