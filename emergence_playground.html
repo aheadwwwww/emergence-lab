@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🧬 涌现游乐场</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#07070e;color:#b0b0c0;font-family:-apple-system,'Segoe UI',system-ui,sans-serif;overflow:hidden;height:100vh}
+canvas{display:block}
+#ui{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;background:rgba(10,10,20,0.8);padding:8px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);backdrop-filter:blur(8px);z-index:10;flex-wrap:wrap;justify-content:center}
+#ui button{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#b0b0c0;padding:5px 12px;border-radius:6px;cursor:pointer;font-size:12px;transition:all 0.2s}
+#ui button:hover{background:rgba(255,255,255,0.12);color:#fff}
+#ui button.active{background:rgba(255,200,50,0.15);border-color:rgba(255,200,50,0.3);color:#ffd700}
+#ui label{font-size:12px;color:#888;display:flex;align-items:center;gap:4px}
+#ui input[type=range]{width:60px;background:transparent;accent-color:#ffd700}
+#modeLabel{font-size:11px;color:#666;min-width:80px;text-align:center}
+#countLabel{font-size:11px;color:#555;min-width:50px;text-align:right}
+#title{position:fixed;top:16px;left:50%;transform:translateX(-50%);font-size:13px;color:rgba(255,255,255,0.3);letter-spacing:2px;z-index:5}
+</style>
+</head>
+<body>
+<div id="title">✦ 涌现游乐场 ✦</div>
+<canvas id="c"></canvas>
+<div id="ui">
+  <button id="modeBtn" class="active">🕊 Boids</button>
+  <button id="resetBtn">⟲</button>
+  <button id="addBtn">+10</button>
+  <label>
+    <span style="color:#888">cohesion</span>
+    <input type="range" id="cohesionR" min="0" max="100" value="50">
+  </label>
+  <label>
+    <span style="color:#888">separation</span>
+    <input type="range" id="separationR" min="0" max="100" value="60">
+  </label>
+  <label>
+    <span style="color:#888">alignment</span>
+    <input type="range" id="alignmentR" min="0" max="100" value="40">
+  </label>
+  <label>
+    <span style="color:#ddd">+</span>
+    <input type="range" id="speedR" min="1" max="10" value="4">
+  </label>
+  <span id="countLabel">120</span>
+</div>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+function resize() { W = canvas.width = innerWidth; H = canvas.height = innerHeight; }
+resize();
+addEventListener('resize', resize);
+
+// === BOIDS ===
+const boids = [];
+const MAX_BOIDS = 400;
+const PERCEPTION = 60;
+let MAX_SPEED = 4;
+let COHESION_W = 0.5;
+let SEPARATION_W = 0.6;
+let ALIGNMENT_W = 0.4;
+let SEPARATION_DIST = 25;
+
+function createBoid() {
+  return {
+    x: Math.random() * W,
+    y: Math.random() * H,
+    vx: (Math.random() - 0.5) * 4,
+    vy: (Math.random() - 0.5) * 4,
+    hue: Math.random() * 40 + 30, // gold-ish range
+    id: Math.random()
+  };
+}
+
+function initBoids(n) {
+  boids.length = 0;
+  for (let i = 0; i < n; i++) boids.push(createBoid());
+}
+initBoids(120);
+
+function addBoids(n) {
+  for (let i = 0; i < n; i++) {
+    if (boids.length >= MAX_BOIDS) break;
+    boids.push(createBoid());
+  }
+  updateCount();
+}
+
+function updateCount() {
+  document.getElementById('countLabel').textContent = boids.length;
+}
+
+function resetBoids() {
+  initBoids(120);
+  updateCount();
+  // Clear trails
+  trailPts.length = 0;
+}
+
+// === BOID LOGIC ===
+function steer(b) {
+  let cx = 0, cy = 0, sx = 0, sy = 0, ax = 0, ay = 0;
+  let neighbors = 0;
+
+  for (const other of boids) {
+    if (other === b) continue;
+    const dx = other.x - b.x;
+    const dy = other.y - b.y;
+    const d = Math.sqrt(dx*dx + dy*dy);
+    if (d > PERCEPTION || d < 0.001) continue;
+    neighbors++;
+    
+    // Cohesion
+    cx += other.x;
+    cy += other.y;
+    
+    // Alignment
+    ax += other.vx;
+    ay += other.vy;
+    
+    // Separation
+    if (d < SEPARATION_DIST) {
+      sx -= (other.x - b.x) / d;
+      sy -= (other.y - b.y) / d;
+    }
+  }
+
+  if (neighbors > 0) {
+    // Cohesion
+    cx = cx / neighbors - b.x;
+    cy = cy / neighbors - b.y;
+    const cd = Math.sqrt(cx*cx + cy*cy) || 1;
+    cx = cx / cd * COHESION_W;
+    cy = cy / cd * COHESION_W;
+    
+    // Alignment
+    ax = ax / neighbors;
+    ay = ay / neighbors;
+    const ad = Math.sqrt(ax*ax + ay*ay) || 1;
+    ax = ax / ad * ALIGNMENT_W;
+    ay = ay / ad * ALIGNMENT_W;
+    
+    // Separation
+    const sd = Math.sqrt(sx*sx + sy*sy) || 1;
+    sx = sx / sd * SEPARATION_W;
+    sy = sy / sd * SEPARATION_W;
+  }
+
+  return { ax: cx + ax + sx, ay: cy + ay + sy };
+}
+
+function updateBoids() {
+  const accels = boids.map(b => steer(b));
+  
+  for (let i = 0; i < boids.length; i++) {
+    const b = boids[i];
+    const a = accels[i];
+    
+    b.vx = Math.max(-MAX_SPEED*2, Math.min(MAX_SPEED*2, b.vx + a.ax));
+    b.vy = Math.max(-MAX_SPEED*2, Math.min(MAX_SPEED*2, b.vy + a.ay));
+    
+    // Limit speed
+    const speed = Math.sqrt(b.vx*b.vx + b.vy*b.vy);
+    if (speed > MAX_SPEED) {
+      b.vx = b.vx / speed * MAX_SPEED;
+      b.vy = b.vy / speed * MAX_SPEED;
+    }
+    
+    b.x += b.vx;
+    b.y += b.vy;
+    
+    // Wrap around with padding
+    const pad = 50;
+    if (b.x < -pad) b.x = W + pad;
+    if (b.x > W + pad) b.x = -pad;
+    if (b.y < -pad) b.y = H + pad;
+    if (b.y > H + pad) b.y = -pad;
+    
+    // Slight drift in hue
+    b.hue = (b.hue + 0.02) % 360;
+  }
+}
+
+// === TRAILS ===
+const trailPts = [];
+let trailTimer = 0;
+
+function captureTrails() {
+  trailTimer++;
+  if (trailTimer % 3 !== 0) return;
+  for (const b of boids) {
+    trailPts.push({ x: b.x, y: b.y, hue: b.hue, t: Date.now() });
+  }
+  // Keep only recent
+  while (trailPts.length > 6000) trailPts.shift();
+}
+
+// === RENDER ===
+function drawBoids() {
+  // Fade trail
+  ctx.fillStyle = 'rgba(7,7,14,0.15)';
+  ctx.fillRect(0, 0, W, H);
+
+  // Draw trails
+  const now = Date.now();
+  for (const p of trailPts) {
+    const age = now - p.t;
+    if (age > 800) continue;
+    const alpha = (1 - age/800) * 0.15;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, 1.5, 0, Math.PI*2);
+    ctx.fillStyle = `hsla(${p.hue}, 80%, 60%, ${alpha})`;
+    ctx.fill();
+  }
+
+  // Draw boids as triangles
+  for (const b of boids) {
+    const angle = Math.atan2(b.vy, b.vx);
+    const len = 8;
+    
+    ctx.save();
+    ctx.translate(b.x, b.y);
+    ctx.rotate(angle);
+    
+    // Body
+    ctx.beginPath();
+    ctx.moveTo(len, 0);
+    ctx.lineTo(-len/2, -len/2.5);
+    ctx.lineTo(-len/2, len/2.5);
+    ctx.closePath();
+    
+    // Main fill
+    ctx.fillStyle = `hsla(${b.hue}, 90%, 65%, 0.85)`;
+    ctx.fill();
+    
+    // Edge glow
+    ctx.strokeStyle = `hsla(${b.hue}, 100%, 80%, 0.3)`;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    
+    ctx.restore();
+  }
+}
+
+// === MODE SWITCHING ===
+let currentMode = 'boids';
+
+document.getElementById('modeBtn').addEventListener('click', () => {
+  const btn = document.getElementById('modeBtn');
+  if (currentMode === 'boids') {
+    // TBD: other modes could be added
+    // For now just a visual toggle
+    btn.textContent = '🕊 Boids';
+    btn.classList.add('active');
+  }
+  currentMode = 'boids';
+  document.getElementById('modeLabel').textContent = 'Boids Flocking';
+});
+
+document.getElementById('resetBtn').addEventListener('click', resetBoids);
+document.getElementById('addBtn').addEventListener('click', () => addBoids(10));
+
+// Sliders
+document.getElementById('cohesionR').addEventListener('input', e => {
+  COHESION_W = e.target.value / 100;
+});
+document.getElementById('separationR').addEventListener('input', e => {
+  SEPARATION_W = e.target.value / 100;
+});
+document.getElementById('alignmentR').addEventListener('input', e => {
+  ALIGNMENT_W = e.target.value / 100;
+});
+document.getElementById('speedR').addEventListener('input', e => {
+  MAX_SPEED = parseInt(e.target.value);
+});
+
+// === INTERACTION ===
+let mouseX = -1000, mouseY = -1000;
+let mouseDown = false;
+
+canvas.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  if (mouseDown) {
+    // Push boids away from cursor
+    for (const b of boids) {
+      const dx = b.x - mouseX;
+      const dy = b.y - mouseY;
+      const d = Math.sqrt(dx*dx + dy*dy);
+      if (d < 80 && d > 0.1) {
+        b.vx += dx / d * 0.5;
+        b.vy += dy / d * 0.5;
+      }
+    }
+  }
+});
+
+canvas.addEventListener('mousedown', () => { mouseDown = true; });
+canvas.addEventListener('mouseup', () => { mouseDown = false; });
+canvas.addEventListener('mouseleave', () => { mouseDown = false; });
+
+// Touch
+canvas.addEventListener('touchstart', e => {
+  const t = e.touches[0];
+  mouseX = t.clientX;
+  mouseY = t.clientY;
+  mouseDown = true;
+}, { passive: true });
+
+canvas.addEventListener('touchmove', e => {
+  const t = e.touches[0];
+  mouseX = t.clientX;
+  mouseY = t.clientY;
+  for (const b of boids) {
+    const dx = b.x - mouseX;
+    const dy = b.y - mouseY;
+    const d = Math.sqrt(dx*dx + dy*dy);
+    if (d < 80 && d > 0.1) {
+      b.vx += dx / d * 0.5;
+      b.vy += dy / d * 0.5;
+    }
+  }
+}, { passive: true });
+
+canvas.addEventListener('touchend', () => { mouseDown = false; }, { passive: true });
+
+// === LOOP ===
+function loop() {
+  updateBoids();
+  captureTrails();
+  drawBoids();
+  
+  // Repulsion indicator
+  if (mouseDown) {
+    ctx.beginPath();
+    ctx.arc(mouseX, mouseY, 80, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+  
+  requestAnimationFrame(loop);
+}
+loop();
+updateCount();
+</script>
+</body>
+</html>

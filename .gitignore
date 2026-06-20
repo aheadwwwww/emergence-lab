@@ -1,0 +1,14 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Large generated images (maps are large)
+curiosity-map.png
+
+# Gateway internal
+.openclaw/
+
