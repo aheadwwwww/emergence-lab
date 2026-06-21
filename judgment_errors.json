@@ -5,8 +5,9 @@
     "confidence": 0.8,
     "expected": "用户会按规划学习",
     "context": "用户说想all in AI",
-    "actual": null,
-    "error": null
+    "actual": "LEARNING_PROGRESS.md所有任务都是待开始状态，用户未开始使用规划",
+    "error": 0.8,
+    "lesson": "规划存在不等于用户会用。可能原因：规划太复杂、用户有其他优先级、麦洛视角冲击后规划已过时。需要迭代规划。"
   },
   {
     "timestamp": "2026-06-21T17:20:00",
