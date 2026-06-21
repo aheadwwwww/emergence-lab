@@ -14,8 +14,8 @@
     "confidence": 0.9,
     "expected": "用户不会再手动重启gateway",
     "context": "用户说API没钱就停了",
-    "actual": null,
-    "error": null
+    "actual": "watchdog已部署，启动文件夹快捷方式已创建",
+    "error": 0
   },
   {
     "timestamp": "2026-06-21T17:20:00",
@@ -43,5 +43,15 @@
     "context": "另一个Claude质疑",
     "actual": null,
     "error": null
+  },
+  {
+    "timestamp": "2026-06-21T18:10:00",
+    "judgment": "我能快速解决看图片的问题",
+    "confidence": 0.6,
+    "expected": "装OCR工具或调用API就能解决",
+    "context": "用户发了飞书图片，我只说看不到",
+    "actual": "失败4次：easyocr(Python兼容)、OCR.space(502)、HuggingFace(SSL)、错误key格式。成功需要：飞书图片已下载到本地+Gemini Vision API+正确endpoint",
+    "error": 0.6,
+    "lesson": "有些能力依赖外部资源（API key格式、endpoint路径），不能假设能一步到位。记录具体失败条件：'easyocr不支持Python 3.14'、'OCR.space返回502'、'Gemini key格式是AQ.Ab8开头不是AIza开头'"
   }
 ]
