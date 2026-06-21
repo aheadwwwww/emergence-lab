@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-06-21T17:42:00",
+  "judgment": "我应该能看图片",
+  "confidence": 0.6,
+  "expected": "找到方法OCR图片内容",
+  "context": "用户发了飞书图片，我只说看不到",
+  "actual": "尝试pip install easyocr被杀，飞书图片路径拿不到，需要更多研究",
+  "error": 0.6
+}
