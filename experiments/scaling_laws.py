@@ -80,7 +80,7 @@ def compute_optimal_allocation(compute_budget):
     return N, D
 
 if __name__ == '__main__':
-    output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+    from pathlib import Path; output_dir = str(Path(r'D:\emergence_experiments').resolve())
     
     print('=== Scaling Laws ===')
     visualize_scaling_laws(f'{output_dir}/scaling_laws.png')

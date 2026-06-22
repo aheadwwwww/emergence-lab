@@ -133,7 +133,7 @@ def visualize_edge_of_chaos(output_path):
     print(f'Saved: {output_path}')
 
 if __name__ == '__main__':
-    output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+    from pathlib import Path; output_dir = str(Path(r'D:\emergence_experiments').resolve())
     
     print('=== Edge of Chaos ===')
     

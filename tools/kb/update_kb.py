@@ -6,7 +6,7 @@ import json
 import numpy as np
 from pathlib import Path
 
-workspace = Path(r'C:\Users\许耀仁\.openclaw\workspace')
+workspace = Path(r'D:\openclaw_workspace')
 KB_DIR = Path('D:/kb_cache')
 
 def collect_docs():

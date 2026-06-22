@@ -71,7 +71,7 @@ def visualize_phase_curve(path):
     img.save(path)
     print(f'Saved: {path}')
 
-output = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+from pathlib import Path; output = str(Path(r'D:\emergence_experiments').resolve())
 print('=== Phase Transitions ===')
 
 for label, beta in [('T0.5', 2.0), ('T2.27', 0.44), ('T4.0', 0.25)]:

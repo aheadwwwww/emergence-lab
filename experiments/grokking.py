@@ -113,7 +113,7 @@ def simulate_grokking():
     return train_acc, test_acc
 
 if __name__ == '__main__':
-    output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+    from pathlib import Path; output_dir = str(Path(r'D:\emergence_experiments').resolve())
     
     print('=== Simulating Grokking ===')
     train_acc, test_acc = simulate_grokking()
