@@ -423,6 +423,8 @@ class TurmitesExperiment(BaseExperiment):
     def describe(self, params, result):
         return f"Turmites: {result['n_states']} states, {result['n_colors']} colors, {result['steps']} steps"
 
+from lenia_exp import LeniaExperiment
+
 REGISTRY = {
     'langtons_ant': LangtonsAnt(),
     'game_of_life': GameOfLife(),
@@ -432,6 +434,7 @@ REGISTRY = {
     'wolfram_ca': WolframCA(),
     'strange_attractors': StrangeAttractors(),
     'turmites': TurmitesExperiment(),
+    'lenia': LeniaExperiment(),
 }
 
 def get_experiment(name):
