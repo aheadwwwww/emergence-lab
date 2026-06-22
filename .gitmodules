@@ -1,3 +1,6 @@
 [submodule "minbpe"]
 	path = minbpe
 	url = https://github.com/karpathy/minbpe.git
+[submodule "curiosity-lenia"]
+	path = curiosity-lenia
+	url = https://github.com/Chakazul/Lenia.git
