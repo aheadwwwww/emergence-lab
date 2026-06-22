@@ -1,0 +1,16 @@
+{
+  "add": {
+    "grokking_epoch": 3000,
+    "best_test_acc": 1.0,
+    "full_test_acc": 1.0,
+    "final_train_acc": 1.0,
+    "final_test_acc": 1.0
+  },
+  "multiply": {
+    "grokking_epoch": 2600,
+    "best_test_acc": 1.0,
+    "full_test_acc": 1.0,
+    "final_train_acc": 1.0,
+    "final_test_acc": 1.0
+  }
+}

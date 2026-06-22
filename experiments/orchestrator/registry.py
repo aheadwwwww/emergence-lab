@@ -358,6 +358,71 @@ class StrangeAttractors(BaseExperiment):
 
 # ===== 注册表 =====
 
+class TurmitesExperiment(BaseExperiment):
+    name = "turmites"
+    description = "Turmites - 二维图灵机，简单规则产生复杂轨迹"
+    
+    def generate_params(self):
+        return {
+            'size': random.choice([150, 200]),
+            'steps': random.randint(8000, 15000),
+            'n_states': random.choice([2, 3, 4]),
+            'n_colors': random.choice([2, 3])
+        }
+    
+    def run(self, params):
+        size = params['size']
+        steps = params['steps']
+        n_states = params['n_states']
+        n_colors = params['n_colors']
+        
+        transition = {}
+        for s in range(n_states):
+            transition[s] = {}
+            for c in range(n_colors):
+                transition[s][c] = (
+                    random.randint(0, n_colors - 1),
+                    random.choice([0, 1, 2]),
+                    random.randint(0, n_states - 1)
+                )
+        
+        grid = np.zeros((size, size), dtype=np.int8)
+        x, y = size // 2, size // 2
+        direction = 0
+        dx, dy = [0, 1, 0, -1], [-1, 0, 1, 0]
+        state = 0
+        
+        for _ in range(steps):
+            current_color = grid[y, x]
+            new_color, turn, new_state = transition[state][current_color]
+            grid[y, x] = new_color
+            if turn == 0:
+                direction = (direction - 1) % 4
+            elif turn == 1:
+                direction = (direction + 1) % 4
+            state = new_state
+            x = (x + dx[direction]) % size
+            y = (y + dy[direction]) % size
+        
+        return {'grid': grid, 'steps': steps, 'n_states': n_states, 'n_colors': n_colors}
+    
+    def visualize(self, result):
+        grid = result['grid']
+        size = len(grid)
+        colors = [(20, 20, 40), (100, 180, 255), (255, 150, 100), (150, 255, 150)]
+        img = Image.new('RGB', (size * 2, size * 2), (10, 10, 20))
+        pixels = img.load()
+        for i in range(size):
+            for j in range(size):
+                c = colors[min(grid[i, j], len(colors) - 1)]
+                for di in range(2):
+                    for dj in range(2):
+                        pixels[j * 2 + dj, i * 2 + di] = c
+        return img
+    
+    def describe(self, params, result):
+        return f"Turmites: {result['n_states']} states, {result['n_colors']} colors, {result['steps']} steps"
+
 REGISTRY = {
     'langtons_ant': LangtonsAnt(),
     'game_of_life': GameOfLife(),
@@ -366,6 +431,7 @@ REGISTRY = {
     'turing_patterns': TuringPatterns(),
     'wolfram_ca': WolframCA(),
     'strange_attractors': StrangeAttractors(),
+    'turmites': TurmitesExperiment(),
 }
 
 def get_experiment(name):
