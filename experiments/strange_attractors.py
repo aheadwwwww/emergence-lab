@@ -73,7 +73,7 @@ def plot_attractor_2d(trajectory, title, output_path, projection='xy'):
     img.save(output_path)
     print(f'{title} 保存到: {output_path}')
 
-output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+output_dir = 'D:/emergence_experiments'
 os.makedirs(output_dir, exist_ok=True)
 
 print('=== Lorenz Attractor ===')

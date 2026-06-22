@@ -1,5 +1,5 @@
 """
-更新知识库索引
+更新知识库索引 - 存储到 D 盘
 """
 
 import json
@@ -7,7 +7,7 @@ import numpy as np
 from pathlib import Path
 
 workspace = Path(r'C:\Users\许耀仁\.openclaw\workspace')
-KB_DIR = Path('C:/kb_cache')
+KB_DIR = Path('D:/kb_cache')
 
 def collect_docs():
     docs = []
@@ -20,7 +20,7 @@ def collect_docs():
             try:
                 content = f.read_text(encoding='utf-8-sig')
             except:
-                continue  # 跳过无法读取的文件
+                continue
         docs.append({'path': str(f.name), 'content': content, 'type': 'memory'})
     
     # MEMORY.md
@@ -63,9 +63,10 @@ index = faiss.IndexFlatL2(embeddings.shape[1])
 index.add(embeddings)
 
 print('保存...')
+KB_DIR.mkdir(exist_ok=True)
 faiss.write_index(index, str(KB_DIR / 'index.faiss'))
 np.save(str(KB_DIR / 'embeddings.npy'), embeddings)
 with open(KB_DIR / 'metadata.json', 'w', encoding='utf-8') as f:
     json.dump({'documents': docs, 'dimension': embeddings.shape[1]}, f, ensure_ascii=False)
 
-print(f'完成: {len(docs)} 个文档')
+print(f'完成: {len(docs)} 个文档，存储在 D:/kb_cache')
