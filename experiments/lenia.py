@@ -95,7 +95,7 @@ def run_lenia(config, name):
             print(f'{name} step {step}: alive cells ~ {alive}', flush=True)
     
     # Save GIF
-    output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+        output_dir = r'D:\emergence_experiments'
     output_path = os.path.join(output_dir, f'lenia_{name}.gif')
     frames[0].save(output_path, save_all=True, append_images=frames[1:], duration=30, loop=0)
     print(f'{name} saved to: {output_path}')
@@ -104,7 +104,7 @@ def run_lenia(config, name):
     final_path = os.path.join(output_dir, f'lenia_{name}_final.png')
     frames[-1].save(final_path)
 
-output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+output_dir = r'D:\emergence_experiments'
 os.makedirs(output_dir, exist_ok=True)
 
 for name, config in configs.items():

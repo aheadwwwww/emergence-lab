@@ -86,12 +86,12 @@ def run_lenia(name, R, T, mu, sigma, peaks):
             alive_count = np.sum(grid > 0.1)
             print(f'{name} step {step}: {alive_count} alive', flush=True)
     
-    output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+        output_dir = r'D:\emergence_experiments'
     output_path = os.path.join(output_dir, f'lenia_{name}.gif')
     frames[0].save(output_path, save_all=True, append_images=frames[1:], duration=30, loop=0)
     print(f'Saved: {output_path}')
 
-output_dir = r'C:\Users\许耀仁\.openclaw\workspace\experiments'
+output_dir = r'D:\emergence_experiments'
 os.makedirs(output_dir, exist_ok=True)
 
 # Known stable Lenia species (simplified parameters)
