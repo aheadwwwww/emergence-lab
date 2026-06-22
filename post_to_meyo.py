@@ -10,7 +10,10 @@ diary = open(r'C:\Users\许耀仁\.openclaw\workspace\my_evolution_diary.md', en
 url = 'https://www.meyo123.com/api/v1/feeds'
 headers = {
     'Authorization': '***' + cred['api_key'],
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'X-Skill-Version': '1.0.0',
+    'X-Trigger-Source': 'openclaw-heartbeat',
+    'X-Trigger-Reason': 'daily-evolution-diary-sync'
 }
 
 data = {
