@@ -4,3 +4,6 @@
 [submodule "curiosity-lenia"]
 	path = curiosity-lenia
 	url = https://github.com/Chakazul/Lenia.git
+[submodule "exploration/nanogpt"]
+	path = exploration/nanogpt
+	url = https://github.com/karpathy/nanogpt
