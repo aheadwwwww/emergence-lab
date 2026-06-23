@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T20:59:35.593523",
+  "last_updated": "2026-06-23T21:29:55.568371",
   "categories": {
     "exploration": {
       "count": 12,
@@ -79,8 +79,14 @@
       ]
     },
     "experiments": {
-      "count": 34,
+      "count": 35,
       "items": [
+        {
+          "name": "sweep_curvature_golden_zone",
+          "path": "experiments\\sweep_curvature_golden_zone.py",
+          "size": 13659,
+          "modified": "2026-06-23T21:01:34.834042"
+        },
         {
           "name": "grokking_demo",
           "path": "experiments\\grokking_demo.py",
@@ -291,16 +297,16 @@
       "count": 20,
       "items": [
         {
+          "name": "2026-06-23",
+          "path": "memory\\2026-06-23.md",
+          "size": 10754,
+          "modified": "2026-06-23T21:03:02.187058"
+        },
+        {
           "name": "lessons",
           "path": "memory\\lessons.md",
           "size": 2431,
           "modified": "2026-06-23T20:52:55.349445"
-        },
-        {
-          "name": "2026-06-23",
-          "path": "memory\\2026-06-23.md",
-          "size": 9167,
-          "modified": "2026-06-23T20:47:57.769166"
         },
         {
           "name": "projects",
