@@ -203,4 +203,25 @@ def test_expanding():
 
 
 if __name__ == '__main__':
-    test_expanding()
+    print("=== 长期运行测试 ===")
+    
+    # 运行更长时间，看状态增长是否持续
+    universe = RecursiveExpandingUniverse()
+    universe.run(5000)
+    analysis = universe.analyze()
+    
+    print(f"树深度={analysis['tree_depth']}, 总状态={analysis['total_states']}, 访问={analysis['visited_states']}")
+    
+    # 绘制状态增长曲线
+    import matplotlib.pyplot as plt
+    
+    state_counts = [h[2] for h in universe.history]
+    plt.figure(figsize=(12, 4))
+    plt.plot(state_counts)
+    plt.xlabel('Steps')
+    plt.ylabel('State Count')
+    plt.title('Self-Expanding Universe: State Growth Over Time')
+    plt.savefig('D:/emergence_experiments/state_growth.png')
+    plt.close()
+    
+    print(f"\n状态增长曲线保存到: D:/emergence_experiments/state_growth.png")
