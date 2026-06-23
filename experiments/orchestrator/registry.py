@@ -424,6 +424,7 @@ class TurmitesExperiment(BaseExperiment):
         return f"Turmites: {result['n_states']} states, {result['n_colors']} colors, {result['steps']} steps"
 
 from lenia_exp import LeniaExperiment
+from phase_transitions import PhaseTransitions
 
 REGISTRY = {
     'langtons_ant': LangtonsAnt(),
@@ -435,6 +436,7 @@ REGISTRY = {
     'strange_attractors': StrangeAttractors(),
     'turmites': TurmitesExperiment(),
     'lenia': LeniaExperiment(),
+    'phase_transitions': PhaseTransitions(),
 }
 
 def get_experiment(name):
