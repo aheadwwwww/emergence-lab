@@ -120,7 +120,7 @@ class OrchestratorV2:
         self.max_workers = max_workers
         self.history = []
     
-    def run_single(self, exp_name):
+    def run_single(self, exp_name, with_animation=False):
         """运行单个实验"""
         exp = REGISTRY.get(exp_name)
         if not exp:
@@ -131,14 +131,25 @@ class OrchestratorV2:
             params = exp.generate_params()
             print(f'    params: {json.dumps({k:str(v) for k,v in params.items()})}')
             
+            # 运行实验
             start = time.time()
             result = exp.run(params)
             elapsed = time.time() - start
             print(f'    done in {elapsed:.1f}s')
             
-            # 可视化
+            # 静态可视化
             img = exp.visualize(result)
             img_path = exp.save_image(img)
+            
+            # 生成动画（如果支持）
+            gif_path = ""
+            if with_animation and exp.supports_animation:
+                anim_start = time.time()
+                print(f'    generating animation...')
+                frames = exp.animate(params)
+                if frames:
+                    gif_path = exp.save_gif(frames, f'{exp_name}_anim', duration=80)
+                    print(f'    GIF saved: {gif_path} ({len(frames)} frames, {time.time()-anim_start:.1f}s)')
             
             record = {
                 'type': exp_name,
@@ -147,6 +158,7 @@ class OrchestratorV2:
                           for k, v in params.items()},
                 'elapsed': round(elapsed, 2),
                 'image': img_path,
+                'gif': gif_path,
                 'description': exp.describe(params, result),
                 'timestamp': datetime.now().isoformat()
             }
@@ -159,6 +171,24 @@ class OrchestratorV2:
             print(f'    ERROR: {e}')
             traceback.print_exc()
             return None
+    
+    def run_with_animations(self, exp_names=None):
+        """运行实验并生成动画（仅支持动画的实验）"""
+        if exp_names is None:
+            exp_names = list_experiments()
+        
+        anim_supported = [n for n in exp_names if REGISTRY.get(n, {}).supports_animation]
+        print(f'Running with animations: {len(anim_supported)} experiments')
+        print(f'  Animated: {anim_supported}')
+        print()
+        
+        results = []
+        for exp_name in anim_supported:
+            r = self.run_single(exp_name, with_animation=True)
+            if r:
+                results.append(r)
+        
+        return results
     
     def run_batch(self, exp_names=None, n_each=1, parallel=True):
         """批量运行实验"""
@@ -206,7 +236,8 @@ class OrchestratorV2:
         """显示摘要"""
         print(f'\n=== Summary: {len(results)} experiments ===')
         for r in results:
-            print(f'  {r["type"]:20s} | {r["description"][:50]:50s} | {r["elapsed"]:6.1f}s')
+            anim_flag = ' [GIF]' if r.get('gif') else ''
+            print(f'  {r["type"]:20s} | {r["description"][:50]:50s} | {r["elapsed"]:6.1f}s{anim_flag}')
         print(f'  Total: {sum(r["elapsed"] for r in results):.1f}s')
 
 # ===== 主入口 =====
@@ -222,6 +253,10 @@ def main():
     elif len(sys.argv) > 1 and sys.argv[1] == 'all':
         # 全部实验
         results = orch.run_batch(n_each=1)
+    elif len(sys.argv) > 1 and sys.argv[1] == 'anim':
+        # 动画模式 - 跑所有支持动画的实验并生成 GIF
+        core_anim = ['langtons_ant', 'game_of_life', 'wolfram_ca', 'strange_attractors', 'turmites']
+        results = orch.run_with_animations(core_anim)
     else:
         # 默认：跑7个核心实验各1次
         core = ['langtons_ant', 'game_of_life', 'sandpile', 'boids', 
