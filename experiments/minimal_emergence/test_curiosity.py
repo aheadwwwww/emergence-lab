@@ -76,7 +76,7 @@ class CuriosityUniverse:
         self._update_curiosity()
         
         # 分裂触发：当好奇心奖励过低时，分裂出新状态
-        if reward < 0.1 and self.state_count < 500 and len(self.history) % 100 == 0:
+        if reward < 0.1 and self.state_count < 1000 and len(self.history) % 100 == 0:
             self._add_state()
         
         key = (self.state, self.memory)
@@ -116,10 +116,10 @@ class CuriosityUniverse:
 
 
 if __name__ == '__main__':
-    print("=== 好奇心驱动型演化测试（50000步） ===")
+    print("=== 好奇心驱动型演化测试（100000步） ===")
     
     universe = CuriosityUniverse()
-    universe.run(50000)
+    universe.run(100000)
     analysis = universe.analyze()
     
     print(f"\n总状态数: {analysis['total_states']}")
