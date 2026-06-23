@@ -1,0 +1,386 @@
+{
+  "last_updated": "2026-06-23T16:02:35.711204",
+  "categories": {
+    "exploration": {
+      "count": 10,
+      "items": [
+        {
+          "name": "grokking",
+          "path": "exploration\\grokking.md",
+          "size": 2248,
+          "modified": "2026-06-23T16:00:10.800812"
+        },
+        {
+          "name": "agent_based_models",
+          "path": "exploration\\agent_based_models.md",
+          "size": 7369,
+          "modified": "2026-06-23T15:33:50.959373"
+        },
+        {
+          "name": "emergence_metrics",
+          "path": "exploration\\emergence_metrics.md",
+          "size": 5493,
+          "modified": "2026-06-23T15:32:31.935518"
+        },
+        {
+          "name": "manim_notes",
+          "path": "exploration\\manim_notes.md",
+          "size": 9977,
+          "modified": "2026-06-23T15:02:43.598778"
+        },
+        {
+          "name": "networkx_notes",
+          "path": "exploration\\networkx_notes.md",
+          "size": 4013,
+          "modified": "2026-06-23T14:43:40.076397"
+        },
+        {
+          "name": "equinox_note",
+          "path": "exploration\\equinox_note.md",
+          "size": 1586,
+          "modified": "2026-06-23T13:59:49.462370"
+        },
+        {
+          "name": "equinox_notes",
+          "path": "exploration\\equinox_notes.md",
+          "size": 4176,
+          "modified": "2026-06-23T13:31:33.037367"
+        },
+        {
+          "name": "jax_notes",
+          "path": "exploration\\jax_notes.md",
+          "size": 4295,
+          "modified": "2026-06-23T13:00:56.219259"
+        },
+        {
+          "name": "lenia_notes",
+          "path": "exploration\\lenia_notes.md",
+          "size": 2853,
+          "modified": "2026-06-23T02:36:24.137866"
+        },
+        {
+          "name": "tinygrad_notes",
+          "path": "exploration\\tinygrad_notes.md",
+          "size": 4113,
+          "modified": "2026-06-23T02:01:48.702545"
+        }
+      ]
+    },
+    "experiments": {
+      "count": 34,
+      "items": [
+        {
+          "name": "grokking_demo",
+          "path": "experiments\\grokking_demo.py",
+          "size": 6564,
+          "modified": "2026-06-23T16:00:50.214929"
+        },
+        {
+          "name": "lenia",
+          "path": "experiments\\lenia.py",
+          "size": 3315,
+          "modified": "2026-06-22T22:43:53.649421"
+        },
+        {
+          "name": "lenia_v2",
+          "path": "experiments\\lenia_v2.py",
+          "size": 3473,
+          "modified": "2026-06-22T22:43:53.649421"
+        },
+        {
+          "name": "fractals",
+          "path": "experiments\\fractals.py",
+          "size": 8417,
+          "modified": "2026-06-22T22:03:36.888652"
+        },
+        {
+          "name": "edge_of_chaos",
+          "path": "experiments\\edge_of_chaos.py",
+          "size": 4859,
+          "modified": "2026-06-22T21:40:32.667262"
+        },
+        {
+          "name": "grokking",
+          "path": "experiments\\grokking.py",
+          "size": 3973,
+          "modified": "2026-06-22T21:40:32.667262"
+        },
+        {
+          "name": "scaling_laws",
+          "path": "experiments\\scaling_laws.py",
+          "size": 3096,
+          "modified": "2026-06-22T21:40:32.667262"
+        },
+        {
+          "name": "phase_transitions",
+          "path": "experiments\\phase_transitions.py",
+          "size": 2866,
+          "modified": "2026-06-22T21:40:22.320272"
+        },
+        {
+          "name": "orchestrator_full",
+          "path": "experiments\\orchestrator_full.py",
+          "size": 11489,
+          "modified": "2026-06-22T20:32:50.364574"
+        },
+        {
+          "name": "strange_attractors",
+          "path": "experiments\\strange_attractors.py",
+          "size": 2643,
+          "modified": "2026-06-22T20:31:01.229160"
+        },
+        {
+          "name": "orchestrator",
+          "path": "experiments\\orchestrator.py",
+          "size": 5971,
+          "modified": "2026-06-22T20:13:14.433183"
+        },
+        {
+          "name": "evolutionary_creativity",
+          "path": "experiments\\evolutionary_creativity.py",
+          "size": 6797,
+          "modified": "2026-06-22T19:36:52.950456"
+        },
+        {
+          "name": "fun_play",
+          "path": "experiments\\fun_play.py",
+          "size": 3248,
+          "modified": "2026-06-22T19:31:58.342105"
+        },
+        {
+          "name": "open_ended",
+          "path": "experiments\\open_ended.py",
+          "size": 4164,
+          "modified": "2026-06-22T19:31:26.849073"
+        },
+        {
+          "name": "resilience",
+          "path": "experiments\\resilience.py",
+          "size": 4016,
+          "modified": "2026-06-22T17:45:19.506733"
+        },
+        {
+          "name": "embodiment",
+          "path": "experiments\\embodiment.py",
+          "size": 4072,
+          "modified": "2026-06-22T17:44:43.477328"
+        },
+        {
+          "name": "adaptation",
+          "path": "experiments\\adaptation.py",
+          "size": 5035,
+          "modified": "2026-06-22T17:36:34.834182"
+        },
+        {
+          "name": "creativity",
+          "path": "experiments\\creativity.py",
+          "size": 3921,
+          "modified": "2026-06-22T17:35:42.834090"
+        },
+        {
+          "name": "artificial_life",
+          "path": "experiments\\artificial_life.py",
+          "size": 4539,
+          "modified": "2026-06-22T17:33:04.484071"
+        },
+        {
+          "name": "collective_intelligence",
+          "path": "experiments\\collective_intelligence.py",
+          "size": 3998,
+          "modified": "2026-06-22T17:32:02.103755"
+        },
+        {
+          "name": "self_organization",
+          "path": "experiments\\self_organization.py",
+          "size": 4145,
+          "modified": "2026-06-22T17:28:09.349748"
+        },
+        {
+          "name": "network_effects",
+          "path": "experiments\\network_effects.py",
+          "size": 4979,
+          "modified": "2026-06-22T17:27:00.178722"
+        },
+        {
+          "name": "swarm_intelligence",
+          "path": "experiments\\swarm_intelligence.py",
+          "size": 4147,
+          "modified": "2026-06-22T17:24:56.073004"
+        },
+        {
+          "name": "digital_evolution",
+          "path": "experiments\\digital_evolution.py",
+          "size": 5332,
+          "modified": "2026-06-22T17:24:19.319057"
+        },
+        {
+          "name": "wolfram_ca",
+          "path": "experiments\\wolfram_ca.py",
+          "size": 3004,
+          "modified": "2026-06-22T15:20:22.983613"
+        },
+        {
+          "name": "make_overview",
+          "path": "experiments\\make_overview.py",
+          "size": 1869,
+          "modified": "2026-06-22T15:10:39.886403"
+        },
+        {
+          "name": "sandpile",
+          "path": "experiments\\sandpile.py",
+          "size": 3439,
+          "modified": "2026-06-22T15:01:46.239988"
+        },
+        {
+          "name": "turing_patterns",
+          "path": "experiments\\turing_patterns.py",
+          "size": 2331,
+          "modified": "2026-06-22T14:58:56.316489"
+        },
+        {
+          "name": "game_of_life_fast",
+          "path": "experiments\\game_of_life_fast.py",
+          "size": 1862,
+          "modified": "2026-06-22T14:45:40.679814"
+        },
+        {
+          "name": "game_of_life",
+          "path": "experiments\\game_of_life.py",
+          "size": 3118,
+          "modified": "2026-06-22T14:44:55.544598"
+        },
+        {
+          "name": "turmites",
+          "path": "experiments\\turmites.py",
+          "size": 3094,
+          "modified": "2026-06-22T14:42:43.249920"
+        },
+        {
+          "name": "boids_predators",
+          "path": "experiments\\boids_predators.py",
+          "size": 4817,
+          "modified": "2026-06-22T14:41:46.918245"
+        },
+        {
+          "name": "boids",
+          "path": "experiments\\boids.py",
+          "size": 3145,
+          "modified": "2026-06-22T14:12:37.190322"
+        },
+        {
+          "name": "langtons_ant",
+          "path": "experiments\\langtons_ant.py",
+          "size": 1599,
+          "modified": "2026-06-22T14:11:58.195276"
+        }
+      ]
+    },
+    "memory": {
+      "count": 17,
+      "items": [
+        {
+          "name": "2026-06-23",
+          "path": "memory\\2026-06-23.md",
+          "size": 3278,
+          "modified": "2026-06-23T15:06:52.414915"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 1884,
+          "modified": "2026-06-23T14:06:07.860744"
+        },
+        {
+          "name": "2026-06-22",
+          "path": "memory\\2026-06-22.md",
+          "size": 3778,
+          "modified": "2026-06-23T01:11:41.113655"
+        },
+        {
+          "name": "2026-06-22-micrograd",
+          "path": "memory\\2026-06-22-micrograd.md",
+          "size": 7380,
+          "modified": "2026-06-22T23:03:23.675157"
+        },
+        {
+          "name": "2026-06-22-cryptos",
+          "path": "memory\\2026-06-22-cryptos.md",
+          "size": 3102,
+          "modified": "2026-06-22T20:35:06.346485"
+        },
+        {
+          "name": "anthropic-cookbook-study",
+          "path": "memory\\anthropic-cookbook-study.md",
+          "size": 3480,
+          "modified": "2026-06-22T20:01:10.962618"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1154,
+          "modified": "2026-06-22T15:34:50.939130"
+        },
+        {
+          "name": "persona",
+          "path": "memory\\persona.md",
+          "size": 749,
+          "modified": "2026-06-22T15:34:11.971855"
+        },
+        {
+          "name": "human",
+          "path": "memory\\human.md",
+          "size": 746,
+          "modified": "2026-06-22T15:33:59.556543"
+        },
+        {
+          "name": "2026-06-22-todo",
+          "path": "memory\\2026-06-22-todo.md",
+          "size": 5210,
+          "modified": "2026-06-22T15:12:23.203156"
+        },
+        {
+          "name": "2026-06-21",
+          "path": "memory\\2026-06-21.md",
+          "size": 1579,
+          "modified": "2026-06-21T23:00:19.984792"
+        },
+        {
+          "name": "2026-06-20",
+          "path": "memory\\2026-06-20.md",
+          "size": 2495,
+          "modified": "2026-06-21T00:45:19.201822"
+        },
+        {
+          "name": "2026-06-18",
+          "path": "memory\\2026-06-18.md",
+          "size": 2833,
+          "modified": "2026-06-18T23:22:12.063663"
+        },
+        {
+          "name": "2026-06-18-2106",
+          "path": "memory\\2026-06-18-2106.md",
+          "size": 2162,
+          "modified": "2026-06-18T21:06:56.431239"
+        },
+        {
+          "name": "2026-06-18.deep",
+          "path": "memory\\2026-06-18.deep.md",
+          "size": 286,
+          "modified": "2026-06-18T19:30:02.929280"
+        },
+        {
+          "name": "_day1_summary",
+          "path": "memory\\_day1_summary.md",
+          "size": 1193,
+          "modified": "2026-06-18T19:29:19.537878"
+        },
+        {
+          "name": "_reflection",
+          "path": "memory\\_reflection.md",
+          "size": 2042,
+          "modified": "2026-06-18T19:18:10.673351"
+        }
+      ]
+    }
+  }
+}
