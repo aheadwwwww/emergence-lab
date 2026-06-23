@@ -332,7 +332,170 @@ def analyze_boids_network(positions: np.ndarray, velocities: np.ndarray,
 
 
 # ============================================================
-# 5. 统一入口
+# 5. Gray-Scott 反应扩散 — 斑图拓扑网络
+# ============================================================
+
+def analyze_gray_scott_pattern(U: np.ndarray, V: np.ndarray) -> dict:
+    """
+    分析 Gray-Scott 反应扩散生成的浓度斑图。
+
+    策略: 以 V 浓度场为基底，通过阈值分割提取结构，
+    计算斑图的拓扑网络特性（连通域、骨架、图案复杂度）。
+    """
+    size = len(V)
+
+    # V 的直方图分析 — 分布形态反映图案类型
+    v_flat = V.flatten()
+    v_mean = float(np.mean(v_flat))
+    v_std = float(np.std(v_flat))
+
+    # 直方图熵（用概率质量，而非密度）
+    hist_counts, _ = np.histogram(v_flat, bins=32)
+    hist_counts = hist_counts[hist_counts > 0]
+    probs = hist_counts / len(v_flat)
+    v_entropy = float(-np.sum(probs * np.log(probs + 1e-30))) if len(probs) > 1 else 0.0
+
+    # 双峰检验 — 判断是否是斑点图案（双峰分布）还是渐变条纹（单峰分布）
+    # 用平滑直方图
+    hist_broad, _ = np.histogram(v_flat, bins=32, density=True)
+    # 寻找局部极大值数量（去噪后）
+    peaks = 0
+    offset = (hist_broad.max() - hist_broad.min()) * 0.1  # 去噪阈值
+    for i in range(1, len(hist_broad) - 1):
+        if (hist_broad[i] > hist_broad[i-1] + offset and
+            hist_broad[i] > hist_broad[i+1] + offset):
+            peaks += 1
+    is_bimodal = peaks >= 2
+
+    # 阈值分割：自适应多策略
+    # 策略1: 均值 + 0.5σ
+    # 策略2: 95分位数（对稀疏图案有效）
+    # 策略3: 中位数
+    v_95 = float(np.percentile(v_flat, 95))
+    v_median = float(np.median(v_flat))
+
+    # 选择最佳阈值使得覆盖率为 10%-40%
+    candidates = [
+        ('mean_0.5std', v_mean + v_std * 0.5),
+        ('percentile_95', v_95),
+        ('median', v_median),
+    ]
+    best_threshold = v_median
+    best_ratio = 0.0
+    for name, th in candidates:
+        ratio = float(np.mean(V >= th))
+        if 0.05 <= ratio <= 0.50:
+            best_threshold = th
+            best_ratio = ratio
+            break
+        if abs(ratio - 0.25) < abs(best_ratio - 0.25) or best_ratio == 0:
+            if 0.02 <= ratio <= 0.80:
+                best_threshold = th
+                best_ratio = ratio
+
+    pattern_mask = V >= best_threshold
+    pattern_ratio = float(np.mean(pattern_mask))
+
+    # 连通分量（斑图碎片）
+    labeled, n_labels = _connected_components(pattern_mask)
+    component_sizes = [np.sum(labeled == i) for i in range(1, n_labels + 1)]
+    component_sizes.sort(reverse=True)
+
+    # 图结构：每个斑块作为节点，相邻斑块之间连边
+    if n_labels >= 2:
+        G = nx.Graph()
+        for idx in range(1, n_labels + 1):
+            G.add_node(idx, size=component_sizes[idx - 1])
+
+        # 相邻斑块检测
+        for i in range(size - 1):
+            for j in range(size):
+                l1, l2 = labeled[i, j], labeled[i + 1, j]
+                if l1 != 0 and l2 != 0 and l1 != l2:
+                    G.add_edge(int(l1), int(l2))
+        for i in range(size):
+            for j in range(size - 1):
+                l1, l2 = labeled[i, j], labeled[i, j + 1]
+                if l1 != 0 and l2 != 0 and l1 != l2:
+                    G.add_edge(int(l1), int(l2))
+
+        n_components = nx.number_connected_components(G)
+        clustering = nx.average_clustering(G) if n_labels > 2 else 0.0
+        density = nx.density(G)
+
+        # 介数中心性（哪些斑块是拓扑枢纽）
+        if n_labels < 500:
+            betweenness = nx.betweenness_centrality(G, k=min(n_labels, 50), seed=42)
+            top_hubs = sorted(betweenness.items(), key=lambda x: x[1], reverse=True)[:3]
+        else:
+            top_hubs = []
+    else:
+        n_components = 0
+        clustering = 0.0
+        density = 0.0
+        top_hubs = []
+
+    # 图案特征：均匀性 vs 条纹性
+    # 用自相关函数判断
+    autocorr = _autocorrelation(V)
+
+    return {
+        "pattern_type": "bimodal_spot" if is_bimodal else "continuous_pattern",
+        "v_mean": round(v_mean, 4),
+        "v_std": round(v_std, 4),
+        "v_entropy": round(v_entropy, 4),
+        "n_patches": int(n_labels),
+        "patch_sizes_top5": component_sizes[:5],
+        "largest_patch_ratio": round(component_sizes[0] / (size * size), 4) if component_sizes else 0,
+        "pattern_coverage": round(pattern_ratio, 4),
+        "n_patch_clusters": int(n_components),
+        "patch_graph_clustering": round(float(clustering), 4),
+        "patch_graph_density": round(float(density), 6),
+        "autocorrelation_scale": round(float(autocorr), 4),
+        "topological_hubs": [
+            {"patch": int(idx), "betweenness": round(float(b), 4)}
+            for idx, b in top_hubs
+        ],
+    }
+
+
+def _connected_components(mask: np.ndarray) -> tuple:
+    """快速连通分量标记（4-邻域），返回 (labeled, n_labels)"""
+    labeled = np.zeros_like(mask, dtype=int)
+    label = 1
+    for i in range(len(mask)):
+        for j in range(len(mask[i])):
+            if mask[i, j] and labeled[i, j] == 0:
+                stack = [(i, j)]
+                labeled[i, j] = label
+                while stack:
+                    ci, cj = stack.pop()
+                    for di, dj in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+                        ni, nj = ci + di, cj + dj
+                        if 0 <= ni < len(mask) and 0 <= nj < len(mask) and mask[ni, nj] and labeled[ni, nj] == 0:
+                            labeled[ni, nj] = label
+                            stack.append((ni, nj))
+                label += 1
+    return labeled, label - 1
+
+
+def _autocorrelation(arr: np.ndarray) -> float:
+    """空间自相关函数，衡量图案的规则性。
+    高值 → 周期性条纹；低值 → 随机斑点。
+    """
+    size = min(arr.shape[0], 100)  # 采样中心区域
+    center = arr[arr.shape[0]//2 - size//2:arr.shape[0]//2 + size//2,
+                 arr.shape[1]//2 - size//2:arr.shape[1]//2 + size//2]
+    shift = 3  # 小偏移量
+    shifted = np.roll(center, shift, axis=0)
+    shifted2 = np.roll(center, shift, axis=1)
+    corr = float(np.corrcoef(center.flatten(), shifted.flatten())[0, 1])
+    corr2 = float(np.corrcoef(center.flatten(), shifted2.flatten())[0, 1])
+    return (abs(corr) + abs(corr2)) / 2
+
+
+# ============================================================
+# 6. 统一入口
 # ============================================================
 
 def get_network_report(experiment_name: str, result: dict, params: dict = None) -> dict:
@@ -348,6 +511,14 @@ def get_network_report(experiment_name: str, result: dict, params: dict = None) 
         'boids': lambda: analyze_boids_network(
             result.get('positions', np.array([])),
             result.get('velocities', np.array([]))
+        ),
+        'gray_scott': lambda: analyze_gray_scott_pattern(
+            result.get('U', np.array([])),
+            result.get('V', np.array([]))
+        ),
+        'turing_patterns': lambda: analyze_gray_scott_pattern(
+            result.get('U', np.array([])),
+            result.get('V', np.array([]))
         ),
     }
 

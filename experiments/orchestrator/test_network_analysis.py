@@ -48,7 +48,7 @@ def run_and_analyze(exp_name: str):
 
 if __name__ == '__main__':
     reports = {}
-    for name in ['phase_transitions', 'game_of_life', 'sandpile', 'boids']:
+    for name in ['phase_transitions', 'game_of_life', 'sandpile', 'boids', 'gray_scott']:
         r = run_and_analyze(name)
         if r:
             reports[name] = r
