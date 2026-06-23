@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T19:59:57.055495",
+  "last_updated": "2026-06-23T20:59:35.593523",
   "categories": {
     "exploration": {
       "count": 12,
@@ -288,8 +288,32 @@
       ]
     },
     "memory": {
-      "count": 19,
+      "count": 20,
       "items": [
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 2431,
+          "modified": "2026-06-23T20:52:55.349445"
+        },
+        {
+          "name": "2026-06-23",
+          "path": "memory\\2026-06-23.md",
+          "size": 9167,
+          "modified": "2026-06-23T20:47:57.769166"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1346,
+          "modified": "2026-06-23T20:37:32.435710"
+        },
+        {
+          "name": "desire_fear",
+          "path": "memory\\desire_fear.md",
+          "size": 1177,
+          "modified": "2026-06-23T20:31:13.981916"
+        },
         {
           "name": "curiosity_success",
           "path": "memory\\curiosity_success.md",
@@ -301,18 +325,6 @@
           "path": "memory\\minimal_emergence_experiment.md",
           "size": 1404,
           "modified": "2026-06-23T19:39:47.344544"
-        },
-        {
-          "name": "2026-06-23",
-          "path": "memory\\2026-06-23.md",
-          "size": 2984,
-          "modified": "2026-06-23T19:30:20.312436"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 2212,
-          "modified": "2026-06-23T17:42:57.259812"
         },
         {
           "name": "2026-06-22",
@@ -337,12 +349,6 @@
           "path": "memory\\anthropic-cookbook-study.md",
           "size": 3480,
           "modified": "2026-06-22T20:01:10.962618"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1154,
-          "modified": "2026-06-22T15:34:50.939130"
         },
         {
           "name": "persona",
