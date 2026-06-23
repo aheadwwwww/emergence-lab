@@ -1,0 +1,5419 @@
+{
+  "params": [
+    {
+      "regrowth": 0.001,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.001,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0045000000000000005,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.008,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0115,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.015,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.018500000000000003,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.022000000000000002,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.025500000000000002,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.029,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0325,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.036000000000000004,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0395,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.043000000000000003,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.0465,
+      "density": 0.3,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.05,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.05,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.05,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.05,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.07777777777777778,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.07777777777777778,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.07777777777777778,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.07777777777777778,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.10555555555555556,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.10555555555555556,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.10555555555555556,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.10555555555555556,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.13333333333333333,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.13333333333333333,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.13333333333333333,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.13333333333333333,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.1611111111111111,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.1611111111111111,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.1611111111111111,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.1611111111111111,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.18888888888888888,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.18888888888888888,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.18888888888888888,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.18888888888888888,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.21666666666666667,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.21666666666666667,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.21666666666666667,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.21666666666666667,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2444444444444444,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2444444444444444,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2444444444444444,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2444444444444444,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2722222222222222,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2722222222222222,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2722222222222222,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.2722222222222222,
+      "energy": 20
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.3,
+      "energy": 5
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.3,
+      "energy": 10
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.3,
+      "energy": 15
+    },
+    {
+      "regrowth": 0.05,
+      "density": 0.3,
+      "energy": 20
+    }
+  ],
+  "curiosity_rates": [
+    0.0,
+    0.06666666666666667,
+    0.35,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.4,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.16,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.2,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.13333333333333333,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.06666666666666667,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.13333333333333333,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.12,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.1,
+    0.0,
+    0.1,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.06666666666666667,
+    0.0,
+    0.0,
+    0.0,
+    0.2,
+    0.0,
+    0.0,
+    0.0,
+    0.13333333333333333,
+    0.0,
+    0.0,
+    0.0,
+    0.06666666666666667,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.15,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.06666666666666667,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.8,
+    0.13333333333333333,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.4666666666666667,
+    0.0,
+    0.0,
+    0.1,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.1,
+    0.06666666666666667,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.05,
+    0.043478260869565216,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.04,
+    0.0,
+    0.0,
+    0.05,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.2,
+    0.0,
+    0.0,
+    0.0,
+    0.1,
+    0.0,
+    0.0,
+    0.4,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "survival_steps": [
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    5,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    25,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    15,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    5,
+    15,
+    20,
+    23,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    25,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    5,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    23,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    10,
+    20,
+    23,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    25,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    10,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    22,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21,
+    10,
+    15,
+    20,
+    21
+  ],
+  "is_alive": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "scores": [
+    0.0,
+    0.005,
+    0.034999999999999996,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.025,
+    0.03,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.02,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.015,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.005000000000000001,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.015,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.005,
+    0.075,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.025,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.015,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.010000000000000002,
+    0.0,
+    0.005000000000000001,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.005,
+    0.0,
+    0.0,
+    0.0,
+    0.015,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.005,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.015,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.005,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.020000000000000004,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.034999999999999996,
+    0.0,
+    0.0,
+    0.005000000000000001,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.005000000000000001,
+    0.005,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05,
+    0.005000000000000001,
+    0.005,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.005,
+    0.0,
+    0.0,
+    0.005000000000000001,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.05,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.020000000000000004,
+    0.0,
+    0.0,
+    0.0,
+    0.010000000000000002,
+    0.0,
+    0.0,
+    0.03,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "best_params": {
+    "regrowth": 0.015,
+    "density": 0.07777777777777778,
+    "energy": 15
+  },
+  "best_score": 0.075,
+  "timestamp": "20260623_210136"
+}
