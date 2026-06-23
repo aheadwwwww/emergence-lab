@@ -13,6 +13,12 @@
 ## 内容展示
 - **图片用 PNG**（2026-06-21）：Python + Pillow 绘制 → `read` 工具 → `MEDIA:` 指令。SVG 不被 `read` 工具支持
 
+## Windows 编码问题
+- **Python print() 避免 Unicode emoji**（2026-06-23）
+  - Windows PowerShell 默认 GBK 编码
+  - `print("✅")` 会报 UnicodeEncodeError
+  - 用 ASCII 替代：`[OK]`, `[XX]`, `[--]` 等
+
 ## 沟通与行为
 - **不要把期待信号当停止信号**（2026-06-22）
   - 用户说"让我赞叹"不等于"做完了"

@@ -141,8 +141,8 @@ if __name__ == '__main__':
     print(f"平均好奇行为率: {avg_curiosity:.1%}")
     
     if avg_curiosity > 0.2:
-        print("✅ 好奇行为涌现：不需要显式编程，从生存压力中自然产生")
+        print("[OK] 好奇行为涌现：不需要显式编程，从生存压力中自然产生")
     elif avg_curiosity > 0.1:
-        print("🔶 少量好奇行为")
+        print("[--] 少量好奇行为")
     else:
-        print("❌ 没有涌现好奇行为，需要更强的生存压力")
+        print("[XX] 没有涌现好奇行为，需要更强的生存压力")
