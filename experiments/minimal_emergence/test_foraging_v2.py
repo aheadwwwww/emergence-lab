@@ -18,13 +18,13 @@ class HarshForagingUniverse:
     def __init__(self, num_states=50):
         self.num_states = num_states
         self.state = 0
-        self.energy = 12  # 更多初始能量
-        self.max_energy = 25
+        self.energy = 15  # 更多初始能量
+        self.max_energy = 30
         self.day = 0
         
         # 食物会迁移：不断有旧食物消失、新食物出现
         self.food = np.zeros(num_states, dtype=float)
-        for _ in range(5):  # 更多初始食物
+        for _ in range(8):  # 更多初始食物
             self._spawn_food()
         
         # 不完美记忆（有噪声+遗忘）
@@ -36,7 +36,7 @@ class HarshForagingUniverse:
     def _spawn_food(self):
         """随机生成一堆食物"""
         state = np.random.randint(0, self.num_states)
-        self.food[state] += np.random.randint(3, 8)
+        self.food[state] += np.random.randint(4, 10)  # 更多食物
     
     def step(self):
         self.day += 1
@@ -79,8 +79,8 @@ class HarshForagingUniverse:
         # 5. 基础代谢
         self.energy -= 1
         
-        # 6. 食物迁移：每10步重新布局（更慢的迁移）
-        if self.day % 10 == 0:
+        # 6. 食物迁移：每15步重新布局（更慢的迁移）
+        if self.day % 15 == 0:
             # 吃掉一些食物的地方变成贫瘠
             depletion_idx = np.random.randint(0, self.num_states)
             self.food[depletion_idx] = 0
