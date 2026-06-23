@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T23:35:34.549745",
+  "last_updated": "2026-06-24T00:03:36.790473",
   "categories": {
     "exploration": {
       "count": 18,
@@ -115,8 +115,20 @@
       ]
     },
     "experiments": {
-      "count": 41,
+      "count": 42,
       "items": [
+        {
+          "name": "lenia",
+          "path": "experiments\\lenia.py",
+          "size": 10360,
+          "modified": "2026-06-24T00:02:49.470364"
+        },
+        {
+          "name": "debug_lenia",
+          "path": "experiments\\debug_lenia.py",
+          "size": 2071,
+          "modified": "2026-06-24T00:02:32.599852"
+        },
         {
           "name": "network_emergence",
           "path": "experiments\\network_emergence.py",
@@ -164,12 +176,6 @@
           "path": "experiments\\grokking_demo.py",
           "size": 6564,
           "modified": "2026-06-23T16:00:50.214929"
-        },
-        {
-          "name": "lenia",
-          "path": "experiments\\lenia.py",
-          "size": 3315,
-          "modified": "2026-06-22T22:43:53.649421"
         },
         {
           "name": "lenia_v2",
