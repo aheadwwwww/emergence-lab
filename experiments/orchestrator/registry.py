@@ -557,6 +557,7 @@ class TurmitesExperiment(BaseExperiment):
 
 from lenia_exp import LeniaExperiment
 from phase_transitions import PhaseTransitions
+from gray_scott import GrayScott
 
 REGISTRY = {
     'langtons_ant': LangtonsAnt(),
@@ -569,6 +570,7 @@ REGISTRY = {
     'turmites': TurmitesExperiment(),
     'lenia': LeniaExperiment(),
     'phase_transitions': PhaseTransitions(),
+    'gray_scott': GrayScott(),
 }
 
 def get_experiment(name):
