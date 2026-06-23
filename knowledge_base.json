@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-23T21:29:55.568371",
+  "last_updated": "2026-06-23T22:02:24.024931",
   "categories": {
     "exploration": {
-      "count": 12,
+      "count": 15,
       "items": [
+        {
+          "name": "golden_zone_proof",
+          "path": "exploration\\golden_zone_proof.md",
+          "size": 5230,
+          "modified": "2026-06-23T22:02:19.510690"
+        },
+        {
+          "name": "golden_zone_analysis",
+          "path": "exploration\\golden_zone_analysis.md",
+          "size": 9271,
+          "modified": "2026-06-23T21:36:42.905141"
+        },
+        {
+          "name": "intrinsic_motivation_golden_zone",
+          "path": "exploration\\intrinsic_motivation_golden_zone.md",
+          "size": 2835,
+          "modified": "2026-06-23T21:32:08.718812"
+        },
         {
           "name": "emergence_sixth_element",
           "path": "exploration\\emergence_sixth_element.md",
@@ -79,8 +97,26 @@
       ]
     },
     "experiments": {
-      "count": 35,
+      "count": 38,
       "items": [
+        {
+          "name": "golden_zone_extended",
+          "path": "experiments\\golden_zone_extended.py",
+          "size": 12970,
+          "modified": "2026-06-23T22:00:38.719985"
+        },
+        {
+          "name": "check_stats",
+          "path": "experiments\\check_stats.py",
+          "size": 2243,
+          "modified": "2026-06-23T21:35:41.725829"
+        },
+        {
+          "name": "analyze_golden_zone",
+          "path": "experiments\\analyze_golden_zone.py",
+          "size": 19373,
+          "modified": "2026-06-23T21:35:07.960524"
+        },
         {
           "name": "sweep_curvature_golden_zone",
           "path": "experiments\\sweep_curvature_golden_zone.py",
@@ -299,8 +335,8 @@
         {
           "name": "2026-06-23",
           "path": "memory\\2026-06-23.md",
-          "size": 10754,
-          "modified": "2026-06-23T21:03:02.187058"
+          "size": 14457,
+          "modified": "2026-06-23T22:02:19.048052"
         },
         {
           "name": "lessons",
