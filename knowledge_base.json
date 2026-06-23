@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T22:34:00.150967",
+  "last_updated": "2026-06-23T22:39:00.083461",
   "categories": {
     "exploration": {
       "count": 15,
@@ -339,6 +339,12 @@
       "count": 21,
       "items": [
         {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 2661,
+          "modified": "2026-06-23T22:34:46.315728"
+        },
+        {
           "name": "project_snapshot",
           "path": "memory\\project_snapshot.md",
           "size": 1472,
@@ -349,12 +355,6 @@
           "path": "memory\\2026-06-23.md",
           "size": 14457,
           "modified": "2026-06-23T22:02:19.048052"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 2431,
-          "modified": "2026-06-23T20:52:55.349445"
         },
         {
           "name": "projects",

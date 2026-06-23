@@ -196,9 +196,9 @@ if __name__ == '__main__':
     l.seed_orbium()
     try:
         l.create_gif(steps=200, filename='exploration/lenia_output.gif', interval=30)
-        print("  ✅ GIF generated!")
+        print("  [OK] GIF generated!")
     except Exception as e:
-        print(f"  ⚠️ GIF generation failed: {e}")
+        print(f"  [WARN] GIF generation failed: {e}")
         # Save just the final frame
         for _ in range(200):
             l.step()
