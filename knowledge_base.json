@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T19:30:22.664886",
+  "last_updated": "2026-06-23T19:59:57.055495",
   "categories": {
     "exploration": {
       "count": 12,
@@ -288,8 +288,20 @@
       ]
     },
     "memory": {
-      "count": 17,
+      "count": 19,
       "items": [
+        {
+          "name": "curiosity_success",
+          "path": "memory\\curiosity_success.md",
+          "size": 367,
+          "modified": "2026-06-23T19:41:31.407734"
+        },
+        {
+          "name": "minimal_emergence_experiment",
+          "path": "memory\\minimal_emergence_experiment.md",
+          "size": 1404,
+          "modified": "2026-06-23T19:39:47.344544"
+        },
         {
           "name": "2026-06-23",
           "path": "memory\\2026-06-23.md",
