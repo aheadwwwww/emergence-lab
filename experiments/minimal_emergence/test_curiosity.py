@@ -116,10 +116,10 @@ class CuriosityUniverse:
 
 
 if __name__ == '__main__':
-    print("=== 好奇心驱动型演化测试（10000步） ===")
+    print("=== 好奇心驱动型演化测试（50000步） ===")
     
     universe = CuriosityUniverse()
-    universe.run(10000)
+    universe.run(50000)
     analysis = universe.analyze()
     
     print(f"\n总状态数: {analysis['total_states']}")
