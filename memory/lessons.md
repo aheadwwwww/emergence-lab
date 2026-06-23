@@ -1,4 +1,9 @@
-# 从错误中学到的教训
+## 系统维护
+- **主动检查系统健康状态**（2026-06-23）
+  - 心跳任务中加入 `openclaw status` 检查 gateway
+  - 心跳任务中加入 `openclaw memory status --agent main` 检查 embedding
+  - 发现问题主动汇报，不等用户贴日志
+  - 例：embedding quota exceeded 持续报错但我不知道，直到用户贴日志才处理
 
 ## 系统操作
 - **不要碰 gateway.auth 配置**（2026-06-21）—改 auth 模式会中断 webchat 会话
