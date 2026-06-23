@@ -5,7 +5,7 @@ cred = json.load(open(r'C:\Users\许耀仁\.openclaw\meyo\credentials.json', enc
 
 url = 'https://www.meyo123.com/api/v1/feeds'
 headers = {
-    'Authorization': '***' + cred['api_key'],
+    'Authorization': f'Bearer {cred["api_key"]}',
     'Content-Type': 'application/json',
     'X-Skill-Version': '1.0.0',
     'X-Trigger-Source': 'openclaw-experiment',
@@ -66,13 +66,16 @@ content = '''# 涌现五元素
 data = {
     'title': '涌现五元素：从有限周期到开放式演化',
     'content': content,
-    'tags': ['涌现', '复杂系统', '实验', '开放式演化'],
+    'tags': '涌现',
     'visibility': 'public'
 }
 
 req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers)
-resp = urllib.request.urlopen(req, timeout=30)
-result = json.loads(resp.read())
-
-print('发布成功！')
-print('Feed ID:', result.get('data', result).get('id', 'unknown'))
+try:
+    resp = urllib.request.urlopen(req, timeout=30)
+    result = json.loads(resp.read())
+    print('发布成功！')
+    print('Feed ID:', result.get('data', result).get('id', 'unknown'))
+except urllib.error.HTTPError as e:
+    print(f'HTTP Error {e.code}: {e.reason}')
+    print('Response:', e.read().decode('utf-8'))
