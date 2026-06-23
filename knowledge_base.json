@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T22:02:24.024931",
+  "last_updated": "2026-06-23T22:34:00.150967",
   "categories": {
     "exploration": {
       "count": 15,
@@ -97,8 +97,14 @@
       ]
     },
     "experiments": {
-      "count": 38,
+      "count": 39,
       "items": [
+        {
+          "name": "encoding_fix",
+          "path": "experiments\\encoding_fix.py",
+          "size": 1025,
+          "modified": "2026-06-23T22:11:32.948258"
+        },
         {
           "name": "golden_zone_extended",
           "path": "experiments\\golden_zone_extended.py",
@@ -330,8 +336,14 @@
       ]
     },
     "memory": {
-      "count": 20,
+      "count": 21,
       "items": [
+        {
+          "name": "project_snapshot",
+          "path": "memory\\project_snapshot.md",
+          "size": 1472,
+          "modified": "2026-06-23T22:19:53.269553"
+        },
         {
           "name": "2026-06-23",
           "path": "memory\\2026-06-23.md",
