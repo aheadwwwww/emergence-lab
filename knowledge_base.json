@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-23T22:39:00.083461",
+  "last_updated": "2026-06-23T23:01:29.954858",
   "categories": {
     "exploration": {
-      "count": 15,
+      "count": 16,
       "items": [
+        {
+          "name": "note_lenia",
+          "path": "exploration\\note_lenia.md",
+          "size": 1574,
+          "modified": "2026-06-23T22:41:20.576884"
+        },
         {
           "name": "golden_zone_proof",
           "path": "exploration\\golden_zone_proof.md",
@@ -97,8 +103,14 @@
       ]
     },
     "experiments": {
-      "count": 39,
+      "count": 40,
       "items": [
+        {
+          "name": "emergent_music",
+          "path": "experiments\\emergent_music.py",
+          "size": 9883,
+          "modified": "2026-06-23T23:01:07.815392"
+        },
         {
           "name": "encoding_fix",
           "path": "experiments\\encoding_fix.py",
@@ -339,6 +351,12 @@
       "count": 21,
       "items": [
         {
+          "name": "2026-06-23",
+          "path": "memory\\2026-06-23.md",
+          "size": 15203,
+          "modified": "2026-06-23T22:42:09.717404"
+        },
+        {
           "name": "lessons",
           "path": "memory\\lessons.md",
           "size": 2661,
@@ -349,12 +367,6 @@
           "path": "memory\\project_snapshot.md",
           "size": 1472,
           "modified": "2026-06-23T22:19:53.269553"
-        },
-        {
-          "name": "2026-06-23",
-          "path": "memory\\2026-06-23.md",
-          "size": 14457,
-          "modified": "2026-06-23T22:02:19.048052"
         },
         {
           "name": "projects",
