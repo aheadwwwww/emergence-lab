@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-23T23:30:23.293652",
+  "last_updated": "2026-06-23T23:34:29.838121",
   "categories": {
     "exploration": {
-      "count": 16,
+      "count": 17,
       "items": [
+        {
+          "name": "network_emergence",
+          "path": "exploration\\network_emergence.md",
+          "size": 2131,
+          "modified": "2026-06-23T23:32:06.533677"
+        },
         {
           "name": "note_lenia",
           "path": "exploration\\note_lenia.md",
@@ -103,8 +109,14 @@
       ]
     },
     "experiments": {
-      "count": 40,
+      "count": 41,
       "items": [
+        {
+          "name": "network_emergence",
+          "path": "experiments\\network_emergence.py",
+          "size": 8603,
+          "modified": "2026-06-23T23:33:02.545161"
+        },
         {
           "name": "emergent_music",
           "path": "experiments\\emergent_music.py",
