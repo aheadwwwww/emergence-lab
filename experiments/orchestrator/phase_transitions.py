@@ -96,7 +96,7 @@ class PhaseTransitions(BaseExperiment):
         return img
     
     def describe(self, params, result):
-        phase_emoji = "🧲" if result['phase'] == 'ordered' else "🌀"
+        phase_emoji = "[MAGNET]" if result['phase'] == 'ordered' else "[CYCLONE]"
         return f"Ising Model T={result['temperature']:.2f} |M|={result['magnetization']:.2f} {phase_emoji}"
 
 if __name__ == '__main__':
