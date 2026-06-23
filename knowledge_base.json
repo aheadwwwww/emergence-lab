@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-23T16:42:10.349786",
+  "last_updated": "2026-06-23T18:35:17.381965",
   "categories": {
     "exploration": {
-      "count": 10,
+      "count": 12,
       "items": [
+        {
+          "name": "emergence_sixth_element",
+          "path": "exploration\\emergence_sixth_element.md",
+          "size": 4955,
+          "modified": "2026-06-23T18:35:04.109894"
+        },
+        {
+          "name": "jax_learning",
+          "path": "exploration\\jax_learning.md",
+          "size": 2857,
+          "modified": "2026-06-23T18:33:12.380856"
+        },
+        {
+          "name": "jax_notes",
+          "path": "exploration\\jax_notes.md",
+          "size": 2697,
+          "modified": "2026-06-23T17:43:21.316775"
+        },
         {
           "name": "grokking",
           "path": "exploration\\grokking.md",
@@ -45,12 +63,6 @@
           "path": "exploration\\equinox_notes.md",
           "size": 4176,
           "modified": "2026-06-23T13:31:33.037367"
-        },
-        {
-          "name": "jax_notes",
-          "path": "exploration\\jax_notes.md",
-          "size": 4295,
-          "modified": "2026-06-23T13:00:56.219259"
         },
         {
           "name": "lenia_notes",
@@ -281,14 +293,14 @@
         {
           "name": "2026-06-23",
           "path": "memory\\2026-06-23.md",
-          "size": 3278,
-          "modified": "2026-06-23T15:06:52.414915"
+          "size": 4686,
+          "modified": "2026-06-23T18:33:27.164539"
         },
         {
           "name": "lessons",
           "path": "memory\\lessons.md",
-          "size": 1884,
-          "modified": "2026-06-23T14:06:07.860744"
+          "size": 2212,
+          "modified": "2026-06-23T17:42:57.259812"
         },
         {
           "name": "2026-06-22",
@@ -367,20 +379,4 @@
           "path": "memory\\2026-06-18.deep.md",
           "size": 286,
           "modified": "2026-06-18T19:30:02.929280"
-        },
-        {
-          "name": "_day1_summary",
-          "path": "memory\\_day1_summary.md",
-          "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+ 
