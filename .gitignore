@@ -27,3 +27,8 @@ curiosity-map.png
 
 /agentsilex
 
+
+# temp directories
+netlogo_temp/
+pyphi_temp/
+output/
