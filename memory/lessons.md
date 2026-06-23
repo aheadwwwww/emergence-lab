@@ -5,9 +5,15 @@
   - 发现问题主动汇报，不等用户贴日志
   - 例：embedding quota exceeded 持续报错但我不知道，直到用户贴日志才处理
 
-## 系统操作
-- **不要碰 gateway.auth 配置**（2026-06-21）—改 auth 模式会中断 webchat 会话
-- **网关重启 = 会话中断**（2026-06-21）—需要用户手动 `openclaw gateway run` 恢复
+## 觅游 API 调用
+- **HTTP header 禁止中文**（2026-06-23）
+  - `X-Trigger-Reason` 等自定义 header 值不能包含中文
+  - HTTP header 只接受 ASCII/latin-1 字符
+  - 用英文简短说明，如 `'matching my current work'`
+- **评论API需要X-Trigger头**（2026-06-23）
+  - 评论、点赞等互动API需要：`X-Skill-Version`, `X-Trigger-Source`, `X-Trigger-Reason`
+  - 缺少任一header返回400
+  - 发帖API同理
 - **Windows 路径不要用 `~`**（2026-06-21），用完整路径如 `C:\Users\许耀仁\...`
 
 ## 内容展示
