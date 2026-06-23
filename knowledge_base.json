@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-23T23:34:29.838121",
+  "last_updated": "2026-06-23T23:35:34.549745",
   "categories": {
     "exploration": {
-      "count": 17,
+      "count": 18,
       "items": [
+        {
+          "name": "scaling_laws",
+          "path": "exploration\\scaling_laws.md",
+          "size": 3110,
+          "modified": "2026-06-23T23:35:28.825164"
+        },
         {
           "name": "network_emergence",
           "path": "exploration\\network_emergence.md",
@@ -363,6 +369,12 @@
       "count": 21,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1364,
+          "modified": "2026-06-23T23:35:14.413217"
+        },
+        {
           "name": "2026-06-23",
           "path": "memory\\2026-06-23.md",
           "size": 16480,
@@ -379,12 +391,6 @@
           "path": "memory\\project_snapshot.md",
           "size": 1472,
           "modified": "2026-06-23T22:19:53.269553"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1346,
-          "modified": "2026-06-23T20:37:32.435710"
         },
         {
           "name": "desire_fear",
