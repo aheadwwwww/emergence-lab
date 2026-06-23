@@ -131,30 +131,30 @@ class RecursiveExpandingUniverse:
         self.state_tree[parent]['children'].append(new_state)
         self.state_count += 1
         
-        # 继承规则并变异
+        # 新状态的规则：指向父状态或兄弟状态，不自指
         for m in [0, 1]:
-            parent_rule = self.rules.get((parent, m), (parent, m))
-            # 变异：可能指向新状态或随机状态
-            if np.random.random() < 0.5:
-                self.rules[(new_state, m)] = (new_state, m)  # 自指
-            else:
-                self.rules[(new_state, m)] = (
-                    np.random.randint(0, min(self.state_count, 10)),
-                    np.random.randint(0, 2)
-                )
+            target = parent if parent != new_state else (new_state - 1) % self.state_count
+            self.rules[(new_state, m)] = (
+                target,
+                np.random.randint(0, 2)
+            )
         
         self.bifurcations.append((len(self.history), parent, new_state))
     
     def step(self):
         key = (self.state, self.memory)
         
-        # 分裂触发：每隔一定步数或到达边界
-        if len(self.history) % 50 == 0 and self.state_count < 50:
+        # 分裂触发：增加触发条件
+        if len(self.history) % 30 == 0 and self.state_count < 200:
             self._bifurcate()
         
         # 规则执行
         if key in self.rules:
             self.state, self.memory = self.rules[key]
+        else:
+            # 默认：随机跳转
+            self.state = (self.state + 1) % self.state_count
+            self.memory = (self.memory + 1) % 2
         
         self.history.append((self.state, self.memory, self.state_count))
     
@@ -203,11 +203,10 @@ def test_expanding():
 
 
 if __name__ == '__main__':
-    print("=== 长期运行测试 ===")
+    print("=== 长期演化测试（10000步） ===")
     
-    # 运行更长时间，看状态增长是否持续
     universe = RecursiveExpandingUniverse()
-    universe.run(5000)
+    universe.run(10000)
     analysis = universe.analyze()
     
     print(f"树深度={analysis['tree_depth']}, 总状态={analysis['total_states']}, 访问={analysis['visited_states']}")
@@ -216,12 +215,12 @@ if __name__ == '__main__':
     import matplotlib.pyplot as plt
     
     state_counts = [h[2] for h in universe.history]
-    plt.figure(figsize=(12, 4))
-    plt.plot(state_counts)
+    plt.figure(figsize=(14, 5))
+    plt.plot(state_counts, linewidth=0.5)
     plt.xlabel('Steps')
     plt.ylabel('State Count')
-    plt.title('Self-Expanding Universe: State Growth Over Time')
-    plt.savefig('D:/emergence_experiments/state_growth.png')
+    plt.title('Self-Expanding Universe: 10000 Steps Evolution')
+    plt.savefig('D:/emergence_experiments/state_growth_10k.png', dpi=150)
     plt.close()
     
-    print(f"\n状态增长曲线保存到: D:/emergence_experiments/state_growth.png")
+    print(f"\n状态增长曲线保存到: D:/emergence_experiments/state_growth_10k.png")
