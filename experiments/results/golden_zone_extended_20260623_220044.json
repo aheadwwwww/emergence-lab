@@ -1,0 +1,7202 @@
+[
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.010638297872340425,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.5535714285714286,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0425531914893617,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.02857142857142857,
+    "survival_steps": 105,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.3815789473684211,
+    "survival_steps": 76,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.2727272727272727,
+    "survival_steps": 55,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.6,
+    "survival_steps": 15,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.02727272727272727,
+    "survival_steps": 110,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.015873015873015872,
+    "survival_steps": 63,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.07446808510638298,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.12195121951219512,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.02830188679245283,
+    "survival_steps": 106,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.015873015873015872,
+    "survival_steps": 63,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.012987012987012988,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.07446808510638298,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.016666666666666666,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.01,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.13333333333333333,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.012987012987012988,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.9545454545454546,
+    "survival_steps": 22,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.19642857142857142,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.24242424242424243,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.05,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 1.0,
+    "survival_steps": 20,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.08928571428571429,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.23636363636363636,
+    "survival_steps": 55,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.019230769230769232,
+    "survival_steps": 104,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.010638297872340425,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 104,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0425531914893617,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.09090909090909091,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.010638297872340425,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.02,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 1.0,
+    "survival_steps": 34,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.05555555555555555,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.038461538461538464,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.2077922077922078,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.9104477611940298,
+    "survival_steps": 67,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.04878048780487805,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.06363636363636363,
+    "survival_steps": 110,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.016666666666666666,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.2692307692307692,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.031914893617021274,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0425531914893617,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.016666666666666666,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.9333333333333333,
+    "survival_steps": 15,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.16071428571428573,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.010638297872340425,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.15151515151515152,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.03,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.06666666666666667,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.08333333333333333,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.46153846153846156,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 104,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.06521739130434782,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.04878048780487805,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0425531914893617,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.02857142857142857,
+    "survival_steps": 105,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.03333333333333333,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.015873015873015872,
+    "survival_steps": 63,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0425531914893617,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.030303030303030304,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.14285714285714285,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.015873015873015872,
+    "survival_steps": 63,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.04,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.05555555555555555,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.3246753246753247,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.030303030303030304,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.07446808510638298,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.1206896551724138,
+    "survival_steps": 116,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.08163265306122448,
+    "survival_steps": 49,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.08695652173913043,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0975609756097561,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.07575757575757576,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.017857142857142856,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.17073170731707318,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.016666666666666666,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.02127659574468085,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.05,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.08333333333333333,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.6060606060606061,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.010638297872340425,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.017857142857142856,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.04878048780487805,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.21666666666666667,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.12121212121212122,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 72,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.024390243902439025,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.10606060606060606,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0625,
+    "survival_steps": 48,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.015873015873015872,
+    "survival_steps": 63,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.30303030303030304,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 129,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.16666666666666666,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.030303030303030304,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.025974025974025976,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.041666666666666664,
+    "survival_steps": 48,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 130,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.060000000000000005,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.23076923076923078,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.15217391304347827,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.02127659574468085,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 1.0,
+    "survival_steps": 29,
+    "is_alive": false,
+    "food_eaten": 0
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0425531914893617,
+    "survival_steps": 47,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.016666666666666666,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.15151515151515152,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.010638297872340425,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.36585365853658536,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.012987012987012988,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.008333333333333333,
+    "survival_steps": 120,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.009708737864077669,
+    "survival_steps": 103,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 52,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.030303030303030304,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.06999999999999999,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.26666666666666666,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.21739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.18181818181818182,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.03571428571428571,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.019230769230769232,
+    "survival_steps": 104,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.09090909090909091,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 63,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.03,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.027777777777777776,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.19230769230769232,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.024390243902439025,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.19696969696969696,
+    "survival_steps": 66,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.054,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.3090909090909091,
+    "survival_steps": 55,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.21666666666666667,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.030303030303030304,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.025,
+    "survival_steps": 120,
+    "is_alive": false,
+    "food_eaten": 2
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 102,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.078,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.021739130434782608,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.030303030303030304,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.08928571428571429,
+    "survival_steps": 112,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.10200000000000001,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.025974025974025976,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.043478260869565216,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 62,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 104,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.126,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 60,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 36,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 10,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 26,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 77,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 46,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 15,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 33,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 94,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 56,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 20,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 41,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 25,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 44,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.3,
+    "curiosity_rate": 0.0,
+    "survival_steps": 101,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.5,
+    "curiosity_rate": 0.0,
+    "survival_steps": 61,
+    "is_alive": false,
+    "food_eaten": 1
+  },
+  {
+    "regrowth": 0.08,
+    "density": 0.15,
+    "energy": 30,
+    "decay": 0.7,
+    "curiosity_rate": 0.0,
+    "survival_steps": 45,
+    "is_alive": false,
+    "food_eaten": 1
+  }
+]
