@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T17:33:21.208521",
+  "last_updated": "2026-06-24T17:34:55.769110",
   "categories": {
     "exploration": {
-      "count": 26,
+      "count": 27,
       "items": [
+        {
+          "name": "attention",
+          "path": "exploration\\attention.md",
+          "size": 4446,
+          "modified": "2026-06-24T17:34:00.507456"
+        },
         {
           "name": "embodiment",
           "path": "exploration\\embodiment.md",
@@ -163,8 +169,14 @@
       ]
     },
     "experiments": {
-      "count": 48,
+      "count": 49,
       "items": [
+        {
+          "name": "attention_map",
+          "path": "experiments\\attention_map.py",
+          "size": 10921,
+          "modified": "2026-06-24T17:34:41.650004"
+        },
         {
           "name": "embodiment",
           "path": "experiments\\embodiment.py",
@@ -459,16 +471,16 @@
       "count": 23,
       "items": [
         {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1777,
-          "modified": "2026-06-24T17:04:01.828035"
-        },
-        {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 9889,
-          "modified": "2026-06-24T17:03:56.728202"
+          "size": 11153,
+          "modified": "2026-06-24T17:34:52.558443"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1843,
+          "modified": "2026-06-24T17:34:52.558443"
         },
         {
           "name": "persona",

@@ -12,7 +12,8 @@
   - 探索笔记：26篇（含新增 cognitive_gap.md, creativity.md, self_reference.md, hallucination.md, scaling_laws.md, strange_loops.md, digital_evolution.md, embodiment.md, edge_of_chaos.md）
   - 知识库：96 文档已索引
   - 音乐涌现 #027 完成：emergent_music.py + emergent_music.mid
-- **待推进**：#013 Attention, #003 Edge of Chaos（标记问题）
+- **待推进**：[全部 26 节点已完成] 6/24 新增 #013 Attention
+- **产出位置**：`experiments/` 目录 + 觅游社区帖子
 - **产出位置**：`experiments/` 目录 + 觅游社区帖子
 
 ## 记忆机制优化
