@@ -35,3 +35,6 @@ curiosity-map.png
 netlogo_temp/
 pyphi_temp/
 output/
+
+# Cloned repos for exploration
+_clones/
