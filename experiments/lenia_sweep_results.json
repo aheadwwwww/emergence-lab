@@ -1,0 +1,492 @@
+[
+  {
+    "mu": 0.08,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.04913179337978364,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.08,
+    "sigma": 0.012,
+    "alive": 0.1373291015625,
+    "entropy": 0.7732209758046891,
+    "edge_density": 0.26165771484375,
+    "stability": 0.028542149066925048,
+    "score": 0.5568671781255256,
+    "label": "simple"
+  },
+  {
+    "mu": 0.08,
+    "sigma": 0.015,
+    "alive": 0.1380615234375,
+    "entropy": 0.7218112209964329,
+    "edge_density": 0.25750732421875,
+    "stability": 0.030175309777259823,
+    "score": 0.5313767985315536,
+    "label": "simple"
+  },
+  {
+    "mu": 0.08,
+    "sigma": 0.018,
+    "alive": 0.14697265625,
+    "entropy": 0.7639791508441944,
+    "edge_density": 0.2474365234375,
+    "stability": 0.03122313767671585,
+    "score": 0.5421199943592462,
+    "label": "simple"
+  },
+  {
+    "mu": 0.08,
+    "sigma": 0.022,
+    "alive": 0.1588134765625,
+    "entropy": 0.7642610785405928,
+    "edge_density": 0.24285888671875,
+    "stability": 0.031872870624065394,
+    "score": 0.5391022448556064,
+    "label": "simple"
+  },
+  {
+    "mu": 0.08,
+    "sigma": 0.028,
+    "alive": 0.1693115234375,
+    "entropy": 0.7546040239588541,
+    "edge_density": 0.21258544921875,
+    "stability": 0.033073789477348334,
+    "score": 0.520728210316345,
+    "label": "simple"
+  },
+  {
+    "mu": 0.08,
+    "sigma": 0.035,
+    "alive": 0.184814453125,
+    "entropy": 0.7781008132365421,
+    "edge_density": 0.19415283203125,
+    "stability": 0.03489250779151916,
+    "score": 0.5191164425240785,
+    "label": "simple"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.05449762582778931,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.012,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.056836143136024475,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.015,
+    "alive": 0.15765380859375,
+    "entropy": 0.8538649718125073,
+    "edge_density": 0.290771484375,
+    "stability": 0.032189272940158845,
+    "score": 0.5934760365946853,
+    "label": "simple"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.018,
+    "alive": 0.1634521484375,
+    "entropy": 0.8480426393363792,
+    "edge_density": 0.27197265625,
+    "stability": 0.0338747689127922,
+    "score": 0.5802565804089673,
+    "label": "simple"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.022,
+    "alive": 0.1702880859375,
+    "entropy": 0.8266633340066243,
+    "edge_density": 0.2598876953125,
+    "stability": 0.03512224197387695,
+    "score": 0.5643759277798959,
+    "label": "simple"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.028,
+    "alive": 0.18115234375,
+    "entropy": 0.8304025436812169,
+    "edge_density": 0.25299072265625,
+    "stability": 0.03841867059469223,
+    "score": 0.5565199653456023,
+    "label": "simple"
+  },
+  {
+    "mu": 0.1,
+    "sigma": 0.035,
+    "alive": 0.19793701171875,
+    "entropy": 0.8245826152921547,
+    "edge_density": 0.21820068359375,
+    "stability": 0.04163401216268539,
+    "score": 0.5338452952289912,
+    "label": "simple"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.05472584009170532,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.012,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06010637521743776,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.015,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06537659704685209,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.018,
+    "alive": 0.19195556640625,
+    "entropy": 0.9658826449505544,
+    "edge_density": 0.29052734375,
+    "stability": 0.03226101905107498,
+    "score": 0.6380419573780718,
+    "label": "simple"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.022,
+    "alive": 0.19134521484375,
+    "entropy": 0.9557528057210847,
+    "edge_density": 0.2938232421875,
+    "stability": 0.03743707031011582,
+    "score": 0.6249562785432022,
+    "label": "simple"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.028,
+    "alive": 0.19476318359375,
+    "entropy": 0.8708008996882544,
+    "edge_density": 0.28448486328125,
+    "stability": 0.04469285100698471,
+    "score": 0.5727286031738323,
+    "label": "simple"
+  },
+  {
+    "mu": 0.12,
+    "sigma": 0.035,
+    "alive": 0.2086181640625,
+    "entropy": 0.9310360218552,
+    "edge_density": 0.25396728515625,
+    "stability": 0.052655742168426514,
+    "score": 0.5686898384677269,
+    "label": "simple"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.056836143136024475,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.012,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.062012672424316406,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.015,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.0694584995508194,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.018,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.07118057250976562,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.022,
+    "alive": 0.20977783203125,
+    "entropy": 1.0338090575503918,
+    "edge_density": 0.28680419921875,
+    "stability": 0.03662168443202972,
+    "score": 0.6550019338435973,
+    "label": "simple"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.028,
+    "alive": 0.2008056640625,
+    "entropy": 0.9037366058023304,
+    "edge_density": 0.286376953125,
+    "stability": 0.046940236389637,
+    "score": 0.5821649507916582,
+    "label": "simple"
+  },
+  {
+    "mu": 0.13,
+    "sigma": 0.035,
+    "alive": 0.21563720703125,
+    "entropy": 0.939130775607424,
+    "edge_density": 0.26446533203125,
+    "stability": 0.05827878952026368,
+    "score": 0.5648808640149423,
+    "label": "simple"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06140619516372681,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.012,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06542654573917388,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.015,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06754161417484283,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.018,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.07347858488559722,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.022,
+    "alive": 0.21734619140625,
+    "entropy": 1.0656208310122286,
+    "edge_density": 0.3038330078125,
+    "stability": 0.03922252267599106,
+    "score": 0.6693364901779094,
+    "label": "simple"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.028,
+    "alive": 0.21844482421875,
+    "entropy": 1.0024588842352944,
+    "edge_density": 0.2828369140625,
+    "stability": 0.04757416009902954,
+    "score": 0.6189699991210587,
+    "label": "simple"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.035,
+    "alive": 0.22119140625,
+    "entropy": 0.9603121380542653,
+    "edge_density": 0.2789306640625,
+    "stability": 0.05953384727239609,
+    "score": 0.5766294263019139,
+    "label": "simple"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.05866661131381988,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.012,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06680760920047762,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.015,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.07093327105045319,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.018,
+    "alive": 0.02423095703125,
+    "entropy": 0.18109973545171434,
+    "edge_density": 0.03045654296875,
+    "stability": 0.06922613590955735,
+    "score": 0.14617023954907105,
+    "label": "simple"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.022,
+    "alive": 0.241455078125,
+    "entropy": 1.1735322123294338,
+    "edge_density": 0.33154296875,
+    "stability": 0.048392774760723116,
+    "score": 0.7052445229103272,
+    "label": "simple"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.028,
+    "alive": 0.2396240234375,
+    "entropy": 1.070940153383108,
+    "edge_density": 0.31048583984375,
+    "stability": 0.04965346902608871,
+    "score": 0.6532634592385658,
+    "label": "simple"
+  },
+  {
+    "mu": 0.16,
+    "sigma": 0.035,
+    "alive": 0.2357177734375,
+    "entropy": 1.0075518612794123,
+    "edge_density": 0.2908935546875,
+    "stability": 0.06219649821519853,
+    "score": 0.5949851699563679,
+    "label": "simple"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06079065859317782,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.012,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.06907297670841217,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.015,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.07562500000000003,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.018,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 0.08145338296890259,
+    "score": 0.0,
+    "label": "dead"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.022,
+    "alive": 0.032958984375,
+    "entropy": 0.2608039701445164,
+    "edge_density": 0.0377197265625,
+    "stability": 0.08128696620464325,
+    "score": 0.15683554627352006,
+    "label": "simple"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.028,
+    "alive": 0.2738037109375,
+    "entropy": 1.2223734027496007,
+    "edge_density": 0.32379150390625,
+    "stability": 0.05547149032354355,
+    "score": 0.7075229820152532,
+    "label": "simple"
+  },
+  {
+    "mu": 0.18,
+    "sigma": 0.035,
+    "alive": 0.2618408203125,
+    "entropy": 1.0957556629628855,
+    "edge_density": 0.3157958984375,
+    "stability": 0.047869273126125336,
+    "score": 0.6688820783079036,
+    "label": "simple"
+  }
+]

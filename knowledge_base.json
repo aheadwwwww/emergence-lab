@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T21:29:36.312099",
+  "last_updated": "2026-06-24T21:33:52.353067",
   "categories": {
     "exploration": {
       "count": 32,
@@ -199,8 +199,14 @@
       ]
     },
     "experiments": {
-      "count": 53,
+      "count": 54,
       "items": [
+        {
+          "name": "particle_life",
+          "path": "experiments\\particle_life.py",
+          "size": 10998,
+          "modified": "2026-06-24T21:30:27.562668"
+        },
         {
           "name": "carle_explorer",
           "path": "experiments\\carle_explorer.py",
