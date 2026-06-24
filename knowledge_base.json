@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-24T18:06:30.530963",
+  "last_updated": "2026-06-24T20:04:22.864775",
   "categories": {
     "exploration": {
-      "count": 28,
+      "count": 30,
       "items": [
+        {
+          "name": "wfc_emergence",
+          "path": "exploration\\wfc_emergence.md",
+          "size": 2114,
+          "modified": "2026-06-24T20:04:16.379814"
+        },
+        {
+          "name": "hard_problem",
+          "path": "exploration\\hard_problem.md",
+          "size": 4612,
+          "modified": "2026-06-24T18:41:11.104678"
+        },
         {
           "name": "predictive_processing",
           "path": "exploration\\predictive_processing.md",
@@ -175,8 +187,26 @@
       ]
     },
     "experiments": {
-      "count": 50,
+      "count": 52,
       "items": [
+        {
+          "name": "wfc_demo",
+          "path": "experiments\\wfc_demo.py",
+          "size": 7955,
+          "modified": "2026-06-24T20:01:36.862391"
+        },
+        {
+          "name": "phase_transitions",
+          "path": "experiments\\phase_transitions.py",
+          "size": 13092,
+          "modified": "2026-06-24T19:02:27.262006"
+        },
+        {
+          "name": "hard_problem",
+          "path": "experiments\\hard_problem.py",
+          "size": 25170,
+          "modified": "2026-06-24T18:40:24.401916"
+        },
         {
           "name": "predictive_processing",
           "path": "experiments\\predictive_processing.py",
@@ -328,12 +358,6 @@
           "modified": "2026-06-22T21:40:32.667262"
         },
         {
-          "name": "phase_transitions",
-          "path": "experiments\\phase_transitions.py",
-          "size": 2866,
-          "modified": "2026-06-22T21:40:22.320272"
-        },
-        {
           "name": "orchestrator_full",
           "path": "experiments\\orchestrator_full.py",
           "size": 11489,
@@ -483,16 +507,16 @@
       "count": 23,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1492,
+          "modified": "2026-06-24T18:41:27.170644"
+        },
+        {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
           "size": 12498,
           "modified": "2026-06-24T18:06:28.705125"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1528,
-          "modified": "2026-06-24T18:05:12.761212"
         },
         {
           "name": "persona",
