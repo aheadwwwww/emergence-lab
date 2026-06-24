@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T16:35:57.228295",
+  "last_updated": "2026-06-24T16:40:45.339044",
   "categories": {
     "exploration": {
-      "count": 24,
+      "count": 25,
       "items": [
+        {
+          "name": "edge_of_chaos",
+          "path": "exploration\\edge_of_chaos.md",
+          "size": 3532,
+          "modified": "2026-06-24T16:40:44.957992"
+        },
         {
           "name": "digital_evolution",
           "path": "exploration\\digital_evolution.md",
@@ -154,6 +160,12 @@
       "count": 48,
       "items": [
         {
+          "name": "edge_of_chaos",
+          "path": "experiments\\edge_of_chaos.py",
+          "size": 11418,
+          "modified": "2026-06-24T16:39:01.893513"
+        },
+        {
           "name": "digital_evolution",
           "path": "experiments\\digital_evolution.py",
           "size": 19530,
@@ -266,12 +278,6 @@
           "path": "experiments\\fractals.py",
           "size": 8417,
           "modified": "2026-06-22T22:03:36.888652"
-        },
-        {
-          "name": "edge_of_chaos",
-          "path": "experiments\\edge_of_chaos.py",
-          "size": 4859,
-          "modified": "2026-06-22T21:40:32.667262"
         },
         {
           "name": "grokking",
