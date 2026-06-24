@@ -31,7 +31,7 @@ import json, time, argparse
 def _make_disk_kernel_np(R, kn=0):
     """Create normalized circular kernel using NumPy (pre-JIT).
     
-    kn: kernel type
+    kn: kernel type (matching official Lenia)
       0 = quad4: (4*r*(1-r))^4
       1 = bump4: exp(4 - 1/(r*(1-r)))
       2 = step:  (r>=1/4)*(r<=3/4)
@@ -46,6 +46,7 @@ def _make_disk_kernel_np(R, kn=0):
     if kn == 0:
         kernel = (4 * r * (1 - r))**4
     elif kn == 1:
+        # Official Lenia bump4: exp(4 - 1/(r*(1-r)))
         kernel = np.exp(4.0 - 1.0 / (r * (1 - r)))
     elif kn == 2:
         q = 0.25
@@ -61,9 +62,15 @@ def _make_disk_kernel_np(R, kn=0):
     return kernel.astype(np.float32)
 
 
-@partial(jit, static_argnums=(2, 3, 4))
-def _lenia_step(grid, kernel_fft, mu, sigma, R):
-    """Single Lenia update step."""
+@partial(jit, static_argnums=(2, 3, 4, 5))
+def _lenia_step(grid, kernel_fft, mu, sigma, R, gn=0):
+    """Single Lenia update step.
+    
+    gn: growth function type (matching official Lenia)
+      0 = quad4: max(0, 1-(n-m)^2/(9*s^2))^4 * 2 - 1
+      1 = gaus:  exp(-(n-m)^2/(2*s^2)) * 2 - 1
+      2 = step:  (|n-m|<=s) * 2 - 1
+    """
     eps = 1e-8
     
     # FFT-based convolution
@@ -71,9 +78,21 @@ def _lenia_step(grid, kernel_fft, mu, sigma, R):
     conv_fft = grid_fft * kernel_fft
     potential = jnp.fft.ifft2(conv_fft).real
     
-    # Growth function (quad4: max(0, 1-((n-mu)/(9*sigma))^2)^4 * 2 - 1)
+    # Clip potential to [0, 1]
     n_potential = jnp.clip(potential, 0, 1)
-    growth = jnp.maximum(0, 1 - ((n_potential - mu) / (9 * sigma))**2)**4 * 2 - 1
+    
+    # Growth function
+    if gn == 0:
+        # quad4: max(0, 1-(n-m)^2/(9*s^2))^4 * 2 - 1
+        growth = jnp.maximum(0, 1 - ((n_potential - mu) / (9 * sigma))**2)**4 * 2 - 1
+    elif gn == 1:
+        # gaus: exp(-(n-m)^2/(2*s^2)) * 2 - 1
+        growth = jnp.exp(-((n_potential - mu)**2) / (2 * sigma**2)) * 2 - 1
+    elif gn == 2:
+        # step: (|n-m|<=s) * 2 - 1
+        growth = jnp.where(jnp.abs(n_potential - mu) <= sigma, 1.0, -1.0)
+    else:
+        growth = jnp.maximum(0, 1 - ((n_potential - mu) / (9 * sigma))**2)**4 * 2 - 1
     
     # Euler integration
     dt = 0.1
@@ -84,17 +103,27 @@ def _lenia_step(grid, kernel_fft, mu, sigma, R):
 
 
 def make_kernel_fft(shape, R, kn=0):
-    """Create kernel and its FFT for convolution."""
-    size = min(shape)
-    kernel_2r1 = _make_disk_kernel_np(R, kn)
+    """Create kernel and its FFT for convolution.
     
-    # Pad to full grid size
+    Properly centers the kernel at (0,0) for FFT convolution.
+    """
+    kernel_2r1 = _make_disk_kernel_np(R, kn)
+    h, w = shape
     k_h, k_w = kernel_2r1.shape
-    pad_h = (shape[0] - k_h) // 2
-    pad_w = (shape[1] - k_w) // 2
-    kernel_pad = np.pad(kernel_2r1, ((pad_h, shape[0]-k_h-pad_h), (pad_w, shape[1]-k_w-pad_w)))
-    kernel_pad = np.roll(kernel_pad, -pad_h, axis=0)
-    kernel_pad = np.roll(kernel_pad, -pad_w, axis=1)
+    
+    # Pad to full grid size, kernel center at (R, R) in kernel_2r1
+    pad_h = (h - k_h) // 2
+    pad_w = (w - k_w) // 2
+    kernel_pad = np.pad(kernel_2r1, 
+                        ((pad_h, h - k_h - pad_h), 
+                         (pad_w, w - k_w - pad_w)))
+    
+    # Kernel center in padded array: (pad_h + R, pad_w + R)
+    # For FFT: roll so center is at (0, 0)
+    cy = pad_h + R
+    cx = pad_w + R
+    kernel_pad = np.roll(kernel_pad, -cy, axis=0)
+    kernel_pad = np.roll(kernel_pad, -cx, axis=1)
     
     return jnp.fft.fft2(jnp.array(kernel_pad))
 
@@ -280,16 +309,36 @@ def render_timeline(grids, potentials=None, filename='lenia_timeline.png', step_
 # Main Simulation
 # ============================================================================
 
-def run_lenia(shape=(256, 256), R=20, mu=0.15, sigma=0.015, kn=0,
+def load_seed(seed_path, shape, R):
+    """Load a seed array and place it centered on a grid of given shape."""
+    seed = np.load(seed_path)
+    sh, sw = seed.shape
+    h, w = shape
+    grid = np.zeros(shape, dtype=np.float32)
+    y0 = (h - sh) // 2
+    x0 = (w - sw) // 2
+    grid[y0:y0+sh, x0:x0+sw] = seed
+    return grid
+
+
+def run_lenia(shape=(256, 256), R=20, mu=0.15, sigma=0.015, kn=0, gn=0,
               steps=500, init='orbium', orbium_variant='classic',
-              record_every=50, save_timeline=None, verbose=True):
-    """Run Lenia simulation with JAX acceleration."""
+              seed_path=None, record_every=50, save_timeline=None, verbose=True):
+    """Run Lenia simulation with JAX acceleration.
+    
+    gn: growth function type (0=quad4, 1=gaus, 2=step)
+    init: 'orbium', 'random', or 'seed' (load from seed_path)
+    """
     
     if verbose:
-        print(f"Lenia: {shape[0]}x{shape[1]}, R={R}, mu={mu}, sigma={sigma}, kn={kn}, steps={steps}")
+        print(f"Lenia: {shape[0]}x{shape[1]}, R={R}, mu={mu}, sigma={sigma}, kn={kn}, gn={gn}, steps={steps}")
     
     # Initialize grid
-    if init == 'orbium':
+    if init == 'seed' and seed_path:
+        grid = load_seed(seed_path, shape, R)
+        if verbose:
+            print(f"  Loaded seed: {seed_path} ({grid.shape})")
+    elif init == 'orbium':
         grid = make_orbium(shape, R, orbium_variant)
     elif init == 'random':
         grid = make_random_seed(shape, R)
@@ -307,7 +356,7 @@ def run_lenia(shape=(256, 256), R=20, mu=0.15, sigma=0.015, kn=0,
     t0 = time.time()
     
     for step in range(steps):
-        grid, potential = _lenia_step(grid, kernel_fft, mu, sigma, R)
+        grid, potential = _lenia_step(grid, kernel_fft, mu, sigma, R, gn)
         
         if (step + 1) % record_every == 0 or step == 0:
             grids.append(grid)
@@ -326,7 +375,7 @@ def run_lenia(shape=(256, 256), R=20, mu=0.15, sigma=0.015, kn=0,
         print(f"  done in {elapsed:.1f}s | {final_state} | alive={final_stats['alive']:.3f}")
     
     result = {
-        'params': {'R': R, 'mu': mu, 'sigma': sigma, 'kn': kn, 'shape': list(shape), 'steps': steps},
+        'params': {'R': R, 'mu': mu, 'sigma': sigma, 'kn': kn, 'gn': gn, 'shape': list(shape), 'steps': steps},
         'stats': final_stats,
         'state': final_state,
         'time': round(elapsed, 2),
@@ -405,11 +454,14 @@ if __name__ == '__main__':
     parser.add_argument('--R', type=int, default=20, help='Kernel radius')
     parser.add_argument('--mu', type=float, default=0.15, help='Growth center')
     parser.add_argument('--sigma', type=float, default=0.015, help='Growth width')
-    parser.add_argument('--kn', type=int, default=0, choices=[0, 1, 2],
+    parser.add_argument('--kn', type=int, default=1, choices=[0, 1, 2],
                         help='Kernel type: 0=quad4, 1=bump4, 2=step')
+    parser.add_argument('--gn', type=int, default=1, choices=[0, 1, 2],
+                        help='Growth function: 0=quad4, 1=gaus, 2=step')
     parser.add_argument('--steps', type=int, default=500, help='Simulation steps')
-    parser.add_argument('--init', default='orbium', choices=['orbium', 'random'],
+    parser.add_argument('--init', default='orbium', choices=['orbium', 'random', 'seed'],
                         help='Initialization')
+    parser.add_argument('--seed-path', default=None, help='Path to .npy seed file (for init=seed)')
     parser.add_argument('--variant', default='classic',
                         choices=['classic', 'split', 'ring'],
                         help='Orbium variant')
@@ -459,8 +511,9 @@ if __name__ == '__main__':
         # Quick test
         result = run_lenia(
             shape=tuple(args.shape), R=args.R,
-            mu=args.mu, sigma=args.sigma, kn=args.kn,
+            mu=args.mu, sigma=args.sigma, kn=args.kn, gn=args.gn,
             steps=args.steps, init=args.init,
+            seed_path=args.seed_path,
             orbium_variant=args.variant,
             record_every=50,
             save_timeline=args.output or 'experiments/lenia_jax_test.png'
@@ -469,8 +522,9 @@ if __name__ == '__main__':
     else:  # single
         result = run_lenia(
             shape=tuple(args.shape), R=args.R,
-            mu=args.mu, sigma=args.sigma, kn=args.kn,
+            mu=args.mu, sigma=args.sigma, kn=args.kn, gn=args.gn,
             steps=args.steps, init=args.init,
+            seed_path=args.seed_path,
             orbium_variant=args.variant,
             record_every=50,
             save_timeline=args.output or 'experiments/lenia_jax_orbium.png'

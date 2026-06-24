@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T21:59:35.166042",
+  "last_updated": "2026-06-24T22:05:18.658348",
   "categories": {
     "exploration": {
-      "count": 34,
+      "count": 35,
       "items": [
+        {
+          "name": "lenia_official_repo_notes",
+          "path": "exploration\\lenia_official_repo_notes.md",
+          "size": 1926,
+          "modified": "2026-06-24T22:01:15.767575"
+        },
         {
           "name": "lenia_sweep_report_v2",
           "path": "exploration\\lenia_sweep_report_v2.md",
@@ -211,8 +217,14 @@
       ]
     },
     "experiments": {
-      "count": 56,
+      "count": 57,
       "items": [
+        {
+          "name": "lenia_jax",
+          "path": "experiments\\lenia_jax.py",
+          "size": 17281,
+          "modified": "2026-06-24T22:03:02.421267"
+        },
         {
           "name": "lenia_sweep_v2",
           "path": "experiments\\lenia_sweep_v2.py",
