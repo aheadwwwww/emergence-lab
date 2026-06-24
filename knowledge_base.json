@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T21:04:29.380046",
+  "last_updated": "2026-06-24T21:06:21.167543",
   "categories": {
     "exploration": {
-      "count": 31,
+      "count": 32,
       "items": [
+        {
+          "name": "jax_acceleration",
+          "path": "exploration\\jax_acceleration.md",
+          "size": 1717,
+          "modified": "2026-06-24T21:06:15.621278"
+        },
         {
           "name": "edge_of_chaos",
           "path": "exploration\\edge_of_chaos.md",
