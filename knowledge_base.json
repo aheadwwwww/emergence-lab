@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T15:02:11.313810",
+  "last_updated": "2026-06-24T15:37:43.220632",
   "categories": {
     "exploration": {
-      "count": 22,
+      "count": 23,
       "items": [
+        {
+          "name": "strange_loops",
+          "path": "exploration\\strange_loops.md",
+          "size": 4945,
+          "modified": "2026-06-24T15:37:23.703720"
+        },
         {
           "name": "hallucination",
           "path": "exploration\\hallucination.md",
@@ -139,8 +145,14 @@
       ]
     },
     "experiments": {
-      "count": 47,
+      "count": 48,
       "items": [
+        {
+          "name": "strange_loops",
+          "path": "experiments\\strange_loops.py",
+          "size": 27035,
+          "modified": "2026-06-24T15:37:03.528363"
+        },
         {
           "name": "hallucination_spectrum",
           "path": "experiments\\hallucination_spectrum.py",
@@ -431,26 +443,26 @@
         {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 4196,
-          "modified": "2026-06-24T14:05:58.279872"
+          "size": 6012,
+          "modified": "2026-06-24T15:37:36.034388"
         },
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 1777,
-          "modified": "2026-06-24T14:05:45.217844"
+          "size": 1743,
+          "modified": "2026-06-24T15:34:44.374155"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 4872,
+          "modified": "2026-06-24T15:08:01.781998"
         },
         {
           "name": "2026-06-23",
           "path": "memory\\2026-06-23.md",
           "size": 16480,
           "modified": "2026-06-23T23:01:51.923481"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 2661,
-          "modified": "2026-06-23T22:34:46.315728"
         },
         {
           "name": "project_snapshot",
