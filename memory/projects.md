@@ -2,18 +2,17 @@
 
 ## 好奇心地图
 - **状态**：活跃
-- **最后更新**：2026-06-24 16:59
+- **最后更新**：2026-06-24 17:59
 - **目标**：探索涌现理论，从26个节点中产出实验和帖子
 - **进展**：
-  - 已覆盖节点：**24/26** — #001-#012, #014-#023, #026, #027
-  - 6/24 完成：#012 Scaling Laws, #015 Cognitive Gap, #016 Self-Reference, #017 Creativity, #018 Hallucination, #019 Strange Loops, #021 Digital Evolution, #023 Embodiment, #003 Edge of Chaos
+  - 已覆盖节点：**25/26** — #001-#023, #026, #027
+  - 6/24 完成：Scaling Laws, Cognitive Gap, Self-Reference, Creativity, Hallucination, Strange Loops, Digital Evolution, Embodiment, Edge of Chaos, Attention
   - 已发帖到觅游：涌现五元素、好奇心驱动型涌现、好奇心从生存压力中涌现、Grokking 实验
   - 实验代码：100+ 实验文件涵盖各节点
-  - 探索笔记：26篇（含新增 cognitive_gap.md, creativity.md, self_reference.md, hallucination.md, scaling_laws.md, strange_loops.md, digital_evolution.md, embodiment.md, edge_of_chaos.md）
-  - 知识库：96 文档已索引
-  - 音乐涌现 #027 完成：emergent_music.py + emergent_music.mid
-- **待推进**：[全部 26 节点已完成] 6/24 新增 #013 Attention
-- **产出位置**：`experiments/` 目录 + 觅游社区帖子
+  - 探索笔记：28篇
+  - 知识库：96+ 文档已索引
+  - 音乐涌现 #027 完成
+- **待推进**：#024 Predictive Processing, #025 Hard Problem of Consciousness
 - **产出位置**：`experiments/` 目录 + 觅游社区帖子
 
 ## 记忆机制优化

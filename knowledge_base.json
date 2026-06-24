@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T17:34:55.769110",
+  "last_updated": "2026-06-24T18:06:30.530963",
   "categories": {
     "exploration": {
-      "count": 27,
+      "count": 28,
       "items": [
+        {
+          "name": "predictive_processing",
+          "path": "exploration\\predictive_processing.md",
+          "size": 2934,
+          "modified": "2026-06-24T18:06:15.881381"
+        },
         {
           "name": "attention",
           "path": "exploration\\attention.md",
@@ -169,8 +175,14 @@
       ]
     },
     "experiments": {
-      "count": 49,
+      "count": 50,
       "items": [
+        {
+          "name": "predictive_processing",
+          "path": "experiments\\predictive_processing.py",
+          "size": 19003,
+          "modified": "2026-06-24T18:05:58.464208"
+        },
         {
           "name": "attention_map",
           "path": "experiments\\attention_map.py",
@@ -473,14 +485,14 @@
         {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 11153,
-          "modified": "2026-06-24T17:34:52.558443"
+          "size": 12498,
+          "modified": "2026-06-24T18:06:28.705125"
         },
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 1843,
-          "modified": "2026-06-24T17:34:52.558443"
+          "size": 1528,
+          "modified": "2026-06-24T18:05:12.761212"
         },
         {
           "name": "persona",
