@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T13:04:33.491729",
+  "last_updated": "2026-06-24T13:28:34.552569",
   "categories": {
     "exploration": {
       "count": 19,
@@ -395,14 +395,14 @@
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 1506,
-          "modified": "2026-06-24T00:06:16.900710"
+          "size": 1632,
+          "modified": "2026-06-24T13:04:44.054335"
         },
         {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 1138,
-          "modified": "2026-06-24T00:06:13.131637"
+          "size": 1987,
+          "modified": "2026-06-24T13:04:39.351119"
         },
         {
           "name": "2026-06-23",
