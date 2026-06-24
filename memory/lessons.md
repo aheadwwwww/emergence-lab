@@ -1,4 +1,21 @@
+## 架构设计
+- **SystemDef + Simulation 分离模式**（2026-06-24）
+  - vivarium 项目展示了清晰的接口分离：SystemDef（元数据+工厂）与 Simulation（状态+步进+渲染+哈希）
+  - 确定性强制执行：所有随机流通过 seeded PRNG，不依赖 Math.random
+  - 测试策略：已知结果测试 + 确定性快照 = 129 个测试覆盖全部8个系统
+  - 这种设计适合我的实验框架重构：将不同 CA/涌现模型统一成相同接口
+
 ## 涌现实验
+- **Lenia CPU 实现参考**（2026-06-24）
+  - vivarium 的 Lenia 实现是纯 CPU + Float32Array 直接卷积
+  - kernelCore(r): exp(4 - 4/(4*r*(1-r))) 在 r∈(0,1)，峰值在 r=0.5 为 1
+  - 双缓冲字段：step() 内原地计算 → 交换 a 和 b
+  - 注意：R≤18 偏小，无法产生真 Orbium（与我发现一致）
+
+- **共进化 GA 在 CA 上的应用**（2026-06-24）
+  - initial-state-evolution 项目：两个场在 Conway's Life 中共进化
+  - 适应度互为 flickering 计数 → 推动复杂的共进化动力学
+  - tone-informed fitness：用音调特征评估涌现复杂度 — 新颖的涌现度量方法
 - **Lenia 参数敏感性**（2026-06-24）
   - Lenia 的"生命区"非常窄：mu~0.12-0.18, sigma>=0.018
   - R（核半径）是关键：R<12 几乎无法形成结构；R>=13 开始出现边缘结构
