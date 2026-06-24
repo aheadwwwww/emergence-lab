@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T17:01:26.262984",
+  "last_updated": "2026-06-24T17:33:21.208521",
   "categories": {
     "exploration": {
-      "count": 25,
+      "count": 26,
       "items": [
+        {
+          "name": "embodiment",
+          "path": "exploration\\embodiment.md",
+          "size": 3469,
+          "modified": "2026-06-24T17:03:26.441806"
+        },
         {
           "name": "edge_of_chaos",
           "path": "exploration\\edge_of_chaos.md",
@@ -159,6 +165,12 @@
     "experiments": {
       "count": 48,
       "items": [
+        {
+          "name": "embodiment",
+          "path": "experiments\\embodiment.py",
+          "size": 24074,
+          "modified": "2026-06-24T17:02:40.638991"
+        },
         {
           "name": "edge_of_chaos",
           "path": "experiments\\edge_of_chaos.py",
@@ -340,12 +352,6 @@
           "modified": "2026-06-22T17:45:19.506733"
         },
         {
-          "name": "embodiment",
-          "path": "experiments\\embodiment.py",
-          "size": 4072,
-          "modified": "2026-06-22T17:44:43.477328"
-        },
-        {
           "name": "adaptation",
           "path": "experiments\\adaptation.py",
           "size": 5035,
@@ -453,10 +459,16 @@
       "count": 23,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1777,
+          "modified": "2026-06-24T17:04:01.828035"
+        },
+        {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 9257,
-          "modified": "2026-06-24T16:41:02.741607"
+          "size": 9889,
+          "modified": "2026-06-24T17:03:56.728202"
         },
         {
           "name": "persona",
@@ -475,12 +487,6 @@
           "path": "memory\\2026-06-24-1604.md",
           "size": 15730,
           "modified": "2026-06-24T16:04:54.170239"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1743,
-          "modified": "2026-06-24T15:34:44.374155"
         },
         {
           "name": "2026-06-23",
