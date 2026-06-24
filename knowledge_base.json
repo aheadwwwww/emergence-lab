@@ -1,14 +1,20 @@
 {
-  "last_updated": "2026-06-24T00:03:36.790473",
+  "last_updated": "2026-06-24T13:04:33.491729",
   "categories": {
     "exploration": {
-      "count": 18,
+      "count": 19,
       "items": [
+        {
+          "name": "creativity",
+          "path": "exploration\\creativity.md",
+          "size": 2818,
+          "modified": "2026-06-24T13:03:30.208314"
+        },
         {
           "name": "scaling_laws",
           "path": "exploration\\scaling_laws.md",
-          "size": 3110,
-          "modified": "2026-06-23T23:35:28.825164"
+          "size": 3844,
+          "modified": "2026-06-24T00:06:07.569412"
         },
         {
           "name": "network_emergence",
@@ -115,8 +121,20 @@
       ]
     },
     "experiments": {
-      "count": 42,
+      "count": 44,
       "items": [
+        {
+          "name": "creative_lsystems",
+          "path": "experiments\\creative_lsystems.py",
+          "size": 3479,
+          "modified": "2026-06-24T13:04:25.761468"
+        },
+        {
+          "name": "creativity_spectrum",
+          "path": "experiments\\creativity_spectrum.py",
+          "size": 5657,
+          "modified": "2026-06-24T13:03:50.962077"
+        },
         {
           "name": "lenia",
           "path": "experiments\\lenia.py",
@@ -372,13 +390,19 @@
       ]
     },
     "memory": {
-      "count": 21,
+      "count": 22,
       "items": [
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 1364,
-          "modified": "2026-06-23T23:35:14.413217"
+          "size": 1506,
+          "modified": "2026-06-24T00:06:16.900710"
+        },
+        {
+          "name": "2026-06-24",
+          "path": "memory\\2026-06-24.md",
+          "size": 1138,
+          "modified": "2026-06-24T00:06:13.131637"
         },
         {
           "name": "2026-06-23",
