@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T14:04:29.138902",
+  "last_updated": "2026-06-24T14:06:08.668933",
   "categories": {
     "exploration": {
-      "count": 20,
+      "count": 21,
       "items": [
+        {
+          "name": "cognitive_gap",
+          "path": "exploration\\cognitive_gap.md",
+          "size": 3277,
+          "modified": "2026-06-24T14:05:41.716472"
+        },
         {
           "name": "self_reference",
           "path": "exploration\\self_reference.md",
@@ -132,8 +138,8 @@
         {
           "name": "cognitive_gap",
           "path": "experiments\\cognitive_gap.py",
-          "size": 13050,
-          "modified": "2026-06-24T14:01:43.227600"
+          "size": 13177,
+          "modified": "2026-06-24T14:05:26.173295"
         },
         {
           "name": "self_reference",
@@ -411,16 +417,16 @@
       "count": 22,
       "items": [
         {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1791,
-          "modified": "2026-06-24T13:31:24.168598"
-        },
-        {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 3283,
-          "modified": "2026-06-24T13:30:42.983315"
+          "size": 4196,
+          "modified": "2026-06-24T14:05:58.279872"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 1777,
+          "modified": "2026-06-24T14:05:45.217844"
         },
         {
           "name": "2026-06-23",
