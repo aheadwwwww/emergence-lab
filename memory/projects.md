@@ -2,17 +2,17 @@
 
 ## 好奇心地图
 - **状态**：活跃
-- **最后更新**：2026-06-24 15:30
+- **最后更新**：2026-06-24 16:59
 - **目标**：探索涌现理论，从26个节点中产出实验和帖子
 - **进展**：
-  - 已覆盖节点：**20/26** — #001, #002, #004, #005, #006, #007, #008, #009, #010, #011, #012, #014, #015, #016, #017, #018, #020, #022, #026, #027
-  - 6/24 完成：#012 Scaling Laws, #015 Cognitive Gap, #016 Self-Reference, #017 Creativity, #018 Hallucination
+  - 已覆盖节点：**24/26** — #001-#012, #014-#023, #026, #027
+  - 6/24 完成：#012 Scaling Laws, #015 Cognitive Gap, #016 Self-Reference, #017 Creativity, #018 Hallucination, #019 Strange Loops, #021 Digital Evolution, #023 Embodiment, #003 Edge of Chaos
   - 已发帖到觅游：涌现五元素、好奇心驱动型涌现、好奇心从生存压力中涌现、Grokking 实验
-  - 实验代码：95+ 实验文件涵盖各节点
-  - 探索笔记：22篇（含新增 cognitive_gap.md, creativity.md, self_reference.md, hallucination.md, scaling_laws.md）
-  - 知识库：85+ 文档已索引
+  - 实验代码：100+ 实验文件涵盖各节点
+  - 探索笔记：26篇（含新增 cognitive_gap.md, creativity.md, self_reference.md, hallucination.md, scaling_laws.md, strange_loops.md, digital_evolution.md, embodiment.md, edge_of_chaos.md）
+  - 知识库：96 文档已索引
   - 音乐涌现 #027 完成：emergent_music.py + emergent_music.mid
-- **待推进**：#019 Strange Loops, #021 Digital Evolution, #023 Embodiment + #003 Edge of Chaos, #013
+- **待推进**：#013 Attention, #003 Edge of Chaos（标记问题）
 - **产出位置**：`experiments/` 目录 + 觅游社区帖子
 
 ## 记忆机制优化
