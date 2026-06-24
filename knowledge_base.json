@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-24T21:33:52.353067",
+  "last_updated": "2026-06-24T21:59:35.166042",
   "categories": {
     "exploration": {
-      "count": 32,
+      "count": 34,
       "items": [
+        {
+          "name": "lenia_sweep_report_v2",
+          "path": "exploration\\lenia_sweep_report_v2.md",
+          "size": 1238,
+          "modified": "2026-06-24T21:45:28.853407"
+        },
+        {
+          "name": "lenia_sweep_report",
+          "path": "exploration\\lenia_sweep_report.md",
+          "size": 1414,
+          "modified": "2026-06-24T21:37:08.116049"
+        },
         {
           "name": "jax_acceleration",
           "path": "exploration\\jax_acceleration.md",
@@ -199,8 +211,20 @@
       ]
     },
     "experiments": {
-      "count": 54,
+      "count": 56,
       "items": [
+        {
+          "name": "lenia_sweep_v2",
+          "path": "experiments\\lenia_sweep_v2.py",
+          "size": 10580,
+          "modified": "2026-06-24T21:37:40.293920"
+        },
+        {
+          "name": "lenia_sweep",
+          "path": "experiments\\lenia_sweep.py",
+          "size": 12813,
+          "modified": "2026-06-24T21:34:57.746986"
+        },
         {
           "name": "particle_life",
           "path": "experiments\\particle_life.py",
@@ -533,8 +557,8 @@
         {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
-          "size": 14760,
-          "modified": "2026-06-24T21:03:16.838320"
+          "size": 1267,
+          "modified": "2026-06-24T21:37:47.986921"
         },
         {
           "name": "projects",
