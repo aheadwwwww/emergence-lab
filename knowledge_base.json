@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-24T20:04:22.864775",
+  "last_updated": "2026-06-24T20:43:40.106679",
   "categories": {
     "exploration": {
-      "count": 30,
+      "count": 31,
       "items": [
+        {
+          "name": "edge_of_chaos",
+          "path": "exploration\\edge_of_chaos.md",
+          "size": 2931,
+          "modified": "2026-06-24T20:43:34.086219"
+        },
+        {
+          "name": "carles_game",
+          "path": "exploration\\carles_game.md",
+          "size": 1570,
+          "modified": "2026-06-24T20:37:23.292580"
+        },
         {
           "name": "wfc_emergence",
           "path": "exploration\\wfc_emergence.md",
@@ -33,12 +45,6 @@
           "path": "exploration\\embodiment.md",
           "size": 3469,
           "modified": "2026-06-24T17:03:26.441806"
-        },
-        {
-          "name": "edge_of_chaos",
-          "path": "exploration\\edge_of_chaos.md",
-          "size": 3532,
-          "modified": "2026-06-24T16:40:44.957992"
         },
         {
           "name": "digital_evolution",
@@ -187,8 +193,14 @@
       ]
     },
     "experiments": {
-      "count": 52,
+      "count": 53,
       "items": [
+        {
+          "name": "carle_explorer",
+          "path": "experiments\\carle_explorer.py",
+          "size": 7817,
+          "modified": "2026-06-24T20:42:32.573481"
+        },
         {
           "name": "wfc_demo",
           "path": "experiments\\wfc_demo.py",
@@ -507,16 +519,16 @@
       "count": 23,
       "items": [
         {
+          "name": "2026-06-24",
+          "path": "memory\\2026-06-24.md",
+          "size": 13413,
+          "modified": "2026-06-24T20:04:29.061879"
+        },
+        {
           "name": "projects",
           "path": "memory\\projects.md",
           "size": 1492,
           "modified": "2026-06-24T18:41:27.170644"
-        },
-        {
-          "name": "2026-06-24",
-          "path": "memory\\2026-06-24.md",
-          "size": 12498,
-          "modified": "2026-06-24T18:06:28.705125"
         },
         {
           "name": "persona",
