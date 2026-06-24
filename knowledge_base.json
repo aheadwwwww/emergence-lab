@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-24T14:36:48.901650",
+  "last_updated": "2026-06-24T15:02:11.313810",
   "categories": {
     "exploration": {
-      "count": 21,
+      "count": 22,
       "items": [
+        {
+          "name": "hallucination",
+          "path": "exploration\\hallucination.md",
+          "size": 2521,
+          "modified": "2026-06-24T15:01:56.521033"
+        },
         {
           "name": "cognitive_gap",
           "path": "exploration\\cognitive_gap.md",
@@ -133,8 +139,14 @@
       ]
     },
     "experiments": {
-      "count": 46,
+      "count": 47,
       "items": [
+        {
+          "name": "hallucination_spectrum",
+          "path": "experiments\\hallucination_spectrum.py",
+          "size": 14191,
+          "modified": "2026-06-24T15:01:15.247247"
+        },
         {
           "name": "cognitive_gap",
           "path": "experiments\\cognitive_gap.py",
