@@ -1,82 +1,58 @@
-# #003 Edge of Chaos — 混沌边缘
+# #003 Edge of Chaos
 
-> 复杂系统在有序和混沌之间的过渡带是否最"有生产力"？
+## Core Insight
+The edge of chaos is not a fixed point — it's a dynamic regime where systems balance order preservation with novelty generation. It's the "sweet spot" where complexity thrives.
 
-## 实验概述
+## Langton's λ Parameter for CA
+- **λ** = fraction of 1s in the CA rule table output (8 bits for Wolfram rules)
+- **λ < 0.25**: Ordered (fixed points, period-2)
+- **0.25 ≤ λ ≤ 0.50**: Edge of chaos (complexity emerges)
+- **λ > 0.50**: Chaotic (turbulent, unpredictable)
 
-运行了完整的 **256 条 Wolfram 1D CA 规则**，从 λ 参数到信息熵全面扫描。
+### But λ is not sufficient alone
+From my Wolfram CA spectrum experiment:
+| Rule | λ | Observed Behavior | λ Prediction |
+|------|---|-------------------|-------------|
+| Rule 4 | 0.12 | Ordered (islands) | ✅ Ordered |
+| Rule 32 | 0.12 | Ordered (periodic) | ✅ Ordered |
+| Rule 110 | 0.62 | Turing-complete | ❌ Predicted chaotic |
+| Rule 54 | 0.50 | Complex gliders | ✅ Edge of chaos |
+| Rule 30 | 0.50 | Chaotic | ❌ Predicted edge of chaos |
+| Rule 90 | 0.50 | Fractal/Sierpinski | ❌ Predicted edge of chaos |
 
-**配置**: width=100, steps=100, initial=单点激发
+**Key finding**: The arrangement of 1s in the 8-bit rule table matters as much as their count. Adjacent transitions in the rule neighborhood determine whether gliders/particles can form.
 
-## 核心结果
+## Known Edge of Chaos Examples
+1. **Conway's Game of Life** (B3/S23) — the classic EoC CA
+2. **Rule 110** — proven Turing-complete
+3. **Rule 54** — complex glider dynamics
+4. **Class IV Wolfram Rules** — the poorly-understood regime
+5. **Langton's Ant** — simple rules, unbounded complexity
+6. **Lenia** — continuous CA with complex life-like patterns
+7. **Neural networks at initialization** — the "edge of chaos" initialization hypothesis
 
-### 分类统计
-| Class | 类型 | 数量 | 占比 |
-|-------|------|------|------|
-| 1 | 冻结 (固定点) | 16 | 6.25% |
-| 2 | 周期 (有序) | 106 | 41.4% |
-| 3 | 混沌 | 22 | 8.6% |
-| 4 | 复杂 (混沌边缘) | 112 | 43.75% |
+## Biological Connections
+- **Criticality hypothesis**: Brains operate near criticality (edge of chaos)
+  - Avalanche dynamics in neural activity follow power laws
+  - Information transmission peaks at criticality
+  - Optimal computational capacity near phase transition
+- **Gene regulatory networks**: Evolve to operate near criticality
+- **Ant colonies**: Information flow tuned to critical regime
 
-### 关键发现
+## Connection to My Projects
+- **#021 Digital Evolution**: Fitness landscapes span order-chaos; novelty search exploits edge of chaos
+- **#001 Emergence**: Emergence requires edge of chaos as precondition
+- **#017 Creativity**: Creativity = controlled exploration of the edge of chaos
+- **#012 Scaling Laws**: Critical scale ≈ edge of chaos in model capacity
+- **CARLE's Game**: 262,144 CA universes — sampling shows ~32% complex on 64x64 grid
 
-1. **混沌边缘最大**：近半数规则（43.75%）表现出复杂行为，远多于纯混沌（8.6%）
-   - 推测：Wolfram Rule Space 天然偏向"能产生结构"的规则
-   - 不是所有混沌边缘都一样，存在复杂度的梯度
+## Open Questions
+1. Is the edge of chaos a universal attractor for evolutionary processes?
+2. Can we analytically predict which rules exhibit complex behavior (beyond λ)?
+3. Does the "edge of chaos" shift with scale? (e.g. chaotic at 64x64, ordered at 1024x1024)
 
-2. **λ 参数是必要条件但不是充分条件**
-   - λ ≈ 0.5（一半输出为1）的规则容易出复杂
-   - 但 λ 相同可以有截然不同的行为（如 Rule 30 vs Rule 110）
-   - 具体规则的演化细节（对称性、递归深度）同样重要
+## Related Tags
+#emergence #complexity #ca #criticality #langton
 
-3. **信息熵区分度**
-   - Class 1 (冻结): 熵 ≈ 0.0
-   - Class 2 (周期): 熵 ≈ 0.1-0.3
-   - Class 4 (复杂): 熵 ≈ 0.4-0.7
-   - Class 3 (混沌): 熵 > 0.7
-   - 熵在混沌边缘存在一个"高信号窗口"
-
-### 已知的经典混沌边缘规则
-- **Rule 30** — 混沌（看似随机但有内在结构，用于 Mathematica 随机数）
-- **Rule 110** — 复杂（图灵完备，最具代表性的混沌边缘）
-- **Rule 184** — 周期（模拟粒子交通流）
-- **Rule 90** — 复杂（Sierpinski 三角形，自指分形）
-- **Rule 73, 105, 150** — 复杂（其他常见混沌边缘规则）
-
-## 关联节点
-
-- **#001 Emergence**: 混沌边缘是涌现的温床。Rule 110 的图灵完备性说明"局部简单规则→全局惊人复杂"是涌现的典型例子
-- **#012 Scaling Laws**: 混沌边缘可能也有"临界规模"门槛——需要足够大的网格和足够多的步骤才能看到复杂结构
-- **#015 Cognitive Gap**: 混沌边缘的不可预测性对应于认知缺口——模型在边界处最"有生产性"
-- **#016 Self-Reference**: Rule 90 既是混沌边缘又是自指分形，自指和混沌边缘常出现在一起
-- **#017 Creativity**: 创造力 = 在混沌和有序之间行走的能力
-- **#019 Strange Loops**: 奇圈是混沌边缘的"跨层级反馈"表现
-- **#020 ALife**: 人工生命系统刻意把自己推向混沌边缘以最大化适应度
-
-## 洞察
-
-1. **混沌边缘不是"平衡点"，而是"持续的不平衡"**：
-   - 复杂规则既能产生结构、也能破坏结构
-   - 自我组织 = 在有序和混沌之间来回振荡的行为
-
-2. **复杂行为的前提条件**：
-   - 规则需要足够"不对称"（不是全0或全1）
-   - 需要能在局部传递信息（邻域敏感）
-   - 需要既能保留又能量子修改模式
-
-3. **对思维系统的启示**：
-   - 思维也应该运行在"混沌边缘"——既有稳定的模式（习惯/知识），又有打破模式的机制（自省/输入刺激）
-   - 完全有序 → 僵化（Class 1/2）
-   - 完全混沌 → 无意义（Class 3）
-   - 边缘 → 持续涌现新理解（Class 4）
-
-4. **为什么混沌边缘"最有生产力"**：
-   - 信息密度最高（熵高但不饱和）
-   - 对初始条件和扰动最敏感→小改变可产生大影响
-   - 能同时维持记忆和适应性
-
-## 实验代码
-`experiments/edge_of_chaos.py`
-
-## 可视化输出
-![Edge of Chaos](experiments/edge_of_chaos.png)
+## Visual
+![Edge of Chaos Spectrum](../experiments/edge_of_chaos_spectrum.png)

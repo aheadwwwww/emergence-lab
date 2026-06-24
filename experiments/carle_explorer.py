@@ -9,27 +9,20 @@ import random
 from collections import Counter
 
 # CA grid size
-SIZE = 128
-STEPS = 200
+# Faster with convolution for neighbor counting
+from scipy import ndimage
 
-def parse_rule(birth_str, survive_str):
-    """Parse Life-like rule from B/S notation."""
-    birth = set(int(c) for c in birth_str)
-    survive = set(int(c) for c in survive_str)
-    return birth, survive
+SIZE = 64
+STEPS = 100
+KERNEL = np.ones((3, 3), dtype=int)
+KERNEL[1, 1] = 0  # exclude self
 
-def step_ca(grid, birth, survive):
-    """One step of Life-like CA."""
-    new_grid = grid.copy()
-    padded = np.pad(grid, 1, mode='wrap')
-    for i in range(1, padded.shape[0]-1):
-        for j in range(1, padded.shape[1]-1):
-            neighbors = np.sum(padded[i-1:i+2, j-1:j+2]) - padded[i, j]
-            if padded[i, j]:
-                new_grid[i-1, j-1] = 1 if neighbors in survive else 0
-            else:
-                new_grid[i-1, j-1] = 1 if neighbors in birth else 0
-    return new_grid
+def step_ca_fast(grid, birth, survive):
+    """One step using convolution for neighbor counting."""
+    neighbors = ndimage.convolve(grid, KERNEL, mode='wrap')
+    birth_mask = np.isin(neighbors, list(birth))
+    survive_mask = np.isin(neighbors, list(survive))
+    return np.where(grid, survive_mask, birth_mask).astype(int)
 
 def classify_behavior(grid, history):
     """Classify CA behavior from final state and history of densities."""
@@ -73,10 +66,14 @@ def run_and_classify(rule_id):
     # Random initial condition
     grid = np.random.choice([0, 1], size=(SIZE, SIZE), p=[0.7, 0.3])
     
+    birth_set = set(list(birth))
+    survive_set = set(list(survive))
+    
+    # Precompute lookup tables for faster checks
     history = []
     for _ in range(STEPS):
-        grid = step_ca(grid, birth, survive)
-        history.append(grid.copy())
+        grid = step_ca_fast(grid, birth_set, survive_set)
+        history.append(grid)
     
     behavior, subtype = classify_behavior(grid, history)
     final_density = np.mean(history[-1])
@@ -153,6 +150,9 @@ def visualize_results(results, filename="carle_explorer.png"):
         font = ImageFont.load_default()
         title_font = ImageFont.load_default()
     
+    # Draw mini-grids with scaling
+    scale = cell_size // SIZE if SIZE <= cell_size else 1
+    
     draw.text((margin, 10), "CARLE Explorer: Sampling CA Universes", fill=(255, 255, 255), font=title_font)
     
     # Stats
@@ -170,16 +170,16 @@ def visualize_results(results, filename="carle_explorer.png"):
         x = margin + col * (cell_size + margin)
         y = margin + 50 + row * (cell_size + margin + label_height)
         
-        # Draw CA grid
+        # Draw CA grid as scaled image patch
         grid = r['final_grid']
-        for i in range(SIZE):
-            for j in range(SIZE):
-                if grid[i, j]:
-                    px = x + int(j * cell_size / SIZE)
-                    py = y + int(i * cell_size / SIZE)
-                    # Use behavior color
-                    c = colors[r['behavior']]
-                    draw.point((px, py), fill=c)
+        # Convert to color bitmap
+        grid_color = np.zeros((SIZE, SIZE, 3), dtype=np.uint8)
+        c = colors[r['behavior']]
+        for ci in range(3):
+            grid_color[:, :, ci] = grid * c[ci]
+        # Resize and paste
+        grid_img = Image.fromarray(grid_color, 'RGB').resize((cell_size, cell_size), Image.NEAREST)
+        img.paste(grid_img, (x, y))
         
         # Border color by behavior
         border_color = colors[r['behavior']]
@@ -211,3 +211,9 @@ if __name__ == "__main__":
         print(f"  {r['name']:20s} density={r['final_density']:.4f} var={r['density_var']:.6f}")
     
     visualize_results(results, "experiments/carle_explorer.png")
+    
+    # Print complex rules for further exploration
+    print("\n=== Complex (edge of chaos) rules to explore further ===")
+    complex_rules = [r for r in results if r['behavior'] == 'complex']
+    for r in sorted(complex_rules, key=lambda x: x['density_var'], reverse=True)[:10]:
+        print(f"  {r['name']:20s} density={r['final_density']:.4f} var={r['density_var']:.6f}")
