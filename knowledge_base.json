@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T22:05:18.658348",
+  "last_updated": "2026-06-24T22:59:24.123715",
   "categories": {
     "exploration": {
       "count": 35,
@@ -217,13 +217,19 @@
       ]
     },
     "experiments": {
-      "count": 57,
+      "count": 58,
       "items": [
         {
           "name": "lenia_jax",
           "path": "experiments\\lenia_jax.py",
-          "size": 17281,
-          "modified": "2026-06-24T22:03:02.421267"
+          "size": 19291,
+          "modified": "2026-06-24T22:09:06.456159"
+        },
+        {
+          "name": "lenia_decode_seed",
+          "path": "experiments\\lenia_decode_seed.py",
+          "size": 3899,
+          "modified": "2026-06-24T22:07:52.825078"
         },
         {
           "name": "lenia_sweep_v2",
@@ -567,28 +573,28 @@
       "count": 23,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 2192,
+          "modified": "2026-06-24T22:43:29.647495"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 27657,
+          "modified": "2026-06-24T22:43:17.954336"
+        },
+        {
           "name": "2026-06-24",
           "path": "memory\\2026-06-24.md",
           "size": 1267,
           "modified": "2026-06-24T21:37:47.986921"
         },
         {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 1492,
-          "modified": "2026-06-24T18:41:27.170644"
-        },
-        {
           "name": "persona",
           "path": "memory\\persona.md",
           "size": 1567,
           "modified": "2026-06-24T16:28:11.733750"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 26496,
-          "modified": "2026-06-24T16:27:55.509017"
         },
         {
           "name": "2026-06-24-1604",
