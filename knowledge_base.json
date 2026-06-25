@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T01:01:35.411983",
+  "last_updated": "2026-06-26T01:31:54.362780",
   "categories": {
     "exploration": {
       "count": 55,
@@ -337,8 +337,14 @@
       ]
     },
     "experiments": {
-      "count": 72,
+      "count": 73,
       "items": [
+        {
+          "name": "lenia_stochastic_sweep",
+          "path": "experiments\\lenia_stochastic_sweep.py",
+          "size": 8050,
+          "modified": "2026-06-26T01:03:23.630434"
+        },
         {
           "name": "swarm_decision",
           "path": "experiments\\swarm_decision.py",
@@ -774,19 +780,25 @@
       ]
     },
     "memory": {
-      "count": 30,
+      "count": 31,
       "items": [
+        {
+          "name": "2026-06-26-0112",
+          "path": "memory\\2026-06-26-0112.md",
+          "size": 304759,
+          "modified": "2026-06-26T01:12:08.126458"
+        },
         {
           "name": "lessons",
           "path": "memory\\lessons.md",
-          "size": 12038,
-          "modified": "2026-06-26T01:01:01.823461"
+          "size": 22004,
+          "modified": "2026-06-26T01:06:28.052947"
         },
         {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
-          "size": 3955,
-          "modified": "2026-06-26T00:48:27.931764"
+          "size": 5398,
+          "modified": "2026-06-26T01:05:50.598493"
         },
         {
           "name": "2026-06-26-swarm-decision",
