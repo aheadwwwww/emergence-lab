@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-25T18:07:45.393492",
+  "last_updated": "2026-06-25T18:31:19.545692",
   "categories": {
     "exploration": {
-      "count": 41,
+      "count": 42,
       "items": [
+        {
+          "name": "2026-06-25-autogen-exploration",
+          "path": "exploration\\2026-06-25-autogen-exploration.md",
+          "size": 2079,
+          "modified": "2026-06-25T18:31:15.075432"
+        },
         {
           "name": "2026-06-25-die-pheromone-lenia",
           "path": "exploration\\2026-06-25-die-pheromone-lenia.md",
@@ -253,8 +259,14 @@
       ]
     },
     "experiments": {
-      "count": 64,
+      "count": 65,
       "items": [
+        {
+          "name": "lenia_pheromone_scan",
+          "path": "experiments\\lenia_pheromone_scan.py",
+          "size": 3765,
+          "modified": "2026-06-25T18:07:51.775552"
+        },
         {
           "name": "lenia_pheromone",
           "path": "experiments\\lenia_pheromone.py",
@@ -647,8 +659,8 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 3951,
-          "modified": "2026-06-25T18:07:39.454546"
+          "size": 4807,
+          "modified": "2026-06-25T18:12:19.792857"
         },
         {
           "name": "projects",
