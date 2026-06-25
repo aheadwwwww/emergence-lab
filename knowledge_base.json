@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-25T19:08:35.029451",
+  "last_updated": "2026-06-25T19:14:58.609819",
   "categories": {
     "exploration": {
-      "count": 46,
+      "count": 48,
       "items": [
+        {
+          "name": "2026-06-25-isotropic-nca-exploration",
+          "path": "exploration\\2026-06-25-isotropic-nca-exploration.md",
+          "size": 4190,
+          "modified": "2026-06-25T19:14:40.496373"
+        },
+        {
+          "name": "2026-06-25-heartbeat-exploration",
+          "path": "exploration\\2026-06-25-heartbeat-exploration.md",
+          "size": 2039,
+          "modified": "2026-06-25T19:10:22.381207"
+        },
         {
           "name": "2026-06-25-meyo-post-lenia",
           "path": "exploration\\2026-06-25-meyo-post-lenia.md",
@@ -683,8 +695,8 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 5974,
-          "modified": "2026-06-25T18:31:36.283456"
+          "size": 6917,
+          "modified": "2026-06-25T19:12:52.498778"
         },
         {
           "name": "projects",
