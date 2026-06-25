@@ -46,59 +46,88 @@ class NCA:
     def run(self, steps=100, record_every=10, verbose=True):
         """运行模拟
         
-        简化规则：随机扰动 + 存活扩散
+        改进规则：基于 Distill Growing NCA
+        - Sobel 感知核
+        - 存活约束
+        - 更强的扩散
         """
+        # Sobel-like perception kernels
+        sobel_x = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]], dtype=np.float32) / 8.0
+        sobel_y = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]], dtype=np.float32) / 8.0
+        laplacian = np.array([[0, 1, 0], [1, -4, 1], [0, 1, 0]], dtype=np.float32)
+        
+        from scipy.ndimage import convolve
+        
         for i in range(steps):
             grid_np = self.grid.copy()
             
             # Alive mask: alpha > 0.1
             alive = grid_np[:, :, 3] > 0.1
             
-            # Perceive neighbors (simplified: average neighbor state)
-            perception = np.zeros_like(grid_np)
+            # Pre-life: expand alive region for growth
+            pre_alive = np.zeros_like(alive)
             for di in [-1, 0, 1]:
                 for dj in [-1, 0, 1]:
-                    if di == 0 and dj == 0:
-                        continue
-                    rolled = np.roll(np.roll(grid_np, di, axis=0), dj, axis=1)
-                    perception += rolled
-            perception /= 8.0
+                    pre_alive |= np.roll(np.roll(alive, di, axis=0), dj, axis=1)
             
-            # Update rule: move toward local average + noise
+            # Perception: Sobel gradients + Laplacian
+            perception = []
+            for c in range(self.channels):
+                px = convolve(grid_np[:, :, c], sobel_x, mode='wrap')
+                py = convolve(grid_np[:, :, c], sobel_y, mode='wrap')
+                pl = convolve(grid_np[:, :, c], laplacian, mode='wrap')
+                perception.extend([px, py, pl])
+            perception = np.stack(perception, axis=-1)  # (H, W, 3*C)
+            
+            # Simplified update: random projection + bias
             rng = np.random.default_rng()
-            noise = rng.normal(0, 0.02, grid_np.shape).astype(np.float32)
             
-            update = 0.1 * (perception - grid_np) + noise
+            # Random weights for this step (simulating learned weights)
+            if not hasattr(self, '_update_weights'):
+                self._update_weights = rng.normal(0, 0.1, (3 * self.channels, self.channels)).astype(np.float32)
+                self._update_bias = rng.uniform(-0.01, 0.01, self.channels).astype(np.float32)
             
-            # Fire rate mask
+            update = np.tanh(perception @ self._update_weights + self._update_bias)
+            
+            # Scale update
+            update = 0.1 * update
+            
+            # Fire rate mask (stochastic updates)
             fire_mask = rng.uniform(0, 1, grid_np.shape[:2]) < self.fire_rate
             
-            # Apply update (only to alive neighbors of alive cells)
-            alive_2d = alive.any()
-            active = fire_mask.copy()
-            if alive_2d:
-                # Only update cells near alive cells
-                alive_neighbors = np.zeros_like(fire_mask)
-                for di in [-1, 0, 1]:
-                    for dj in [-1, 0, 1]:
-                        alive_neighbors |= np.roll(np.roll(alive, di, axis=0), dj, axis=1)
-                active = fire_mask & alive_neighbors
+            # Only update cells in pre_alive region
+            active = fire_mask & pre_alive
             
+            # Apply update
             self.grid = grid_np + update * active[..., None]
+            
+            # Alive constraint: dead cells (alpha < 0.1) can't have RGB
+            dead_mask = self.grid[:, :, 3] < 0.1
+            self.grid[dead_mask, :3] = 0
+            
+            # Clip to [0, 1]
             self.grid = np.clip(self.grid, 0, 1)
             
             if (i + 1) % record_every == 0:
                 self.history.append(self.grid.copy())
                 if verbose:
                     alive_frac = np.mean(self.grid[:, :, 3] > 0.1)
-                    print(f"  step {i+1}/{steps} | alive={alive_frac:.3f}")
+                    entropy = EmergenceMetrics.entropy(self.grid[:, :, 3])
+                    score = EmergenceMetrics.emergence_score(self.grid[:, :, 3])
+                    print(f"  step {i+1}/{steps} | alive={alive_frac:.3f} score={score:.3f}")
         
         # Final metrics
         rgba = self.grid[:, :, :4]
         alive_frac = float(np.mean(rgba[:, :, 3] > 0.1))
+        entropy = EmergenceMetrics.entropy(rgba[:, :, 3])
+        edge = EmergenceMetrics.edge_density(rgba[:, :, 3])
+        score = EmergenceMetrics.emergence_score(rgba[:, :, 3])
         return {
             'alive': alive_frac,
-            'state': 'structure' if alive_frac > 0.01 else 'dead',
+            'entropy': entropy,
+            'edge_density': edge,
+            'emergence_score': score,
+            'state': EmergenceMetrics.classify(rgba[:, :, 3]),
         }
     
     def get_rgba(self):

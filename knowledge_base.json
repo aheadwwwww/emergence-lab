@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-25T20:59:18.209537",
+  "last_updated": "2026-06-25T21:32:57.555686",
   "categories": {
     "exploration": {
-      "count": 52,
+      "count": 54,
       "items": [
+        {
+          "name": "2026-06-25-coordination-comparison",
+          "path": "exploration\\2026-06-25-coordination-comparison.md",
+          "size": 2176,
+          "modified": "2026-06-25T21:10:55.077788"
+        },
+        {
+          "name": "2026-06-25-learnable-lenia",
+          "path": "exploration\\2026-06-25-learnable-lenia.md",
+          "size": 1715,
+          "modified": "2026-06-25T21:03:46.496677"
+        },
         {
           "name": "2026-06-25-async-lenia",
           "path": "exploration\\2026-06-25-async-lenia.md",
@@ -319,8 +331,14 @@
       ]
     },
     "experiments": {
-      "count": 69,
+      "count": 70,
       "items": [
+        {
+          "name": "learnable_lenia",
+          "path": "experiments\\learnable_lenia.py",
+          "size": 8232,
+          "modified": "2026-06-25T21:02:33.668997"
+        },
         {
           "name": "lenia_async",
           "path": "experiments\\lenia_async.py",
@@ -743,8 +761,8 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 4321,
-          "modified": "2026-06-25T20:26:00.598443"
+          "size": 1927,
+          "modified": "2026-06-25T21:19:03.866743"
         },
         {
           "name": "2026-06-25-heartbeat-summary",
