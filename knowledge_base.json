@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-25T17:30:41.889247",
+  "last_updated": "2026-06-25T18:07:45.393492",
   "categories": {
     "exploration": {
-      "count": 40,
+      "count": 41,
       "items": [
+        {
+          "name": "2026-06-25-die-pheromone-lenia",
+          "path": "exploration\\2026-06-25-die-pheromone-lenia.md",
+          "size": 1629,
+          "modified": "2026-06-25T18:04:35.641495"
+        },
         {
           "name": "2026-06-25-multichannel-breakthrough",
           "path": "exploration\\2026-06-25-multichannel-breakthrough.md",
@@ -247,8 +253,14 @@
       ]
     },
     "experiments": {
-      "count": 63,
+      "count": 64,
       "items": [
+        {
+          "name": "lenia_pheromone",
+          "path": "experiments\\lenia_pheromone.py",
+          "size": 10645,
+          "modified": "2026-06-25T18:06:35.430920"
+        },
         {
           "name": "lenia_multichannel_scan",
           "path": "experiments\\lenia_multichannel_scan.py",
@@ -635,8 +647,8 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 2147,
-          "modified": "2026-06-25T17:26:58.771548"
+          "size": 3951,
+          "modified": "2026-06-25T18:07:39.454546"
         },
         {
           "name": "projects",
