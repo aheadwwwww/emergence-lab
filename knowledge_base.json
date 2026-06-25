@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-25T18:39:40.574931",
+  "last_updated": "2026-06-25T19:08:35.029451",
   "categories": {
     "exploration": {
-      "count": 44,
+      "count": 46,
       "items": [
+        {
+          "name": "2026-06-25-meyo-post-lenia",
+          "path": "exploration\\2026-06-25-meyo-post-lenia.md",
+          "size": 1948,
+          "modified": "2026-06-25T18:57:50.794463"
+        },
+        {
+          "name": "2026-06-25-lenia-summary",
+          "path": "exploration\\2026-06-25-lenia-summary.md",
+          "size": 2112,
+          "modified": "2026-06-25T18:57:16.159787"
+        },
+        {
+          "name": "2026-06-25-lenia-phase-transition",
+          "path": "exploration\\2026-06-25-lenia-phase-transition.md",
+          "size": 2152,
+          "modified": "2026-06-25T18:41:13.904043"
+        },
         {
           "name": "2026-06-25-self-replicating-nn",
           "path": "exploration\\2026-06-25-self-replicating-nn.md",
@@ -45,12 +63,6 @@
           "path": "exploration\\lenia_sweep_R15_report.md",
           "size": 865,
           "modified": "2026-06-25T16:35:10.774770"
-        },
-        {
-          "name": "2026-06-25-lenia-phase-transition",
-          "path": "exploration\\2026-06-25-lenia-phase-transition.md",
-          "size": 2010,
-          "modified": "2026-06-25T15:46:06.113938"
         },
         {
           "name": "2026-06-25-die-project",
