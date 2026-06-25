@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T23:32:01.260170",
+  "last_updated": "2026-06-25T13:24:25.843832",
   "categories": {
     "exploration": {
       "count": 35,
@@ -217,8 +217,14 @@
       ]
     },
     "experiments": {
-      "count": 58,
+      "count": 59,
       "items": [
+        {
+          "name": "lenia_sweep_R20",
+          "path": "experiments\\lenia_sweep_R20.py",
+          "size": 4928,
+          "modified": "2026-06-25T00:00:44.433544"
+        },
         {
           "name": "lenia_jax",
           "path": "experiments\\lenia_jax.py",
@@ -570,19 +576,25 @@
       ]
     },
     "memory": {
-      "count": 23,
+      "count": 24,
       "items": [
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 2192,
-          "modified": "2026-06-24T22:43:29.647495"
+          "size": 2774,
+          "modified": "2026-06-24T23:33:29.563334"
         },
         {
           "name": "lessons",
           "path": "memory\\lessons.md",
-          "size": 27657,
-          "modified": "2026-06-24T22:43:17.954336"
+          "size": 28778,
+          "modified": "2026-06-24T23:33:24.326685"
+        },
+        {
+          "name": "2026-06-24-discovery-vivarium",
+          "path": "memory\\2026-06-24-discovery-vivarium.md",
+          "size": 2575,
+          "modified": "2026-06-24T23:33:16.778345"
         },
         {
           "name": "2026-06-24",
