@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T23:29:28.520343",
+  "last_updated": "2026-06-25T23:59:37.315022",
   "categories": {
     "exploration": {
       "count": 54,
@@ -756,8 +756,20 @@
       ]
     },
     "memory": {
-      "count": 27,
+      "count": 29,
       "items": [
+        {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 1650,
+          "modified": "2026-06-25T23:32:17.849006"
+        },
+        {
+          "name": "2026-06-26-jax-md-deep-dive",
+          "path": "memory\\2026-06-26-jax-md-deep-dive.md",
+          "size": 3294,
+          "modified": "2026-06-25T23:31:23.348093"
+        },
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
