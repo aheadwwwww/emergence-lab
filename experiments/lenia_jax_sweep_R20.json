@@ -1,0 +1,492 @@
+[
+  {
+    "mu": 0.06,
+    "sigma": 0.008,
+    "alive": 0.158,
+    "entropy": 0.1685,
+    "edge_density": 0.0619,
+    "stability": 0.1617,
+    "score": 0.1921,
+    "label": "structure"
+  },
+  {
+    "mu": 0.06,
+    "sigma": 0.0133,
+    "alive": 0.1875,
+    "entropy": 0.1784,
+    "edge_density": 0.0477,
+    "stability": 0.2098,
+    "score": 0.1994,
+    "label": "simple"
+  },
+  {
+    "mu": 0.06,
+    "sigma": 0.0187,
+    "alive": 0.2025,
+    "entropy": 0.1868,
+    "edge_density": 0.0484,
+    "stability": 0.2066,
+    "score": 0.2065,
+    "label": "simple"
+  },
+  {
+    "mu": 0.06,
+    "sigma": 0.024,
+    "alive": 0.2205,
+    "entropy": 0.2003,
+    "edge_density": 0.0515,
+    "stability": 0.1941,
+    "score": 0.2166,
+    "label": "structure"
+  },
+  {
+    "mu": 0.06,
+    "sigma": 0.0293,
+    "alive": 0.2408,
+    "entropy": 0.2283,
+    "edge_density": 0.0548,
+    "stability": 0.1825,
+    "score": 0.232,
+    "label": "structure"
+  },
+  {
+    "mu": 0.06,
+    "sigma": 0.0347,
+    "alive": 0.2589,
+    "entropy": 0.2398,
+    "edge_density": 0.0583,
+    "stability": 0.1716,
+    "score": 0.2422,
+    "label": "structure"
+  },
+  {
+    "mu": 0.06,
+    "sigma": 0.04,
+    "alive": 0.2784,
+    "entropy": 0.248,
+    "edge_density": 0.0611,
+    "stability": 0.1638,
+    "score": 0.2517,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.008,
+    "alive": 0.1685,
+    "entropy": 0.1773,
+    "edge_density": 0.0771,
+    "stability": 0.1298,
+    "score": 0.2068,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.0133,
+    "alive": 0.2051,
+    "entropy": 0.1884,
+    "edge_density": 0.0578,
+    "stability": 0.173,
+    "score": 0.2104,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.0187,
+    "alive": 0.2257,
+    "entropy": 0.2013,
+    "edge_density": 0.053,
+    "stability": 0.1888,
+    "score": 0.2188,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.024,
+    "alive": 0.2428,
+    "entropy": 0.2207,
+    "edge_density": 0.0552,
+    "stability": 0.1813,
+    "score": 0.2304,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.0293,
+    "alive": 0.2635,
+    "entropy": 0.2346,
+    "edge_density": 0.0587,
+    "stability": 0.1704,
+    "score": 0.2422,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.0347,
+    "alive": 0.2832,
+    "entropy": 0.2458,
+    "edge_density": 0.0612,
+    "stability": 0.1633,
+    "score": 0.2526,
+    "label": "structure"
+  },
+  {
+    "mu": 0.0867,
+    "sigma": 0.04,
+    "alive": 0.3017,
+    "entropy": 0.2517,
+    "edge_density": 0.0624,
+    "stability": 0.1602,
+    "score": 0.2605,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.008,
+    "alive": 0.183,
+    "entropy": 0.191,
+    "edge_density": 0.0863,
+    "stability": 0.1159,
+    "score": 0.2217,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.0133,
+    "alive": 0.219,
+    "entropy": 0.2075,
+    "edge_density": 0.072,
+    "stability": 0.1389,
+    "score": 0.2277,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.0187,
+    "alive": 0.2487,
+    "entropy": 0.2197,
+    "edge_density": 0.0574,
+    "stability": 0.1742,
+    "score": 0.2328,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.024,
+    "alive": 0.2711,
+    "entropy": 0.2421,
+    "edge_density": 0.061,
+    "stability": 0.164,
+    "score": 0.2477,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.0293,
+    "alive": 0.2896,
+    "entropy": 0.2469,
+    "edge_density": 0.0635,
+    "stability": 0.1574,
+    "score": 0.256,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.0347,
+    "alive": 0.3068,
+    "entropy": 0.25,
+    "edge_density": 0.063,
+    "stability": 0.1589,
+    "score": 0.2618,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1133,
+    "sigma": 0.04,
+    "alive": 0.3246,
+    "entropy": 0.2489,
+    "edge_density": 0.0644,
+    "stability": 0.1552,
+    "score": 0.2675,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.008,
+    "alive": 0.2032,
+    "entropy": 0.2086,
+    "edge_density": 0.0923,
+    "stability": 0.1083,
+    "score": 0.2375,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.0133,
+    "alive": 0.2336,
+    "entropy": 0.2158,
+    "edge_density": 0.0822,
+    "stability": 0.1217,
+    "score": 0.2413,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.0187,
+    "alive": 0.2711,
+    "entropy": 0.2393,
+    "edge_density": 0.0708,
+    "stability": 0.1413,
+    "score": 0.2521,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.024,
+    "alive": 0.2956,
+    "entropy": 0.2464,
+    "edge_density": 0.0655,
+    "stability": 0.1526,
+    "score": 0.2586,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.0293,
+    "alive": 0.3123,
+    "entropy": 0.2415,
+    "edge_density": 0.0666,
+    "stability": 0.1502,
+    "score": 0.2628,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.0347,
+    "alive": 0.3308,
+    "entropy": 0.2464,
+    "edge_density": 0.0679,
+    "stability": 0.1474,
+    "score": 0.2705,
+    "label": "structure"
+  },
+  {
+    "mu": 0.14,
+    "sigma": 0.04,
+    "alive": 0.348,
+    "entropy": 0.251,
+    "edge_density": 0.0663,
+    "stability": 0.1509,
+    "score": 0.2762,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.0133,
+    "alive": 0.2513,
+    "entropy": 0.2303,
+    "edge_density": 0.0889,
+    "stability": 0.1125,
+    "score": 0.2558,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.0187,
+    "alive": 0.2944,
+    "entropy": 0.2503,
+    "edge_density": 0.0767,
+    "stability": 0.1303,
+    "score": 0.2662,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.024,
+    "alive": 0.3171,
+    "entropy": 0.2439,
+    "edge_density": 0.0691,
+    "stability": 0.1447,
+    "score": 0.2664,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.0293,
+    "alive": 0.3361,
+    "entropy": 0.249,
+    "edge_density": 0.0689,
+    "stability": 0.1452,
+    "score": 0.2734,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.0347,
+    "alive": 0.353,
+    "entropy": 0.2457,
+    "edge_density": 0.0684,
+    "stability": 0.1462,
+    "score": 0.2772,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1667,
+    "sigma": 0.04,
+    "alive": 0.3692,
+    "entropy": 0.2501,
+    "edge_density": 0.0684,
+    "stability": 0.1463,
+    "score": 0.2834,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.0133,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.0187,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.024,
+    "alive": 0.3414,
+    "entropy": 0.2516,
+    "edge_density": 0.0743,
+    "stability": 0.1346,
+    "score": 0.2791,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.0293,
+    "alive": 0.3573,
+    "entropy": 0.244,
+    "edge_density": 0.0716,
+    "stability": 0.1397,
+    "score": 0.2799,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.0347,
+    "alive": 0.3743,
+    "entropy": 0.2488,
+    "edge_density": 0.0702,
+    "stability": 0.1424,
+    "score": 0.2856,
+    "label": "structure"
+  },
+  {
+    "mu": 0.1933,
+    "sigma": 0.04,
+    "alive": 0.389,
+    "entropy": 0.2484,
+    "edge_density": 0.0692,
+    "stability": 0.1444,
+    "score": 0.2893,
+    "label": "structure"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.008,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.0133,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.0187,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.024,
+    "alive": 0.0,
+    "entropy": -0.0,
+    "edge_density": 0.0,
+    "stability": 1.0,
+    "score": 0.2,
+    "label": "dead"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.0293,
+    "alive": 0.3793,
+    "entropy": 0.2519,
+    "edge_density": 0.0727,
+    "stability": 0.1376,
+    "score": 0.2895,
+    "label": "structure"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.0347,
+    "alive": 0.3934,
+    "entropy": 0.2463,
+    "edge_density": 0.0717,
+    "stability": 0.1394,
+    "score": 0.2915,
+    "label": "structure"
+  },
+  {
+    "mu": 0.22,
+    "sigma": 0.04,
+    "alive": 0.409,
+    "entropy": 0.2538,
+    "edge_density": 0.0702,
+    "stability": 0.1424,
+    "score": 0.2976,
+    "label": "structure"
+  }
+]
