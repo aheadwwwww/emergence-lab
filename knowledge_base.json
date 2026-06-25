@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-25T18:31:19.545692",
+  "last_updated": "2026-06-25T18:39:40.574931",
   "categories": {
     "exploration": {
-      "count": 42,
+      "count": 44,
       "items": [
+        {
+          "name": "2026-06-25-self-replicating-nn",
+          "path": "exploration\\2026-06-25-self-replicating-nn.md",
+          "size": 2045,
+          "modified": "2026-06-25T18:36:35.714216"
+        },
+        {
+          "name": "2026-06-25-pheromone-analysis",
+          "path": "exploration\\2026-06-25-pheromone-analysis.md",
+          "size": 6966,
+          "modified": "2026-06-25T18:33:51.407676"
+        },
         {
           "name": "2026-06-25-autogen-exploration",
           "path": "exploration\\2026-06-25-autogen-exploration.md",
@@ -659,8 +671,8 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 4807,
-          "modified": "2026-06-25T18:12:19.792857"
+          "size": 5974,
+          "modified": "2026-06-25T18:31:36.283456"
         },
         {
           "name": "projects",
