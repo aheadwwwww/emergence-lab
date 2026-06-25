@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-25T16:55:38.289673",
+  "last_updated": "2026-06-25T16:58:17.998825",
   "categories": {
     "exploration": {
-      "count": 39,
+      "count": 40,
       "items": [
+        {
+          "name": "2026-06-25-multichannel-breakthrough",
+          "path": "exploration\\2026-06-25-multichannel-breakthrough.md",
+          "size": 2553,
+          "modified": "2026-06-25T16:56:45.674228"
+        },
         {
           "name": "2026-06-25-multichannel-lenia",
           "path": "exploration\\2026-06-25-multichannel-lenia.md",
@@ -617,14 +623,14 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 2922,
-          "modified": "2026-06-25T16:41:24.071465"
+          "size": 4058,
+          "modified": "2026-06-25T16:58:01.554389"
         },
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 3336,
-          "modified": "2026-06-25T15:50:04.360485"
+          "size": 3530,
+          "modified": "2026-06-25T16:57:01.327353"
         },
         {
           "name": "lessons",
