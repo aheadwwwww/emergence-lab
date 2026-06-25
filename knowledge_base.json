@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-25T23:59:37.315022",
+  "last_updated": "2026-06-26T01:01:35.411983",
   "categories": {
     "exploration": {
-      "count": 54,
+      "count": 55,
       "items": [
+        {
+          "name": "2026-06-25-lenia-roadmap",
+          "path": "exploration\\2026-06-25-lenia-roadmap.md",
+          "size": 4097,
+          "modified": "2026-06-26T00:01:27.353970"
+        },
         {
           "name": "2026-06-25-coordination-comparison",
           "path": "exploration\\2026-06-25-coordination-comparison.md",
@@ -331,8 +337,20 @@
       ]
     },
     "experiments": {
-      "count": 70,
+      "count": 72,
       "items": [
+        {
+          "name": "swarm_decision",
+          "path": "experiments\\swarm_decision.py",
+          "size": 10587,
+          "modified": "2026-06-26T00:36:47.220926"
+        },
+        {
+          "name": "lenia_param_search",
+          "path": "experiments\\lenia_param_search.py",
+          "size": 6613,
+          "modified": "2026-06-26T00:00:57.575945"
+        },
         {
           "name": "learnable_lenia",
           "path": "experiments\\learnable_lenia.py",
@@ -756,13 +774,37 @@
       ]
     },
     "memory": {
-      "count": 29,
+      "count": 30,
       "items": [
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 12038,
+          "modified": "2026-06-26T01:01:01.823461"
+        },
         {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
-          "size": 1650,
-          "modified": "2026-06-25T23:32:17.849006"
+          "size": 3955,
+          "modified": "2026-06-26T00:48:27.931764"
+        },
+        {
+          "name": "2026-06-26-swarm-decision",
+          "path": "memory\\2026-06-26-swarm-decision.md",
+          "size": 2011,
+          "modified": "2026-06-26T00:37:18.592486"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 4421,
+          "modified": "2026-06-26T00:33:12.948678"
+        },
+        {
+          "name": "2026-06-25-heartbeat-summary",
+          "path": "memory\\2026-06-25-heartbeat-summary.md",
+          "size": 1614,
+          "modified": "2026-06-26T00:04:20.296169"
         },
         {
           "name": "2026-06-26-jax-md-deep-dive",
@@ -777,28 +819,10 @@
           "modified": "2026-06-25T22:36:19.790942"
         },
         {
-          "name": "2026-06-25-heartbeat-summary",
-          "path": "memory\\2026-06-25-heartbeat-summary.md",
-          "size": 2454,
-          "modified": "2026-06-25T20:07:55.084718"
-        },
-        {
           "name": "heartbeat-dashboard-2026-06-25",
           "path": "memory\\heartbeat-dashboard-2026-06-25.md",
           "size": 2903,
           "modified": "2026-06-25T19:33:45.613770"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 3835,
-          "modified": "2026-06-25T19:33:17.195106"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 28778,
-          "modified": "2026-06-24T23:33:24.326685"
         },
         {
           "name": "2026-06-24-discovery-vivarium",
