@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-25T19:32:20.544667",
+  "last_updated": "2026-06-25T20:07:33.207391",
   "categories": {
     "exploration": {
-      "count": 49,
+      "count": 50,
       "items": [
+        {
+          "name": "2026-06-25-rdl-hybrid",
+          "path": "exploration\\2026-06-25-rdl-hybrid.md",
+          "size": 4446,
+          "modified": "2026-06-25T20:05:04.787278"
+        },
         {
           "name": "2026-06-25-stochastic-lenia",
           "path": "exploration\\2026-06-25-stochastic-lenia.md",
@@ -301,8 +307,20 @@
       ]
     },
     "experiments": {
-      "count": 66,
+      "count": 68,
       "items": [
+        {
+          "name": "rdl_hybrid",
+          "path": "experiments\\rdl_hybrid.py",
+          "size": 8708,
+          "modified": "2026-06-25T20:05:39.126296"
+        },
+        {
+          "name": "lenia_stochastic_jax",
+          "path": "experiments\\lenia_stochastic_jax.py",
+          "size": 8921,
+          "modified": "2026-06-25T20:02:17.921147"
+        },
         {
           "name": "lenia_stochastic",
           "path": "experiments\\lenia_stochastic.py",
@@ -702,19 +720,31 @@
       ]
     },
     "memory": {
-      "count": 25,
+      "count": 27,
       "items": [
+        {
+          "name": "heartbeat-dashboard-2026-06-25",
+          "path": "memory\\heartbeat-dashboard-2026-06-25.md",
+          "size": 2903,
+          "modified": "2026-06-25T19:33:45.613770"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 3835,
+          "modified": "2026-06-25T19:33:17.195106"
+        },
+        {
+          "name": "2026-06-25-heartbeat-summary",
+          "path": "memory\\2026-06-25-heartbeat-summary.md",
+          "size": 3243,
+          "modified": "2026-06-25T19:32:59.530305"
+        },
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
           "size": 15318,
           "modified": "2026-06-25T19:15:56.446525"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 3530,
-          "modified": "2026-06-25T16:57:01.327353"
         },
         {
           "name": "lessons",
