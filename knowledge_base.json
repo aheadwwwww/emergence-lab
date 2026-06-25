@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-25T13:29:41.774699",
+  "last_updated": "2026-06-25T16:34:00.281984",
   "categories": {
     "exploration": {
-      "count": 35,
+      "count": 38,
       "items": [
+        {
+          "name": "2026-06-25-lenia-phase-transition",
+          "path": "exploration\\2026-06-25-lenia-phase-transition.md",
+          "size": 2010,
+          "modified": "2026-06-25T15:46:06.113938"
+        },
+        {
+          "name": "2026-06-25-die-project",
+          "path": "exploration\\2026-06-25-die-project.md",
+          "size": 2289,
+          "modified": "2026-06-25T15:35:12.167975"
+        },
+        {
+          "name": "lenia_sweep_R15_report",
+          "path": "exploration\\lenia_sweep_R15_report.md",
+          "size": 865,
+          "modified": "2026-06-25T13:34:17.460177"
+        },
         {
           "name": "lenia_official_repo_notes",
           "path": "exploration\\lenia_official_repo_notes.md",
@@ -217,8 +235,14 @@
       ]
     },
     "experiments": {
-      "count": 59,
+      "count": 60,
       "items": [
+        {
+          "name": "lenia_sweep_R15",
+          "path": "experiments\\lenia_sweep_R15.py",
+          "size": 8349,
+          "modified": "2026-06-25T13:33:52.647116"
+        },
         {
           "name": "lenia_sweep_R20",
           "path": "experiments\\lenia_sweep_R20.py",
@@ -579,16 +603,16 @@
       "count": 25,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 3336,
+          "modified": "2026-06-25T15:50:04.360485"
+        },
+        {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
           "size": 1463,
           "modified": "2026-06-25T13:25:34.591902"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 3394,
-          "modified": "2026-06-25T13:25:16.079795"
         },
         {
           "name": "lessons",
