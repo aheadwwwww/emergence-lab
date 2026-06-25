@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-25T16:34:00.281984",
+  "last_updated": "2026-06-25T16:40:55.500256",
   "categories": {
     "exploration": {
-      "count": 38,
+      "count": 39,
       "items": [
+        {
+          "name": "2026-06-25-multichannel-lenia",
+          "path": "exploration\\2026-06-25-multichannel-lenia.md",
+          "size": 2229,
+          "modified": "2026-06-25T16:40:39.760314"
+        },
+        {
+          "name": "lenia_sweep_R15_report",
+          "path": "exploration\\lenia_sweep_R15_report.md",
+          "size": 865,
+          "modified": "2026-06-25T16:35:10.774770"
+        },
         {
           "name": "2026-06-25-lenia-phase-transition",
           "path": "exploration\\2026-06-25-lenia-phase-transition.md",
@@ -15,12 +27,6 @@
           "path": "exploration\\2026-06-25-die-project.md",
           "size": 2289,
           "modified": "2026-06-25T15:35:12.167975"
-        },
-        {
-          "name": "lenia_sweep_R15_report",
-          "path": "exploration\\lenia_sweep_R15_report.md",
-          "size": 865,
-          "modified": "2026-06-25T13:34:17.460177"
         },
         {
           "name": "lenia_official_repo_notes",
@@ -235,8 +241,14 @@
       ]
     },
     "experiments": {
-      "count": 60,
+      "count": 61,
       "items": [
+        {
+          "name": "lenia_multichannel_jax",
+          "path": "experiments\\lenia_multichannel_jax.py",
+          "size": 28768,
+          "modified": "2026-06-25T16:39:36.381273"
+        },
         {
           "name": "lenia_sweep_R15",
           "path": "experiments\\lenia_sweep_R15.py",
