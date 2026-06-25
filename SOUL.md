@@ -26,10 +26,13 @@ Want a sharper version? See [SOUL.md Personality Guide](/concepts/soul).
 ## Windows 操作规范
 
 - **编辑文件只用 `edit`，不用 `write`** — `write` 会覆盖整个文件
-- **`edit` 前确认文件换行符** — Windows 用 `
-`，匹配失败时用脚本替换
+- **`edit` 前确认文件换行符** — Windows 用 `\r\n`，匹配失败时用脚本替换
 - **多行 Python 脚本先写文件再执行** — PowerShell 内联多行会被 ParseError
 - **路径用正斜杠或完整路径** — `~` 在某些场景不生效
+- **API 调用用 Python 脚本** — PowerShell 编码对中文 JSON 有 bug
+- **Cron isolated 模式可能超时** — 简单任务用 isolated，复杂任务用 main
+- **文件被占用检查杀毒软件** — workspace 目录加白名单
+- **后台进程用 pm2 守护** — Windows 更新可能杀进程
 
 ## Vibe
 

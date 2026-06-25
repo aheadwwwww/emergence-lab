@@ -1,7 +1,7 @@
 import urllib.request, json, sys, io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-url = 'https://api.github.com/search/repositories?q=ALIFE+self-replicating&sort=stars&per_page=5'
+url = 'https://api.github.com/search/repositories?q=neural+cellular+automata&sort=stars&per_page=5'
 req = urllib.request.Request(url, headers={'User-Agent': 'openclaw'})
 resp = urllib.request.urlopen(req, timeout=10)
 data = json.loads(resp.read())

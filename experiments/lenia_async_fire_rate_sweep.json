@@ -1,0 +1,65 @@
+[
+  {
+    "fire_rate": 0.5,
+    "state": "simple",
+    "alive": 0.6021,
+    "entropy": 0.5558,
+    "edge_density": 0.1945,
+    "stability": 0.0514,
+    "score": 0.5522
+  },
+  {
+    "fire_rate": 0.6,
+    "state": "simple",
+    "alive": 0.5271,
+    "entropy": 0.516,
+    "edge_density": 0.186,
+    "stability": 0.0537,
+    "score": 0.5097
+  },
+  {
+    "fire_rate": 0.7,
+    "state": "structure",
+    "alive": 0.4449,
+    "entropy": 0.4619,
+    "edge_density": 0.1703,
+    "stability": 0.0587,
+    "score": 0.4541
+  },
+  {
+    "fire_rate": 0.8,
+    "state": "structure",
+    "alive": 0.3667,
+    "entropy": 0.4019,
+    "edge_density": 0.1505,
+    "stability": 0.0665,
+    "score": 0.3943
+  },
+  {
+    "fire_rate": 0.9,
+    "state": "structure",
+    "alive": 0.2841,
+    "entropy": 0.3228,
+    "edge_density": 0.1249,
+    "stability": 0.0801,
+    "score": 0.323
+  },
+  {
+    "fire_rate": 0.95,
+    "state": "structure",
+    "alive": 0.2469,
+    "entropy": 0.2806,
+    "edge_density": 0.1128,
+    "stability": 0.0886,
+    "score": 0.2888
+  },
+  {
+    "fire_rate": 1.0,
+    "state": "structure",
+    "alive": 0.2087,
+    "entropy": 0.2237,
+    "edge_density": 0.097,
+    "stability": 0.1031,
+    "score": 0.2474
+  }
+]

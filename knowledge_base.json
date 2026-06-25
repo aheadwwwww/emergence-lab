@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-25T20:07:33.207391",
+  "last_updated": "2026-06-25T20:38:30.685624",
   "categories": {
     "exploration": {
-      "count": 50,
+      "count": 52,
       "items": [
+        {
+          "name": "2026-06-25-async-lenia",
+          "path": "exploration\\2026-06-25-async-lenia.md",
+          "size": 1970,
+          "modified": "2026-06-25T20:25:19.497511"
+        },
+        {
+          "name": "2026-06-25-nca-exploration",
+          "path": "exploration\\2026-06-25-nca-exploration.md",
+          "size": 2116,
+          "modified": "2026-06-25T20:16:50.098498"
+        },
         {
           "name": "2026-06-25-rdl-hybrid",
           "path": "exploration\\2026-06-25-rdl-hybrid.md",
@@ -307,8 +319,14 @@
       ]
     },
     "experiments": {
-      "count": 68,
+      "count": 69,
       "items": [
+        {
+          "name": "lenia_async",
+          "path": "experiments\\lenia_async.py",
+          "size": 7054,
+          "modified": "2026-06-25T20:23:51.246480"
+        },
         {
           "name": "rdl_hybrid",
           "path": "experiments\\rdl_hybrid.py",
@@ -723,6 +741,18 @@
       "count": 27,
       "items": [
         {
+          "name": "2026-06-25",
+          "path": "memory\\2026-06-25.md",
+          "size": 4321,
+          "modified": "2026-06-25T20:26:00.598443"
+        },
+        {
+          "name": "2026-06-25-heartbeat-summary",
+          "path": "memory\\2026-06-25-heartbeat-summary.md",
+          "size": 2454,
+          "modified": "2026-06-25T20:07:55.084718"
+        },
+        {
           "name": "heartbeat-dashboard-2026-06-25",
           "path": "memory\\heartbeat-dashboard-2026-06-25.md",
           "size": 2903,
@@ -733,18 +763,6 @@
           "path": "memory\\projects.md",
           "size": 3835,
           "modified": "2026-06-25T19:33:17.195106"
-        },
-        {
-          "name": "2026-06-25-heartbeat-summary",
-          "path": "memory\\2026-06-25-heartbeat-summary.md",
-          "size": 3243,
-          "modified": "2026-06-25T19:32:59.530305"
-        },
-        {
-          "name": "2026-06-25",
-          "path": "memory\\2026-06-25.md",
-          "size": 15318,
-          "modified": "2026-06-25T19:15:56.446525"
         },
         {
           "name": "lessons",
