@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T16:58:17.998825",
+  "last_updated": "2026-06-25T17:26:43.633022",
   "categories": {
     "exploration": {
       "count": 40,
@@ -247,8 +247,20 @@
       ]
     },
     "experiments": {
-      "count": 61,
+      "count": 63,
       "items": [
+        {
+          "name": "lenia_multichannel_scan",
+          "path": "experiments\\lenia_multichannel_scan.py",
+          "size": 2485,
+          "modified": "2026-06-25T17:26:26.381368"
+        },
+        {
+          "name": "lenia_multichannel",
+          "path": "experiments\\lenia_multichannel.py",
+          "size": 8859,
+          "modified": "2026-06-25T17:08:20.546233"
+        },
         {
           "name": "lenia_multichannel_jax",
           "path": "experiments\\lenia_multichannel_jax.py",
@@ -623,8 +635,8 @@
         {
           "name": "2026-06-25",
           "path": "memory\\2026-06-25.md",
-          "size": 4058,
-          "modified": "2026-06-25T16:58:01.554389"
+          "size": 1537,
+          "modified": "2026-06-25T17:09:28.008172"
         },
         {
           "name": "projects",
