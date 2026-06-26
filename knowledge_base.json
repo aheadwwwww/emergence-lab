@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T15:29:21.448179",
+  "last_updated": "2026-06-26T16:33:39.563941",
   "categories": {
     "exploration": {
       "count": 58,
@@ -813,6 +813,12 @@
       "count": 43,
       "items": [
         {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 1211,
+          "modified": "2026-06-26T15:29:55.997132"
+        },
+        {
           "name": "2026-06-26-memary-discovery",
           "path": "memory\\2026-06-26-memary-discovery.md",
           "size": 3243,
@@ -829,12 +835,6 @@
           "path": "memory\\2026-06-26-plato-agent-discovery.md",
           "size": 3904,
           "modified": "2026-06-26T14:36:04.158440"
-        },
-        {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 4913,
-          "modified": "2026-06-26T14:22:03.629564"
         },
         {
           "name": "judgment-frameworks",
