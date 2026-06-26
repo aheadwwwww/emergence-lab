@@ -89,3 +89,23 @@
 {"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
 {"entity1": "我", "relation": "应用", "entity2": "状态五要素", "source": "manual_update"}
 {"entity1": "我", "relation": "应用", "entity2": "闭环公式", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "使用", "entity2": "我", "source": "manual_update"}
+{"entity1": "树林", "relation": "属于", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "使用", "entity2": "我", "source": "manual_update"}
+{"entity1": "树林", "relation": "属于", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "使用", "entity2": "我", "source": "manual_update"}
+{"entity1": "树林", "relation": "属于", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "使用", "entity2": "我", "source": "manual_update"}
+{"entity1": "树林", "relation": "属于", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "使用", "entity2": "我", "source": "manual_update"}
+{"entity1": "树林", "relation": "属于", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "ICL梯度下降", "relation": "属于", "entity2": "Transformer机制", "source": "manual_update"}
+{"entity1": "ICL梯度下降", "relation": "发现于", "entity2": "Google Research", "source": "manual_update"}
+{"entity1": "ICL梯度下降", "relation": "启发", "entity2": "知识图谱设计", "source": "manual_update"}
+{"entity1": "我", "relation": "学习", "entity2": "ICL梯度下降", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "应优化为", "entity2": "示例驱动记忆", "source": "manual_update"}

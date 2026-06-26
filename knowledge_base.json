@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T23:06:35.964828",
+  "last_updated": "2026-06-26T23:29:31.883165",
   "categories": {
     "exploration": {
       "count": 62,
@@ -870,19 +870,43 @@
       ]
     },
     "memory": {
-      "count": 60,
+      "count": 63,
       "items": [
+        {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 1758,
+          "modified": "2026-06-26T23:16:40.775622"
+        },
+        {
+          "name": "2026-06-26-igraph-query-implementation",
+          "path": "memory\\2026-06-26-igraph-query-implementation.md",
+          "size": 2168,
+          "modified": "2026-06-26T23:10:51.996407"
+        },
+        {
+          "name": "2026-06-26-cognee-discovery",
+          "path": "memory\\2026-06-26-cognee-discovery.md",
+          "size": 6907,
+          "modified": "2026-06-26T23:07:44.087830"
+        },
+        {
+          "name": "2026-06-26-heartbeat-2259",
+          "path": "memory\\2026-06-26-heartbeat-2259.md",
+          "size": 1553,
+          "modified": "2026-06-26T23:07:03.336938"
+        },
+        {
+          "name": "paper-kg-llm-interface",
+          "path": "memory\\paper-kg-llm-interface.md",
+          "size": 10036,
+          "modified": "2026-06-26T23:06:58.714071"
+        },
         {
           "name": "projects",
           "path": "memory\\projects.md",
           "size": 6221,
           "modified": "2026-06-26T23:01:36.118227"
-        },
-        {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 2048,
-          "modified": "2026-06-26T22:32:30.199705"
         },
         {
           "name": "2026-06-26-micrograd-learning",
@@ -967,12 +991,6 @@
           "path": "memory\\2026-06-26-heartbeat.md",
           "size": 2614,
           "modified": "2026-06-26T18:32:01.300740"
-        },
-        {
-          "name": "2026-06-26-cognee-discovery",
-          "path": "memory\\2026-06-26-cognee-discovery.md",
-          "size": 6834,
-          "modified": "2026-06-26T18:02:09.309228"
         },
         {
           "name": "2026-06-26-afternoon",

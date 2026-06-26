@@ -78,6 +78,23 @@ class KnowledgeGraphUpdater:
         }
 
 
+def add_single(entity1: str, relation: str, entity2: str):
+    """添加单个三元组（命令行调用）"""
+    updater = KnowledgeGraphUpdater()
+    initial = updater.stats()
+    print(f"Before: {initial['nodes']} nodes, {initial['edges']} edges")
+    
+    if updater.add_triple(entity1, relation, entity2):
+        print(f"  Added: {entity1} --[{relation}]--> {entity2}")
+        updater.save()
+    else:
+        print(f"  Skipped (exists): {entity1} --[{relation}]--> {entity2}")
+    
+    final = updater.stats()
+    print(f"After: {final['nodes']} nodes, {final['edges']} edges")
+    print("Knowledge graph updated!")
+
+
 def main():
     updater = KnowledgeGraphUpdater()
     
@@ -86,42 +103,13 @@ def main():
     
     # ======== 添加最近学到的新关系 ========
     
-    # 工作操作系统相关
+    # ICL梯度下降相关（2026-06-26）
     new_triples = [
-        # 工作操作系统
-        ("工作操作系统", "提出", "闭环公式"),
-        ("工作操作系统", "提出", "状态五要素"),
-        ("工作操作系统", "提出", "投资消费负债"),
-        ("闭环公式", "是", "接收行动反馈结果"),
-        ("状态五要素", "包含", "你是谁"),
-        ("状态五要素", "包含", "做了什么"),
-        ("状态五要素", "包含", "进度"),
-        ("状态五要素", "包含", "结果画像"),
-        ("状态五要素", "包含", "下一步时间点"),
-        
-        # igraph工具
-        ("ig", "实现", "知识图谱查询工具"),
-        ("知识图谱查询工具", "支持", "多跳查询"),
-        ("知识图谱查询工具", "支持", "按类型查询"),
-        ("知识图谱查询工具", "支持", "按关系查询"),
-        ("知识图谱查询工具", "支持", "路径查询"),
-        ("知识图谱查询工具", "支持", "社区检测"),
-        ("知识图谱查询工具", "支持", "实体信息查询"),
-        
-        # 知识图谱
-        ("知识图谱", "存储于", "ig"),
-        ("知识图谱", "支持", "多跳查询"),
-        ("知识图谱", "支持", "社区检测"),
-        ("知识图谱", "检测到", "10个社区"),
-        ("我", "使用", "ig"),
-        ("我", "使用", "知识图谱"),
-        
-        # 与工作操作系统的关联
-        ("我", "学习", "工作操作系统"),
-        ("工作操作系统", "属于", "树林"),
-        ("工作操作系统", "应用", "熔炉系统"),
-        ("我", "应用", "状态五要素"),
-        ("我", "应用", "闭环公式"),
+        ("ICL梯度下降", "属于", "Transformer机制"),
+        ("ICL梯度下降", "发现于", "Google Research"),
+        ("ICL梯度下降", "启发", "知识图谱设计"),
+        ("我", "学习", "ICL梯度下降"),
+        ("知识图谱", "应优化为", "示例驱动记忆"),
     ]
     
     added = 0
@@ -139,4 +127,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    
+    if len(sys.argv) == 4 and sys.argv[1] == "add":
+        # python update_knowledge_graph.py add entity1 relation entity2
+        add_single(sys.argv[2], sys.argv[3], sys.argv[4])
+    else:
+        main()
