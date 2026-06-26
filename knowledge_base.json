@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-26T23:29:31.883165",
+  "last_updated": "2026-06-26T23:59:43.696757",
   "categories": {
     "exploration": {
-      "count": 62,
+      "count": 63,
       "items": [
+        {
+          "name": "2026-06-26-icl-gradient-descent-experiments",
+          "path": "exploration\\2026-06-26-icl-gradient-descent-experiments.md",
+          "size": 3255,
+          "modified": "2026-06-26T23:30:40.967489"
+        },
         {
           "name": "2026-06-26-mutualistic-lenia-results",
           "path": "exploration\\2026-06-26-mutualistic-lenia-results.md",
@@ -875,8 +881,8 @@
         {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
-          "size": 1758,
-          "modified": "2026-06-26T23:16:40.775622"
+          "size": 2352,
+          "modified": "2026-06-26T23:32:17.403171"
         },
         {
           "name": "2026-06-26-igraph-query-implementation",
