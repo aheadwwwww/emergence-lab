@@ -94,15 +94,19 @@
 
 ## 外部项目发现
 - **状态**：活跃
-- **最后更新**：2026-06-26 13:10
+- **最后更新**：2026-06-26 23:59
 - **目标**：发掘 GitHub 上涌现/复杂系统相关项目，吸收设计思路
 - **进展**：
-  - 📦 **Google Self-Organising Systems** (google-research): 官方自组织系统代码库 ⭐ NEW
+  - 📦 **Google Self-Organising Systems** (google-research): 官方自组织系统代码库 ⭐ HIGH VALUE
+    - **Isotropic NCA**: 直接验证我的随机更新发现！使用随机更新掩码技术
+    - **Biomaker CA**: 生物群落CA，深度分析完成 2026-06-26 ✅ NEW
+    - **Self-Replicating NN**: 自复制神经网络，分析笔记完成
+    - **Adversarial Reprogramming CA**: CA重编程
     - **Isotropic NCA**: 直接验证我的随机更新发现！使用随机更新掩码技术
     - **Biomaker CA**: 生物群落CA，有论文和教程
     - **Self-Replicating NN**: 自复制神经网络
     - **Adversarial Reprogramming CA**: CA重编程
-    - 详细笔记：`exploration/2026-06-26-self-organising-systems.md`
+    - 详细笔记：`exploration/2026-06-26-self-organising-systems.md`, `exploration/2026-06-26-biomakerca-analysis.md`
   - 📦 **vivarium** (ikkeseb): TypeScript CA 沙盒，支持8个系统含 Lenia，干净架构（SystemDef/Simulation），确定性 PRNG 设计
   - 📦 **initial-state-evolution** (xcontcom): 共进化 GA + Conway's Life，创新的 tone-informed fitness
   - 📦 **Symbiote** (ShamelesAbyss): Rust 终端人工生命生态系统，v0.21.0
