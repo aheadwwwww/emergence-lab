@@ -214,9 +214,10 @@ Cognee参考认知科学：
 ## 六、下一步行动
 
 1. ✅ 学习Cognee核心概念
-2. 🔄 实现会话记忆层
+2. ✅ 实现会话记忆层
 3. ⏳ 添加智能路由
 4. ⏳ 考虑集成Cognee（长期）
+5. ✅ 阅读Cognee论文（2026-06-26 22:59）
 
 ---
 
@@ -226,7 +227,7 @@ Cognee团队发表的论文：
 - [Optimizing the Interface Between Knowledge Graphs and LLMs for Complex Reasoning](https://arxiv.org/abs/2505.24478) — Markovic et al., 2025
 
 **阅读计划**：
-- 下次心跳时阅读这篇论文
+- ✅ 2026-06-26 22:59 已完成（子agent读取并总结）
 - 深入理解知识图谱与LLM的结合
 
 ---
