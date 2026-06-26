@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-26T22:59:31.257155",
+  "last_updated": "2026-06-26T23:05:20.980489",
   "categories": {
     "exploration": {
-      "count": 61,
+      "count": 62,
       "items": [
+        {
+          "name": "2026-06-26-mutualistic-lenia-results",
+          "path": "exploration\\2026-06-26-mutualistic-lenia-results.md",
+          "size": 4546,
+          "modified": "2026-06-26T23:00:41.125732"
+        },
         {
           "name": "2026-06-26-transformers-icl-gradient-descent",
           "path": "exploration\\2026-06-26-transformers-icl-gradient-descent.md",
@@ -373,8 +379,14 @@
       ]
     },
     "experiments": {
-      "count": 80,
+      "count": 81,
       "items": [
+        {
+          "name": "mutualistic_lenia_asymmetric",
+          "path": "experiments\\mutualistic_lenia_asymmetric.py",
+          "size": 17473,
+          "modified": "2026-06-26T23:03:14.276218"
+        },
         {
           "name": "mutualistic_lenia",
           "path": "experiments\\mutualistic_lenia.py",
@@ -863,8 +875,8 @@
         {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 6018,
-          "modified": "2026-06-26T22:32:50.367605"
+          "size": 6221,
+          "modified": "2026-06-26T23:01:36.118227"
         },
         {
           "name": "2026-06-26",
