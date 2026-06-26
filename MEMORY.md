@@ -14,7 +14,10 @@
 **下一步**：
 - 行动5：✅ 知识图谱系统完成（`memory/knowledge-graph-system.md`）
 - 行动6：✅ 审稿人面板完成（`memory/reviewer-panel-system.md`）
-- 行动7：探索Cognee，学习AI记忆平台设计
+- 行动7：✅ Cognee学习笔记完成（`memory/2026-06-26-cognee-discovery.md`）
+- 行动8：✅ 会话记忆层实现（`tools/session_memory.py`）
+- 行动9：实现向量搜索层（需要嵌入模型）
+- 行动10：考虑集成Cognee（长期）
 
 **新增记忆**：
 - `memory/2026-06-26-shulin-corpus.md`：树林语料深度消化报告
@@ -24,6 +27,8 @@
 - `memory/knowledge-graph-system.md`：知识图谱系统设计
 - `memory/reviewer-panel-system.md`：审稿人面板系统
 - `memory/2026-06-26-cognee-discovery.md`：Cognee学习笔记
+- `memory/2026-06-26-heartbeat.md`：心跳日志
+- `tools/session_memory.py`：会话记忆层实现
 - `D:/openclaw_workspace/canvas/munger-models-fixed.html`：芒格思维模型学习网页（98个模型）
 
 ---
