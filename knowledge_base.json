@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T22:29:39.289617",
+  "last_updated": "2026-06-26T22:32:16.405667",
   "categories": {
     "exploration": {
       "count": 61,
@@ -373,8 +373,14 @@
       ]
     },
     "experiments": {
-      "count": 79,
+      "count": 80,
       "items": [
+        {
+          "name": "mutualistic_lenia",
+          "path": "experiments\\mutualistic_lenia.py",
+          "size": 14741,
+          "modified": "2026-06-26T22:31:25.439679"
+        },
         {
           "name": "lenia_alive_sweep",
           "path": "experiments\\lenia_alive_sweep.py",
