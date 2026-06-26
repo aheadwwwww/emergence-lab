@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>测试芒格模型</title>
+</head>
+<body>
+    <h1>测试页面</h1>
+    <div id="test-output"></div>
+    
+    <script>
+        // 测试：先定义models，再调用
+        const models = {
+            'm01': { title: '地图非领土', category: 'General' },
+            'm02': { title: '能力圈', category: 'General' }
+        };
+        
+        console.log('Models loaded:', Object.keys(models).length);
+        
+        window.onload = function() {
+            const output = document.getElementById('test-output');
+            for (const [id, m] of Object.entries(models)) {
+                output.innerHTML += `<p>${id}: ${m.title}</p>`;
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芒格思维模型库 - 98个思维模型完整版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh; padding: 15px;
+        }
+        .container {
+            max-width: 1500px; margin: 0 auto; background: white;
+            border-radius: 15px; box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; padding: 30px; text-align: center;
+        }
+        h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .subtitle { font-size: 1.1em; opacity: 0.9; }
+        .stats {
+            display: flex; justify-content: space-around; padding: 20px;
+            background: #f8f9fa; border-bottom: 1px solid #e9ecef;
+        }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2.5em; font-weight: bold; color: #667eea; }
+        .stat-label { color: #6c757d; margin-top: 3px; font-size: 0.9em; }
+        .main-content { display: grid; grid-template-columns: 260px 1fr; min-height: 650px; }
+        .sidebar {
+            background: #f8f9fa; padding: 12px; border-right: 1px solid #e9ecef;
+            overflow-y: auto; max-height: 650px;
+        }
+        .category { margin-bottom: 12px; }
+        .category-title {
+            font-weight: bold; color: #495057; padding: 7px 10px; background: white;
+            border-radius: 5px; margin-bottom: 6px; cursor: pointer;
+            transition: all 0.3s; font-size: 0.9em;
+        }
+        .category-title:hover { background: #667eea; color: white; }
+        .model-list { list-style: none; padding-left: 6px; }
+        .model-item {
+            padding: 5px 8px; cursor: pointer; border-radius: 3px;
+            transition: all 0.2s; font-size: 0.82em; color: #6c757d;
+            margin-bottom: 2px;
+        }
+        .model-item:hover { background: #e9ecef; color: #495057; }
+        .model-item.active { background: #667eea; color: white; }
+        .model-item.learned { background: #28a745; color: white; }
+        .content { padding: 25px; overflow-y: auto; max-height: 650px; }
+        .welcome { text-align: center; padding: 50px 20px; }
+        .welcome h2 { font-size: 1.8em; color: #495057; margin-bottom: 15px; }
+        .welcome p { color: #6c757d; font-size: 1em; line-height: 1.7; }
+        .model-detail { display: none; animation: fadeIn 0.3s; }
+        .model-detail.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .model-header {
+            margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #e9ecef;
+        }
+        .model-number {
+            display: inline-block; background: #667eea; color: white;
+            padding: 4px 10px; border-radius: 12px; font-weight: bold; margin-bottom: 6px;
+            font-size: 0.9em;
+        }
+        .model-title { font-size: 1.6em; color: #495057; margin-bottom: 4px; }
+        .model-title-en { font-size: 0.95em; color: #6c757d; margin-bottom: 8px; font-style: italic; }
+        .model-category { color: #6c757d; font-size: 0.9em; }
+        .section { margin-bottom: 20px; }
+        .section-title {
+            font-size: 1.1em; color: #667eea; margin-bottom: 10px;
+            display: flex; align-items: center;
+        }
+        .section-title::before {
+            content: ''; display: inline-block; width: 3px; height: 16px;
+            background: #667eea; margin-right: 8px; border-radius: 2px;
+        }
+        .section-content { color: #495057; line-height: 1.6; padding-left: 11px; font-size: 0.95em; }
+        .keywords { display: flex; flex-wrap: wrap; gap: 6px; padding-left: 11px; }
+        .keyword { background: #e9ecef; padding: 3px 10px; border-radius: 10px; font-size: 0.8em; color: #495057; }
+        .steps-list { list-style: none; padding-left: 11px; counter-reset: step; }
+        .steps-list li {
+            counter-increment: step; margin-bottom: 10px; padding-left: 30px;
+            position: relative; color: #495057; font-size: 0.95em; line-height: 1.5;
+        }
+        .steps-list li::before {
+            content: counter(step); position: absolute; left: 0; top: 0;
+            width: 22px; height: 22px; background: #667eea; color: white;
+            border-radius: 50%; text-align: center; line-height: 22px;
+            font-weight: bold; font-size: 0.8em;
+        }
+        .coaching-questions { list-style: none; padding-left: 11px; }
+        .coaching-questions li {
+            padding: 10px; background: #f8f9fa; border-left: 3px solid #667eea;
+            margin-bottom: 6px; border-radius: 3px; font-style: italic;
+            color: #495057; font-size: 0.9em;
+        }
+        .mark-learned {
+            background: #667eea; color: white; border: none; padding: 8px 20px;
+            border-radius: 15px; cursor: pointer; font-size: 0.95em; margin-top: 15px;
+            transition: all 0.3s;
+        }
+        .mark-learned:hover {
+            background: #764ba2; transform: translateY(-1px);
+            box-shadow: 0 3px 12px rgba(102, 126, 234, 0.4);
+        }
+        .mark-learned.learned { background: #28a745; }
+        .progress-bar {
+            width: 100%; height: 5px; background: #e9ecef; border-radius: 3px;
+            margin-top: 12px; overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%; transition: width 0.5s;
+        }
+        .tip {
+            background: #fff3cd; border-left: 3px solid #ffc107;
+            padding: 10px; margin-top: 15px; border-radius: 3px;
+            font-size: 0.85em; color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 芒格思维模型库</h1>
+            <p class="subtitle">Charlie Munger's Mental Models - 98个跨学科思维模型</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">98</div>
+                <div class="stat-label">思维模型</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="learned-count">0</div>
+                <div class="stat-label">已学习</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8</div>
+                <div class="stat-label">学科领域</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <!-- General -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('general')">📚 General (通用思维) - 9个</div>
+                    <ul class="model-list" id="general-list"></ul>
+                </div>
+                
+                <!-- Science -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('science')">🔬 Science (科学) - 20个</div>
+                    <ul class="model-list" id="science-list" style="display:none;"></ul>
+                </div>
+                
+                <!-- Mathematics -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('math')">📊 Mathematics (数学) - 7个</div>
+                    <ul class="model-list" id="math-list" style="display:none;"></ul>
+                </div>
+                
+                <!-- Economics -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('economics')">💰 Economics (经济) - 12个</div>
+                    <ul class="model-list" id="economics-list" style="display:none;"></ul>
+                </div>
+                
+                <!-- Systems Thinking -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('systems')">⚙️ Systems Thinking (系统思维) - 11个</div>
+                    <ul class="model-list" id="systems-list" style="display:none;"></ul>
+                </div>
+                
+                <!-- Human Nature -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('human')">🧬 Human Nature (人性) - 23个</div>
+                    <ul class="model-list" id="human-list" style="display:none;"></ul>
+                </div>
+                
+                <!-- Art -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('art')">🎨 Art (艺术) - 11个</div>
+                    <ul class="model-list" id="art-list" style="display:none;"></ul>
+                </div>
+                
+                <!-- War -->
+                <div class="category">
+                    <div class="category-title" onclick="toggleCategory('war')">⚔️ War (战争) - 5个</div>
+                    <ul class="model-list" id="war-list" style="display:none;"></ul>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="welcome" id="welcome">
+                    <h2>欢迎使用芒格思维模型学习工具</h2>
+                    <p>
+                        查理·芒格说：<strong>"手里只有锤子，看什么都像钉子。"</strong><br><br>
+                        为了避免这种"铁锤人综合征"，我们需要建立<strong>多元思维模型格栅</strong>。<br><br>
+                        本库包含 <strong>98个思维模型</strong>，跨越8个学科领域。<br><br>
+                        每个模型都包含：<strong>描述、何时避免、应用场景、思考步骤、教练问题</strong>。<br><br>
+                        点击左侧的模型开始学习，点击"标记为已学习"追踪进度。
+                    </p>
+                    <div class="tip">
+                        💡 <strong>提示</strong>：点击学科分类可以展开/折叠。学习进度会自动保存在浏览器中。
+                    </div>
+                </div>
+                
+                <div class="model-detail" id="model-detail">
+                    <div class="model-header">
+                        <span class="model-number" id="model-number">m01</span>
+                        <h2 class="model-title" id="model-title">第一性原理</h2>
+                        <p class="model-title-en" id="model-title-en">First-Principle Thinking</p>
+                        <p class="model-category" id="model-category">Category: General Thinking Tools</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">📖 模型描述</h3>
+                        <p class="section-content" id="model-description">描述内容</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">⚠️ 何时避免使用</h3>
+                        <p class="section-content" id="model-avoid">避免内容</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🏷️ 应用场景</h3>
+                        <div class="keywords" id="model-keywords"></div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🪜 思考步骤</h3>
+                        <ol class="steps-list" id="model-steps"></ol>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">❓ 教练问题</h3>
+                        <ul class="coaching-questions" id="model-coaching"></ul>
+                    </div>
+                    
+                    <button class="mark-learned" onclick="markLearned()">标记为已学习 ✓</button>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="models_data.js"></script>
+    <script>
+        let learnedModels = new Set(JSON.parse(localStorage.getItem('learnedModels') || '[]'));
+        let currentModel = null;
+        
+        // 初始化侧边栏
+        function initSidebar() {
+            const categoryMap = {
+                'General': 'general',
+                'Science': 'science',
+                'Mathematics': 'math',
+                'Economics': 'economics',
+                'Systems Thinking': 'systems',
+                'Human Nature': 'human',
+                'Art': 'art',
+                'War': 'war'
+            };
+            
+            for (const [modelId, model] of Object.entries(models)) {
+                const categoryKey = categoryMap[model.category] || 'general';
+                const list = document.getElementById(categoryKey + '-list');
+                
+                if (list) {
+                    const li = document.createElement('li');
+                    li.className = 'model-item';
+                    if (learnedModels.has(modelId)) {
+                        li.classList.add('learned');
+                    }
+                    li.textContent = `${modelId}: ${model.title}`;
+                    li.onclick = () => loadModel(modelId);
+                    list.appendChild(li);
+                }
+            }
+        }
+        
+        function toggleCategory(category) {
+            const list = document.getElementById(category + '-list');
+            list.style.display = list.style.display === 'none' ? 'block' : 'none';
+        }
+        
+        function loadModel(modelId) {
+            currentModel = modelId;
+            const model = models[modelId];
+            
+            document.getElementById('welcome').style.display = 'none';
+            document.getElementById('model-detail').classList.add('active');
+            
+            document.getElementById('model-number').textContent = modelId;
+            document.getElementById('model-title').textContent = model.title;
+            document.getElementById('model-title-en').textContent = model.title_en;
+            document.getElementById('model-category').textContent = 'Category: ' + model.category;
+            document.getElementById('model-description').textContent = model.description;
+            document.getElementById('model-avoid').textContent = model.avoid;
+            
+            // 关键词
+            const keywordsHtml = model.keywords.map(k => `<span class="keyword">${k}</span>`).join('');
+            document.getElementById('model-keywords').innerHTML = keywordsHtml;
+            
+            // 思考步骤
+            const stepsHtml = model.steps.map(s => `<li>${s}</li>`).join('');
+            document.getElementById('model-steps').innerHTML = stepsHtml;
+            
+            // 教练问题
+            const coachingHtml = model.coaching.map(q => `<li>${q}</li>`).join('');
+            document.getElementById('model-coaching').innerHTML = coachingHtml;
+            
+            // 更新按钮状态
+            const btn = document.querySelector('.mark-learned');
+            if (learnedModels.has(modelId)) {
+                btn.classList.add('learned');
+                btn.textContent = '已学习 ✓';
+            } else {
+                btn.classList.remove('learned');
+                btn.textContent = '标记为已学习 ✓';
+            }
+            
+            // 高亮当前模型
+            document.querySelectorAll('.model-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+        
+        function markLearned() {
+            if (!currentModel) return;
+            
+            if (learnedModels.has(currentModel)) {
+                learnedModels.delete(currentModel);
+            } else {
+                learnedModels.add(currentModel);
+            }
+            
+            localStorage.setItem('learnedModels', JSON.stringify([...learnedModels]));
+            updateProgress();
+            
+            const btn = document.querySelector('.mark-learned');
+            if (learnedModels.has(currentModel)) {
+                btn.classList.add('learned');
+                btn.textContent = '已学习 ✓';
+            } else {
+                btn.classList.remove('learned');
+                btn.textContent = '标记为已学习 ✓';
+            }
+            
+            // 更新侧边栏状态
+            document.querySelectorAll('.model-item').forEach(item => {
+                const mid = item.textContent.split(':')[0];
+                if (learnedModels.has(mid)) {
+                    item.classList.add('learned');
+                } else {
+                    item.classList.remove('learned');
+                }
+            });
+        }
+        
+        function updateProgress() {
+            const count = learnedModels.size;
+            document.getElementById('learned-count').textContent = count;
+            const progress = (count / 98) * 100;
+            document.getElementById('progress-fill').style.width = progress + '%';
+        }
+        
+        // 初始化
+        initSidebar();
+        updateProgress();
+    </script>
+</body>
+</html>
