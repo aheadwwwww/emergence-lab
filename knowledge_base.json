@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-26T20:59:44.884302",
+  "last_updated": "2026-06-26T21:30:39.344203",
   "categories": {
     "exploration": {
-      "count": 59,
+      "count": 61,
       "items": [
+        {
+          "name": "2026-06-26-transformers-icl-gradient-descent",
+          "path": "exploration\\2026-06-26-transformers-icl-gradient-descent.md",
+          "size": 4025,
+          "modified": "2026-06-26T21:30:35.490925"
+        },
+        {
+          "name": "2026-06-26-lenia-alive-sweep",
+          "path": "exploration\\2026-06-26-lenia-alive-sweep.md",
+          "size": 1815,
+          "modified": "2026-06-26T21:03:02.622052"
+        },
         {
           "name": "2026-06-26-self-replicating-nn-implementation",
           "path": "exploration\\2026-06-26-self-replicating-nn-implementation.md",
@@ -361,8 +373,14 @@
       ]
     },
     "experiments": {
-      "count": 78,
+      "count": 79,
       "items": [
+        {
+          "name": "lenia_alive_sweep",
+          "path": "experiments\\lenia_alive_sweep.py",
+          "size": 4456,
+          "modified": "2026-06-26T21:01:43.557105"
+        },
         {
           "name": "lenia_alive_mask",
           "path": "experiments\\lenia_alive_mask.py",
