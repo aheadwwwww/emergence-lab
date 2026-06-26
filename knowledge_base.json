@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T17:59:12.453410",
+  "last_updated": "2026-06-26T18:29:32.347370",
   "categories": {
     "exploration": {
       "count": 58,
@@ -822,8 +822,14 @@
       ]
     },
     "memory": {
-      "count": 46,
+      "count": 47,
       "items": [
+        {
+          "name": "2026-06-26-cognee-discovery",
+          "path": "memory\\2026-06-26-cognee-discovery.md",
+          "size": 6834,
+          "modified": "2026-06-26T18:02:09.309228"
+        },
         {
           "name": "2026-06-26-afternoon",
           "path": "memory\\2026-06-26-afternoon.md",
