@@ -1,64 +1,91 @@
-{"entity1": "树林", "relation": "提出", "entity2": "四词方法论", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "四词方法论", "relation": "包含", "entity2": "自动化", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "四词方法论", "relation": "包含", "entity2": "专门化", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "四词方法论", "relation": "包含", "entity2": "外显化", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "四词方法论", "relation": "包含", "entity2": "复利化", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "树林", "relation": "提出", "entity2": "熔炉系统", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "熔炉系统", "relation": "包含", "entity2": "采集", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "熔炉系统", "relation": "包含", "entity2": "炼", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "熔炉系统", "relation": "包含", "entity2": "铸器", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "熔炉系统", "relation": "包含", "entity2": "输出", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "树林", "relation": "提出", "entity2": "认知三角公式", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "认知三角公式", "relation": "包含", "entity2": "认知", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "认知三角公式", "relation": "包含", "entity2": "时间", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "认知三角公式", "relation": "包含", "entity2": "金钱", "source": "memory/2026-06-26-shulin-corpus.md", "timestamp": "2026-06-26"}
-{"entity1": "树林", "relation": "提出", "entity2": "判断力斜率", "source": "memory/judgment-frameworks.md", "timestamp": "2026-06-26"}
-{"entity1": "判断力斜率", "relation": "等于", "entity2": "认知加经验加上下文", "source": "memory/judgment-frameworks.md", "timestamp": "2026-06-26"}
-{"entity1": "芒格", "relation": "提出", "entity2": "多元思维模型", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "芒格", "relation": "提出", "entity2": "第一性原理", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "芒格", "relation": "提出", "entity2": "二阶思维", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "芒格", "relation": "提出", "entity2": "逆向思维", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "芒格", "relation": "提出", "entity2": "能力圈", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "思维模型", "relation": "分类", "entity2": "决策与分析类", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "思维模型", "relation": "分类", "entity2": "认知与行为类", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "思维模型", "relation": "分类", "entity2": "系统与战略类", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "思维模型", "relation": "分类", "entity2": "问题解决与创新类", "source": "memory/mental-models-library.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "发现", "entity2": "Plato", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Plato", "relation": "是", "entity2": "自主科学研究Agent", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Plato", "relation": "实现", "entity2": "审稿人面板", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板", "relation": "评估", "entity2": "方法论", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板", "relation": "评估", "entity2": "统计", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板", "relation": "评估", "entity2": "新颖性", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板", "relation": "评估", "entity2": "写作", "source": "memory/2026-06-26-plato-agent-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "发现", "entity2": "24hr-research", "source": "memory/2026-06-26-24hr-research-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "24hr-research", "relation": "是", "entity2": "深度研究Agent", "source": "memory/2026-06-26-24hr-research-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "24hr-research", "relation": "架构", "entity2": "三Agent协作", "source": "memory/2026-06-26-24hr-research-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "发现", "entity2": "Memary", "source": "memory/2026-06-26-memary-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Memary", "relation": "是", "entity2": "Agent记忆层", "source": "memory/2026-06-26-memary-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Memary", "relation": "实现", "entity2": "知识图谱", "source": "memory/2026-06-26-memary-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "实现", "entity2": "审稿人面板系统", "source": "memory/reviewer-panel-system.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "实用性", "source": "memory/reviewer-panel-system.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "可复用性", "source": "memory/reviewer-panel-system.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "真实性", "source": "memory/reviewer-panel-system.md", "timestamp": "2026-06-26"}
-{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "清晰度", "source": "memory/reviewer-panel-system.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "实现", "entity2": "知识图谱系统", "source": "memory/knowledge-graph-system.md", "timestamp": "2026-06-26"}
-{"entity1": "知识图谱系统", "relation": "存储", "entity2": "三元组", "source": "memory/knowledge-graph-system.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "发现", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Cognee", "relation": "是", "entity2": "AI记忆平台", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Cognee", "relation": "实现", "entity2": "知识图谱", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Cognee", "relation": "提供", "entity2": "四大操作", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "四大操作", "relation": "包含", "entity2": "remember", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "四大操作", "relation": "包含", "entity2": "recall", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "四大操作", "relation": "包含", "entity2": "forget", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "四大操作", "relation": "包含", "entity2": "improve", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Cognee", "relation": "启发", "entity2": "会话记忆层", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Cognee", "relation": "启发", "entity2": "智能路由", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "我", "relation": "发现", "entity2": "Graphiti", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Graphiti", "relation": "是", "entity2": "时序知识图谱引擎", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Graphiti", "relation": "实现", "entity2": "时序感知", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Graphiti", "relation": "实现", "entity2": "增量更新", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "Graphiti", "relation": "实现", "entity2": "溯源机制", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "时序知识图谱", "relation": "优于", "entity2": "静态知识图谱", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "时序感知", "relation": "记录", "entity2": "事实变化时间", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "增量更新", "relation": "避免", "entity2": "重新生成", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
-{"entity1": "溯源机制", "relation": "追踪", "entity2": "原始数据", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "四词方法论", "relation": "提出", "entity2": "树林", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "四词方法论", "relation": "包含", "entity2": "自动化", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "四词方法论", "relation": "包含", "entity2": "专门化", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "四词方法论", "relation": "包含", "entity2": "外显化", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "四词方法论", "relation": "包含", "entity2": "复利化", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "树林", "relation": "提出", "entity2": "熔炉系统", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "采集", "relation": "包含", "entity2": "熔炉系统", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "炼", "relation": "包含", "entity2": "熔炉系统", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "铸器", "relation": "包含", "entity2": "熔炉系统", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "熔炉系统", "relation": "包含", "entity2": "输出", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "认知三角公式", "relation": "提出", "entity2": "树林", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "认知三角公式", "relation": "包含", "entity2": "认知", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "认知三角公式", "relation": "包含", "entity2": "时间", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "认知三角公式", "relation": "包含", "entity2": "金钱", "source": "memory/2026-06-26-shulin-corpus.md"}
+{"entity1": "判断力斜率", "relation": "提出", "entity2": "树林", "source": "memory/judgment-frameworks.md"}
+{"entity1": "判断力斜率", "relation": "等于", "entity2": "认知加经验加上下文", "source": "memory/judgment-frameworks.md"}
+{"entity1": "多元思维模型", "relation": "提出", "entity2": "芒格", "source": "memory/mental-models-library.md"}
+{"entity1": "第一性原理", "relation": "提出", "entity2": "芒格", "source": "memory/mental-models-library.md"}
+{"entity1": "二阶思维", "relation": "提出", "entity2": "芒格", "source": "memory/mental-models-library.md"}
+{"entity1": "逆向思维", "relation": "提出", "entity2": "芒格", "source": "memory/mental-models-library.md"}
+{"entity1": "能力圈", "relation": "提出", "entity2": "芒格", "source": "memory/mental-models-library.md"}
+{"entity1": "思维模型", "relation": "分类", "entity2": "决策与分析类", "source": "memory/mental-models-library.md"}
+{"entity1": "思维模型", "relation": "分类", "entity2": "认知与行为类", "source": "memory/mental-models-library.md"}
+{"entity1": "系统与战略类", "relation": "分类", "entity2": "思维模型", "source": "memory/mental-models-library.md"}
+{"entity1": "思维模型", "relation": "分类", "entity2": "问题解决与创新类", "source": "memory/mental-models-library.md"}
+{"entity1": "Plato", "relation": "发现", "entity2": "我", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "Plato", "relation": "是", "entity2": "自主科学研究Agent", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "Plato", "relation": "实现", "entity2": "审稿人面板", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "方法论", "relation": "评估", "entity2": "审稿人面板", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "审稿人面板", "relation": "评估", "entity2": "统计", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "新颖性", "relation": "评估", "entity2": "审稿人面板", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "审稿人面板", "relation": "评估", "entity2": "写作", "source": "memory/2026-06-26-plato-agent-discovery.md"}
+{"entity1": "我", "relation": "发现", "entity2": "24hr-research", "source": "memory/2026-06-26-24hr-research-discovery.md"}
+{"entity1": "深度研究Agent", "relation": "是", "entity2": "24hr-research", "source": "memory/2026-06-26-24hr-research-discovery.md"}
+{"entity1": "三Agent协作", "relation": "架构", "entity2": "24hr-research", "source": "memory/2026-06-26-24hr-research-discovery.md"}
+{"entity1": "Memary", "relation": "发现", "entity2": "我", "source": "memory/2026-06-26-memary-discovery.md"}
+{"entity1": "Memary", "relation": "是", "entity2": "Agent记忆层", "source": "memory/2026-06-26-memary-discovery.md"}
+{"entity1": "Memary", "relation": "实现", "entity2": "知识图谱", "source": "memory/2026-06-26-memary-discovery.md"}
+{"entity1": "我", "relation": "实现", "entity2": "审稿人面板系统", "source": "memory/reviewer-panel-system.md"}
+{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "实用性", "source": "memory/reviewer-panel-system.md"}
+{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "可复用性", "source": "memory/reviewer-panel-system.md"}
+{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "真实性", "source": "memory/reviewer-panel-system.md"}
+{"entity1": "审稿人面板系统", "relation": "评估", "entity2": "清晰度", "source": "memory/reviewer-panel-system.md"}
+{"entity1": "知识图谱系统", "relation": "实现", "entity2": "我", "source": "memory/knowledge-graph-system.md"}
+{"entity1": "三元组", "relation": "存储", "entity2": "知识图谱系统", "source": "memory/knowledge-graph-system.md"}
+{"entity1": "我", "relation": "发现", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "AI记忆平台", "relation": "是", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "知识图谱", "relation": "实现", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "四大操作", "relation": "提供", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "remember", "relation": "包含", "entity2": "四大操作", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "四大操作", "relation": "包含", "entity2": "recall", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "forget", "relation": "包含", "entity2": "四大操作", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "四大操作", "relation": "包含", "entity2": "improve", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "会话记忆层", "relation": "启发", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "智能路由", "relation": "启发", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md"}
+{"entity1": "Graphiti", "relation": "发现", "entity2": "我", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "Graphiti", "relation": "是", "entity2": "时序知识图谱引擎", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "Graphiti", "relation": "实现", "entity2": "时序感知", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "Graphiti", "relation": "实现", "entity2": "增量更新", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "Graphiti", "relation": "实现", "entity2": "溯源机制", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "时序知识图谱", "relation": "优于", "entity2": "静态知识图谱", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "时序感知", "relation": "记录", "entity2": "事实变化时间", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "增量更新", "relation": "避免", "entity2": "重新生成", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "原始数据", "relation": "追踪", "entity2": "溯源机制", "source": "memory/2026-06-26-graphiti-discovery.md"}
+{"entity1": "工作操作系统", "relation": "提出", "entity2": "闭环公式", "source": "manual_update"}
+{"entity1": "工作操作系统", "relation": "提出", "entity2": "状态五要素", "source": "manual_update"}
+{"entity1": "工作操作系统", "relation": "提出", "entity2": "投资消费负债", "source": "manual_update"}
+{"entity1": "闭环公式", "relation": "是", "entity2": "接收行动反馈结果", "source": "manual_update"}
+{"entity1": "状态五要素", "relation": "包含", "entity2": "你是谁", "source": "manual_update"}
+{"entity1": "状态五要素", "relation": "包含", "entity2": "做了什么", "source": "manual_update"}
+{"entity1": "状态五要素", "relation": "包含", "entity2": "进度", "source": "manual_update"}
+{"entity1": "状态五要素", "relation": "包含", "entity2": "结果画像", "source": "manual_update"}
+{"entity1": "状态五要素", "relation": "包含", "entity2": "下一步时间点", "source": "manual_update"}
+{"entity1": "ig", "relation": "实现", "entity2": "知识图谱查询工具", "source": "manual_update"}
+{"entity1": "知识图谱查询工具", "relation": "支持", "entity2": "多跳查询", "source": "manual_update"}
+{"entity1": "知识图谱查询工具", "relation": "支持", "entity2": "按类型查询", "source": "manual_update"}
+{"entity1": "知识图谱查询工具", "relation": "支持", "entity2": "按关系查询", "source": "manual_update"}
+{"entity1": "知识图谱查询工具", "relation": "支持", "entity2": "路径查询", "source": "manual_update"}
+{"entity1": "知识图谱查询工具", "relation": "支持", "entity2": "社区检测", "source": "manual_update"}
+{"entity1": "知识图谱查询工具", "relation": "支持", "entity2": "实体信息查询", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "存储于", "entity2": "ig", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "支持", "entity2": "多跳查询", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "支持", "entity2": "社区检测", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "检测到", "entity2": "10个社区", "source": "manual_update"}
+{"entity1": "我", "relation": "使用", "entity2": "ig", "source": "manual_update"}
+{"entity1": "知识图谱", "relation": "使用", "entity2": "我", "source": "manual_update"}
+{"entity1": "我", "relation": "学习", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "树林", "relation": "属于", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "熔炉系统", "relation": "应用", "entity2": "工作操作系统", "source": "manual_update"}
+{"entity1": "我", "relation": "应用", "entity2": "状态五要素", "source": "manual_update"}
+{"entity1": "我", "relation": "应用", "entity2": "闭环公式", "source": "manual_update"}

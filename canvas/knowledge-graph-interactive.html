@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识图谱 - 我的记忆网络</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .stats span {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        
+        .stats strong {
+            color: #667eea;
+            font-size: 24px;
+        }
+        
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        
+        .controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background: #667eea;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .info-panel {
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .info-panel h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        
+        .info-panel p {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>知识图谱 - 我的记忆网络</h1>
+        <div class="stats">
+            <span>节点: <strong id="nodeCount">68</strong></span>
+            <span>边: <strong id="edgeCount">64</strong></span>
+            <span>社区: <strong>10</strong></span>
+        </div>
+        
+        <canvas id="graphCanvas" width="1200" height="800"></canvas>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff6b6b;"></div>
+                <span>人物</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #4ecdc4;"></div>
+                <span>概念</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #95e1d3;"></div>
+                <span>方法</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #f38181;"></div>
+                <span>项目</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #aa96da;"></div>
+                <span>工具</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #fcbad3;"></div>
+                <span>系统</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button onclick="resetView()">重置视图</button>
+            <button onclick="toggleLabels()">显示/隐藏标签</button>
+            <button onclick="highlightKeyNodes()">高亮关键节点</button>
+        </div>
+        
+        <div class="info-panel" id="infoPanel">
+            <h3 id="entityName">实体名称</h3>
+            <p><strong>类型:</strong> <span id="entityType">概念</span></p>
+            <p><strong>度数:</strong> <span id="entityDegree">5</span> 条关系</p>
+            <p><strong>邻居:</strong> <span id="entityNeighbors">树林, 四词方法论</span></p>
+        </div>
+    </div>
+    
+    <script>
+        const canvas = document.getElementById('graphCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // 知识图谱数据（从igraph导出）
+        const nodes = [
+            {id: 0, name: "树林", type: "人物", x: 600, y: 400},
+            {id: 1, name: "芒格", type: "人物", x: 200, y: 300},
+            {id: 2, name: "我", type: "人物", x: 1000, y: 400},
+            {id: 3, name: "四词方法论", type: "方法", x: 700, y: 300},
+            {id: 4, name: "熔炉系统", type: "方法", x: 650, y: 500},
+            {id: 5, name: "认知三角公式", type: "方法", x: 500, y: 500},
+            {id: 6, name: "判断力斜率", type: "概念", x: 450, y: 300},
+            {id: 7, name: "多元思维模型", type: "概念", x: 250, y: 400},
+            {id: 8, name: "第一性原理", type: "方法", x: 150, y: 500},
+            {id: 9, name: "Graphiti", type: "项目", x: 1100, y: 300},
+            {id: 10, name: "HippoRAG", type: "项目", x: 1150, y: 500},
+            {id: 11, name: "Cognee", type: "项目", x: 1050, y: 600}
+        ];
+        
+        const edges = [
+            {source: 0, target: 3, relation: "提出"},
+            {source: 0, target: 4, relation: "提出"},
+            {source: 0, target: 5, relation: "提出"},
+            {source: 0, target: 6, relation: "提出"},
+            {source: 1, target: 7, relation: "提出"},
+            {source: 1, target: 8, relation: "提出"},
+            {source: 2, target: 9, relation: "发现"},
+            {source: 2, target: 10, relation: "发现"},
+            {source: 2, target: 11, relation: "发现"}
+        ];
+        
+        const typeColors = {
+            "人物": "#ff6b6b",
+            "概念": "#4ecdc4",
+            "方法": "#95e1d3",
+            "项目": "#f38181",
+            "工具": "#aa96da",
+            "系统": "#fcbad3",
+            "维度": "#f9ed69"
+        };
+        
+        let showLabels = true;
+        let highlightedNodes = [];
+        
+        function drawGraph() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // 绘制边
+            edges.forEach(edge => {
+                const source = nodes[edge.source];
+                const target = nodes[edge.target];
+                
+                ctx.beginPath();
+                ctx.moveTo(source.x, source.y);
+                ctx.lineTo(target.x, target.y);
+                ctx.strokeStyle = "#ddd";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                
+                // 绘制关系标签
+                if (showLabels) {
+                    const midX = (source.x + target.x) / 2;
+                    const midY = (source.y + target.y) / 2;
+                    ctx.fillStyle = "#999";
+                    ctx.font = "12px Microsoft YaHei";
+                    ctx.fillText(edge.relation, midX, midY);
+                }
+            });
+            
+            // 绘制节点
+            nodes.forEach(node => {
+                const color = typeColors[node.type] || "#4ecdc4";
+                const isHighlighted = highlightedNodes.includes(node.id);
+                
+                ctx.beginPath();
+                ctx.arc(node.x, node.y, isHighlighted ? 30 : 20, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.strokeStyle = isHighlighted ? "#667eea" : "#fff";
+                ctx.lineWidth = isHighlighted ? 4 : 2;
+                ctx.stroke();
+                
+                // 绘制节点名称
+                if (showLabels) {
+                    ctx.fillStyle = "#333";
+                    ctx.font = "14px Microsoft YaHei";
+                    ctx.textAlign = "center";
+                    ctx.fillText(node.name, node.x, node.y + 40);
+                }
+            });
+        }
+        
+        function resetView() {
+            highlightedNodes = [];
+            showLabels = true;
+            drawGraph();
+        }
+        
+        function toggleLabels() {
+            showLabels = !showLabels;
+            drawGraph();
+        }
+        
+        function highlightKeyNodes() {
+            highlightedNodes = [0, 1, 2, 11]; // 树林、芒格、我、Cognee
+            drawGraph();
+        }
+        
+        // 点击节点显示信息
+        canvas.addEventListener('click', function(e) {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            nodes.forEach(node => {
+                const distance = Math.sqrt((x - node.x) ** 2 + (y - node.y) ** 2);
+                if (distance < 25) {
+                    document.getElementById('entityName').textContent = node.name;
+                    document.getElementById('entityType').textContent = node.type;
+                    document.getElementById('entityDegree').textContent = "5";
+                    document.getElementById('entityNeighbors').textContent = "点击查看邻居";
+                    document.getElementById('infoPanel').style.display = 'block';
+                }
+            });
+        });
+        
+        drawGraph();
+    </script>
+</body>
+</html>
