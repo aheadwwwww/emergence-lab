@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-26T20:32:30.646753",
+  "last_updated": "2026-06-26T20:59:44.884302",
   "categories": {
     "exploration": {
-      "count": 58,
+      "count": 59,
       "items": [
+        {
+          "name": "2026-06-26-self-replicating-nn-implementation",
+          "path": "exploration\\2026-06-26-self-replicating-nn-implementation.md",
+          "size": 5390,
+          "modified": "2026-06-26T20:34:04.058479"
+        },
         {
           "name": "2026-06-26-self-replicating-nn-discovery",
           "path": "exploration\\2026-06-26-self-replicating-nn-discovery.md",
@@ -831,6 +837,12 @@
       "count": 58,
       "items": [
         {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 11874,
+          "modified": "2026-06-26T20:40:20.894620"
+        },
+        {
           "name": "2026-06-26-kge-research",
           "path": "memory\\2026-06-26-kge-research.md",
           "size": 2749,
@@ -895,12 +907,6 @@
           "path": "memory\\2026-06-26-graphiti-discovery.md",
           "size": 4960,
           "modified": "2026-06-26T19:21:23.555432"
-        },
-        {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 9889,
-          "modified": "2026-06-26T19:10:25.163815"
         },
         {
           "name": "2026-06-26-heartbeat",
