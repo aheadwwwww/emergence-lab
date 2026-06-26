@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芒格思维模型库 - 测试版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh; padding: 15px;
+        }
+        .container {
+            max-width: 1400px; margin: 0 auto; background: white;
+            border-radius: 15px; box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; padding: 25px; text-align: center;
+        }
+        h1 { font-size: 2em; margin-bottom: 5px; }
+        .subtitle { font-size: 1em; opacity: 0.9; }
+        .stats {
+            display: flex; justify-content: space-around; padding: 15px;
+            background: #f8f9fa; border-bottom: 1px solid #e9ecef;
+        }
+        .stat { text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #667eea; }
+        .stat-label { color: #6c757d; margin-top: 2px; font-size: 0.85em; }
+        .main-content { display: grid; grid-template-columns: 240px 1fr; min-height: 600px; }
+        .sidebar {
+            background: #f8f9fa; padding: 10px; border-right: 1px solid #e9ecef;
+            overflow-y: auto; max-height: 600px;
+        }
+        .category { margin-bottom: 10px; }
+        .category-title {
+            font-weight: bold; color: #495057; padding: 6px 8px; background: white;
+            border-radius: 4px; margin-bottom: 5px; cursor: pointer;
+            transition: all 0.3s; font-size: 0.85em;
+        }
+        .category-title:hover { background: #667eea; color: white; }
+        .model-list { list-style: none; padding-left: 5px; }
+        .model-item {
+            padding: 4px 7px; cursor: pointer; border-radius: 3px;
+            transition: all 0.2s; font-size: 0.78em; color: #6c757d;
+            margin-bottom: 1px;
+        }
+        .model-item:hover { background: #e9ecef; color: #495057; }
+        .model-item.active { background: #667eea; color: white; }
+        .content { padding: 20px; overflow-y: auto; max-height: 600px; }
+        .welcome { text-align: center; padding: 40px 15px; }
+        .welcome h2 { font-size: 1.5em; color: #495057; margin-bottom: 12px; }
+        .welcome p { color: #6c757d; font-size: 0.9em; line-height: 1.6; }
+        .model-detail { display: none; }
+        .model-detail.active { display: block; }
+        .model-header { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #e9ecef; }
+        .model-number {
+            display: inline-block; background: #667eea; color: white;
+            padding: 3px 8px; border-radius: 10px; font-weight: bold; margin-bottom: 4px;
+            font-size: 0.85em;
+        }
+        .model-title { font-size: 1.4em; color: #495057; margin-bottom: 3px; }
+        .model-title-en { font-size: 0.85em; color: #6c757d; margin-bottom: 6px; font-style: italic; }
+        .model-category { color: #6c757d; font-size: 0.85em; }
+        .section { margin-bottom: 15px; }
+        .section-title {
+            font-size: 1em; color: #667eea; margin-bottom: 8px;
+            display: flex; align-items: center;
+        }
+        .section-title::before {
+            content: ''; display: inline-block; width: 3px; height: 14px;
+            background: #667eea; margin-right: 6px; border-radius: 2px;
+        }
+        .section-content { color: #495057; line-height: 1.5; padding-left: 9px; font-size: 0.9em; }
+        .keywords { display: flex; flex-wrap: wrap; gap: 5px; padding-left: 9px; }
+        .keyword { background: #e9ecef; padding: 2px 8px; border-radius: 8px; font-size: 0.75em; color: #495057; }
+        .steps-list { list-style: none; padding-left: 9px; counter-reset: step; }
+        .steps-list li {
+            counter-increment: step; margin-bottom: 8px; padding-left: 25px;
+            position: relative; color: #495057; font-size: 0.9em; line-height: 1.4;
+        }
+        .steps-list li::before {
+            content: counter(step); position: absolute; left: 0; top: 0;
+            width: 18px; height: 18px; background: #667eea; color: white;
+            border-radius: 50%; text-align: center; line-height: 18px;
+            font-weight: bold; font-size: 0.7em;
+        }
+        .coaching-questions { list-style: none; padding-left: 9px; }
+        .coaching-questions li {
+            padding: 8px; background: #f8f9fa; border-left: 2px solid #667eea;
+            margin-bottom: 5px; border-radius: 2px; font-style: italic;
+            color: #495057; font-size: 0.85em;
+        }
+        .mark-learned {
+            background: #667eea; color: white; border: none; padding: 7px 18px;
+            border-radius: 12px; cursor: pointer; font-size: 0.9em; margin-top: 12px;
+            transition: all 0.3s;
+        }
+        .mark-learned:hover { background: #764ba2; }
+        .mark-learned.learned { background: #28a745; }
+        .progress-bar {
+            width: 100%; height: 4px; background: #e9ecef; border-radius: 2px;
+            margin-top: 10px; overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%; transition: width 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 芒格思维模型库</h1>
+            <p class="subtitle">Charlie Munger's Mental Models - 98个跨学科思维模型</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">98</div>
+                <div class="stat-label">思维模型</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="learned-count">0</div>
+                <div class="stat-label">已学习</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8</div>
+                <div class="stat-label">学科领域</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="sidebar" id="sidebar">
+                <!-- 侧边栏内容由JavaScript生成 -->
+            </div>
+            
+            <div class="content" id="content">
+                <div class="welcome" id="welcome">
+                    <h2>欢迎使用芒格思维模型学习工具</h2>
+                    <p>
+                        查理·芒格说：<strong>"手里只有锤子，看什么都像钉子。"</strong><br><br>
+                        为了避免这种"铁锤人综合征"，我们需要建立<strong>多元思维模型格栅</strong>。<br><br>
+                        本库包含 <strong>98个思维模型</strong>，跨越8个学科领域。<br><br>
+                        点击左侧的模型开始学习。
+                    </p>
+                </div>
+                
+                <div class="model-detail" id="model-detail">
+                    <div class="model-header">
+                        <span class="model-number" id="model-number">m01</span>
+                        <h2 class="model-title" id="model-title">模型标题</h2>
+                        <p class="model-title-en" id="model-title-en">Model Title</p>
+                        <p class="model-category" id="model-category">Category: General</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">📖 模型描述</h3>
+                        <p class="section-content" id="model-description">描述内容</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">⚠️ 何时避免使用</h3>
+                        <p class="section-content" id="model-avoid">避免内容</p>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🏷️ 应用场景</h3>
+                        <div class="keywords" id="model-keywords"></div>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">🪜 思考步骤</h3>
+                        <ol class="steps-list" id="model-steps"></ol>
+                    </div>
+                    
+                    <div class="section">
+                        <h3 class="section-title">❓ 教练问题</h3>
+                        <ul class="coaching-questions" id="model-coaching"></ul>
+                    </div>
+                    
+                    <button class="mark-learned" id="mark-btn" onclick="markLearned()">标记为已学习 ✓</button>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 测试：简化版模型数据（只包含前5个）
+        const testModels = {
+            'm01': {
+                title: '地图非领土',
+                title_en: 'The Map Is Not the Territory',
+                category: 'General',
+                description: '任何对现实的表示（地图、商业计划、科学理论）本质上都是简化，不是现实本身。现实比我们创建的任何模型都复杂得多。',
+                avoid: '当决策快速、低影响、易逆转时，过度分析会浪费时间。',
+                keywords: ['战略规划', '数据分析', '项目管理', '个人发展'],
+                steps: ['识别你使用的地图', '承认它的局限性', '寻找真实领土', '对比差异', '更新地图'],
+                coaching: ['"我们用的是什么地图？"', '"这个模型的假设是什么？"', '"如何直接观察真实情况？"', '"数据可能遗漏了什么？"', '"如果失败了，我们误判了哪部分现实？"']
+            },
+            'm02': {
+                title: '能力圈',
+                title_en: 'Circle of Competence',
+                category: 'General',
+                description: '知道自己知道什么，也知道不知道什么。在能力圈内决策，承认圈外的无知。',
+                avoid: '不要用能力圈作为拒绝学习的借口。',
+                keywords: ['投资', '职业选择', '商业策略', '决策制定'],
+                steps: ['定义核心能力', '定义边界', '在圈内操作', '谨慎扩展圈子', '咨询专家'],
+                coaching: ['"这在我们核心专业范围内吗？"', '"你对这个主题真正理解多少？"', '"你能比对方更好地解释反对观点吗？"', '"有哪些未知的未知？"', '"我们是基于真正的能力还是自信的感觉做决策？"']
+            },
+            'm03': {
+                title: '第一性原理',
+                title_en: 'First-Principle Thinking',
+                category: 'General',
+                description: '将问题拆解到最基本的事实，从头开始推理。这是创新的源泉。',
+                avoid: '当系统已经运作良好只需要小优化时，第一性原理太慢。',
+                keywords: ['创新', '问题解决', '产品开发', '商业模式'],
+                steps: ['识别问题/目标', '拆解到基本组件', '挑战每个假设', '从零重建', '优化新方案'],
+                coaching: ['"这个情况的基本事实是什么？"', '"为什么我们相信必须这样做？"', '"如果从零开始会怎样？"', '"问题的原材料是什么？"', '"用最简单的真理说明给五岁孩子听。"']
+            },
+            'm04': {
+                title: '思想实验',
+                title_en: 'Thought Experiment',
+                category: 'General',
+                description: '通过想象模拟场景来测试假设，无需实际执行。',
+                avoid: '如果能轻易在现实世界测试，就直接测试。',
+                keywords: ['重大决策', '战略规划', '伦理困境', '科学理论'],
+                steps: ['定义场景', '建立条件', '运行模拟', '探索后果', '得出结论'],
+                coaching: ['"想象执行这个计划，会发生什么？"', '"最坏情况是什么？"', '"一年后会怎样？"', '"我们没考虑什么因素？"', '"这会如何影响财务、压力和关系？"']
+            },
+            'm05': {
+                title: '二阶思维',
+                title_en: 'Second-Order Thinking',
+                category: 'General',
+                description: '思考后果的后果。避免只看到直接效果而忽略长期影响。',
+                avoid: '真正的紧急情况需要立即响应。',
+                keywords: ['政策制定', '商业策略', '个人财务', '长期决策'],
+                steps: ['识别决策和一阶后果', '问"然后呢？"', '继续问"然后呢？"', '考虑整个系统', '评估完整后果链'],
+                coaching: ['"这是直接效果，之后会发生什么？"', '"六个月后的涟漪效应是什么？"', '"谁会受到影响，他们如何反应？"', '"可能的意外后果是什么？"', '"类似决策的意外结果是什么？"']
+            }
+        };
+        
+        let learnedModels = new Set(JSON.parse(localStorage.getItem('learnedModels') || '[]'));
+        let currentModel = null;
+        
+        // 简化的初始化函数
+        function initPage() {
+            console.log('=== 页面初始化开始 ===');
+            console.log('测试模型数量:', Object.keys(testModels).length);
+            
+            // 创建侧边栏
+            const sidebar = document.getElementById('sidebar');
+            if (!sidebar) {
+                console.error('错误：找不到sidebar元素');
+                return;
+            }
+            console.log('找到sidebar元素');
+            
+            // 创建General分类
+            const categoryDiv = document.createElement('div');
+            categoryDiv.className = 'category';
+            
+            const categoryTitle = document.createElement('div');
+            categoryTitle.className = 'category-title';
+            categoryTitle.textContent = '📚 General (通用思维) - 5个测试模型';
+            categoryDiv.appendChild(categoryTitle);
+            
+            const modelList = document.createElement('ul');
+            modelList.className = 'model-list';
+            modelList.id = 'general-list';
+            
+            // 添加5个测试模型
+            for (const [modelId, model] of Object.entries(testModels)) {
+                const li = document.createElement('li');
+                li.className = 'model-item';
+                if (learnedModels.has(modelId)) {
+                    li.classList.add('learned');
+                }
+                li.textContent = modelId + ': ' + model.title;
+                li.onclick = function() {
+                    console.log('点击模型:', modelId);
+                    loadModel(modelId);
+                };
+                modelList.appendChild(li);
+                console.log('添加模型:', modelId, model.title);
+            }
+            
+            categoryDiv.appendChild(modelList);
+            sidebar.appendChild(categoryDiv);
+            
+            console.log('侧边栏创建完成，共添加', modelList.children.length, '个模型');
+            updateProgress();
+            console.log('=== 页面初始化完成 ===');
+        }
+        
+        function loadModel(modelId) {
+            console.log('=== loadModel开始 ===', modelId);
+            currentModel = modelId;
+            const model = testModels[modelId];
+            
+            if (!model) {
+                console.error('错误：找不到模型', modelId);
+                return;
+            }
+            console.log('找到模型数据:', model.title);
+            
+            // 隐藏欢迎页面
+            const welcome = document.getElementById('welcome');
+            if (welcome) {
+                welcome.style.display = 'none';
+                console.log('隐藏welcome');
+            }
+            
+            // 显示模型详情
+            const detail = document.getElementById('model-detail');
+            if (detail) {
+                detail.classList.add('active');
+                detail.style.display = 'block';
+                console.log('显示model-detail');
+            }
+            
+            // 更新内容
+            document.getElementById('model-number').textContent = modelId;
+            document.getElementById('model-title').textContent = model.title;
+            document.getElementById('model-title-en').textContent = model.title_en;
+            document.getElementById('model-category').textContent = 'Category: ' + model.category;
+            document.getElementById('model-description').textContent = model.description;
+            document.getElementById('model-avoid').textContent = model.avoid;
+            
+            // 关键词
+            const keywordsDiv = document.getElementById('model-keywords');
+            keywordsDiv.innerHTML = '';
+            model.keywords.forEach(k => {
+                const span = document.createElement('span');
+                span.className = 'keyword';
+                span.textContent = k;
+                keywordsDiv.appendChild(span);
+            });
+            
+            // 思考步骤
+            const stepsList = document.getElementById('model-steps');
+            stepsList.innerHTML = '';
+            model.steps.forEach(s => {
+                const li = document.createElement('li');
+                li.textContent = s;
+                stepsList.appendChild(li);
+            });
+            
+            // 教练问题
+            const coachingList = document.getElementById('model-coaching');
+            coachingList.innerHTML = '';
+            model.coaching.forEach(q => {
+                const li = document.createElement('li');
+                li.textContent = q;
+                coachingList.appendChild(li);
+            });
+            
+            // 更新按钮
+            const btn = document.getElementById('mark-btn');
+            if (learnedModels.has(modelId)) {
+                btn.classList.add('learned');
+                btn.textContent = '已学习 ✓';
+            } else {
+                btn.classList.remove('learned');
+                btn.textContent = '标记为已学习 ✓';
+            }
+            
+            // 高亮当前模型
+            document.querySelectorAll('.model-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            console.log('=== loadModel完成 ===');
+        }
+        
+        function markLearned() {
+            if (!currentModel) return;
+            
+            if (learnedModels.has(currentModel)) {
+                learnedModels.delete(currentModel);
+            } else {
+                learnedModels.add(currentModel);
+            }
+            
+            localStorage.setItem('learnedModels', JSON.stringify([...learnedModels]));
+            updateProgress();
+            
+            const btn = document.getElementById('mark-btn');
+            if (learnedModels.has(currentModel)) {
+                btn.classList.add('learned');
+                btn.textContent = '已学习 ✓';
+            } else {
+                btn.classList.remove('learned');
+                btn.textContent = '标记为已学习 ✓';
+            }
+            
+            // 更新侧边栏
+            document.querySelectorAll('.model-item').forEach(item => {
+                const text = item.textContent;
+                const mid = text.split(':')[0];
+                if (learnedModels.has(mid)) {
+                    item.classList.add('learned');
+                } else {
+                    item.classList.remove('learned');
+                }
+            });
+        }
+        
+        function updateProgress() {
+            const count = learnedModels.size;
+            document.getElementById('learned-count').textContent = count;
+            const progress = (count / 98) * 100;
+            document.getElementById('progress-fill').style.width = progress + '%';
+        }
+        
+        // 等待DOM加载完成后初始化
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPage);
+        } else {
+            // DOM已经加载完成，直接初始化
+            initPage();
+        }
+    </script>
+</body>
+</html>
