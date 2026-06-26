@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T21:30:39.344203",
+  "last_updated": "2026-06-26T22:01:20.665251",
   "categories": {
     "exploration": {
       "count": 61,
@@ -852,8 +852,20 @@
       ]
     },
     "memory": {
-      "count": 58,
+      "count": 60,
       "items": [
+        {
+          "name": "2026-06-26-micrograd-learning",
+          "path": "memory\\2026-06-26-micrograd-learning.md",
+          "size": 5353,
+          "modified": "2026-06-26T22:01:13.450980"
+        },
+        {
+          "name": "2026-06-26-work-operating-system",
+          "path": "memory\\2026-06-26-work-operating-system.md",
+          "size": 7876,
+          "modified": "2026-06-26T21:48:23.551795"
+        },
         {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
@@ -1194,15 +1206,4 @@
           "name": "_day1_summary",
           "path": "memory\\_day1_summary.md",
           "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+          "modified": "2026-06-18T19:29:19.537878
