@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-26T13:02:16.227436",
+  "last_updated": "2026-06-26T13:08:16.771444",
   "categories": {
     "exploration": {
-      "count": 55,
+      "count": 56,
       "items": [
+        {
+          "name": "2026-06-26-self-organising-systems",
+          "path": "exploration\\2026-06-26-self-organising-systems.md",
+          "size": 2504,
+          "modified": "2026-06-26T13:07:40.433846"
+        },
         {
           "name": "2026-06-25-lenia-roadmap",
           "path": "exploration\\2026-06-25-lenia-roadmap.md",
@@ -340,16 +346,16 @@
       "count": 74,
       "items": [
         {
+          "name": "lenia_stochastic_sweep",
+          "path": "experiments\\lenia_stochastic_sweep.py",
+          "size": 16205,
+          "modified": "2026-06-26T13:04:01.848534"
+        },
+        {
           "name": "entropy_evolution",
           "path": "experiments\\entropy_evolution.py",
           "size": 10201,
           "modified": "2026-06-26T12:34:34.672567"
-        },
-        {
-          "name": "lenia_stochastic_sweep",
-          "path": "experiments\\lenia_stochastic_sweep.py",
-          "size": 8050,
-          "modified": "2026-06-26T01:03:23.630434"
         },
         {
           "name": "swarm_decision",
@@ -789,6 +795,12 @@
       "count": 35,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 5690,
+          "modified": "2026-06-26T13:08:08.194011"
+        },
+        {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
           "size": 9156,
@@ -805,12 +817,6 @@
           "path": "memory\\mental-models-library.md",
           "size": 8310,
           "modified": "2026-06-26T12:10:11.875080"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 5250,
-          "modified": "2026-06-26T01:34:10.014004"
         },
         {
           "name": "2026-06-26-shulin-corpus",
@@ -990,15 +996,4 @@
           "name": "_day1_summary",
           "path": "memory\\_day1_summary.md",
           "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+          "modified": "2026-06-18T
