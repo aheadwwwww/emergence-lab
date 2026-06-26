@@ -28,6 +28,7 @@
 - `memory/reviewer-panel-system.md`：审稿人面板系统
 - `memory/2026-06-26-cognee-discovery.md`：Cognee学习笔记
 - `memory/2026-06-26-heartbeat.md`：心跳日志
+- `memory/2026-06-26-kge-research.md`：知识图谱嵌入研究
 - `tools/session_memory.py`：会话记忆层实现
 - `D:/openclaw_workspace/canvas/munger-models-fixed.html`：芒格思维模型学习网页（98个模型）
 

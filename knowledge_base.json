@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T19:05:53.847671",
+  "last_updated": "2026-06-26T19:59:24.710147",
   "categories": {
     "exploration": {
       "count": 58,
@@ -828,13 +828,73 @@
       ]
     },
     "memory": {
-      "count": 48,
+      "count": 57,
       "items": [
+        {
+          "name": "2026-06-26-igraph-implementation",
+          "path": "memory\\2026-06-26-igraph-implementation.md",
+          "size": 1216,
+          "modified": "2026-06-26T19:57:13.316137"
+        },
+        {
+          "name": "2026-06-26-igraph-quickstart",
+          "path": "memory\\2026-06-26-igraph-quickstart.md",
+          "size": 3514,
+          "modified": "2026-06-26T19:55:43.785006"
+        },
+        {
+          "name": "2026-06-26-hipporag-deep-dive",
+          "path": "memory\\2026-06-26-hipporag-deep-dive.md",
+          "size": 3535,
+          "modified": "2026-06-26T19:54:52.167848"
+        },
+        {
+          "name": "2026-06-26-deep-learning",
+          "path": "memory\\2026-06-26-deep-learning.md",
+          "size": 2844,
+          "modified": "2026-06-26T19:50:20.895361"
+        },
+        {
+          "name": "2026-06-26-graphiti-deep-dive",
+          "path": "memory\\2026-06-26-graphiti-deep-dive.md",
+          "size": 6042,
+          "modified": "2026-06-26T19:49:32.758442"
+        },
+        {
+          "name": "heartbeat-log",
+          "path": "memory\\heartbeat-log.md",
+          "size": 2740,
+          "modified": "2026-06-26T19:31:35.483324"
+        },
+        {
+          "name": "2026-06-26-crewai-discovery",
+          "path": "memory\\2026-06-26-crewai-discovery.md",
+          "size": 3633,
+          "modified": "2026-06-26T19:31:02.232210"
+        },
+        {
+          "name": "2026-06-26-evening",
+          "path": "memory\\2026-06-26-evening.md",
+          "size": 3782,
+          "modified": "2026-06-26T19:24:19.472708"
+        },
+        {
+          "name": "2026-06-26-hipporag-discovery",
+          "path": "memory\\2026-06-26-hipporag-discovery.md",
+          "size": 2318,
+          "modified": "2026-06-26T19:23:51.005611"
+        },
+        {
+          "name": "2026-06-26-graphiti-discovery",
+          "path": "memory\\2026-06-26-graphiti-discovery.md",
+          "size": 4960,
+          "modified": "2026-06-26T19:21:23.555432"
+        },
         {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
-          "size": 2931,
-          "modified": "2026-06-26T19:03:15.790592"
+          "size": 9889,
+          "modified": "2026-06-26T19:10:25.163815"
         },
         {
           "name": "2026-06-26-heartbeat",
@@ -865,12 +925,6 @@
           "path": "memory\\reviewer-panel-system.md",
           "size": 4153,
           "modified": "2026-06-26T17:50:15.032684"
-        },
-        {
-          "name": "heartbeat-log",
-          "path": "memory\\heartbeat-log.md",
-          "size": 1866,
-          "modified": "2026-06-26T16:36:30.472144"
         },
         {
           "name": "2026-06-26-heartbeat-summary",
