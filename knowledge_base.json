@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T19:59:24.710147",
+  "last_updated": "2026-06-26T20:32:30.646753",
   "categories": {
     "exploration": {
       "count": 58,
@@ -828,8 +828,14 @@
       ]
     },
     "memory": {
-      "count": 57,
+      "count": 58,
       "items": [
+        {
+          "name": "2026-06-26-kge-research",
+          "path": "memory\\2026-06-26-kge-research.md",
+          "size": 2749,
+          "modified": "2026-06-26T20:00:48.473414"
+        },
         {
           "name": "2026-06-26-igraph-implementation",
           "path": "memory\\2026-06-26-igraph-implementation.md",
