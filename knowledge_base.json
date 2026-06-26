@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T22:32:16.405667",
+  "last_updated": "2026-06-26T22:59:31.257155",
   "categories": {
     "exploration": {
       "count": 61,
@@ -861,10 +861,16 @@
       "count": 60,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 6018,
+          "modified": "2026-06-26T22:32:50.367605"
+        },
+        {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
-          "size": 1333,
-          "modified": "2026-06-26T22:26:33.382130"
+          "size": 2048,
+          "modified": "2026-06-26T22:32:30.199705"
         },
         {
           "name": "2026-06-26-micrograd-learning",
@@ -1015,12 +1021,6 @@
           "path": "memory\\2026-06-26-update.md",
           "size": 2544,
           "modified": "2026-06-26T13:52:01.598089"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 5690,
-          "modified": "2026-06-26T13:08:08.194011"
         },
         {
           "name": "2026-06-26-munger-insights",
