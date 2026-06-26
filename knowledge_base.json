@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T14:01:38.851494",
+  "last_updated": "2026-06-26T14:59:48.625714",
   "categories": {
     "exploration": {
       "count": 58,
@@ -810,8 +810,44 @@
       ]
     },
     "memory": {
-      "count": 38,
+      "count": 43,
       "items": [
+        {
+          "name": "2026-06-26-memary-discovery",
+          "path": "memory\\2026-06-26-memary-discovery.md",
+          "size": 3243,
+          "modified": "2026-06-26T14:39:16.032301"
+        },
+        {
+          "name": "2026-06-26-24hr-research-discovery",
+          "path": "memory\\2026-06-26-24hr-research-discovery.md",
+          "size": 3778,
+          "modified": "2026-06-26T14:36:47.484035"
+        },
+        {
+          "name": "2026-06-26-plato-agent-discovery",
+          "path": "memory\\2026-06-26-plato-agent-discovery.md",
+          "size": 3904,
+          "modified": "2026-06-26T14:36:04.158440"
+        },
+        {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 4913,
+          "modified": "2026-06-26T14:22:03.629564"
+        },
+        {
+          "name": "judgment-frameworks",
+          "path": "memory\\judgment-frameworks.md",
+          "size": 6860,
+          "modified": "2026-06-26T14:20:21.041002"
+        },
+        {
+          "name": "furnace-memory-system",
+          "path": "memory\\furnace-memory-system.md",
+          "size": 6887,
+          "modified": "2026-06-26T14:01:44.191711"
+        },
         {
           "name": "2026-06-26-update",
           "path": "memory\\2026-06-26-update.md",
@@ -835,12 +871,6 @@
           "path": "memory\\projects.md",
           "size": 5690,
           "modified": "2026-06-26T13:08:08.194011"
-        },
-        {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 9156,
-          "modified": "2026-06-26T12:36:13.813758"
         },
         {
           "name": "2026-06-26-munger-insights",
@@ -1019,28 +1049,4 @@
         {
           "name": "2026-06-18-2106",
           "path": "memory\\2026-06-18-2106.md",
-          "size": 2162,
-          "modified": "2026-06-18T21:06:56.431239"
-        },
-        {
-          "name": "2026-06-18.deep",
-          "path": "memory\\2026-06-18.deep.md",
-          "size": 286,
-          "modified": "2026-06-18T19:30:02.929280"
-        },
-        {
-          "name": "_day1_summary",
-          "path": "memory\\_day1_summary.md",
-          "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+ 
