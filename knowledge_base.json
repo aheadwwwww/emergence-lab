@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T01:31:54.362780",
+  "last_updated": "2026-06-26T12:32:21.351561",
   "categories": {
     "exploration": {
       "count": 55,
@@ -780,8 +780,38 @@
       ]
     },
     "memory": {
-      "count": 31,
+      "count": 34,
       "items": [
+        {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 6877,
+          "modified": "2026-06-26T12:10:48.592499"
+        },
+        {
+          "name": "mental-models-library",
+          "path": "memory\\mental-models-library.md",
+          "size": 8310,
+          "modified": "2026-06-26T12:10:11.875080"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 5250,
+          "modified": "2026-06-26T01:34:10.014004"
+        },
+        {
+          "name": "2026-06-26-shulin-corpus",
+          "path": "memory\\2026-06-26-shulin-corpus.md",
+          "size": 10706,
+          "modified": "2026-06-26T01:33:55.744173"
+        },
+        {
+          "name": "2026-06-26-01-29-heartbeat",
+          "path": "memory\\2026-06-26-01-29-heartbeat.md",
+          "size": 3532,
+          "modified": "2026-06-26T01:32:28.778387"
+        },
         {
           "name": "2026-06-26-0112",
           "path": "memory\\2026-06-26-0112.md",
@@ -795,22 +825,10 @@
           "modified": "2026-06-26T01:06:28.052947"
         },
         {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 5398,
-          "modified": "2026-06-26T01:05:50.598493"
-        },
-        {
           "name": "2026-06-26-swarm-decision",
           "path": "memory\\2026-06-26-swarm-decision.md",
           "size": 2011,
           "modified": "2026-06-26T00:37:18.592486"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 4421,
-          "modified": "2026-06-26T00:33:12.948678"
         },
         {
           "name": "2026-06-25-heartbeat-summary",
