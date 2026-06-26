@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T19:02:03.447720",
+  "last_updated": "2026-06-26T19:05:53.847671",
   "categories": {
     "exploration": {
       "count": 58,
@@ -355,8 +355,14 @@
       ]
     },
     "experiments": {
-      "count": 77,
+      "count": 78,
       "items": [
+        {
+          "name": "lenia_alive_mask",
+          "path": "experiments\\lenia_alive_mask.py",
+          "size": 9932,
+          "modified": "2026-06-26T19:05:15.898328"
+        },
         {
           "name": "lenia_ecosystem",
           "path": "experiments\\lenia_ecosystem.py",
@@ -825,6 +831,12 @@
       "count": 48,
       "items": [
         {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 2931,
+          "modified": "2026-06-26T19:03:15.790592"
+        },
+        {
           "name": "2026-06-26-heartbeat",
           "path": "memory\\2026-06-26-heartbeat.md",
           "size": 2614,
@@ -865,12 +877,6 @@
           "path": "memory\\2026-06-26-heartbeat-summary.md",
           "size": 2134,
           "modified": "2026-06-26T16:36:14.011844"
-        },
-        {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 1211,
-          "modified": "2026-06-26T15:29:55.997132"
         },
         {
           "name": "2026-06-26-memary-discovery",
