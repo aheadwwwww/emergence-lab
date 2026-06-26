@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T17:30:36.010121",
+  "last_updated": "2026-06-26T17:59:12.453410",
   "categories": {
     "exploration": {
       "count": 58,
@@ -822,8 +822,26 @@
       ]
     },
     "memory": {
-      "count": 43,
+      "count": 46,
       "items": [
+        {
+          "name": "2026-06-26-afternoon",
+          "path": "memory\\2026-06-26-afternoon.md",
+          "size": 4450,
+          "modified": "2026-06-26T17:52:39.000525"
+        },
+        {
+          "name": "knowledge-graph-system",
+          "path": "memory\\knowledge-graph-system.md",
+          "size": 4179,
+          "modified": "2026-06-26T17:50:51.685257"
+        },
+        {
+          "name": "reviewer-panel-system",
+          "path": "memory\\reviewer-panel-system.md",
+          "size": 4153,
+          "modified": "2026-06-26T17:50:15.032684"
+        },
         {
           "name": "heartbeat-log",
           "path": "memory\\heartbeat-log.md",

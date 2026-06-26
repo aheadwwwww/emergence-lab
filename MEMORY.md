@@ -8,17 +8,22 @@
 1. ✅ 消化54.5万字语料（树林9份+麦洛直播2份）
 2. ✅ 建立思维模型库（芒格100个模型、第一性原理、熵增）
 3. ✅ 优化记忆系统（熔炉系统应用）
+4. ✅ 实现知识图谱系统（55个三元组）
+5. ✅ 实现审稿人面板系统（四维度评估）
 
 **下一步**：
-- 行动2：✅ 熔炉记忆系统设计完成（`memory/furnace-memory-system.md`）
-- 行动3：✅ 判断框架建立完成（`memory/judgment-frameworks.md`）
-- 行动4：熵减维护（持续执行）
+- 行动5：✅ 知识图谱系统完成（`memory/knowledge-graph-system.md`）
+- 行动6：✅ 审稿人面板完成（`memory/reviewer-panel-system.md`）
+- 行动7：探索Cognee，学习AI记忆平台设计
 
 **新增记忆**：
 - `memory/2026-06-26-shulin-corpus.md`：树林语料深度消化报告
 - `memory/mental-models-library.md`：思维模型库（完整版）
 - `memory/furnace-memory-system.md`：熔炉记忆系统设计
 - `memory/judgment-frameworks.md`：判断框架库
+- `memory/knowledge-graph-system.md`：知识图谱系统设计
+- `memory/reviewer-panel-system.md`：审稿人面板系统
+- `memory/2026-06-26-cognee-discovery.md`：Cognee学习笔记
 - `D:/openclaw_workspace/canvas/munger-models-fixed.html`：芒格思维模型学习网页（98个模型）
 
 ---

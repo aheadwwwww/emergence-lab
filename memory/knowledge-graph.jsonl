@@ -43,3 +43,13 @@
 {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "清晰度", "source": "memory/reviewer-panel-system.md", "timestamp": "2026-06-26"}
 {"entity1": "我", "relation": "实现", "entity2": "知识图谱系统", "source": "memory/knowledge-graph-system.md", "timestamp": "2026-06-26"}
 {"entity1": "知识图谱系统", "relation": "存储", "entity2": "三元组", "source": "memory/knowledge-graph-system.md", "timestamp": "2026-06-26"}
+{"entity1": "我", "relation": "发现", "entity2": "Cognee", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Cognee", "relation": "是", "entity2": "AI记忆平台", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Cognee", "relation": "实现", "entity2": "知识图谱", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Cognee", "relation": "提供", "entity2": "四大操作", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "四大操作", "relation": "包含", "entity2": "remember", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "四大操作", "relation": "包含", "entity2": "recall", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "四大操作", "relation": "包含", "entity2": "forget", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "四大操作", "relation": "包含", "entity2": "improve", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Cognee", "relation": "启发", "entity2": "会话记忆层", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Cognee", "relation": "启发", "entity2": "智能路由", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
