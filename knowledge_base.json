@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T22:01:20.665251",
+  "last_updated": "2026-06-26T22:29:39.289617",
   "categories": {
     "exploration": {
       "count": 61,
@@ -855,6 +855,12 @@
       "count": 60,
       "items": [
         {
+          "name": "2026-06-26",
+          "path": "memory\\2026-06-26.md",
+          "size": 1333,
+          "modified": "2026-06-26T22:26:33.382130"
+        },
+        {
           "name": "2026-06-26-micrograd-learning",
           "path": "memory\\2026-06-26-micrograd-learning.md",
           "size": 5353,
@@ -865,12 +871,6 @@
           "path": "memory\\2026-06-26-work-operating-system.md",
           "size": 7876,
           "modified": "2026-06-26T21:48:23.551795"
-        },
-        {
-          "name": "2026-06-26",
-          "path": "memory\\2026-06-26.md",
-          "size": 11874,
-          "modified": "2026-06-26T20:40:20.894620"
         },
         {
           "name": "2026-06-26-kge-research",
