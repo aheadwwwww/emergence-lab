@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T16:33:39.563941",
+  "last_updated": "2026-06-26T17:30:36.010121",
   "categories": {
     "exploration": {
       "count": 58,
@@ -355,8 +355,20 @@
       ]
     },
     "experiments": {
-      "count": 75,
+      "count": 77,
       "items": [
+        {
+          "name": "lenia_ecosystem",
+          "path": "experiments\\lenia_ecosystem.py",
+          "size": 10108,
+          "modified": "2026-06-26T17:30:17.610664"
+        },
+        {
+          "name": "lenia_isotropic_hybrid",
+          "path": "experiments\\lenia_isotropic_hybrid.py",
+          "size": 7615,
+          "modified": "2026-06-26T16:35:36.779475"
+        },
         {
           "name": "lenia_isotropic_enhanced",
           "path": "experiments\\lenia_isotropic_enhanced.py",
@@ -813,6 +825,18 @@
       "count": 43,
       "items": [
         {
+          "name": "heartbeat-log",
+          "path": "memory\\heartbeat-log.md",
+          "size": 1866,
+          "modified": "2026-06-26T16:36:30.472144"
+        },
+        {
+          "name": "2026-06-26-heartbeat-summary",
+          "path": "memory\\2026-06-26-heartbeat-summary.md",
+          "size": 2134,
+          "modified": "2026-06-26T16:36:14.011844"
+        },
+        {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
           "size": 1211,
@@ -853,18 +877,6 @@
           "path": "memory\\2026-06-26-update.md",
           "size": 2544,
           "modified": "2026-06-26T13:52:01.598089"
-        },
-        {
-          "name": "heartbeat-log",
-          "path": "memory\\heartbeat-log.md",
-          "size": 882,
-          "modified": "2026-06-26T13:43:06.438369"
-        },
-        {
-          "name": "2026-06-26-heartbeat-summary",
-          "path": "memory\\2026-06-26-heartbeat-summary.md",
-          "size": 3095,
-          "modified": "2026-06-26T13:11:01.868232"
         },
         {
           "name": "projects",

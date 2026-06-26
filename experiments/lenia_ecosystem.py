@@ -240,7 +240,7 @@ class LeniaEcosystem:
         memory_path = f"{output_dir}/memory.json"
         with open(memory_path, 'w') as f:
             json.dump({
-                'alive_history': self.memory['alive_history'],
+                'alive_history': [[int(x) for x in row] for row in self.memory['alive_history']],
                 'emergence_events': self.memory['emergence_events'],
                 'species': [{'name': s.name, 'mu': s.mu, 'sigma': s.sigma, 'update_prob': s.update_prob} 
                            for s in self.species]
