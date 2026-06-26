@@ -7,16 +7,19 @@
 **优先级**：
 1. ✅ 消化54.5万字语料（树林9份+麦洛直播2份）
 2. ✅ 建立思维模型库（芒格100个模型、第一性原理、熵增）
-3. 优化记忆系统（熔炉系统应用）
+3. ✅ 优化记忆系统（熔炉系统应用）
 
 **下一步**：
-- 行动2：优化记忆系统（把熔炉系统应用到记忆机制）
-- 行动3：建立判断框架
-- 行动4：熵减维护
+- 行动2：✅ 熔炉记忆系统设计完成（`memory/furnace-memory-system.md`）
+- 行动3：✅ 判断框架建立完成（`memory/judgment-frameworks.md`）
+- 行动4：熵减维护（持续执行）
 
 **新增记忆**：
 - `memory/2026-06-26-shulin-corpus.md`：树林语料深度消化报告
 - `memory/mental-models-library.md`：思维模型库（完整版）
+- `memory/furnace-memory-system.md`：熔炉记忆系统设计
+- `memory/judgment-frameworks.md`：判断框架库
+- `D:/openclaw_workspace/canvas/munger-models-fixed.html`：芒格思维模型学习网页（98个模型）
 
 ---
 
