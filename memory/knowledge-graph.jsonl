@@ -53,3 +53,12 @@
 {"entity1": "四大操作", "relation": "包含", "entity2": "improve", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
 {"entity1": "Cognee", "relation": "启发", "entity2": "会话记忆层", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
 {"entity1": "Cognee", "relation": "启发", "entity2": "智能路由", "source": "memory/2026-06-26-cognee-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "我", "relation": "发现", "entity2": "Graphiti", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Graphiti", "relation": "是", "entity2": "时序知识图谱引擎", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Graphiti", "relation": "实现", "entity2": "时序感知", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Graphiti", "relation": "实现", "entity2": "增量更新", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "Graphiti", "relation": "实现", "entity2": "溯源机制", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "时序知识图谱", "relation": "优于", "entity2": "静态知识图谱", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "时序感知", "relation": "记录", "entity2": "事实变化时间", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "增量更新", "relation": "避免", "entity2": "重新生成", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}
+{"entity1": "溯源机制", "relation": "追踪", "entity2": "原始数据", "source": "memory/2026-06-26-graphiti-discovery.md", "timestamp": "2026-06-26"}

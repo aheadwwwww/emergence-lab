@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识图谱 - 我的记忆网络</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        #container {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #tooltip {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 12px 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            max-width: 300px;
+            z-index: 1000;
+        }
+        
+        #tooltip.visible {
+            opacity: 1;
+        }
+        
+        #tooltip h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #1e3c72;
+        }
+        
+        #tooltip .type {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        #tooltip .relations {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        #legend {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        #legend h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        #stats {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        
+        #stats h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+        
+        .stat-item {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+            color: #2a5298;
+        }
+        
+        .node {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .node:hover {
+            transform: scale(1.3);
+        }
+        
+        .node circle {
+            stroke-width: 3px;
+            stroke: #fff;
+        }
+        
+        .node text {
+            font-size: 12px;
+            pointer-events: none;
+            fill: #fff;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .link {
+            stroke-opacity: 0.6;
+            fill: none;
+        }
+        
+        .link-label {
+            font-size: 10px;
+            fill: #666;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="tooltip">
+        <h3></h3>
+        <div class="type"></div>
+        <div class="relations"></div>
+    </div>
+    
+    <div id="legend">
+        <h2>📊 实体类型</h2>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ff6b6b;"></div>
+            <span>人物</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #4ecdc4;"></div>
+            <span>概念</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #95e1d3;"></div>
+            <span>方法</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #f38181;"></div>
+            <span>项目</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #aa96da;"></div>
+            <span>工具</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #fcbad3;"></div>
+            <span>系统</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #f9ed69;"></div>
+            <span>维度</span>
+        </div>
+    </div>
+    
+    <div id="stats">
+        <h2>📈 统计信息</h2>
+        <div class="stat-item">实体总数: <span class="stat-value" id="entity-count">0</span></div>
+        <div class="stat-item">关系总数: <span class="stat-value" id="relation-count">0</span></div>
+        <div class="stat-item">三元组数: <span class="stat-value" id="triple-count">0</span></div>
+    </div>
+    
+    <script>
+        // 知识图谱数据
+        const triples = [
+            {"entity1": "树林", "relation": "提出", "entity2": "四词方法论"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "自动化"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "专门化"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "外显化"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "复利化"},
+            {"entity1": "树林", "relation": "提出", "entity2": "熔炉系统"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "采集"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "炼"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "铸器"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "输出"},
+            {"entity1": "树林", "relation": "提出", "entity2": "认知三角公式"},
+            {"entity1": "认知三角公式", "relation": "包含", "entity2": "认知"},
+            {"entity1": "认知三角公式", "relation": "包含", "entity2": "时间"},
+            {"entity1": "认知三角公式", "relation": "包含", "entity2": "金钱"},
+            {"entity1": "树林", "relation": "提出", "entity2": "判断力斜率"},
+            {"entity1": "判断力斜率", "relation": "等于", "entity2": "认知加经验加上下文"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "多元思维模型"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "第一性原理"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "二阶思维"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "逆向思维"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "能力圈"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "决策与分析类"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "认知与行为类"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "系统与战略类"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "问题解决与创新类"},
+            {"entity1": "我", "relation": "发现", "entity2": "Plato"},
+            {"entity1": "Plato", "relation": "是", "entity2": "自主科学研究Agent"},
+            {"entity1": "Plato", "relation": "实现", "entity2": "审稿人面板"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "方法论"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "统计"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "新颖性"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "写作"},
+            {"entity1": "我", "relation": "发现", "entity2": "24hr-research"},
+            {"entity1": "24hr-research", "relation": "是", "entity2": "深度研究Agent"},
+            {"entity1": "24hr-research", "relation": "架构", "entity2": "三Agent协作"},
+            {"entity1": "我", "relation": "发现", "entity2": "Memary"},
+            {"entity1": "Memary", "relation": "是", "entity2": "Agent记忆层"},
+            {"entity1": "Memary", "relation": "实现", "entity2": "知识图谱"},
+            {"entity1": "我", "relation": "实现", "entity2": "审稿人面板系统"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "实用性"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "可复用性"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "真实性"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "清晰度"},
+            {"entity1": "我", "relation": "实现", "entity2": "知识图谱系统"},
+            {"entity1": "知识图谱系统", "relation": "存储", "entity2": "三元组"}
+        ];
+        
+        // 实体类型映射
+        const entityTypes = {
+            "树林": "人物",
+            "芒格": "人物",
+            "我": "人物",
+            "四词方法论": "方法",
+            "熔炉系统": "方法",
+            "认知三角公式": "方法",
+            "判断力斜率": "概念",
+            "多元思维模型": "概念",
+            "第一性原理": "方法",
+            "二阶思维": "方法",
+            "逆向思维": "方法",
+            "能力圈": "方法",
+            "思维模型": "概念",
+            "Plato": "项目",
+            "24hr-research": "项目",
+            "Memary": "项目",
+            "自主科学研究Agent": "概念",
+            "深度研究Agent": "概念",
+            "Agent记忆层": "概念",
+            "三Agent协作": "概念",
+            "审稿人面板": "系统",
+            "审稿人面板系统": "系统",
+            "知识图谱系统": "系统",
+            "知识图谱": "工具",
+            "方法论": "维度",
+            "统计": "维度",
+            "新颖性": "维度",
+            "写作": "维度",
+            "实用性": "维度",
+            "可复用性": "维度",
+            "真实性": "维度",
+            "清晰度": "维度",
+            "三元组": "概念",
+            "认知加经验加上下文": "概念"
+        };
+        
+        // 实体颜色映射
+        const typeColors = {
+            "人物": "#ff6b6b",
+            "概念": "#4ecdc4",
+            "方法": "#95e1d3",
+            "项目": "#f38181",
+            "工具": "#aa96da",
+            "系统": "#fcbad3",
+            "维度": "#f9ed69"
+        };
+        
+        // 关系颜色映射
+        const relationColors = {
+            "提出": "#ff6b6b",
+            "包含": "#4ecdc4",
+            "等于": "#95e1d3",
+            "分类": "#f38181",
+            "发现": "#aa96da",
+            "是": "#fcbad3",
+            "实现": "#f9ed69",
+            "评估": "#fca311",
+            "架构": "#2a9d8f",
+            "存储": "#264653"
+        };
+        
+        // 构建节点和边
+        const nodes = [];
+        const links = [];
+        const nodeMap = new Map();
+        
+        triples.forEach(t => {
+            if (!nodeMap.has(t.entity1)) {
+                const type = entityTypes[t.entity1] || "概念";
+                nodeMap.set(t.entity1, {
+                    id: t.entity1,
+                    type: type,
+                    count: 1
+                });
+            } else {
+                nodeMap.get(t.entity1).count++;
+            }
+            
+            if (!nodeMap.has(t.entity2)) {
+                const type = entityTypes[t.entity2] || "概念";
+                nodeMap.set(t.entity2, {
+                    id: t.entity2,
+                    type: type,
+                    count: 1
+                });
+            } else {
+                nodeMap.get(t.entity2).count++;
+            }
+            
+            links.push({
+                source: t.entity1,
+                target: t.entity2,
+                relation: t.relation
+            });
+        });
+        
+        nodeMap.forEach(node => nodes.push(node));
+        
+        // 更新统计信息
+        document.getElementById("entity-count").textContent = nodes.length;
+        document.getElementById("relation-count").textContent = links.length;
+        document.getElementById("triple-count").textContent = triples.length;
+        
+        // 创建力导向图
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        
+        const svg = d3.select("#container")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        
+        // 定义箭头
+        svg.append("defs").selectAll("marker")
+            .data(Object.keys(relationColors))
+            .enter().append("marker")
+            .attr("id", d => `arrow-${d}`)
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 20)
+            .attr("refY", 0)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("fill", d => relationColors[d])
+            .attr("d", "M0,-5L10,0L0,5");
+        
+        const simulation = d3.forceSimulation(nodes)
+            .force("link", d3.forceLink(links).id(d => d.id).distance(120))
+            .force("charge", d3.forceManyBody().strength(-400))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(60));
+        
+        // 绘制边
+        const link = svg.append("g")
+            .selectAll("line")
+            .data(links)
+            .enter().append("line")
+            .attr("class", "link")
+            .attr("stroke", d => relationColors[d.relation])
+            .attr("stroke-width", 2)
+            .attr("marker-end", d => `url(#arrow-${d.relation})`);
+        
+        // 绘制边标签
+        const linkLabel = svg.append("g")
+            .selectAll("text")
+            .data(links)
+            .enter().append("text")
+            .attr("class", "link-label")
+            .attr("text-anchor", "middle")
+            .attr("dy", -5)
+            .text(d => d.relation);
+        
+        // 绘制节点
+        const node = svg.append("g")
+            .selectAll("g")
+            .data(nodes)
+            .enter().append("g")
+            .attr("class", "node")
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+        
+        node.append("circle")
+            .attr("r", d => 10 + d.count * 2)
+            .attr("fill", d => typeColors[d.type]);
+        
+        node.append("text")
+            .attr("dy", 4)
+            .attr("text-anchor", "middle")
+            .text(d => d.id.length > 6 ? d.id.substring(0, 6) + "..." : d.id);
+        
+        // 添加tooltip
+        const tooltip = d3.select("#tooltip");
+        
+        node.on("mouseover", function(event, d) {
+            const relatedLinks = links.filter(l => l.source.id === d.id || l.target.id === d.id);
+            let relationsHtml = "<strong>关系:</strong><br>";
+            relatedLinks.forEach(l => {
+                if (l.source.id === d.id) {
+                    relationsHtml += `→ ${l.relation} → ${l.target.id}<br>`;
+                } else {
+                    relationsHtml += `← ${l.relation} ← ${l.source.id}<br>`;
+                }
+            });
+            
+            tooltip.select("h3").text(d.id);
+            tooltip.select(".type").text(`类型: ${d.type} | 出现次数: ${d.count}`);
+            tooltip.select(".relations").html(relationsHtml);
+            tooltip.classed("visible", true);
+        })
+        .on("mousemove", function(event) {
+            tooltip.style("left", (event.pageX + 15) + "px")
+                   .style("top", (event.pageY - 10) + "px");
+        })
+        .on("mouseout", function() {
+            tooltip.classed("visible", false);
+        });
+        
+        // 更新位置
+        simulation.on("tick", () => {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+            
+            linkLabel
+                .attr("x", d => (d.source.x + d.target.x) / 2)
+                .attr("y", d => (d.source.y + d.target.y) / 2);
+            
+            node.attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+        
+        // 拖拽函数
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+        
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+        
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+    </script>
+</body>
+</html>

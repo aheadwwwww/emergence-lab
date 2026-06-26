@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识图谱 - 我的记忆网络</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+        
+        #header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        #header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        #header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        #network {
+            width: 100%;
+            height: calc(100vh - 80px);
+            margin-top: 80px;
+        }
+        
+        #sidebar {
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 100;
+            max-width: 300px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+        
+        #sidebar h2 {
+            font-size: 18px;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 12px;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        #search-box {
+            position: fixed;
+            left: 20px;
+            top: 100px;
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        
+        #search-box input {
+            width: 200px;
+            padding: 8px 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        #search-box input:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+        
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .info-card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+        
+        .info-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>🧠 知识图谱</h1>
+        <p>我学到的所有概念、方法、项目之间的关系 | 共 45 个实体，45 条关系</p>
+    </div>
+    
+    <div id="search-box">
+        <input type="text" id="search" placeholder="搜索实体..." />
+    </div>
+    
+    <div id="sidebar">
+        <h2>📊 实体类型</h2>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #ff6b6b;"></div>
+            <span>人物（树林、芒格、我）</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #4ecdc4;"></div>
+            <span>概念（判断力斜率等）</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #95e1d3;"></div>
+            <span>方法（四词方法论等）</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #f38181;"></div>
+            <span>项目（Plato等）</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #aa96da;"></div>
+            <span>工具（知识图谱）</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #fcbad3;"></div>
+            <span>系统（审稿人面板）</span>
+        </div>
+        
+        <div class="info-card">
+            <h3>💡 使用说明</h3>
+            <p>
+                • 点击节点查看详情<br>
+                • 拖动节点调整位置<br>
+                • 缩放：鼠标滚轮<br>
+                • 平移：拖动空白区域<br>
+                • 搜索：输入框查找
+            </p>
+        </div>
+        
+        <div class="info-card">
+            <h3>🎯 核心发现</h3>
+            <p>
+                • 树林提出4个核心方法<br>
+                • 芒格提出5个思维模型<br>
+                • 我发现3个Agent项目<br>
+                • 实现了2个系统改进
+            </p>
+        </div>
+    </div>
+    
+    <div id="network"></div>
+    
+    <script>
+        // 知识图谱数据
+        const triples = [
+            {"entity1": "树林", "relation": "提出", "entity2": "四词方法论"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "自动化"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "专门化"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "外显化"},
+            {"entity1": "四词方法论", "relation": "包含", "entity2": "复利化"},
+            {"entity1": "树林", "relation": "提出", "entity2": "熔炉系统"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "采集"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "炼"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "铸器"},
+            {"entity1": "熔炉系统", "relation": "包含", "entity2": "输出"},
+            {"entity1": "树林", "relation": "提出", "entity2": "认知三角公式"},
+            {"entity1": "认知三角公式", "relation": "包含", "entity2": "认知"},
+            {"entity1": "认知三角公式", "relation": "包含", "entity2": "时间"},
+            {"entity1": "认知三角公式", "relation": "包含", "entity2": "金钱"},
+            {"entity1": "树林", "relation": "提出", "entity2": "判断力斜率"},
+            {"entity1": "判断力斜率", "relation": "等于", "entity2": "认知加经验加上下文"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "多元思维模型"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "第一性原理"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "二阶思维"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "逆向思维"},
+            {"entity1": "芒格", "relation": "提出", "entity2": "能力圈"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "决策与分析类"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "认知与行为类"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "系统与战略类"},
+            {"entity1": "思维模型", "relation": "分类", "entity2": "问题解决与创新类"},
+            {"entity1": "我", "relation": "发现", "entity2": "Plato"},
+            {"entity1": "Plato", "relation": "是", "entity2": "自主科学研究Agent"},
+            {"entity1": "Plato", "relation": "实现", "entity2": "审稿人面板"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "方法论"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "统计"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "新颖性"},
+            {"entity1": "审稿人面板", "relation": "评估", "entity2": "写作"},
+            {"entity1": "我", "relation": "发现", "entity2": "24hr-research"},
+            {"entity1": "24hr-research", "relation": "是", "entity2": "深度研究Agent"},
+            {"entity1": "24hr-research", "relation": "架构", "entity2": "三Agent协作"},
+            {"entity1": "我", "relation": "发现", "entity2": "Memary"},
+            {"entity1": "Memary", "relation": "是", "entity2": "Agent记忆层"},
+            {"entity1": "Memary", "relation": "实现", "entity2": "知识图谱"},
+            {"entity1": "我", "relation": "实现", "entity2": "审稿人面板系统"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "实用性"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "可复用性"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "真实性"},
+            {"entity1": "审稿人面板系统", "relation": "评估", "entity2": "清晰度"},
+            {"entity1": "我", "relation": "实现", "entity2": "知识图谱系统"},
+            {"entity1": "知识图谱系统", "relation": "存储", "entity2": "三元组"}
+        ];
+        
+        // 实体类型映射
+        const entityTypes = {
+            "树林": "人物",
+            "芒格": "人物",
+            "我": "人物",
+            "四词方法论": "方法",
+            "熔炉系统": "方法",
+            "认知三角公式": "方法",
+            "判断力斜率": "概念",
+            "多元思维模型": "概念",
+            "第一性原理": "方法",
+            "二阶思维": "方法",
+            "逆向思维": "方法",
+            "能力圈": "方法",
+            "思维模型": "概念",
+            "Plato": "项目",
+            "24hr-research": "项目",
+            "Memary": "项目",
+            "自主科学研究Agent": "概念",
+            "深度研究Agent": "概念",
+            "Agent记忆层": "概念",
+            "三Agent协作": "概念",
+            "审稿人面板": "系统",
+            "审稿人面板系统": "系统",
+            "知识图谱系统": "系统",
+            "知识图谱": "工具",
+            "方法论": "维度",
+            "统计": "维度",
+            "新颖性": "维度",
+            "写作": "维度",
+            "实用性": "维度",
+            "可复用性": "维度",
+            "真实性": "维度",
+            "清晰度": "维度",
+            "三元组": "概念",
+            "认知加经验加上下文": "概念",
+            "自动化": "概念",
+            "专门化": "概念",
+            "外显化": "概念",
+            "复利化": "概念",
+            "采集": "概念",
+            "炼": "概念",
+            "铸器": "概念",
+            "认知": "概念",
+            "时间": "概念",
+            "金钱": "概念"
+        };
+        
+        // 实体颜色映射
+        const typeColors = {
+            "人物": {background: "#ff6b6b", border: "#c92a2a"},
+            "概念": {background: "#4ecdc4", border: "#2b9d8f"},
+            "方法": {background: "#95e1d3", border: "#69c9b8"},
+            "项目": {background: "#f38181", border: "#d63031"},
+            "工具": {background: "#aa96da", border: "#8a7ab8"},
+            "系统": {background: "#fcbad3", border: "#f687b3"},
+            "维度": {background: "#f9ed69", border: "#f7d354"}
+        };
+        
+        // 构建节点和边
+        const nodes = new vis.DataSet();
+        const edges = new vis.DataSet();
+        const nodeMap = new Map();
+        
+        triples.forEach(t => {
+            if (!nodeMap.has(t.entity1)) {
+                const type = entityTypes[t.entity1] || "概念";
+                nodeMap.set(t.entity1, {
+                    id: t.entity1,
+                    label: t.entity1,
+                    type: type,
+                    count: 1
+                });
+            } else {
+                nodeMap.get(t.entity1).count++;
+            }
+            
+            if (!nodeMap.has(t.entity2)) {
+                const type = entityTypes[t.entity2] || "概念";
+                nodeMap.set(t.entity2, {
+                    id: t.entity2,
+                    label: t.entity2,
+                    type: type,
+                    count: 1
+                });
+            } else {
+                nodeMap.get(t.entity2).count++;
+            }
+            
+            edges.add({
+                from: t.entity1,
+                to: t.entity2,
+                label: t.relation,
+                arrows: "to",
+                color: {color: "#aaa", highlight: "#2a5298"},
+                font: {size: 12, align: "middle"}
+            });
+        });
+        
+        nodeMap.forEach(node => {
+            const colors = typeColors[node.type];
+            nodes.add({
+                id: node.id,
+                label: node.label,
+                title: `${node.label}\n类型: ${node.type}\n出现次数: ${node.count}`,
+                color: colors,
+                font: {size: 16, color: "#333"},
+                size: node.count * 5 + 20,
+                shape: "dot"
+            });
+        });
+        
+        // 创建网络
+        const container = document.getElementById("network");
+        const data = {nodes: nodes, edges: edges};
+        const options = {
+            physics: {
+                stabilization: {iterations: 200},
+                barnesHut: {
+                    gravitationalConstant: -2000,
+                    centralGravity: 0.3,
+                    springLength: 150
+                }
+            },
+            interaction: {
+                hover: true,
+                tooltipDelay: 200,
+                zoomView: true,
+                dragView: true
+            },
+            nodes: {
+                borderWidth: 3,
+                shadow: true
+            },
+            edges: {
+                smooth: {
+                    type: "continuous",
+                    roundness: 0.5
+                },
+                width: 2
+            }
+        };
+        
+        const network = new vis.Network(container, data, options);
+        
+        // 搜索功能
+        const searchInput = document.getElementById("search");
+        searchInput.addEventListener("input", function() {
+            const query = this.value.toLowerCase();
+            if (query.length > 0) {
+                const matchingNodes = [];
+                nodeMap.forEach(node => {
+                    if (node.label.toLowerCase().includes(query)) {
+                        matchingNodes.push(node.id);
+                    }
+                });
+                
+                if (matchingNodes.length > 0) {
+                    network.selectNodes(matchingNodes);
+                    network.focus(matchingNodes[0]);
+                }
+            } else {
+                network.unselectAll();
+            }
+        });
+        
+        // 点击节点显示详情
+        network.on("click", function(params) {
+            if (params.nodes.length > 0) {
+                const nodeId = params.nodes[0];
+                const node = nodeMap.get(nodeId);
+                
+                // 找到相关节点
+                const relatedEdges = edges.get().filter(e => e.from === nodeId || e.to === nodeId);
+                let relatedNodes = [];
+                relatedEdges.forEach(e => {
+                    if (e.from === nodeId) {
+                        relatedNodes.push(`${e.label} → ${e.to}`);
+                    } else {
+                        relatedNodes.push(`${e.label} ← ${e.from}`);
+                    }
+                });
+                
+                alert(`节点详情:\n\n名称: ${node.label}\n类型: ${node.type}\n出现次数: ${node.count}\n\n关系:\n${relatedNodes.join("\n")}`);
+            }
+        });
+        
+        // 稳定后通知
+        network.once("stabilized", function() {
+            console.log("网络已稳定，可以交互");
+        });
+    </script>
+</body>
+</html>
