@@ -1,840 +1,476 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>芒格思维模型 - 多元思维框架</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            min-height: 100vh;
-            color: #e0e0e0;
-        }
-
-        .container {
-            display: flex;
-            min-height: 100vh;
-        }
-
-        /* 侧边栏 */
-        .sidebar {
-            width: 280px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            position: fixed;
-            height: 100vh;
-            overflow-y: auto;
-        }
-
-        .sidebar h1 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #a855f7, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .sidebar .subtitle {
-            font-size: 0.85rem;
-            color: #9ca3af;
-            margin-bottom: 30px;
-        }
-
-        .search-box {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            color: #fff;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-
-        .search-box:focus {
-            border-color: #a855f7;
-        }
-
-        .search-box::placeholder {
-            color: #6b7280;
-        }
-
-        .category-section {
-            margin-bottom: 20px;
-        }
-
-        .category-title {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #9ca3af;
-            margin-bottom: 10px;
-            padding-left: 10px;
-        }
-
-        .category-items {
-            list-style: none;
-        }
-
-        .category-item {
-            padding: 8px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .category-item:hover {
-            background: rgba(168, 85, 247, 0.2);
-        }
-
-        .category-item.active {
-            background: linear-gradient(90deg, rgba(168, 85, 247, 0.3), rgba(99, 102, 241, 0.3));
-            border-left: 3px solid #a855f7;
-        }
-
-        .category-item .check {
-            width: 18px;
-            height: 18px;
-            border: 2px solid #4b5563;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 10px;
-            transition: all 0.2s;
-        }
-
-        .category-item.learned .check {
-            background: #10b981;
-            border-color: #10b981;
-        }
-
-        .category-item.learned .check::after {
-            content: '✓';
-            color: white;
-        }
-
-        /* 主内容区 */
-        .main-content {
-            flex: 1;
-            margin-left: 280px;
-            padding: 40px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            background: linear-gradient(90deg, #a855f7, #6366f1, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .header p {
-            color: #9ca3af;
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .stats-bar {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            background: linear-gradient(90deg, #a855f7, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            font-size: 0.85rem;
-            color: #9ca3af;
-        }
-
-        /* 模型卡片 */
-        .models-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .model-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 25px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s;
-            cursor: pointer;
-        }
-
-        .model-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(168, 85, 247, 0.5);
-            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.15);
-        }
-
-        .model-card.learned {
-            border-color: rgba(16, 185, 129, 0.3);
-            background: rgba(16, 185, 129, 0.05);
-        }
-
-        .model-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 15px;
-        }
-
-        .model-name {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #fff;
-        }
-
-        .model-category-tag {
-            font-size: 0.7rem;
-            padding: 4px 10px;
-            border-radius: 20px;
-            background: linear-gradient(90deg, rgba(168, 85, 247, 0.3), rgba(99, 102, 241, 0.3));
-            color: #c4b5fd;
-        }
-
-        .model-core {
-            font-size: 0.95rem;
-            color: #a78bfa;
-            margin-bottom: 12px;
-            font-style: italic;
-        }
-
-        .model-description {
-            color: #d1d5db;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .model-when {
-            background: rgba(168, 85, 247, 0.1);
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        .model-when-title {
-            font-size: 0.75rem;
-            color: #a78bfa;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .model-when-content {
-            font-size: 0.85rem;
-            color: #c4b5fd;
-        }
-
-        .model-steps {
-            margin-top: 15px;
-        }
-
-        .model-steps-title {
-            font-size: 0.75rem;
-            color: #9ca3af;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .step-item {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 8px;
-            font-size: 0.85rem;
-            color: #d1d5db;
-        }
-
-        .step-number {
-            width: 20px;
-            height: 20px;
-            background: linear-gradient(135deg, #a855f7, #6366f1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            flex-shrink: 0;
-            color: white;
-        }
-
-        .learn-btn {
-            width: 100%;
-            padding: 12px;
-            margin-top: 15px;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(90deg, #a855f7, #6366f1);
-            color: white;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .learn-btn:hover {
-            transform: scale(1.02);
-            box-shadow: 0 5px 20px rgba(168, 85, 247, 0.4);
-        }
-
-        .learn-btn.learned {
-            background: linear-gradient(90deg, #10b981, #059669);
-        }
-
-        /* 进度条 */
-        .progress-section {
-            margin-top: 40px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-        }
-
-        .progress-title {
-            font-size: 0.9rem;
-            color: #9ca3af;
-            margin-bottom: 15px;
-        }
-
-        .progress-bar {
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #a855f7, #6366f1);
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-
-        .progress-text {
-            margin-top: 10px;
-            font-size: 0.85rem;
-            color: #a78bfa;
-            text-align: right;
-        }
-
-        /* 响应式 */
-        @media (max-width: 768px) {
-            .sidebar {
-                transform: translateX(-100%);
-                z-index: 1000;
-            }
-
-            .sidebar.open {
-                transform: translateX(0);
-            }
-
-            .main-content {
-                margin-left: 0;
-            }
-
-            .models-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* 隐藏的模型 */
-        .model-card.hidden {
-            display: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>芒格思维模型库 - 34个核心模型</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:15px}
+.container{max-width:1400px;margin:0 auto;background:white;border-radius:15px;box-shadow:0 15px 50px rgba(0,0,0,0.3);overflow:hidden}
+header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px;text-align:center}
+h1{font-size:2em;margin-bottom:5px}
+.subtitle{font-size:1em;opacity:0.9}
+.stats{display:flex;justify-content:space-around;padding:15px;background:#f8f9fa;border-bottom:1px solid #e9ecef}
+.stat{text-align:center}
+.stat-number{font-size:2em;font-weight:bold;color:#667eea}
+.stat-label{color:#6c757d;margin-top:2px;font-size:0.85em}
+.main-content{display:grid;grid-template-columns:200px 1fr;min-height:600px}
+.sidebar{background:#f8f9fa;padding:10px;border-right:1px solid #e9ecef;overflow-y:auto;max-height:600px}
+.sidebar input{width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:10px;font-size:0.85em}
+.cat-title{font-weight:bold;color:#495057;padding:6px 8px;background:white;border-radius:4px;margin:8px 0 5px;cursor:pointer;font-size:0.85em}
+.cat-title:hover{background:#667eea;color:white}
+.model-item{padding:5px 8px;cursor:pointer;border-radius:3px;font-size:0.8em;color:#6c757d;margin-bottom:1px}
+.model-item:hover{background:#e9ecef;color:#495057}
+.model-item.active{background:#667eea;color:white}
+.content{padding:25px;overflow-y:auto;max-height:600px}
+.welcome{text-align:center;padding:60px 20px}
+.welcome h2{font-size:1.5em;color:#495057;margin-bottom:12px}
+.welcome p{color:#6c757d;font-size:0.9em;line-height:1.6}
+.model-detail{display:none}
+.model-detail.active{display:block}
+.model-header{margin-bottom:15px;padding-bottom:10px;border-bottom:2px solid #e9ecef}
+.model-badge{display:inline-block;background:#667eea;color:white;padding:3px 10px;border-radius:10px;font-weight:bold;margin-bottom:5px;font-size:0.85em}
+.model-title{font-size:1.5em;color:#495057;margin-bottom:3px}
+.model-core{font-size:1em;color:#667eea;margin-bottom:8px;font-style:italic}
+.section{margin-bottom:18px}
+.section-title{font-size:1em;color:#667eea;margin-bottom:8px;display:flex;align-items:center}
+.section-title::before{content:'';display:inline-block;width:3px;height:14px;background:#667eea;margin-right:6px;border-radius:2px}
+.section-content{color:#495057;line-height:1.7;padding-left:9px;font-size:0.9em}
+.steps-list{list-style:none;padding-left:9px;counter-reset:step}
+.steps-list li{padding:4px 0;color:#495057;font-size:0.9em;line-height:1.5;counter-increment:step}
+.steps-list li::before{content:counter(step);display:inline-block;width:20px;height:20px;background:#667eea;color:white;border-radius:50%;text-align:center;line-height:20px;font-size:0.75em;margin-right:8px}
+.learn-btn{display:inline-block;margin-top:15px;padding:8px 20px;background:#667eea;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.9em}
+.learn-btn:hover{background:#5a6fd6}
+.learn-btn.learned{background:#28a745}
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- 侧边栏 -->
-        <nav class="sidebar">
-            <h1>🧠 芒格思维模型</h1>
-            <p class="subtitle">查理·芒格的多元思维框架</p>
-            
-            <input type="text" class="search-box" placeholder="搜索模型..." id="searchBox">
-            
-            <div class="category-section">
-                <div class="category-title">决策类</div>
-                <ul class="category-items" id="decision-category">
-                </ul>
-            </div>
-            
-            <div class="category-section">
-                <div class="category-title">经济学</div>
-                <ul class="category-items" id="economics-category">
-                </ul>
-            </div>
-            
-            <div class="category-section">
-                <div class="category-title">心理学</div>
-                <ul class="category-items" id="psychology-category">
-                </ul>
-            </div>
-            
-            <div class="category-section">
-                <div class="category-title">系统思维</div>
-                <ul class="category-items" id="system-category">
-                </ul>
-            </div>
-            
-            <div class="category-section">
-                <div class="category-title">生物学</div>
-                <ul class="category-items" id="biology-category">
-                </ul>
-            </div>
-            
-            <div class="category-section">
-                <div class="category-title">其他</div>
-                <ul class="category-items" id="other-category">
-                </ul>
-            </div>
-            
-            <div class="progress-section">
-                <div class="progress-title">学习进度</div>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progressFill"></div>
-                </div>
-                <div class="progress-text" id="progressText">0 / 35 已掌握</div>
-            </div>
-        </nav>
-
-        <!-- 主内容 -->
-        <main class="main-content">
-            <div class="header">
-                <h1>多元思维模型</h1>
-                <p>查理·芒格说："要成为一个有智慧的人，你必须拥有多个模型。"掌握这些跨学科的核心思维工具，提升你的决策质量。</p>
-                <div class="stats-bar">
-                    <div class="stat-item">
-                        <div class="stat-number">35</div>
-                        <div class="stat-label">思维模型</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">6</div>
-                        <div class="stat-label">核心领域</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" id="learnedCount">0</div>
-                        <div class="stat-label">已掌握</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="models-grid" id="modelsGrid">
-            </div>
-        </main>
-    </div>
-
-    <script>
-        // 思维模型数据
-        const models = [
-            // 决策类
-            {
-                id: 'first-principles',
-                name: '第一性原理',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '打破既有假设，回归事物最基本的真理进行推理。',
-                description: '第一性原理思维要求我们剥离所有假设和惯例，从最基本的事实出发重新思考问题。这种方法能帮助你发现别人看不到的创新路径，避免被"常识"束缚。',
-                whenUse: '面对复杂问题需要创新解决方案时，或当现有方法都失效需要重新思考时。',
-                steps: ['识别并质疑所有现有假设', '找出最基本、不可再分的事实', '从这些基础事实重新构建解决方案', '验证新方案是否更优']
-            },
-            {
-                id: 'second-order-thinking',
-                name: '二阶思维',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '不只考虑直接后果，还要思考后果的后果。',
-                description: '大多数人只做一阶思维：如果我做X，会发生Y。二阶思维追问：Y发生后，又会引发什么？这种思维能帮你避免短视决策带来的长期隐患。',
-                whenUse: '做重要决策时，特别是那些看似有利但可能有隐藏代价的选择。',
-                steps: ['列出决策的直接后果', '对每个后果追问"然后呢？"', '思考二阶、三阶效应', '权衡短期利益与长期影响']
-            },
-            {
-                id: 'inversion',
-                name: '逆向思维',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '与其思考如何成功，不如思考如何避免失败。',
-                description: '查理·芒格的名言："告诉我我会死在哪里，我就永远不去那里。"通过反向思考，你能发现正向思维容易忽略的风险和陷阱。',
-                whenUse: '规划项目、制定策略或评估风险时，特别适合风险管理场景。',
-                steps: ['定义你想要避免的失败结果', '列出导致失败的所有可能原因', '针对每个失败原因制定预防措施', '确保预防措施覆盖所有关键风险']
-            },
-            {
-                id: 'thought-experiment',
-                name: '思想实验',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '在脑海中模拟情景，低成本探索可能性。',
-                description: '爱因斯坦通过思想实验发现相对论。你可以在不承担实际风险的情况下，推演各种假设情景的结果，从而做出更明智的决策。',
-                whenUse: '面临重大决策但无法实际试错时，或需要评估多个方案优劣时。',
-                steps: ['设定假设条件和边界', '推演情景发展过程', '分析可能的结果', '从中提取可应用的洞见']
-            },
-            {
-                id: 'probabilistic-thinking',
-                name: '概率思维',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '用概率而非确定性来理解和预测世界。',
-                description: '世界充满不确定性，几乎没有事情是100%确定的。概率思维帮你量化风险和机会，做出期望值最高的决策，而不是追求不存在的确定性。',
-                whenUse: '面临不确定性决策时，如投资、职业选择、产品发布等。',
-                steps: ['识别所有可能的结果', '估算每个结果的概率', '计算每个结果的期望值', '选择期望值最优的选项']
-            },
-            {
-                id: 'circle-of-competence',
-                name: '能力圈',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '知道自己知道什么，更要知道自己不知道什么。',
-                description: '巴菲特和芒格强调：只在自己真正理解的领域做决策。能力圈之外的机会，看起来再诱人也要放弃。承认无知比假装聪明更明智。',
-                whenUse: '评估是否进入新领域、接受新任务或做出重大决策时。',
-                steps: ['诚实评估自己的知识和经验边界', '识别决策是否在能力圈内', '圈内决策可自信行动，圈外则谨慎', '持续学习扩大能力圈']
-            },
-            {
-                id: 'map-not-territory',
-                name: '地图非领土',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '模型只是现实的简化，不要把模型当现实。',
-                description: '地图是对领土的抽象，但它永远不是领土本身。你的认知模型、理论框架都是"地图"，使用时要记住它们的局限性，不要把简化当成真相。',
-                whenUse: '使用任何理论、模型或框架做决策时，特别是复杂系统。',
-                steps: ['识别你正在使用的模型或假设', '承认模型的简化和局限', '验证模型在当前情境的适用性', '保持开放心态，随时修正模型']
-            },
-            {
-                id: 'occams-razor',
-                name: '奥卡姆剃刀',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '如无必要，勿增实体。最简单的解释往往是对的。',
-                description: '当多个解释都能说明现象时，优先选择假设最少的那个。这不是绝对真理，但作为启发法则，能帮你避免过度复杂化问题。',
-                whenUse: '分析问题原因、诊断故障或评估多个假设时。',
-                steps: ['列出所有可能的解释', '计算每个解释的假设数量', '优先检验假设最少的解释', '如果简单解释成立，就无需复杂假设']
-            },
-            {
-                id: 'hanlons-razor',
-                name: '汉隆剃刀',
-                category: 'decision',
-                categoryLabel: '决策类',
-                core: '能用愚蠢解释的，不要归因于恶意。',
-                description: '当别人做了让你不舒服的事，先假设是无知或失误，而非恶意针对。这种思维方式能减少不必要的冲突，改善人际关系。',
-                whenUse: '解读他人行为、处理人际冲突或分析负面事件原因时。',
-                steps: ['观察到负面行为或结果', '列出可能的原因（无知、失误、恶意等）', '优先考虑非恶意的解释', '以善意假设开始，再根据证据调整']
-            },
-            // 经济学
-            {
-                id: 'compound-interest',
-                name: '复利',
-                category: 'economics',
-                categoryLabel: '经济学',
-                core: '指数增长的力量，时间是小额增长的放大器。',
-                description: '复利被称为世界第八大奇迹。不只是财富，知识、技能、人际关系都可以复利增长。关键是持续投入和足够长的时间。',
-                whenUse: '规划长期投资、学习计划或任何需要持续积累的事情。',
-                steps: ['识别可以复利增长的对象（资金、知识、关系等）', '确保持续的正向增长', '给予足够长的时间让复利发挥作用', '避免中断和负向复利']
-            },
-            {
-                id: 'opportunity-cost',
-                name: '机会成本',
-                category: 'economics',
-                categoryLabel: '经济学',
-                core: '选择A意味着放弃B，B的价值就是A的机会成本。',
-                description: '每个选择都有代价，不只是金钱，更是你放弃的其他选项中最好的那个。理解机会成本能帮你做出更理性的资源配置决策。',
-                whenUse: '面临多个选项需要选择时，评估选择的真实成本。',
-                steps: ['列出所有可能的选项', '评估每个选项的价值', '选择最优选项时，识别放弃的次优选项', '将机会成本纳入决策考量']
-            },
-            {
-                id: 'margin-of-safety',
-                name: '安全边际',
-                category: 'economics',
-                categoryLabel: '经济学',
-                core: '为不确定性留出缓冲空间，防止最坏情况。',
-                description: '工程师设计桥梁时会留出远超预期的承重余量。投资、决策也是一样，不要压满赌注，留出应对意外的空间。',
-                whenUse: '评估风险、做投资决策或规划项目预算时。',
-                steps: ['估算预期情况下的需求', '识别可能的意外和不确定性', '设置足够的安全缓冲', '确保即使最坏情况也能承受']
-            },
-            {
-                id: 'supply-demand',
-                name: '供需关系',
-                category: 'economics',
-                categoryLabel: '经济学',
-                core: '价格由供给和需求的相对稀缺性决定。',
-                description: '供给增加需求不变则价格下降，需求增加供给不变则价格上升。这个基本规律适用于商品、劳动力、注意力等各种资源。',
-                whenUse: '分析市场趋势、定价策略或职业发展路径时。',
-                steps: ['分析供给侧情况（数量、成本、竞争者）', '分析需求侧情况（规模、增长、替代品）', '预测供需变化趋势', '据此做出决策']
-            },
-            {
-                id: 'scarcity',
-                name: '稀缺性',
-                category: 'economics',
-                categoryLabel: '经济学',
-                core: '有限资源与无限欲望的矛盾，是一切经济问题的根源。',
-                description: '稀缺性决定价值。时间、金钱、注意力都是稀缺资源。理解稀缺性，能帮你更好地分配资源，也能识别真正的机会。',
-                whenUse: '资源配置、时间管理或评估物品/技能价值时。',
-                steps: ['识别稀缺资源是什么', '理解稀缺性的来源', '评估获取难度和替代品', '据此优化资源分配']
-            },
-            {
-                id: 'incentives',
-                name: '激励',
-                category: 'economics',
-                categoryLabel: '经济学',
-                core: '人会按照激励方向行动，设计激励就是设计行为。',
-                description: '芒格说："给我看激励，我就告诉你结果。"好的激励机制能引导预期行为，坏的激励会产生意外后果。分析任何系统都要看激励。',
-                whenUse: '设计制度、管理团队或分析他人行为动机时。',
-                steps: ['识别现有激励机制', '分析激励与期望行为的关系', '找出可能的激励扭曲', '设计激励使其与目标一致']
-            },
-            // 心理学
-            {
-                id: 'confirmation-bias',
-                name: '确认偏误',
-                category: 'psychology',
-                categoryLabel: '心理学',
-                core: '人倾向于寻找支持自己观点的证据，忽略相反证据。',
-                description: '我们天生喜欢被证明正确，讨厌被证明错误。这种偏误会让你只看到想看的，忽略不想看的，导致错误决策。',
-                whenUse: '做重要判断时，特别是当你很确信某个观点的时候。',
-                steps: ['识别你的初始观点和倾向', '主动寻找反驳证据', '请持不同意见的人挑战你', '保持开放心态修正观点']
-            },
-            {
-                id: 'social-proof',
-                name: '社会认同',
-                category: 'psychology',
-                categoryLabel: '心理学',
-                core: '不确定时，人会参考他人的行为来做决定。',
-                description: '当我们不知道该怎么做时，会看别人怎么做。这种本能可以帮助我们快速决策，但也可能导致群体盲从和羊群效应。',
-                whenUse: '营销设计、行为引导或分析群体行为时。',
-                steps: ['识别社会认同正在发挥作用', '判断参考群体是否可信', '思考多数人行为是否真的正确', '避免盲目跟风']
-            },
-            {
-                id: 'sunk-cost',
-                name: '沉没成本',
-                category: 'psychology',
-                categoryLabel: '心理学',
-                core: '已经发生的成本不应影响未来决策，该放手时要放手。',
-                description: '"已经投入这么多，不能放弃"是最危险的思维陷阱。沉没成本已经无法挽回，决策应该只看未来收益，不看过去投入。',
-                whenUse: '考虑是否继续投入时间、金钱或精力时。',
-                steps: ['识别沉没成本（已投入无法收回的部分）', '明确沉没成本与未来决策无关', '只根据未来成本收益做决策', '克服情感上的"不舍得"']
-            },
-            {
-                id: 'anchoring',
-                name: '锚定效应',
-                category: 'psychology',
-                categoryLabel: '心理学',
-                core: '第一印象或初始信息会显著影响后续判断。',
-                description: '谈判中先出价的人往往占优势，因为后续讨论会围绕这个"锚"进行。意识到锚定效应，能帮你做出更独立的判断。',
-                whenUse: '谈判、定价或评估价值时，以及需要做客观判断时。',
-                steps: ['识别可能的锚点（初始价格、第一印象等）', '有意识地忽略锚点', '从零开始独立评估', '必要时主动设置有利于自己的锚']
-            },
-            {
-                id: 'framing',
-                name: '框架效应',
-                category: 'psychology',
-                categoryLabel: '心理学',
-                core: '同一事实的不同表述方式会引发不同决策。',
-                description: '"90%存活率"和"10%死亡率"意思相同，但前者让人更乐观。框架效应揭示：人们不是对事实做反应，而是对事实的表述做反应。',
-                whenUse: '沟通表达、市场营销或分析自己决策时。',
-                steps: ['识别信息是如何被"框架"的', '尝试多种框架重新表述同一事实', '看透框架到事实本质', '选择适合目标的框架进行沟通']
-            },
-            {
-                id: 'loss-aversion',
-                name: '损失厌恶',
-                category: 'psychology',
-                categoryLabel: '心理学',
-                core: '失去带来的痛苦远大于获得同等收益的快乐。',
-                description: '心理学研究表明，损失带来的痛苦是同等收益快乐的2-2.5倍。这解释了为什么人宁愿保住现有也不愿冒险争取更多。',
-                whenUse: '投资决策、风险承受或理解他人行为时。',
-                steps: ['识别损失厌恶正在影响你', '量化风险和收益的期望值', '克服对损失的非理性恐惧', '避免因害怕损失而错过机会']
-            },
-            // 系统思维
-            {
-                id: 'feedback-loops',
-                name: '反馈循环',
-                category: 'system',
-                categoryLabel: '系统思维',
-                core: '系统输出反过来影响输入，形成正反馈或负反馈。',
-                description: '正反馈让趋势自我强化（如病毒传播、泡沫形成），负反馈让系统趋于稳定（如恒温器）。识别反馈循环是理解系统行为的关键。',
-                whenUse: '分析复杂系统、预测趋势或设计机制时。',
-                steps: ['识别系统中的因果链条', '判断输出是否反过来影响输入', '区分正反馈和负反馈', '预测反馈带来的系统演化']
-            },
-            {
-                id: 'emergence',
-                name: '涌现',
-                category: 'system',
-                categoryLabel: '系统思维',
-                core: '整体展现出部分所不具备的特性，量变引发质变。',
-                description: '单个蚂蚁很简单，但蚁群展现出智能行为。涌现告诉我们：理解整体不能只看部分，复杂系统有不可预测的新特性。',
-                whenUse: '分析复杂系统、组织行为或理解群体现象时。',
-                steps: ['观察系统整体行为', '分析个体行为如何相互作用', '识别涌现出的新特性', '理解这些特性不可从个体推导']
-            },
-            {
-                id: 'bottleneck',
-                name: '瓶颈',
-                category: 'system',
-                categoryLabel: '系统思维',
-                core: '系统的产出由最薄弱环节决定，优化其他环节徒劳无功。',
-                description: '工厂生产线的产能由最慢的工序决定。找到瓶颈，集中资源突破瓶颈，才能提升整体效能。这就是约束理论的核心。',
-                whenUse: '提升系统效率、优化流程或解决产能问题时。',
-                steps: ['分析整个系统的流程', '找出限制产出的最慢环节', '集中资源突破瓶颈', '突破后再找下一个瓶颈']
-            },
-            {
-                id: 'leverage-points',
-                name: '杠杆点',
-                category: 'system',
-                categoryLabel: '系统思维',
-                core: '系统中投入小努力产生大效果的关键位置。',
-                description: '系统中有些点位的改变会带来系统性的巨大影响。找到这些杠杆点，你就能用最小的努力撬动最大的改变。',
-                whenUse: '想要高效改变系统、解决根本问题或优化资源投入时。',
-                steps: ['理解系统的结构和动力', '识别高杠杆的干预点', '在这些点位施加影响力', '观察系统性变化']
-            },
-            {
-                id: 'path-dependence',
-                name: '路径依赖',
-                category: 'system',
-                categoryLabel: '系统思维',
-                core: '过去的选择限制了未来的可能，历史塑造现在。',
-                description: 'QWERTY键盘不是最优设计，但路径依赖让它成为标准。早期的偶然选择会锁定后续发展路径，即使有更好选择也难以切换。',
-                whenUse: '分析历史演进、理解现状成因或评估变革阻力时。',
-                steps: ['识别当前状态的历史起点', '追踪关键转折点和选择', '理解历史如何锁定当前路径', '评估突破路径依赖的可行性']
-            },
-            {
-                id: 'entropy',
-                name: '熵增',
-                category: 'system',
-                categoryLabel: '系统思维',
-                core: '封闭系统趋向无序，有序需要持续投入能量。',
-                description: '房间会自然变乱，组织会自然混乱，代码会自然腐化。对抗熵增需要持续投入能量。理解熵增，才知道维护和清理的重要性。',
-                whenUse: '理解系统衰退原因、规划维护工作或解释混乱时。',
-                steps: ['识别系统中的熵增趋势', '分析熵增的来源', '投入能量对抗熵增（清理、维护、重构）', '建立持续对抗熵增的机制']
-            },
-            // 生物学
-            {
-                id: 'evolution',
-                name: '演化',
-                category: 'biology',
-                categoryLabel: '生物学',
-                core: '适者生存，环境筛选最适合的特征。',
-                description: '演化不是随机的，而是环境对变异进行筛选。商业、技术、文化都在演化。理解演化，就能理解为什么某些策略、产品、组织会胜出。',
-                whenUse: '分析市场竞争、组织变革或理解趋势变化时。',
-                steps: ['识别选择的压力来源（环境/市场）', '观察变异和多样性', '分析哪些特征被选择保留', '预测演化方向']
-            },
-            {
-                id: 'niche',
-                name: '生态位',
-                category: 'biology',
-                categoryLabel: '生物学',
-                core: '找到属于自己的生存空间，避免正面竞争。',
-                description: '每个物种都有自己的生态位——特定的生存空间和资源。企业、个人也一样，找到适合自己的生态位，比在拥挤市场里硬刚更明智。',
-                whenUse: '制定差异化战略、职业规划或市场定位时。',
-                steps: ['分析现有竞争格局', '识别未被占据的生态位', '评估自己与生态位的匹配度', '在适合自己的生态位深耕']
-            },
-            {
-                id: 'cooperation',
-                name: '合作',
-                category: 'biology',
-                categoryLabel: '生物学',
-                core: '非零和博弈中，合作能创造更大价值。',
-                description: '演化不只是竞争，合作也是生存策略。互惠利他、共生关系在自然界广泛存在。理解合作，才能理解复杂系统如何协调运作。',
-                whenUse: '建立合作关系、设计团队机制或分析组织行为时。',
-                steps: ['识别各方利益是否可协调', '设计互惠共赢的机制', '建立信任和监督体系', '确保长期合作的价值']
-            },
-            {
-                id: 'autocatalysis',
-                name: '自催化',
-                category: 'biology',
-                categoryLabel: '生物学',
-                core: '过程的产物反过来加速这个过程。',
-                description: '化学反应中，产物催化自身生成会形成自我加速。知识积累、网络效应、品牌建设都是自催化过程——越强越容易变强。',
-                whenUse: '设计增长策略、分析飞轮效应或规划长期发展时。',
-                steps: ['识别可以自催化的要素', '设计产物促进生产的机制', '突破初始门槛启动循环', '让自催化带来指数增长']
-            },
-            // 其他
-            {
-                id: 'critical-mass',
-                name: '临界质量',
-                category: 'other',
-                categoryLabel: '其他',
-                core: '积累到某个阈值后，系统发生质变。',
-                description: '核裂变需要临界质量才能持续。产品需要临界用户才能爆发，社交网络需要临界规模才有价值。理解临界质量，就知道何时该坚持，何时该放弃。',
-                whenUse: '评估项目潜力、规划增长策略或判断突破时机时。',
-                steps: ['识别系统的临界点在哪里', '评估当前与临界点的距离', '决定是否继续投入逼近临界', '突破后享受质变红利']
-            },
-            {
-                id: 'lindy-effect',
-                name: '林迪效应',
-                category: 'other',
-                categoryLabel: '其他',
-                core: '已存在越久的事物，未来可能存活越久。',
-                description: '新技术会过时，但经典永流传。林迪效应说：一个已经存在100年的事物，比只存在10年的事物更可能再活100年。时间是最好的过滤器。',
-                whenUse: '选择技术栈、学习内容或评估长期价值时。',
-                steps: ['评估事物的年龄和历史', '理解经历过时间考验的价值', '对新生事物保持谨慎', '优先选择经过验证的方案']
-            },
-            {
-                id: 'pareto-principle',
-                name: '帕累托法则',
-                category: 'other',
-                categoryLabel: '其他',
-                core: '80%的结果来自20%的原因，关键少数决定大局。',
-                description: '也叫二八法则：80%的产出来自20%的努力，80%的利润来自20%的客户。找到关键的20%，投入80%的精力，事半功倍。',
-                whenUse: '时间管理、客户分析或任何需要优先级排序的场景。',
-                steps: ['分析结果分布', '找出贡献最大的关键少数', '把资源集中在关键20%上', '减少或放弃低价值的80%']
-            }
-        ];
-
-        // 学习进度存储
-        let learnedModels = JSON.parse(localStorage.getItem('learnedModels') || '[]');
-
-        // 渲染侧边栏
-        function renderSidebar() {
-            const categories = {
-                'decision': 'decision-category',
-                'economics': 'economics-category',
-                'psychology': 'psychology-category',
-                'system': 'system-category',
-                'biology': 'biology-category',
-                'other': 'other-category'
-            };
-
-            Object.keys(categories).forEach(cat => {
-                const ul = document.getElementById(categories[cat]);
-                const catModels = models.filter(m => m.category === cat);
-                ul.innerHTML = catModels.map(m => `
-                    <li class="category-item ${learnedModels.includes(m.id) ? 'learned' : ''}"
+<div class="container">
+<header>
+<h1>芒格思维模型库</h1>
+<p class="subtitle">查理芒格的多元思维模型 -- 34个核心模型 | 全中文</p>
+</header>
+<div class="stats">
+<div class="stat"><div class="stat-number">34</div><div class="stat-label">思维模型</div></div>
+<div class="stat"><div class="stat-number">6</div><div class="stat-label">分类</div></div>
+<div class="stat"><div class="stat-number" id="learned-count">0</div><div class="stat-label">已学习</div></div>
+</div>
+<div class="main-content">
+<div class="sidebar">
+<input type="text" id="search" placeholder="搜索模型..." oninput="filterModels()">
+<div class="cat-title" onclick="toggleCat(this)">决策 (9)</div><div class="model-item" data-cat="决策" data-id="m1" onclick="showModel('m1')">第一性原理</div><div class="model-item" data-cat="决策" data-id="m2" onclick="showModel('m2')">二阶思维</div><div class="model-item" data-cat="决策" data-id="m3" onclick="showModel('m3')">逆向思维</div><div class="model-item" data-cat="决策" data-id="m4" onclick="showModel('m4')">思想实验</div><div class="model-item" data-cat="决策" data-id="m5" onclick="showModel('m5')">概率思维</div><div class="model-item" data-cat="决策" data-id="m6" onclick="showModel('m6')">能力圈</div><div class="model-item" data-cat="决策" data-id="m7" onclick="showModel('m7')">地图非领土</div><div class="model-item" data-cat="决策" data-id="m8" onclick="showModel('m8')">奥卡姆剃刀</div><div class="model-item" data-cat="决策" data-id="m9" onclick="showModel('m9')">汉隆剃刀</div><div class="cat-title" onclick="toggleCat(this)">经济学 (6)</div><div class="model-item" data-cat="经济学" data-id="m10" onclick="showModel('m10')">复利</div><div class="model-item" data-cat="经济学" data-id="m11" onclick="showModel('m11')">机会成本</div><div class="model-item" data-cat="经济学" data-id="m12" onclick="showModel('m12')">安全边际</div><div class="model-item" data-cat="经济学" data-id="m13" onclick="showModel('m13')">供需关系</div><div class="model-item" data-cat="经济学" data-id="m14" onclick="showModel('m14')">稀缺性</div><div class="model-item" data-cat="经济学" data-id="m15" onclick="showModel('m15')">激励</div><div class="cat-title" onclick="toggleCat(this)">心理学 (6)</div><div class="model-item" data-cat="心理学" data-id="m16" onclick="showModel('m16')">确认偏误</div><div class="model-item" data-cat="心理学" data-id="m17" onclick="showModel('m17')">社会认同</div><div class="model-item" data-cat="心理学" data-id="m18" onclick="showModel('m18')">沉没成本</div><div class="model-item" data-cat="心理学" data-id="m19" onclick="showModel('m19')">锚定效应</div><div class="model-item" data-cat="心理学" data-id="m20" onclick="showModel('m20')">框架效应</div><div class="model-item" data-cat="心理学" data-id="m21" onclick="showModel('m21')">损失厌恶</div><div class="cat-title" onclick="toggleCat(this)">系统思维 (6)</div><div class="model-item" data-cat="系统思维" data-id="m22" onclick="showModel('m22')">反馈循环</div><div class="model-item" data-cat="系统思维" data-id="m23" onclick="showModel('m23')">涌现</div><div class="model-item" data-cat="系统思维" data-id="m24" onclick="showModel('m24')">瓶颈</div><div class="model-item" data-cat="系统思维" data-id="m25" onclick="showModel('m25')">杠杆点</div><div class="model-item" data-cat="系统思维" data-id="m26" onclick="showModel('m26')">路径依赖</div><div class="model-item" data-cat="系统思维" data-id="m27" onclick="showModel('m27')">熵增</div><div class="cat-title" onclick="toggleCat(this)">生物学 (4)</div><div class="model-item" data-cat="生物学" data-id="m28" onclick="showModel('m28')">演化</div><div class="model-item" data-cat="生物学" data-id="m29" onclick="showModel('m29')">生态位</div><div class="model-item" data-cat="生物学" data-id="m30" onclick="showModel('m30')">合作</div><div class="model-item" data-cat="生物学" data-id="m31" onclick="showModel('m31')">自催化</div><div class="cat-title" onclick="toggleCat(this)">其他 (3)</div><div class="model-item" data-cat="其他" data-id="m32" onclick="showModel('m32')">临界质量</div><div class="model-item" data-cat="其他" data-id="m33" onclick="showModel('m33')">林迪效应</div><div class="model-item" data-cat="其他" data-id="m34" onclick="showModel('m34')">帕累托法则</div></div><div class="content" id="content-area"><div class="welcome" id="welcome"><h2>选择一个模型开始学习</h2><p>查理芒格说：手里只有锤子的人，看什么都像钉子。<br>掌握多元思维模型，用不同的透镜看世界。</p></div>
+<div class="model-detail" id="detail-m1">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">第一性原理</h2>
+<p class="model-core">拆解到最基本事实，从零重建</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">把问题拆到不能再拆的基本元素，抛弃所有假设和惯例，从最底层重新构建解决方案。马斯克用这个方法把火箭成本降到1/10。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">当被告知不可能时；当行业惯例成为枷锁时；当需要突破性创新时</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 明确你要解决的问题是什么</li><li>2. 拆解：这个问题由哪些基本元素构成？</li><li>3. 质疑：哪些是事实，哪些只是惯例？</li><li>4. 重建：从基本事实出发，能有什么新方案？</li></ol></div>
+<button class="learn-btn" id="btn-m1" onclick="toggleLearned('m1')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m2">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">二阶思维</h2>
+<p class="model-core">思考后果的后果</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不只考虑直接结果，还要想'然后呢？'。第一阶：降价导致销量上升。第二阶：竞品跟进导致利润都下降导致行业洗牌。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做战略决策时；评估政策影响时；投资判断时</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出决策的直接后果</li><li>2. 对每个后果问会发生什么</li><li>3. 重复至少两次</li><li>4. 比较一阶和二阶的差异</li></ol></div>
+<button class="learn-btn" id="btn-m2" onclick="toggleLearned('m2')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m3">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">逆向思维</h2>
+<p class="model-core">从失败倒推</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不问怎么成功，问怎么失败然后避免。芒格说：告诉我我会死在哪，我永远不去那里。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">风险评估；项目启动前；重大决策前</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 定义你想要的结果</li><li>2. 反过来问：怎样确保达不到？</li><li>3. 列出所有失败路径</li><li>4. 逐一设计防范措施</li></ol></div>
+<button class="learn-btn" id="btn-m3" onclick="toggleLearned('m3')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m4">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">思想实验</h2>
+<p class="model-core">在脑子里做实验</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">在大脑中模拟场景，探索假设和可能性。爱因斯坦用思想实验发现了相对论。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">无法做真实实验时；探索如果会怎样；测试假设</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 设定场景和假设条件</li><li>2. 在脑中推演事件发展</li><li>3. 观察矛盾点和意外发现</li><li>4. 提炼可验证的结论</li></ol></div>
+<button class="learn-btn" id="btn-m4" onclick="toggleLearned('m4')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m5">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">概率思维</h2>
+<p class="model-core">用概率而非确定论看世界</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">未来不是确定的，是一组概率分布。好的决策是选择胜率更高的选项，而非保证赢的选项。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">面对不确定性；评估风险；做预测</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出所有可能的结果</li><li>2. 估算每种结果的概率</li><li>3. 计算期望值</li><li>4. 选择期望值最高的方案</li></ol></div>
+<button class="learn-btn" id="btn-m5" onclick="toggleLearned('m5')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m6">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">能力圈</h2>
+<p class="model-core">知道边界在哪比圈子多大更重要</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">巴菲特和芒格的核心原则。不在能力圈外做决策。圈的大小不重要，知道边界在哪才重要。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做投资决策；接受新任务；给别人建议</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 问自己：这件事我真的懂吗？</li><li>2. 区分知道和以为自己知道</li><li>3. 在圈外时承认不懂找懂的人</li><li>4. 持续扩大能力圈</li></ol></div>
+<button class="learn-btn" id="btn-m6" onclick="toggleLearned('m6')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m7">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">地图非领土</h2>
+<p class="model-core">模型不等于现实</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">任何理论、模型、计划都只是现实的简化表示。地图再精确也不是领土本身。不要爱上自己的模型。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">制定计划时；使用理论框架时；分析数据时</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 确认你用的是哪个地图</li><li>2. 问：这个地图忽略了什么？</li><li>3. 去领土上实地验证</li><li>4. 根据现实反馈更新地图</li></ol></div>
+<button class="learn-btn" id="btn-m7" onclick="toggleLearned('m7')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m8">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">奥卡姆剃刀</h2>
+<p class="model-core">最简单的解释往往是对的</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">在多个解释中，选择假设最少的那个。不是简单的一定对，而是不必要的复杂通常是错的。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">面对多个解释时；设计方案时；调试问题时</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出所有可能的解释</li><li>2. 数每个解释需要多少假设</li><li>3. 优先验证假设最少的</li><li>4. 如果不够再逐步增加复杂度</li></ol></div>
+<button class="learn-btn" id="btn-m8" onclick="toggleLearned('m8')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m9">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">汉隆剃刀</h2>
+<p class="model-core">能用愚蠢解释的，不要归咎于恶意</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">别人做了让你不爽的事，先假设他是疏忽或无知，而不是故意害你。大多数恶意其实是笨拙。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">被人冒犯时；解读竞争对手行为；处理冲突</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 暂停：感受到被冒犯时先停下来</li><li>2. 列出其他可能的解释</li><li>3. 问：有证据证明是恶意吗？</li><li>4. 没有证据就选最善意的解释</li></ol></div>
+<button class="learn-btn" id="btn-m9" onclick="toggleLearned('m9')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m10">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">复利</h2>
+<p class="model-core">利滚利，时间是最好的杠杆</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">收益产生收益，形成指数增长。不只是钱，知识、技能、人际关系都遵循复利。关键是持续投入和时间。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">投资理财；学习规划；职业发展</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 找到能产生复利的事</li><li>2. 尽早开始让时间发挥作用</li><li>3. 保持持续投入不要中断</li><li>4. 耐心等待指数拐点</li></ol></div>
+<button class="learn-btn" id="btn-m10" onclick="toggleLearned('m10')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m11">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">机会成本</h2>
+<p class="model-core">选择的真正代价是你放弃的东西</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">做一件事的成本不是花的时间和钱，而是用同样的资源能做的最好的另一件事。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做选择时；分配资源时；评估时间投入</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出你正在放弃的选项</li><li>2. 找出其中价值最高的</li><li>3. 问：选A放弃B值得吗？</li><li>4. 用放弃的最好选项来衡量成本</li></ol></div>
+<button class="learn-btn" id="btn-m11" onclick="toggleLearned('m11')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m12">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">安全边际</h2>
+<p class="model-core">留足缓冲应对意外</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">工程师造桥不造刚好承重的桥，而是留几倍余量。投资、计划、承诺都应该留安全边际。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做预算；承诺截止日期；投资决策</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 估算最坏情况需要什么</li><li>2. 在估算基础上加缓冲30%到100%</li><li>3. 按加了缓冲的标准执行</li><li>4. 永远不要刚好卡在极限上</li></ol></div>
+<button class="learn-btn" id="btn-m12" onclick="toggleLearned('m12')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m13">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">供需关系</h2>
+<p class="model-core">价格由供需决定不是由成本决定</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">东西值多少钱不取决于你花了多少成本，取决于有多少人想要、有多少人提供。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">定价；分析市场；理解价格波动</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别谁是供给方谁是需求方</li><li>2. 分析供给和需求各自的弹性</li><li>3. 预测什么因素会改变供给或需求</li><li>4. 判断价格会往哪个方向走</li></ol></div>
+<button class="learn-btn" id="btn-m13" onclick="toggleLearned('m13')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m14">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">稀缺性</h2>
+<p class="model-core">有限的资源无限的需求</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">经济学的基本前提。因为稀缺所以需要选择，因为选择所以有机会成本。稀缺创造价值。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">资源分配；优先级排序；理解价值</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别什么是真正稀缺的</li><li>2. 区分稀缺和短暂短缺</li><li>3. 问：谁控制了稀缺资源？</li><li>4. 思考如何创造或获取稀缺资源</li></ol></div>
+<button class="learn-btn" id="btn-m14" onclick="toggleLearned('m14')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m15">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">激励</h2>
+<p class="model-core">人会对激励做出反应</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">芒格说：告诉我激励是什么，我告诉你结果是什么。设计错误的激励会产生错误的行为。永远先看激励结构。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">设计制度；管理团队；理解行为</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 找出系统中所有的激励</li><li>2. 问这些激励会导致什么行为</li><li>3. 检查有没有激励在鼓励坏行为</li><li>4. 调整让激励和想要的结果对齐</li></ol></div>
+<button class="learn-btn" id="btn-m15" onclick="toggleLearned('m15')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m16">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">确认偏误</h2>
+<p class="model-core">人只看到自己想看到的</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">我们倾向于寻找、注意、记住支持自己观点的证据，忽略反对的证据。这是最普遍也最危险的认知偏差。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做判断时；收集信息时；评估证据时</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 明确自己当前的信念是什么</li><li>2. 主动寻找反对的证据</li><li>3. 问如果我是错的会是什么原因</li><li>4. 让持不同观点的人来挑战你</li></ol></div>
+<button class="learn-btn" id="btn-m16" onclick="toggleLearned('m16')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m17">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">社会认同</h2>
+<p class="model-core">别人怎么做我就怎么做</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">在不确定时人会参考他人的行为。这是为什么排队、从众、潮流会形成。也是为什么泡沫会膨胀。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">看到大家都在做某事时；做独立判断时；分析趋势</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 意识到我是不是在跟风</li><li>2. 问如果没人这么做我还会做吗</li><li>3. 找反例有没有人不跟风也成功了</li><li>4. 独立评估这件事本身的价值</li></ol></div>
+<button class="learn-btn" id="btn-m17" onclick="toggleLearned('m17')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m18">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">沉没成本</h2>
+<p class="model-core">已经花掉的不应该影响未来决策</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">钱花出去了时间投入了，但这些不应该影响要不要继续。决策只看未来不看过去。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">考虑是否放弃时；评估项目时；投资决策</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 区分哪些是已经花掉的沉没成本</li><li>2. 问如果今天从零开始我会做这个选择吗</li><li>3. 只看未来的成本和收益</li><li>4. 如果答案是不果断放弃</li></ol></div>
+<button class="learn-btn" id="btn-m18" onclick="toggleLearned('m18')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m19">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">锚定效应</h2>
+<p class="model-core">第一个数字决定了你的判断范围</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">看到第一个价格后后续判断都会围绕它。标价1000打折到500你觉得便宜，但如果一开始标500呢？</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">谈判；定价；做估算</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别第一个出现的数字是什么</li><li>2. 问如果没有这个锚我会怎么判断</li><li>3. 主动设置自己的锚</li><li>4. 在谈判中先出价</li></ol></div>
+<button class="learn-btn" id="btn-m19" onclick="toggleLearned('m19')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m20">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">框架效应</h2>
+<p class="model-core">怎么说比说什么更重要</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">同样的信息换个说法人的反应完全不同。存活率90%和死亡率10%是一回事但感受截然不同。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">沟通；说服；做选择时</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别当前的表述框架</li><li>2. 换个框架重新描述同一件事</li><li>3. 问不同框架下我的判断会变吗</li><li>4. 选择最能帮助理性决策的框架</li></ol></div>
+<button class="learn-btn" id="btn-m20" onclick="toggleLearned('m20')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m21">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">损失厌恶</h2>
+<p class="model-core">失去的痛苦大于得到的快乐</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">失去100块的痛苦大约是得到100块快乐的两倍。这导致人过度保守不愿放弃不愿冒险。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做风险决策；考虑改变；评估投资</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别我是不是因为怕失去而在回避</li><li>2. 量化失去和得到的实际价值</li><li>3. 问如果这已经是失去的状态我会花多少挽回</li><li>4. 用理性计算代替情绪反应</li></ol></div>
+<button class="learn-btn" id="btn-m21" onclick="toggleLearned('m21')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m22">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">反馈循环</h2>
+<p class="model-core">输出反过来影响输入</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">正反馈：A增加导致B增加导致A更增加。负反馈：A增加导致B减少导致A被抑制。系统行为由反馈结构决定。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">分析系统行为；设计流程；理解增长或衰退</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 画出系统的因果链条</li><li>2. 找出所有反馈回路</li><li>3. 判断每条回路是正反馈还是负反馈</li><li>4. 问主导回路是什么它会把系统带向哪里</li></ol></div>
+<button class="learn-btn" id="btn-m22" onclick="toggleLearned('m22')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m23">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">涌现</h2>
+<p class="model-core">整体大于部分之和</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">简单规则在大量交互后产生复杂行为。蚁群没有CEO但能建复杂的巢。意识从神经元中涌现。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">理解复杂系统；设计规则；分析群体行为</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别系统的微观规则是什么</li><li>2. 观察宏观层面出现了什么模式</li><li>3. 问这个模式能从微观规则推导出来吗</li><li>4. 如果不能这就是涌现</li></ol></div>
+<button class="learn-btn" id="btn-m23" onclick="toggleLearned('m23')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m24">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">瓶颈</h2>
+<p class="model-core">系统最慢的环节决定整体速度</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">一条流水线的速度由最慢的工位决定。优化非瓶颈环节是浪费。找到瓶颈解决它然后找下一个。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">优化流程；提高效率；诊断问题</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 画出整个流程</li><li>2. 找出最慢最堵的环节</li><li>3. 集中资源解决这个环节</li><li>4. 解决后新的瓶颈会出现重复此过程</li></ol></div>
+<button class="learn-btn" id="btn-m24" onclick="toggleLearned('m24')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m25">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">杠杆点</h2>
+<p class="model-core">小改变大影响</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">系统中有些点稍微用力就能产生巨大变化。找到这些点比盲目努力重要100倍。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">推动变革；解决问题；提高效率</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 理解系统的结构</li><li>2. 列出所有可以干预的点</li><li>3. 评估每个点的杠杆效应</li><li>4. 优先干预杠杆最大的点</li></ol></div>
+<button class="learn-btn" id="btn-m25" onclick="toggleLearned('m25')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m26">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">路径依赖</h2>
+<p class="model-core">历史决定未来</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">一旦走上某条路就很难换。QWERTY键盘不是最优布局但所有人都习惯了。选择初始路径时要格外谨慎。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">做初始选择；设计标准；理解行业格局</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别当前状态是哪些历史选择造成的</li><li>2. 问如果重来我会选这条路吗</li><li>3. 评估转换成本有多高</li><li>4. 在起点时多花时间选对路</li></ol></div>
+<button class="learn-btn" id="btn-m26" onclick="toggleLearned('m26')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m27">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">熵增</h2>
+<p class="model-core">封闭系统必然走向无序</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">热力学第二定律。不持续输入能量或信息任何系统都会退化。这就是为什么维护比建设更难。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">理解衰退；维护系统；组织管理</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别系统是封闭的还是开放的</li><li>2. 测量无序度在增加吗</li><li>3. 找到负熵源什么在对抗熵增</li><li>4. 持续注入能量信息和秩序</li></ol></div>
+<button class="learn-btn" id="btn-m27" onclick="toggleLearned('m27')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m28">
+<div class="model-header">
+<span class="model-badge">生物学</span>
+<h2 class="model-title">演化</h2>
+<p class="model-core">变异加选择加时间等于适应</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不需要设计师不需要目标。随机变异环境选择适者生存。这是地球上最强大的优化算法。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">理解变化；设计迭代流程；接受不确定性</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 创造变异尝试不同的方案</li><li>2. 设置选择标准什么算好</li><li>3. 保留好的淘汰差的</li><li>4. 重复很多次</li></ol></div>
+<button class="learn-btn" id="btn-m28" onclick="toggleLearned('m28')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m29">
+<div class="model-header">
+<span class="model-badge">生物学</span>
+<h2 class="model-title">生态位</h2>
+<p class="model-core">找到你独有的位置</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">每个物种都有自己的生态位。商业也一样找到别人做不了或不愿做的位置。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">职业规划；商业定位；竞争策略</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 分析环境有什么未被满足的需求</li><li>2. 评估自己有什么独特优势</li><li>3. 匹配优势和需求的交集就是你的生态位</li><li>4. 深耕在生态位里做到最好</li></ol></div>
+<button class="learn-btn" id="btn-m29" onclick="toggleLearned('m29')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m30">
+<div class="model-header">
+<span class="model-badge">生物学</span>
+<h2 class="model-title">合作</h2>
+<p class="model-core">一起做比单干强</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">演化不只是竞争合作同样重要。共生、互惠、协作自然界充满了合作的例子。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">团队协作；商业合作；生态设计</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别谁和你有互补的能力</li><li>2. 设计如何让合作双方都受益</li><li>3. 建立信任从小合作开始</li><li>4. 扩展成功的合作模式可以复制</li></ol></div>
+<button class="learn-btn" id="btn-m30" onclick="toggleLearned('m30')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m31">
+<div class="model-header">
+<span class="model-badge">生物学</span>
+<h2 class="model-title">自催化</h2>
+<p class="model-core">产物加速自己的生产</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">化学反应中产物本身是催化剂。商业中用户越多产品越好导致产品越好用户越多。这是指数增长的底层机制。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">理解增长；设计产品；分析网络效应</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别什么在加速自己的增长</li><li>2. 问增长是自催化的还是外部驱动的</li><li>3. 如果是自催化找到加速循环的关键环节</li><li>4. 小心自催化也会加速崩溃</li></ol></div>
+<button class="learn-btn" id="btn-m31" onclick="toggleLearned('m31')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m32">
+<div class="model-header">
+<span class="model-badge">其他</span>
+<h2 class="model-title">临界质量</h2>
+<p class="model-core">过了某个点变化不可逆</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">核反应需要足够的铀堆在一起才能链式反应。社会运动、技术采用、市场引爆都有临界质量。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">推动变革；产品发布；理解趋势</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 定义什么状态算引爆</li><li>2. 估算需要多少积累才能到临界点</li><li>3. 集中资源推过临界点</li><li>4. 过了临界点后系统会自我维持</li></ol></div>
+<button class="learn-btn" id="btn-m32" onclick="toggleLearned('m32')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m33">
+<div class="model-header">
+<span class="model-badge">其他</span>
+<h2 class="model-title">林迪效应</h2>
+<p class="model-core">存在越久的东西未来存在越久</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">一本书卖了100年大概率还会再卖100年。时间是质量的过滤器。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">选择学习内容；判断趋势；做长期决策</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 问这个东西存在多久了</li><li>2. 存在越久未来预期寿命越长</li><li>3. 优先选择经得起时间考验的东西</li><li>4. 对新事物保持谨慎</li></ol></div>
+<button class="learn-btn" id="btn-m33" onclick="toggleLearned('m33')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m34">
+<div class="model-header">
+<span class="model-badge">其他</span>
+<h2 class="model-title">帕累托法则</h2>
+<p class="model-core">80%的结果来自20%的原因</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">80%的销售额来自20%的客户。80%的成果来自20%的努力。找到那20%把精力集中在那里。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">优先级排序；资源分配；提高效率</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出所有投入和产出</li><li>2. 找出贡献最大的20%</li><li>3. 把80%精力放在这20%上</li><li>4. 对剩下的80%减少投入或放弃</li></ol></div>
+<button class="learn-btn" id="btn-m34" onclick="toggleLearned('m34')">标记为已学习</button>
+</div></div></div></div>
+<script>
+let learned=JSON.parse(localStorage.getItem("munger-learned")||"{}");
+function showModel(id){
+document.querySelectorAll(".model-detail").forEach(d=>d.classList.remove("active"));
+document.querySelectorAll(".model-item").forEach(i=>i.classList.remove("active"));
+document.getElementById("detail-"+id).classList.add("active");
+let item=document.querySelector('.model-item[data-id="'+id+'"]');
+if(item)item.classList.add("active");
+document.getElementById("welcome").style.display="none";
+updateBtn(id);
+}
+function toggleLearned(id){
+learned[id]=!learned[id];
+localStorage.setItem("munger-learned",JSON.stringify(learned));
+updateBtn(id);
+updateCount();
+}
+function updateBtn(id){
+let btn=document.getElementById("btn-"+id);
+if(learned[id]){btn.textContent="已学习";btn.classList.add("learned");}
+else{btn.textContent="标记为已学习";btn.classList.remove("learned");}
+}
+function updateCount(){
+document.getElementById("learned-count").textContent=Object.values(learned).filter(v=>v).length;
+}
+function filterModels(){
+let q=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".model-item").forEach(item=>{
+item.style.display=item.textContent.toLowerCase().includes(q)?"":"none";
+});
+}
+function toggleCat(el){
+let items=el.parentElement.querySelectorAll(".model-item");
+let hidden=items.length>0&&items[0].style.display!=="none";
+items.forEach(i=>i.style.display=hidden?"none":"");
+}
+updateCount();
+</script>
+</body>
+</html>
