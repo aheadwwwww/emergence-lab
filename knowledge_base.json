@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-27T15:32:34.789941",
+  "last_updated": "2026-06-27T16:06:51.156837",
   "categories": {
     "exploration": {
-      "count": 66,
+      "count": 69,
       "items": [
+        {
+          "name": "2026-06-27-ecosystem-sweep",
+          "path": "exploration\\2026-06-27-ecosystem-sweep.md",
+          "size": 2669,
+          "modified": "2026-06-27T16:06:07.917848"
+        },
+        {
+          "name": "lenia-exploration",
+          "path": "exploration\\lenia-exploration.md",
+          "size": 2349,
+          "modified": "2026-06-27T16:03:19.948620"
+        },
+        {
+          "name": "2026-06-27-heartbeat-note",
+          "path": "exploration\\2026-06-27-heartbeat-note.md",
+          "size": 2062,
+          "modified": "2026-06-27T15:33:17.656225"
+        },
         {
           "name": "2026-06-27-digital-metabolism",
           "path": "exploration\\2026-06-27-digital-metabolism.md",
@@ -403,8 +421,26 @@
       ]
     },
     "experiments": {
-      "count": 84,
+      "count": 87,
       "items": [
+        {
+          "name": "quick_ecosystem_test",
+          "path": "experiments\\quick_ecosystem_test.py",
+          "size": 2349,
+          "modified": "2026-06-27T16:05:33.780871"
+        },
+        {
+          "name": "ecosystem_parameter_sweep",
+          "path": "experiments\\ecosystem_parameter_sweep.py",
+          "size": 3425,
+          "modified": "2026-06-27T16:04:16.838836"
+        },
+        {
+          "name": "rigorous_ecosystem_comparison",
+          "path": "experiments\\rigorous_ecosystem_comparison.py",
+          "size": 2022,
+          "modified": "2026-06-27T15:32:43.234943"
+        },
         {
           "name": "quick_ecosystem_comparison",
           "path": "experiments\\quick_ecosystem_comparison.py",
@@ -912,8 +948,14 @@
       ]
     },
     "memory": {
-      "count": 69,
+      "count": 70,
       "items": [
+        {
+          "name": "2026-06-27-heartbeat",
+          "path": "memory\\2026-06-27-heartbeat.md",
+          "size": 2831,
+          "modified": "2026-06-27T16:06:50.805552"
+        },
         {
           "name": "2026-06-27",
           "path": "memory\\2026-06-27.md",
