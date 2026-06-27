@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T19:59:32.156989",
+  "last_updated": "2026-06-27T20:32:53.111026",
   "categories": {
     "exploration": {
-      "count": 76,
+      "count": 77,
       "items": [
+        {
+          "name": "2026-06-27-self-replicating-nn-deep-dive",
+          "path": "exploration\\2026-06-27-self-replicating-nn-deep-dive.md",
+          "size": 7202,
+          "modified": "2026-06-27T20:00:34.762403"
+        },
         {
           "name": "2026-06-27-google-sos-latest",
           "path": "exploration\\2026-06-27-google-sos-latest.md",
@@ -468,8 +474,8 @@
         {
           "name": "neural_lenia_quick_test",
           "path": "experiments\\neural_lenia_quick_test.py",
-          "size": 2154,
-          "modified": "2026-06-27T19:33:33.535924"
+          "size": 2232,
+          "modified": "2026-06-27T20:01:29.883316"
         },
         {
           "name": "neural_lenia_self_replicating_v2",
@@ -1023,6 +1029,12 @@
       "count": 72,
       "items": [
         {
+          "name": "2026-06-27",
+          "path": "memory\\2026-06-27.md",
+          "size": 3837,
+          "modified": "2026-06-27T20:02:04.171786"
+        },
+        {
           "name": "projects",
           "path": "memory\\projects.md",
           "size": 7722,
@@ -1033,12 +1045,6 @@
           "path": "memory\\heartbeat-log.md",
           "size": 3629,
           "modified": "2026-06-27T18:38:39.394117"
-        },
-        {
-          "name": "2026-06-27",
-          "path": "memory\\2026-06-27.md",
-          "size": 2273,
-          "modified": "2026-06-27T18:23:01.823062"
         },
         {
           "name": "2026-06-27-heartbeat-summary",
