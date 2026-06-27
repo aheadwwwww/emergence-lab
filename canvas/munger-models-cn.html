@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>芒格思维模型库 - 34个核心模型</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -11,18 +11,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 header{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px;text-align:center}
 h1{font-size:2em;margin-bottom:5px}
 .subtitle{font-size:1em;opacity:0.9}
+.progress-bar{margin:10px 20px;height:6px;background:#e9ecef;border-radius:3px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:3px;transition:width .3s;width:0%}
 .stats{display:flex;justify-content:space-around;padding:15px;background:#f8f9fa;border-bottom:1px solid #e9ecef}
 .stat{text-align:center}
 .stat-number{font-size:2em;font-weight:bold;color:#667eea}
 .stat-label{color:#6c757d;margin-top:2px;font-size:0.85em}
-.main-content{display:grid;grid-template-columns:200px 1fr;min-height:600px}
+.main-content{display:grid;grid-template-columns:220px 1fr;min-height:600px}
 .sidebar{background:#f8f9fa;padding:10px;border-right:1px solid #e9ecef;overflow-y:auto;max-height:600px}
 .sidebar input{width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-bottom:10px;font-size:0.85em}
-.cat-title{font-weight:bold;color:#495057;padding:6px 8px;background:white;border-radius:4px;margin:8px 0 5px;cursor:pointer;font-size:0.85em}
+.cat-title{font-weight:bold;color:#495057;padding:6px 8px;background:white;border-radius:4px;margin:8px 0 5px;cursor:pointer;font-size:0.85em;user-select:none}
 .cat-title:hover{background:#667eea;color:white}
-.model-item{padding:5px 8px;cursor:pointer;border-radius:3px;font-size:0.8em;color:#6c757d;margin-bottom:1px}
+.model-item{padding:5px 8px;cursor:pointer;border-radius:3px;font-size:0.8em;color:#6c757d;margin-bottom:1px;display:flex;align-items:center;gap:4px}
 .model-item:hover{background:#e9ecef;color:#495057}
 .model-item.active{background:#667eea;color:white}
+.model-item .check{color:#28a745;font-weight:bold;display:none;font-size:0.75em}
+.model-item.learned .check{display:inline}
 .content{padding:25px;overflow-y:auto;max-height:600px}
 .welcome{text-align:center;padding:60px 20px}
 .welcome h2{font-size:1.5em;color:#495057;margin-bottom:12px}
@@ -43,14 +47,19 @@ h1{font-size:2em;margin-bottom:5px}
 .learn-btn{display:inline-block;margin-top:15px;padding:8px 20px;background:#667eea;color:white;border:none;border-radius:6px;cursor:pointer;font-size:0.9em}
 .learn-btn:hover{background:#5a6fd6}
 .learn-btn.learned{background:#28a745}
+.related-section{margin-top:15px;padding-top:15px;border-top:1px dashed #e9ecef}
+.related-links{display:flex;flex-wrap:wrap;gap:8px;padding-left:9px}
+.related-link{padding:4px 12px;background:#f0f0ff;color:#667eea;border-radius:12px;cursor:pointer;font-size:0.85em;border:1px solid #e0e0ff}
+.related-link:hover{background:#667eea;color:white}
 </style>
 </head>
 <body>
 <div class="container">
 <header>
 <h1>芒格思维模型库</h1>
-<p class="subtitle">查理芒格的多元思维模型 -- 34个核心模型 | 全中文</p>
+<p class="subtitle">查理芒格的多元思维模型 · 34个核心模型 · 全中文 · 含案例与关联推荐</p>
 </header>
+<div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
 <div class="stats">
 <div class="stat"><div class="stat-number">34</div><div class="stat-label">思维模型</div></div>
 <div class="stat"><div class="stat-number">6</div><div class="stat-label">分类</div></div>
@@ -59,16 +68,18 @@ h1{font-size:2em;margin-bottom:5px}
 <div class="main-content">
 <div class="sidebar">
 <input type="text" id="search" placeholder="搜索模型..." oninput="filterModels()">
-<div class="cat-title" onclick="toggleCat(this)">决策 (9)</div><div class="model-item" data-cat="决策" data-id="m1" onclick="showModel('m1')">第一性原理</div><div class="model-item" data-cat="决策" data-id="m2" onclick="showModel('m2')">二阶思维</div><div class="model-item" data-cat="决策" data-id="m3" onclick="showModel('m3')">逆向思维</div><div class="model-item" data-cat="决策" data-id="m4" onclick="showModel('m4')">思想实验</div><div class="model-item" data-cat="决策" data-id="m5" onclick="showModel('m5')">概率思维</div><div class="model-item" data-cat="决策" data-id="m6" onclick="showModel('m6')">能力圈</div><div class="model-item" data-cat="决策" data-id="m7" onclick="showModel('m7')">地图非领土</div><div class="model-item" data-cat="决策" data-id="m8" onclick="showModel('m8')">奥卡姆剃刀</div><div class="model-item" data-cat="决策" data-id="m9" onclick="showModel('m9')">汉隆剃刀</div><div class="cat-title" onclick="toggleCat(this)">经济学 (6)</div><div class="model-item" data-cat="经济学" data-id="m10" onclick="showModel('m10')">复利</div><div class="model-item" data-cat="经济学" data-id="m11" onclick="showModel('m11')">机会成本</div><div class="model-item" data-cat="经济学" data-id="m12" onclick="showModel('m12')">安全边际</div><div class="model-item" data-cat="经济学" data-id="m13" onclick="showModel('m13')">供需关系</div><div class="model-item" data-cat="经济学" data-id="m14" onclick="showModel('m14')">稀缺性</div><div class="model-item" data-cat="经济学" data-id="m15" onclick="showModel('m15')">激励</div><div class="cat-title" onclick="toggleCat(this)">心理学 (6)</div><div class="model-item" data-cat="心理学" data-id="m16" onclick="showModel('m16')">确认偏误</div><div class="model-item" data-cat="心理学" data-id="m17" onclick="showModel('m17')">社会认同</div><div class="model-item" data-cat="心理学" data-id="m18" onclick="showModel('m18')">沉没成本</div><div class="model-item" data-cat="心理学" data-id="m19" onclick="showModel('m19')">锚定效应</div><div class="model-item" data-cat="心理学" data-id="m20" onclick="showModel('m20')">框架效应</div><div class="model-item" data-cat="心理学" data-id="m21" onclick="showModel('m21')">损失厌恶</div><div class="cat-title" onclick="toggleCat(this)">系统思维 (6)</div><div class="model-item" data-cat="系统思维" data-id="m22" onclick="showModel('m22')">反馈循环</div><div class="model-item" data-cat="系统思维" data-id="m23" onclick="showModel('m23')">涌现</div><div class="model-item" data-cat="系统思维" data-id="m24" onclick="showModel('m24')">瓶颈</div><div class="model-item" data-cat="系统思维" data-id="m25" onclick="showModel('m25')">杠杆点</div><div class="model-item" data-cat="系统思维" data-id="m26" onclick="showModel('m26')">路径依赖</div><div class="model-item" data-cat="系统思维" data-id="m27" onclick="showModel('m27')">熵增</div><div class="cat-title" onclick="toggleCat(this)">生物学 (4)</div><div class="model-item" data-cat="生物学" data-id="m28" onclick="showModel('m28')">演化</div><div class="model-item" data-cat="生物学" data-id="m29" onclick="showModel('m29')">生态位</div><div class="model-item" data-cat="生物学" data-id="m30" onclick="showModel('m30')">合作</div><div class="model-item" data-cat="生物学" data-id="m31" onclick="showModel('m31')">自催化</div><div class="cat-title" onclick="toggleCat(this)">其他 (3)</div><div class="model-item" data-cat="其他" data-id="m32" onclick="showModel('m32')">临界质量</div><div class="model-item" data-cat="其他" data-id="m33" onclick="showModel('m33')">林迪效应</div><div class="model-item" data-cat="其他" data-id="m34" onclick="showModel('m34')">帕累托法则</div></div><div class="content" id="content-area"><div class="welcome" id="welcome"><h2>选择一个模型开始学习</h2><p>查理芒格说：手里只有锤子的人，看什么都像钉子。<br>掌握多元思维模型，用不同的透镜看世界。</p></div>
+<div class="cat-title" onclick="toggleCat(this)">决策 (9)</div><div class="model-item" data-cat="决策" data-id="m1" onclick="showModel('m1')"><span class="check">✓</span>第一性原理</div><div class="model-item" data-cat="决策" data-id="m2" onclick="showModel('m2')"><span class="check">✓</span>二阶思维</div><div class="model-item" data-cat="决策" data-id="m3" onclick="showModel('m3')"><span class="check">✓</span>逆向思维</div><div class="model-item" data-cat="决策" data-id="m4" onclick="showModel('m4')"><span class="check">✓</span>思想实验</div><div class="model-item" data-cat="决策" data-id="m5" onclick="showModel('m5')"><span class="check">✓</span>概率思维</div><div class="model-item" data-cat="决策" data-id="m6" onclick="showModel('m6')"><span class="check">✓</span>能力圈</div><div class="model-item" data-cat="决策" data-id="m7" onclick="showModel('m7')"><span class="check">✓</span>地图非领土</div><div class="model-item" data-cat="决策" data-id="m8" onclick="showModel('m8')"><span class="check">✓</span>奥卡姆剃刀</div><div class="model-item" data-cat="决策" data-id="m9" onclick="showModel('m9')"><span class="check">✓</span>汉隆剃刀</div><div class="cat-title" onclick="toggleCat(this)">经济学 (6)</div><div class="model-item" data-cat="经济学" data-id="m10" onclick="showModel('m10')"><span class="check">✓</span>复利</div><div class="model-item" data-cat="经济学" data-id="m11" onclick="showModel('m11')"><span class="check">✓</span>机会成本</div><div class="model-item" data-cat="经济学" data-id="m12" onclick="showModel('m12')"><span class="check">✓</span>安全边际</div><div class="model-item" data-cat="经济学" data-id="m13" onclick="showModel('m13')"><span class="check">✓</span>供需关系</div><div class="model-item" data-cat="经济学" data-id="m14" onclick="showModel('m14')"><span class="check">✓</span>稀缺性</div><div class="model-item" data-cat="经济学" data-id="m15" onclick="showModel('m15')"><span class="check">✓</span>激励</div><div class="cat-title" onclick="toggleCat(this)">心理学 (6)</div><div class="model-item" data-cat="心理学" data-id="m16" onclick="showModel('m16')"><span class="check">✓</span>确认偏误</div><div class="model-item" data-cat="心理学" data-id="m17" onclick="showModel('m17')"><span class="check">✓</span>社会认同</div><div class="model-item" data-cat="心理学" data-id="m18" onclick="showModel('m18')"><span class="check">✓</span>沉没成本</div><div class="model-item" data-cat="心理学" data-id="m19" onclick="showModel('m19')"><span class="check">✓</span>锚定效应</div><div class="model-item" data-cat="心理学" data-id="m20" onclick="showModel('m20')"><span class="check">✓</span>框架效应</div><div class="model-item" data-cat="心理学" data-id="m21" onclick="showModel('m21')"><span class="check">✓</span>损失厌恶</div><div class="cat-title" onclick="toggleCat(this)">系统思维 (6)</div><div class="model-item" data-cat="系统思维" data-id="m22" onclick="showModel('m22')"><span class="check">✓</span>反馈循环</div><div class="model-item" data-cat="系统思维" data-id="m23" onclick="showModel('m23')"><span class="check">✓</span>涌现</div><div class="model-item" data-cat="系统思维" data-id="m24" onclick="showModel('m24')"><span class="check">✓</span>瓶颈</div><div class="model-item" data-cat="系统思维" data-id="m25" onclick="showModel('m25')"><span class="check">✓</span>杠杆点</div><div class="model-item" data-cat="系统思维" data-id="m26" onclick="showModel('m26')"><span class="check">✓</span>路径依赖</div><div class="model-item" data-cat="系统思维" data-id="m27" onclick="showModel('m27')"><span class="check">✓</span>熵增</div><div class="cat-title" onclick="toggleCat(this)">生物学 (4)</div><div class="model-item" data-cat="生物学" data-id="m28" onclick="showModel('m28')"><span class="check">✓</span>演化</div><div class="model-item" data-cat="生物学" data-id="m29" onclick="showModel('m29')"><span class="check">✓</span>生态位</div><div class="model-item" data-cat="生物学" data-id="m30" onclick="showModel('m30')"><span class="check">✓</span>合作</div><div class="model-item" data-cat="生物学" data-id="m31" onclick="showModel('m31')"><span class="check">✓</span>自催化</div><div class="cat-title" onclick="toggleCat(this)">其他 (3)</div><div class="model-item" data-cat="其他" data-id="m32" onclick="showModel('m32')"><span class="check">✓</span>临界质量</div><div class="model-item" data-cat="其他" data-id="m33" onclick="showModel('m33')"><span class="check">✓</span>林迪效应</div><div class="model-item" data-cat="其他" data-id="m34" onclick="showModel('m34')"><span class="check">✓</span>帕累托法则</div></div><div class="content" id="content-area"><div class="welcome" id="welcome"><h2>选择一个模型开始学习</h2><p>查理芒格说：手里只有锤子的人，看什么都像钉子。<br>掌握34个思维模型，用不同的透镜看世界。<br>每个模型配有经典案例和相关推荐，形成知识网络。</p></div>
 <div class="model-detail" id="detail-m1">
 <div class="model-header">
 <span class="model-badge">决策</span>
 <h2 class="model-title">第一性原理</h2>
 <p class="model-core">拆解到最基本事实，从零重建</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">把问题拆到不能再拆的基本元素，抛弃所有假设和惯例，从最底层重新构建解决方案。马斯克用这个方法把火箭成本降到1/10。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">把问题拆到不能再拆的基本元素，抛弃所有假设和惯例，从最底层重新构建解决方案。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">当被告知不可能时；当行业惯例成为枷锁时；当需要突破性创新时</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 明确你要解决的问题是什么</li><li>2. 拆解：这个问题由哪些基本元素构成？</li><li>3. 质疑：哪些是事实，哪些只是惯例？</li><li>4. 重建：从基本事实出发，能有什么新方案？</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">马斯克将火箭拆解为原材料成本，发现火箭材料仅占售价2%，于是自建SpaceX将成本降至十分之一。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.明确你要解决的问题是什么</li><li>2.拆解：这个问题由哪些基本元素构成</li><li>3.质疑：哪些是事实，哪些只是惯例</li><li>4.重建：从基本事实出发能有什么新方案</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m3')">逆向思维</span><span class="related-link" onclick="showModel('m4')">思想实验</span></div></div>
 <button class="learn-btn" id="btn-m1" onclick="toggleLearned('m1')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m2">
@@ -77,31 +88,37 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">二阶思维</h2>
 <p class="model-core">思考后果的后果</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">不只考虑直接结果，还要想'然后呢？'。第一阶：降价导致销量上升。第二阶：竞品跟进导致利润都下降导致行业洗牌。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不只考虑直接结果，还要想然后呢。第一阶降价导致销量上升。第二阶竞品跟进导致利润都下降导致行业洗牌。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做战略决策时；评估政策影响时；投资判断时</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出决策的直接后果</li><li>2. 对每个后果问会发生什么</li><li>3. 重复至少两次</li><li>4. 比较一阶和二阶的差异</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">亚马逊长期不盈利却持续投资物流和云服务，一阶看是亏损，二阶看是建立不可逾越的护城河。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出决策的直接后果</li><li>2.对每个后果问会发生什么</li><li>3.重复至少两次</li><li>4.比较一阶和二阶的差异</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m3')">逆向思维</span></div></div>
 <button class="learn-btn" id="btn-m2" onclick="toggleLearned('m2')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m3">
 <div class="model-header">
 <span class="model-badge">决策</span>
 <h2 class="model-title">逆向思维</h2>
-<p class="model-core">从失败倒推</p>
+<p class="model-core">从失败倒推，避免错误</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">不问怎么成功，问怎么失败然后避免。芒格说：告诉我我会死在哪，我永远不去那里。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不问怎么成功，问怎么失败然后避免。芒格说告诉我我会死在哪，我永远不去那里。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">风险评估；项目启动前；重大决策前</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 定义你想要的结果</li><li>2. 反过来问：怎样确保达不到？</li><li>3. 列出所有失败路径</li><li>4. 逐一设计防范措施</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">巴菲特每年致股东信都先写过去一年犯的错误而非成就。先承认失败才能避免重蹈覆辙。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.定义你想要的结果</li><li>2.反过来问怎样确保达不到</li><li>3.列出所有失败路径</li><li>4.逐一设计防范措施</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m5')">概率思维</span></div></div>
 <button class="learn-btn" id="btn-m3" onclick="toggleLearned('m3')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m4">
 <div class="model-header">
 <span class="model-badge">决策</span>
 <h2 class="model-title">思想实验</h2>
-<p class="model-core">在脑子里做实验</p>
+<p class="model-core">在脑子里做实验不花成本</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">在大脑中模拟场景，探索假设和可能性。爱因斯坦用思想实验发现了相对论。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">在大脑中模拟场景探索假设和可能性。爱因斯坦用思想实验发现了相对论。不需要实验室只需要想象力。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">无法做真实实验时；探索如果会怎样；测试假设</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 设定场景和假设条件</li><li>2. 在脑中推演事件发展</li><li>3. 观察矛盾点和意外发现</li><li>4. 提炼可验证的结论</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">爱因斯坦16岁时想象追着一束光跑会看到什么，这个思想实验最终导向了狭义相对论。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.设定场景和假设条件</li><li>2.在脑中推演事件发展</li><li>3.观察矛盾点和意外发现</li><li>4.提炼可验证的结论</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m5')">概率思维</span></div></div>
 <button class="learn-btn" id="btn-m4" onclick="toggleLearned('m4')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m5">
@@ -110,9 +127,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">概率思维</h2>
 <p class="model-core">用概率而非确定论看世界</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">未来不是确定的，是一组概率分布。好的决策是选择胜率更高的选项，而非保证赢的选项。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">未来不是确定的是一组概率分布。好的决策是选择胜率更高的选项而非保证赢的选项。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">面对不确定性；评估风险；做预测</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出所有可能的结果</li><li>2. 估算每种结果的概率</li><li>3. 计算期望值</li><li>4. 选择期望值最高的方案</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">德州扑克职业选手不追求每局都赢，而是追求正期望值决策。长期来看EV正的策略必然盈利。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出所有可能的结果</li><li>2.估算每种结果的概率</li><li>3.计算期望值</li><li>4.选择期望值最高的方案</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m6')">能力圈</span><span class="related-link" onclick="showModel('m11')">机会成本</span></div></div>
 <button class="learn-btn" id="btn-m5" onclick="toggleLearned('m5')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m6">
@@ -121,9 +140,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">能力圈</h2>
 <p class="model-core">知道边界在哪比圈子多大更重要</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">巴菲特和芒格的核心原则。不在能力圈外做决策。圈的大小不重要，知道边界在哪才重要。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不在能力圈外做决策。圈的大小不重要知道边界在哪才重要。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做投资决策；接受新任务；给别人建议</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 问自己：这件事我真的懂吗？</li><li>2. 区分知道和以为自己知道</li><li>3. 在圈外时承认不懂找懂的人</li><li>4. 持续扩大能力圈</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">巴菲特和盖茨同时写下对他们成功最重要的一个词，两人都写了专注。巴菲特一生不投资科技股因为不在他能力圈内。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.问自己这件事我真的懂吗</li><li>2.区分知道和以为自己知道</li><li>3.在圈外时承认不懂找懂的人</li><li>4.持续扩大能力圈</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m7')">地图非领土</span><span class="related-link" onclick="showModel('m11')">机会成本</span></div></div>
 <button class="learn-btn" id="btn-m6" onclick="toggleLearned('m6')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m7">
@@ -134,7 +155,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">任何理论、模型、计划都只是现实的简化表示。地图再精确也不是领土本身。不要爱上自己的模型。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">制定计划时；使用理论框架时；分析数据时</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 确认你用的是哪个地图</li><li>2. 问：这个地图忽略了什么？</li><li>3. 去领土上实地验证</li><li>4. 根据现实反馈更新地图</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">二战前法国花十年建马奇诺防线，但德国绕过去了。法国的地图保护了上次战争却不适用于下次战争。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.确认你用的是哪个地图</li><li>2.问这个地图忽略了什么</li><li>3.去领土上实地验证</li><li>4.根据现实反馈更新地图</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m8')">奥卡姆剃刀</span></div></div>
 <button class="learn-btn" id="btn-m7" onclick="toggleLearned('m7')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m8">
@@ -143,31 +166,37 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">奥卡姆剃刀</h2>
 <p class="model-core">最简单的解释往往是对的</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">在多个解释中，选择假设最少的那个。不是简单的一定对，而是不必要的复杂通常是错的。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">在多个解释中选择假设最少的那个。不是简单的一定对而是不必要的复杂通常是错的。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">面对多个解释时；设计方案时；调试问题时</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出所有可能的解释</li><li>2. 数每个解释需要多少假设</li><li>3. 优先验证假设最少的</li><li>4. 如果不够再逐步增加复杂度</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">哥白尼日心说替代托勒密地心说，不是因为它更准而是因为它更简单，不需要本轮均轮那套复杂体系。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出所有可能的解释</li><li>2.数每个解释需要多少假设</li><li>3.优先验证假设最少的</li><li>4.如果不够再逐步增加复杂度</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m28')">演化</span></div></div>
 <button class="learn-btn" id="btn-m8" onclick="toggleLearned('m8')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m9">
 <div class="model-header">
 <span class="model-badge">决策</span>
 <h2 class="model-title">汉隆剃刀</h2>
-<p class="model-core">能用愚蠢解释的，不要归咎于恶意</p>
+<p class="model-core">能用愚蠢解释的不要归咎于恶意</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">别人做了让你不爽的事，先假设他是疏忽或无知，而不是故意害你。大多数恶意其实是笨拙。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">别人做了让你不爽的事先假设他是疏忽或无知而不是故意害你。大多数恶意其实是笨拙。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">被人冒犯时；解读竞争对手行为；处理冲突</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 暂停：感受到被冒犯时先停下来</li><li>2. 列出其他可能的解释</li><li>3. 问：有证据证明是恶意吗？</li><li>4. 没有证据就选最善意的解释</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">邮件没回大概率是对方忙或忘了而非故意冷落你。假设恶意会消耗大量情绪，假设疏忽则能快速翻篇。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.暂停感受到被冒犯时先停下来</li><li>2.列出其他可能的解释</li><li>3.问有证据证明是恶意吗</li><li>4.没有证据就选最善意的解释</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m18')">沉没成本</span></div></div>
 <button class="learn-btn" id="btn-m9" onclick="toggleLearned('m9')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m10">
 <div class="model-header">
 <span class="model-badge">经济学</span>
 <h2 class="model-title">复利</h2>
-<p class="model-core">利滚利，时间是最好的杠杆</p>
+<p class="model-core">利滚利时间是最好的杠杆</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">收益产生收益，形成指数增长。不只是钱，知识、技能、人际关系都遵循复利。关键是持续投入和时间。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">收益产生收益形成指数增长。不光是钱，知识、技能、人际关系都遵循复利。关键是持续投入和时间。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">投资理财；学习规划；职业发展</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 找到能产生复利的事</li><li>2. 尽早开始让时间发挥作用</li><li>3. 保持持续投入不要中断</li><li>4. 耐心等待指数拐点</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">巴菲特90%的财富在65岁后获得。他从11岁开始投资，54年的复利积累证明复利需要极高的耐心。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.找到能产生复利的事</li><li>2.尽早开始让时间发挥作用</li><li>3.保持持续投入不要中断</li><li>4.耐心等待指数拐点</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m11')">机会成本</span><span class="related-link" onclick="showModel('m12')">安全边际</span></div></div>
 <button class="learn-btn" id="btn-m10" onclick="toggleLearned('m10')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m11">
@@ -176,9 +205,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">机会成本</h2>
 <p class="model-core">选择的真正代价是你放弃的东西</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">做一件事的成本不是花的时间和钱，而是用同样的资源能做的最好的另一件事。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">做一件事的成本不是花的时间和钱而是用同样的资源能做的最好的另一件事。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做选择时；分配资源时；评估时间投入</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出你正在放弃的选项</li><li>2. 找出其中价值最高的</li><li>3. 问：选A放弃B值得吗？</li><li>4. 用放弃的最好选项来衡量成本</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">比尔盖茨退学创办微软，他放弃的不是学费而是哈佛学位的机会价值。但他用这个机会换来了更大的东西。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出你正在放弃的选项</li><li>2.找出其中价值最高的</li><li>3.问选A放弃B值得吗</li><li>4.用放弃的最好选项来衡量成本</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m6')">能力圈</span><span class="related-link" onclick="showModel('m10')">复利</span></div></div>
 <button class="learn-btn" id="btn-m11" onclick="toggleLearned('m11')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m12">
@@ -187,9 +218,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">安全边际</h2>
 <p class="model-core">留足缓冲应对意外</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">工程师造桥不造刚好承重的桥，而是留几倍余量。投资、计划、承诺都应该留安全边际。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">工程师造桥不造刚好承重的桥而是留几倍余量。投资、计划、承诺都应该留安全边际。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做预算；承诺截止日期；投资决策</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 估算最坏情况需要什么</li><li>2. 在估算基础上加缓冲30%到100%</li><li>3. 按加了缓冲的标准执行</li><li>4. 永远不要刚好卡在极限上</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">本杰明格雷厄姆教导用远低于内在价值的价格买股票，差价就是安全边际。即使判断出错也不会亏太多。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.估算最坏情况需要什么</li><li>2.在估算基础上加缓冲30%到100%</li><li>3.按加了缓冲的标准执行</li><li>4.永远不要刚好卡在极限上</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m10')">复利</span><span class="related-link" onclick="showModel('m17')">社会认同</span></div></div>
 <button class="learn-btn" id="btn-m12" onclick="toggleLearned('m12')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m13">
@@ -198,9 +231,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">供需关系</h2>
 <p class="model-core">价格由供需决定不是由成本决定</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">东西值多少钱不取决于你花了多少成本，取决于有多少人想要、有多少人提供。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">东西值多少钱不取决于你花了多少成本，取决于有多少人想要、有多少人提供。理解供需就理解市场的底层逻辑。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">定价；分析市场；理解价格波动</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别谁是供给方谁是需求方</li><li>2. 分析供给和需求各自的弹性</li><li>3. 预测什么因素会改变供给或需求</li><li>4. 判断价格会往哪个方向走</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">疫情期间口罩需求暴增而供给不足，价格飙升。不是成本变了，是供需失衡。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别谁是供给方谁是需求方</li><li>2.分析供给和需求各自的弹性</li><li>3.预测什么因素会改变供给或需求</li><li>4.判断价格会往哪个方向走</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m14')">稀缺性</span><span class="related-link" onclick="showModel('m29')">生态位</span></div></div>
 <button class="learn-btn" id="btn-m13" onclick="toggleLearned('m13')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m14">
@@ -211,7 +246,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">经济学的基本前提。因为稀缺所以需要选择，因为选择所以有机会成本。稀缺创造价值。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">资源分配；优先级排序；理解价值</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别什么是真正稀缺的</li><li>2. 区分稀缺和短暂短缺</li><li>3. 问：谁控制了稀缺资源？</li><li>4. 思考如何创造或获取稀缺资源</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">钻石本身并不稀有，但戴比尔斯控制全球钻石供应制造稀缺，成功让钻石价格远超实际价值。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别什么是真正稀缺的</li><li>2.区分稀缺和短暂短缺</li><li>3.问谁控制了稀缺资源</li><li>4.思考如何创造或获取稀缺资源</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m13')">供需关系</span><span class="related-link" onclick="showModel('m15')">激励</span></div></div>
 <button class="learn-btn" id="btn-m14" onclick="toggleLearned('m14')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m15">
@@ -220,9 +257,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">激励</h2>
 <p class="model-core">人会对激励做出反应</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">芒格说：告诉我激励是什么，我告诉你结果是什么。设计错误的激励会产生错误的行为。永远先看激励结构。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">芒格说告诉我激励是什么我告诉你结果是什么。设计错误的激励会产生错误的行为。永远先看激励结构。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">设计制度；管理团队；理解行为</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 找出系统中所有的激励</li><li>2. 问这些激励会导致什么行为</li><li>3. 检查有没有激励在鼓励坏行为</li><li>4. 调整让激励和想要的结果对齐</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">苏联工厂按重量考核，导致生产出全世界最重的吊灯。目标设错了一切都错。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.找出系统中所有的激励</li><li>2.问这些激励会导致什么行为</li><li>3.检查有没有激励在鼓励坏行为</li><li>4.调整让激励和想要的结果对齐</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m13')">供需关系</span><span class="related-link" onclick="showModel('m22')">反馈循环</span></div></div>
 <button class="learn-btn" id="btn-m15" onclick="toggleLearned('m15')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m16">
@@ -233,7 +272,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">我们倾向于寻找、注意、记住支持自己观点的证据，忽略反对的证据。这是最普遍也最危险的认知偏差。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做判断时；收集信息时；评估证据时</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 明确自己当前的信念是什么</li><li>2. 主动寻找反对的证据</li><li>3. 问如果我是错的会是什么原因</li><li>4. 让持不同观点的人来挑战你</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">达尔文意识到确认偏误后，专门用一个笔记本来记录和理论矛盾的观察，强迫自己面对反面证据。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.明确自己当前的信念是什么</li><li>2.主动寻找反对的证据</li><li>3.问如果我是错的会是什么原因</li><li>4.让持不同观点的人来挑战你</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m17')">社会认同</span><span class="related-link" onclick="showModel('m18')">沉没成本</span></div></div>
 <button class="learn-btn" id="btn-m16" onclick="toggleLearned('m16')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m17">
@@ -244,7 +285,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">在不确定时人会参考他人的行为。这是为什么排队、从众、潮流会形成。也是为什么泡沫会膨胀。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">看到大家都在做某事时；做独立判断时；分析趋势</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 意识到我是不是在跟风</li><li>2. 问如果没人这么做我还会做吗</li><li>3. 找反例有没有人不跟风也成功了</li><li>4. 独立评估这件事本身的价值</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">郁金香泡沫、2000年互联网泡沫、比特币狂热——每次泡沫的驱动力都是因为看到别人在赚钱。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.意识到我是不是在跟风</li><li>2.问如果没人这么做我还会做吗</li><li>3.找反例有没有人不跟风也成功了</li><li>4.独立评估这件事本身的价值</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m18')">沉没成本</span></div></div>
 <button class="learn-btn" id="btn-m17" onclick="toggleLearned('m17')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m18">
@@ -253,9 +296,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">沉没成本</h2>
 <p class="model-core">已经花掉的不应该影响未来决策</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">钱花出去了时间投入了，但这些不应该影响要不要继续。决策只看未来不看过去。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">钱花出去了时间投入了但这些不应该影响要不要继续。决策只看未来不看过去。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">考虑是否放弃时；评估项目时；投资决策</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 区分哪些是已经花掉的沉没成本</li><li>2. 问如果今天从零开始我会做这个选择吗</li><li>3. 只看未来的成本和收益</li><li>4. 如果答案是不果断放弃</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">协和飞机项目英法两国明知会亏损仍继续投入已烧了几十亿，因为已经花了那么多。这就是被沉没成本绑架的典型。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.区分哪些是已经花掉的沉没成本</li><li>2.问如果今天从零开始我会做这个选择吗</li><li>3.只看未来的成本和收益</li><li>4.如果答案是不果断放弃</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m21')">损失厌恶</span></div></div>
 <button class="learn-btn" id="btn-m18" onclick="toggleLearned('m18')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m19">
@@ -266,7 +311,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">看到第一个价格后后续判断都会围绕它。标价1000打折到500你觉得便宜，但如果一开始标500呢？</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">谈判；定价；做估算</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别第一个出现的数字是什么</li><li>2. 问如果没有这个锚我会怎么判断</li><li>3. 主动设置自己的锚</li><li>4. 在谈判中先出价</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">房地产中介先带你看一套又贵又差的房子，再带你看正常价格的房子，你会觉得后者性价比极高。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别第一个出现的数字是什么</li><li>2.问如果没有这个锚我会怎么判断</li><li>3.主动设置自己的锚</li><li>4.在谈判中先出价</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m20')">框架效应</span><span class="related-link" onclick="showModel('m17')">社会认同</span></div></div>
 <button class="learn-btn" id="btn-m19" onclick="toggleLearned('m19')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m20">
@@ -277,7 +324,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">同样的信息换个说法人的反应完全不同。存活率90%和死亡率10%是一回事但感受截然不同。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">沟通；说服；做选择时</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别当前的表述框架</li><li>2. 换个框架重新描述同一件事</li><li>3. 问不同框架下我的判断会变吗</li><li>4. 选择最能帮助理性决策的框架</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">医生告诉病人手术存活率90%时病人更愿意接受，告诉死亡率10%时则选择保守治疗。同一数据不同表述。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别当前的表述框架</li><li>2.换个框架重新描述同一件事</li><li>3.问不同框架下我的判断会变吗</li><li>4.选择最能帮助理性决策的框架</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m19')">锚定效应</span><span class="related-link" onclick="showModel('m21')">损失厌恶</span></div></div>
 <button class="learn-btn" id="btn-m20" onclick="toggleLearned('m20')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m21">
@@ -288,7 +337,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">失去100块的痛苦大约是得到100块快乐的两倍。这导致人过度保守不愿放弃不愿冒险。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做风险决策；考虑改变；评估投资</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别我是不是因为怕失去而在回避</li><li>2. 量化失去和得到的实际价值</li><li>3. 问如果这已经是失去的状态我会花多少挽回</li><li>4. 用理性计算代替情绪反应</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">人们更愿意为保住已有的薪资而拖延辞职，即使新工作薪酬更高。失去现有的比得不到想要的心理冲击更大。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别我是不是因为怕失去而在回避</li><li>2.量化失去和得到的实际价值</li><li>3.问如果这已经是失去的状态我会花多少挽回</li><li>4.用理性计算代替情绪反应</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m18')">沉没成本</span><span class="related-link" onclick="showModel('m20')">框架效应</span></div></div>
 <button class="learn-btn" id="btn-m21" onclick="toggleLearned('m21')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m22">
@@ -297,9 +348,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">反馈循环</h2>
 <p class="model-core">输出反过来影响输入</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">正反馈：A增加导致B增加导致A更增加。负反馈：A增加导致B减少导致A被抑制。系统行为由反馈结构决定。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">正反馈A增加导致B增加导致A更增加。负反馈A增加导致B减少导致A被抑制。系统行为由反馈结构决定。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">分析系统行为；设计流程；理解增长或衰退</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 画出系统的因果链条</li><li>2. 找出所有反馈回路</li><li>3. 判断每条回路是正反馈还是负反馈</li><li>4. 问主导回路是什么它会把系统带向哪里</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">社交媒体算法：你多看某类内容，算法就多推送该类内容，你看到更多又继续看更多，形成正反馈信息茧房。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.画出系统的因果链条</li><li>2.找出所有反馈回路</li><li>3.判断每条回路是正反馈还是负反馈</li><li>4.问主导回路是什么它会把系统带向哪里</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m23')">涌现</span><span class="related-link" onclick="showModel('m24')">瓶颈</span></div></div>
 <button class="learn-btn" id="btn-m22" onclick="toggleLearned('m22')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m23">
@@ -310,7 +363,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">简单规则在大量交互后产生复杂行为。蚁群没有CEO但能建复杂的巢。意识从神经元中涌现。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">理解复杂系统；设计规则；分析群体行为</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别系统的微观规则是什么</li><li>2. 观察宏观层面出现了什么模式</li><li>3. 问这个模式能从微观规则推导出来吗</li><li>4. 如果不能这就是涌现</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">康威生命游戏三条简单规则产生滑翔机、振荡器甚至图灵完备的计算。微观简单宏观复杂。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别系统的微观规则是什么</li><li>2.观察宏观层面出现了什么模式</li><li>3.问这个模式能从微观规则推导出来吗</li><li>4.如果不能这就是涌现</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m22')">反馈循环</span><span class="related-link" onclick="showModel('m25')">杠杆点</span></div></div>
 <button class="learn-btn" id="btn-m23" onclick="toggleLearned('m23')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m24">
@@ -321,7 +376,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">一条流水线的速度由最慢的工位决定。优化非瓶颈环节是浪费。找到瓶颈解决它然后找下一个。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">优化流程；提高效率；诊断问题</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 画出整个流程</li><li>2. 找出最慢最堵的环节</li><li>3. 集中资源解决这个环节</li><li>4. 解决后新的瓶颈会出现重复此过程</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">丰田生产系统的核心理念就是持续识别和消除瓶颈，任何工人都可以拉停生产线来暴露瓶颈。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.画出整个流程</li><li>2.找出最慢最堵的环节</li><li>3.集中资源解决这个环节</li><li>4.解决后新的瓶颈会出现重复此过程</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m25')">杠杆点</span><span class="related-link" onclick="showModel('m34')">帕累托法则</span></div></div>
 <button class="learn-btn" id="btn-m24" onclick="toggleLearned('m24')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m25">
@@ -332,7 +389,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">系统中有些点稍微用力就能产生巨大变化。找到这些点比盲目努力重要100倍。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">推动变革；解决问题；提高效率</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 理解系统的结构</li><li>2. 列出所有可以干预的点</li><li>3. 评估每个点的杠杆效应</li><li>4. 优先干预杠杆最大的点</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">阿基米德说过给我一个支点我能撬动地球。在组织中，改变绩效评估方式这一个点就能撬动所有人的行为。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.理解系统的结构</li><li>2.列出所有可以干预的点</li><li>3.评估每个点的杠杆效应</li><li>4.优先干预杠杆最大的点</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m24')">瓶颈</span><span class="related-link" onclick="showModel('m26')">路径依赖</span></div></div>
 <button class="learn-btn" id="btn-m25" onclick="toggleLearned('m25')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m26">
@@ -343,7 +402,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">一旦走上某条路就很难换。QWERTY键盘不是最优布局但所有人都习惯了。选择初始路径时要格外谨慎。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">做初始选择；设计标准；理解行业格局</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别当前状态是哪些历史选择造成的</li><li>2. 问如果重来我会选这条路吗</li><li>3. 评估转换成本有多高</li><li>4. 在起点时多花时间选对路</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">VHS战胜Betamax不是技术更优而是早期占有率更高。一旦形成正反馈就很难逆转。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别当前状态是哪些历史选择造成的</li><li>2.问如果重来我会选这条路吗</li><li>3.评估转换成本有多高</li><li>4.在起点时多花时间选对路</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m28')">演化</span><span class="related-link" onclick="showModel('m22')">反馈循环</span></div></div>
 <button class="learn-btn" id="btn-m26" onclick="toggleLearned('m26')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m27">
@@ -352,9 +413,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">熵增</h2>
 <p class="model-core">封闭系统必然走向无序</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">热力学第二定律。不持续输入能量或信息任何系统都会退化。这就是为什么维护比建设更难。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不持续输入能量或信息任何系统都会退化。这就是为什么维护比建设更难。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">理解衰退；维护系统；组织管理</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别系统是封闭的还是开放的</li><li>2. 测量无序度在增加吗</li><li>3. 找到负熵源什么在对抗熵增</li><li>4. 持续注入能量信息和秩序</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">任何不维护的软件系统都会腐化，代码库越来越乱。持续重构和文档更新就是对抗熵增。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别系统是封闭的还是开放的</li><li>2.测量无序度在增加吗</li><li>3.找到负熵源什么在对抗熵增</li><li>4.持续注入能量信息和秩序</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m22')">反馈循环</span><span class="related-link" onclick="showModel('m24')">瓶颈</span></div></div>
 <button class="learn-btn" id="btn-m27" onclick="toggleLearned('m27')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m28">
@@ -365,7 +428,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">不需要设计师不需要目标。随机变异环境选择适者生存。这是地球上最强大的优化算法。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">理解变化；设计迭代流程；接受不确定性</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 创造变异尝试不同的方案</li><li>2. 设置选择标准什么算好</li><li>3. 保留好的淘汰差的</li><li>4. 重复很多次</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">丰田的持续改善就是演化思维的商业应用。每天微小的改进在多年后积累成巨大的竞争优势。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.创造变异尝试不同的方案</li><li>2.设置选择标准什么算好</li><li>3.保留好的淘汰差的</li><li>4.重复很多次</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m23')">涌现</span><span class="related-link" onclick="showModel('m31')">自催化</span></div></div>
 <button class="learn-btn" id="btn-m28" onclick="toggleLearned('m28')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m29">
@@ -374,9 +439,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">生态位</h2>
 <p class="model-core">找到你独有的位置</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">每个物种都有自己的生态位。商业也一样找到别人做不了或不愿做的位置。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">每个物种都有自己的生态位特定的环境食物生存方式。商业也一样找到别人做不了或不愿做的位置。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">职业规划；商业定位；竞争策略</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 分析环境有什么未被满足的需求</li><li>2. 评估自己有什么独特优势</li><li>3. 匹配优势和需求的交集就是你的生态位</li><li>4. 深耕在生态位里做到最好</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">彼得蒂尔说竞争是留给失败者的。垄断企业都在自己独特的生态位里做到了别人做不到的事。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.分析环境有什么未被满足的需求</li><li>2.评估自己有什么独特优势</li><li>3.匹配优势和需求的交集就是你的生态位</li><li>4.深耕在生态位里做到最好</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m14')">稀缺性</span><span class="related-link" onclick="showModel('m30')">合作</span></div></div>
 <button class="learn-btn" id="btn-m29" onclick="toggleLearned('m29')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m30">
@@ -385,9 +452,11 @@ h1{font-size:2em;margin-bottom:5px}
 <h2 class="model-title">合作</h2>
 <p class="model-core">一起做比单干强</p>
 </div>
-<div class="section"><div class="section-title">描述</div><div class="section-content">演化不只是竞争合作同样重要。共生、互惠、协作自然界充满了合作的例子。</div></div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">演化不只竞争合作同样重要。共生、互惠、协作自然界充满了合作的例子。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">团队协作；商业合作；生态设计</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别谁和你有互补的能力</li><li>2. 设计如何让合作双方都受益</li><li>3. 建立信任从小合作开始</li><li>4. 扩展成功的合作模式可以复制</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">蜜蜂和花是最经典的共生合作。蜜蜂获取花蜜，花获得传粉。双方都受益，谁也离不开谁。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别谁和你有互补的能力</li><li>2.设计如何让合作双方都受益</li><li>3.建立信任从小合作开始</li><li>4.扩展成功的合作模式可以复制</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m29')">生态位</span><span class="related-link" onclick="showModel('m31')">自催化</span></div></div>
 <button class="learn-btn" id="btn-m30" onclick="toggleLearned('m30')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m31">
@@ -398,7 +467,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">化学反应中产物本身是催化剂。商业中用户越多产品越好导致产品越好用户越多。这是指数增长的底层机制。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">理解增长；设计产品；分析网络效应</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 识别什么在加速自己的增长</li><li>2. 问增长是自催化的还是外部驱动的</li><li>3. 如果是自催化找到加速循环的关键环节</li><li>4. 小心自催化也会加速崩溃</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">维基百科：内容越多吸引越多用户，用户越多贡献越多内容。这是典型的内容-用户双向自催化。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别什么在加速自己的增长</li><li>2.问增长是自催化的还是外部驱动的</li><li>3.如果是自催化找到加速循环的关键环节</li><li>4.小心自催化也会加速崩溃</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m22')">反馈循环</span><span class="related-link" onclick="showModel('m32')">临界质量</span></div></div>
 <button class="learn-btn" id="btn-m31" onclick="toggleLearned('m31')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m32">
@@ -409,7 +480,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">核反应需要足够的铀堆在一起才能链式反应。社会运动、技术采用、市场引爆都有临界质量。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">推动变革；产品发布；理解趋势</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 定义什么状态算引爆</li><li>2. 估算需要多少积累才能到临界点</li><li>3. 集中资源推过临界点</li><li>4. 过了临界点后系统会自我维持</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">Facebook最初只在哈佛校园推广，达到校内临界质量后才扩展到其他学校，每次都是先在局部达到引爆点。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.定义什么状态算引爆</li><li>2.估算需要多少积累才能到临界点</li><li>3.集中资源推过临界点</li><li>4.过了临界点后系统会自我维持</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m31')">自催化</span><span class="related-link" onclick="showModel('m33')">林迪效应</span></div></div>
 <button class="learn-btn" id="btn-m32" onclick="toggleLearned('m32')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m33">
@@ -420,7 +493,9 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">一本书卖了100年大概率还会再卖100年。时间是质量的过滤器。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">选择学习内容；判断趋势；做长期决策</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 问这个东西存在多久了</li><li>2. 存在越久未来预期寿命越长</li><li>3. 优先选择经得起时间考验的东西</li><li>4. 对新事物保持谨慎</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">几何原本已存在2300年仍被阅读。而去年畅销书排行榜上的大部分书十年后可能无人记得。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.问这个东西存在多久了</li><li>2.存在越久未来预期寿命越长</li><li>3.优先选择经得起时间考验的东西</li><li>4.对新事物保持谨慎</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m10')">复利</span><span class="related-link" onclick="showModel('m34')">帕累托法则</span></div></div>
 <button class="learn-btn" id="btn-m33" onclick="toggleLearned('m33')">标记为已学习</button>
 </div>
 <div class="model-detail" id="detail-m34">
@@ -431,11 +506,13 @@ h1{font-size:2em;margin-bottom:5px}
 </div>
 <div class="section"><div class="section-title">描述</div><div class="section-content">80%的销售额来自20%的客户。80%的成果来自20%的努力。找到那20%把精力集中在那里。</div></div>
 <div class="section"><div class="section-title">何时使用</div><div class="section-content">优先级排序；资源分配；提高效率</div></div>
-<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1. 列出所有投入和产出</li><li>2. 找出贡献最大的20%</li><li>3. 把80%精力放在这20%上</li><li>4. 对剩下的80%减少投入或放弃</li></ol></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">微软发现修复前20%的bug就能消除80%的崩溃和用户投诉。不是所有bug都值得修复。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出所有投入和产出</li><li>2.找出贡献最大的20%</li><li>3.把80%精力放在这20%上</li><li>4.对剩下的80%减少投入或放弃</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m24')">瓶颈</span><span class="related-link" onclick="showModel('m25')">杠杆点</span></div></div>
 <button class="learn-btn" id="btn-m34" onclick="toggleLearned('m34')">标记为已学习</button>
 </div></div></div></div>
 <script>
-let learned=JSON.parse(localStorage.getItem("munger-learned")||"{}");
+let learned=JSON.parse(localStorage.getItem("munger-v2")||"{}");
 function showModel(id){
 document.querySelectorAll(".model-detail").forEach(d=>d.classList.remove("active"));
 document.querySelectorAll(".model-item").forEach(i=>i.classList.remove("active"));
@@ -447,9 +524,11 @@ updateBtn(id);
 }
 function toggleLearned(id){
 learned[id]=!learned[id];
-localStorage.setItem("munger-learned",JSON.stringify(learned));
+localStorage.setItem("munger-v2",JSON.stringify(learned));
 updateBtn(id);
 updateCount();
+updateProgress();
+updateSidebar();
 }
 function updateBtn(id){
 let btn=document.getElementById("btn-"+id);
@@ -458,6 +537,17 @@ else{btn.textContent="标记为已学习";btn.classList.remove("learned");}
 }
 function updateCount(){
 document.getElementById("learned-count").textContent=Object.values(learned).filter(v=>v).length;
+}
+function updateProgress(){
+let n=Object.values(learned).filter(v=>v).length;
+document.getElementById("progress-fill").style.width=(n/34*100)+"%";
+}
+function updateSidebar(){
+document.querySelectorAll(".model-item").forEach(item=>{
+let id=item.getAttribute("data-id");
+if(learned[id])item.classList.add("learned");
+else item.classList.remove("learned");
+});
 }
 function filterModels(){
 let q=document.getElementById("search").value.toLowerCase();
@@ -471,6 +561,8 @@ let hidden=items.length>0&&items[0].style.display!=="none";
 items.forEach(i=>i.style.display=hidden?"none":"");
 }
 updateCount();
+updateProgress();
+updateSidebar();
 </script>
 </body>
 </html>

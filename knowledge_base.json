@@ -1518,4 +1518,27 @@
           "name": "2026-06-18-2106",
           "path": "memory\\2026-06-18-2106.md",
           "size": 2162,
-   
+          "modified": "2026-06-18T21:06:56.431239"
+        },
+        {
+          "name": "2026-06-18.deep",
+          "path": "memory\\2026-06-18.deep.md",
+          "size": 286,
+          "modified": "2026-06-18T19:30:02.929280"
+        },
+        {
+          "name": "_day1_summary",
+          "path": "memory\\_day1_summary.md",
+          "size": 1193,
+          "modified": "2026-06-18T19:29:19.537878"
+        },
+        {
+          "name": "_reflection",
+          "path": "memory\\_reflection.md",
+          "size": 2042,
+          "modified": "2026-06-18T19:18:10.673351"
+        }
+      ]
+    }
+  }
+}
