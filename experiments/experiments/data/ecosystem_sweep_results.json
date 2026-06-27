@@ -1,0 +1,434 @@
+[
+  {
+    "n_species": 2,
+    "eco_type": "web",
+    "grid_size": 64,
+    "mean_diversity": 0.6881657227085848,
+    "std_diversity": 0.08273367917222814,
+    "mean_alive": 2.6,
+    "survival_rate": 1.3
+  },
+  {
+    "n_species": 2,
+    "eco_type": "web",
+    "grid_size": 128,
+    "mean_diversity": 0.2525187958570676,
+    "std_diversity": 0.37008253702941973,
+    "mean_alive": 1.4,
+    "survival_rate": 0.7
+  },
+  {
+    "n_species": 2,
+    "eco_type": "web",
+    "grid_size": 256,
+    "mean_diversity": 0.3961992211502235,
+    "std_diversity": 0.35646646309963825,
+    "mean_alive": 1.8,
+    "survival_rate": 0.9
+  },
+  {
+    "n_species": 2,
+    "eco_type": "chain",
+    "grid_size": 64,
+    "mean_diversity": 0.16501654656803919,
+    "std_diversity": 0.12852373249701404,
+    "mean_alive": 1.4,
+    "survival_rate": 0.7
+  },
+  {
+    "n_species": 2,
+    "eco_type": "chain",
+    "grid_size": 128,
+    "mean_diversity": 0.10809378016602264,
+    "std_diversity": 0.18554298068844985,
+    "mean_alive": 1.2,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 2,
+    "eco_type": "chain",
+    "grid_size": 256,
+    "mean_diversity": 0.0,
+    "std_diversity": 0.0,
+    "mean_alive": 1.0,
+    "survival_rate": 0.5
+  },
+  {
+    "n_species": 2,
+    "eco_type": "cycle",
+    "grid_size": 64,
+    "mean_diversity": 0.4412598677825059,
+    "std_diversity": 0.23072133676508824,
+    "mean_alive": 1.8,
+    "survival_rate": 0.9
+  },
+  {
+    "n_species": 2,
+    "eco_type": "cycle",
+    "grid_size": 128,
+    "mean_diversity": 0.4775131447885304,
+    "std_diversity": 0.17323784045420024,
+    "mean_alive": 1.8,
+    "survival_rate": 0.9
+  },
+  {
+    "n_species": 2,
+    "eco_type": "cycle",
+    "grid_size": 256,
+    "mean_diversity": 0.2476897662573946,
+    "std_diversity": 0.30344415711506817,
+    "mean_alive": 1.4,
+    "survival_rate": 0.7
+  },
+  {
+    "n_species": 2,
+    "eco_type": "competition",
+    "grid_size": 64,
+    "mean_diversity": 0.08048669641151872,
+    "std_diversity": 0.16097339282303744,
+    "mean_alive": 1.2,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 2,
+    "eco_type": "competition",
+    "grid_size": 128,
+    "mean_diversity": 0.4194383751117621,
+    "std_diversity": 0.36878404094636813,
+    "mean_alive": 1.8,
+    "survival_rate": 0.9
+  },
+  {
+    "n_species": 2,
+    "eco_type": "competition",
+    "grid_size": 256,
+    "mean_diversity": 0.07667192357606033,
+    "std_diversity": 0.15334384715212065,
+    "mean_alive": 1.2,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 3,
+    "eco_type": "web",
+    "grid_size": 64,
+    "mean_diversity": 0.6357870020800063,
+    "std_diversity": 0.14461724729422806,
+    "mean_alive": 2.6,
+    "survival_rate": 0.8666666666666667
+  },
+  {
+    "n_species": 3,
+    "eco_type": "web",
+    "grid_size": 128,
+    "mean_diversity": 0.421136461050234,
+    "std_diversity": 0.2179308327398188,
+    "mean_alive": 1.8,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 3,
+    "eco_type": "web",
+    "grid_size": 256,
+    "mean_diversity": 0.1916153406811903,
+    "std_diversity": 0.20189063452598527,
+    "mean_alive": 1.4,
+    "survival_rate": 0.4666666666666666
+  },
+  {
+    "n_species": 3,
+    "eco_type": "chain",
+    "grid_size": 64,
+    "mean_diversity": 0.39028285292767945,
+    "std_diversity": 0.3016138661859345,
+    "mean_alive": 1.8,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 3,
+    "eco_type": "chain",
+    "grid_size": 128,
+    "mean_diversity": 0.21725198980019328,
+    "std_diversity": 0.2661730717295081,
+    "mean_alive": 1.4,
+    "survival_rate": 0.4666666666666666
+  },
+  {
+    "n_species": 3,
+    "eco_type": "chain",
+    "grid_size": 256,
+    "mean_diversity": 0.09117039252860301,
+    "std_diversity": 0.18234078505720602,
+    "mean_alive": 1.2,
+    "survival_rate": 0.39999999999999997
+  },
+  {
+    "n_species": 3,
+    "eco_type": "cycle",
+    "grid_size": 64,
+    "mean_diversity": 0.47317800956953304,
+    "std_diversity": 0.2016729772113817,
+    "mean_alive": 2.2,
+    "survival_rate": 0.7333333333333334
+  },
+  {
+    "n_species": 3,
+    "eco_type": "cycle",
+    "grid_size": 128,
+    "mean_diversity": 0.18835420538806694,
+    "std_diversity": 0.19409447935245172,
+    "mean_alive": 1.4,
+    "survival_rate": 0.4666666666666666
+  },
+  {
+    "n_species": 3,
+    "eco_type": "cycle",
+    "grid_size": 256,
+    "mean_diversity": 0.0713230963729176,
+    "std_diversity": 0.1426461927458352,
+    "mean_alive": 1.2,
+    "survival_rate": 0.39999999999999997
+  },
+  {
+    "n_species": 3,
+    "eco_type": "competition",
+    "grid_size": 64,
+    "mean_diversity": 0.10767281612250693,
+    "std_diversity": 0.21534563224501385,
+    "mean_alive": 1.2,
+    "survival_rate": 0.39999999999999997
+  },
+  {
+    "n_species": 3,
+    "eco_type": "competition",
+    "grid_size": 128,
+    "mean_diversity": 0.18488919399117593,
+    "std_diversity": 0.22961517234888595,
+    "mean_alive": 1.4,
+    "survival_rate": 0.4666666666666666
+  },
+  {
+    "n_species": 3,
+    "eco_type": "competition",
+    "grid_size": 256,
+    "mean_diversity": 0.23923645871466742,
+    "std_diversity": 0.2933249285186343,
+    "mean_alive": 1.4,
+    "survival_rate": 0.4666666666666666
+  },
+  {
+    "n_species": 4,
+    "eco_type": "web",
+    "grid_size": 64,
+    "mean_diversity": 0.7097088525593112,
+    "std_diversity": 0.1408048005493366,
+    "mean_alive": 2.8,
+    "survival_rate": 0.7
+  },
+  {
+    "n_species": 4,
+    "eco_type": "web",
+    "grid_size": 128,
+    "mean_diversity": 0.29910584794454065,
+    "std_diversity": 0.2583274186250122,
+    "mean_alive": 1.6,
+    "survival_rate": 0.4
+  },
+  {
+    "n_species": 4,
+    "eco_type": "web",
+    "grid_size": 256,
+    "mean_diversity": 0.6086844858353421,
+    "std_diversity": 0.24588711957912038,
+    "mean_alive": 2.4,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 4,
+    "eco_type": "chain",
+    "grid_size": 64,
+    "mean_diversity": 0.42162888933933457,
+    "std_diversity": 0.27580208086010904,
+    "mean_alive": 2.0,
+    "survival_rate": 0.5
+  },
+  {
+    "n_species": 4,
+    "eco_type": "chain",
+    "grid_size": 128,
+    "mean_diversity": 0.1480082628619162,
+    "std_diversity": 0.15542246545054267,
+    "mean_alive": 1.4,
+    "survival_rate": 0.35
+  },
+  {
+    "n_species": 4,
+    "eco_type": "chain",
+    "grid_size": 256,
+    "mean_diversity": 0.28371667706597414,
+    "std_diversity": 0.32536279940380974,
+    "mean_alive": 1.8,
+    "survival_rate": 0.45
+  },
+  {
+    "n_species": 4,
+    "eco_type": "cycle",
+    "grid_size": 64,
+    "mean_diversity": 0.4627564549405244,
+    "std_diversity": 0.10169768580692543,
+    "mean_alive": 2.6,
+    "survival_rate": 0.65
+  },
+  {
+    "n_species": 4,
+    "eco_type": "cycle",
+    "grid_size": 128,
+    "mean_diversity": 0.42175655715158467,
+    "std_diversity": 0.31745289329940035,
+    "mean_alive": 2.0,
+    "survival_rate": 0.5
+  },
+  {
+    "n_species": 4,
+    "eco_type": "cycle",
+    "grid_size": 256,
+    "mean_diversity": 0.2746403821951732,
+    "std_diversity": 0.23951511872428613,
+    "mean_alive": 1.6,
+    "survival_rate": 0.4
+  },
+  {
+    "n_species": 4,
+    "eco_type": "competition",
+    "grid_size": 64,
+    "mean_diversity": 0.168819082336279,
+    "std_diversity": 0.21585226836140198,
+    "mean_alive": 1.4,
+    "survival_rate": 0.35
+  },
+  {
+    "n_species": 4,
+    "eco_type": "competition",
+    "grid_size": 128,
+    "mean_diversity": 0.1760255481657858,
+    "std_diversity": 0.23412535040124344,
+    "mean_alive": 1.4,
+    "survival_rate": 0.35
+  },
+  {
+    "n_species": 4,
+    "eco_type": "competition",
+    "grid_size": 256,
+    "mean_diversity": 0.1442354623947712,
+    "std_diversity": 0.19262243276577282,
+    "mean_alive": 1.4,
+    "survival_rate": 0.35
+  },
+  {
+    "n_species": 5,
+    "eco_type": "web",
+    "grid_size": 64,
+    "mean_diversity": 0.6924486429018831,
+    "std_diversity": 0.12189243711959563,
+    "mean_alive": 3.0,
+    "survival_rate": 0.6
+  },
+  {
+    "n_species": 5,
+    "eco_type": "web",
+    "grid_size": 128,
+    "mean_diversity": 0.35890181324759235,
+    "std_diversity": 0.21734902841219103,
+    "mean_alive": 1.8,
+    "survival_rate": 0.36
+  },
+  {
+    "n_species": 5,
+    "eco_type": "web",
+    "grid_size": 256,
+    "mean_diversity": 0.34138960686296993,
+    "std_diversity": 0.20767640989885267,
+    "mean_alive": 2.0,
+    "survival_rate": 0.4
+  },
+  {
+    "n_species": 5,
+    "eco_type": "chain",
+    "grid_size": 64,
+    "mean_diversity": 0.26508976874789414,
+    "std_diversity": 0.07156450419588373,
+    "mean_alive": 1.8,
+    "survival_rate": 0.36
+  },
+  {
+    "n_species": 5,
+    "eco_type": "chain",
+    "grid_size": 128,
+    "mean_diversity": 0.43259446581866695,
+    "std_diversity": 0.19633350221009027,
+    "mean_alive": 1.8,
+    "survival_rate": 0.36
+  },
+  {
+    "n_species": 5,
+    "eco_type": "chain",
+    "grid_size": 256,
+    "mean_diversity": 0.2929068466473902,
+    "std_diversity": 0.24313111326441075,
+    "mean_alive": 1.6,
+    "survival_rate": 0.32
+  },
+  {
+    "n_species": 5,
+    "eco_type": "cycle",
+    "grid_size": 64,
+    "mean_diversity": 0.6509150293053956,
+    "std_diversity": 0.2019856692162473,
+    "mean_alive": 2.6,
+    "survival_rate": 0.52
+  },
+  {
+    "n_species": 5,
+    "eco_type": "cycle",
+    "grid_size": 128,
+    "mean_diversity": 0.29847873058126106,
+    "std_diversity": 0.17449404181925857,
+    "mean_alive": 2.0,
+    "survival_rate": 0.4
+  },
+  {
+    "n_species": 5,
+    "eco_type": "cycle",
+    "grid_size": 256,
+    "mean_diversity": 0.19502920025360396,
+    "std_diversity": 0.21653211771574166,
+    "mean_alive": 1.4,
+    "survival_rate": 0.27999999999999997
+  },
+  {
+    "n_species": 5,
+    "eco_type": "competition",
+    "grid_size": 64,
+    "mean_diversity": 0.4065262869643368,
+    "std_diversity": 0.274913334542502,
+    "mean_alive": 2.0,
+    "survival_rate": 0.4
+  },
+  {
+    "n_species": 5,
+    "eco_type": "competition",
+    "grid_size": 128,
+    "mean_diversity": 0.12898077798183774,
+    "std_diversity": 0.18794277605687734,
+    "mean_alive": 1.4,
+    "survival_rate": 0.27999999999999997
+  },
+  {
+    "n_species": 5,
+    "eco_type": "competition",
+    "grid_size": 256,
+    "mean_diversity": 0.23925999708424203,
+    "std_diversity": 0.33411443600514,
+    "mean_alive": 1.6,
+    "survival_rate": 0.32
+  }
+]
