@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T17:13:07.449060",
+  "last_updated": "2026-06-27T17:32:27.299896",
   "categories": {
     "exploration": {
-      "count": 69,
+      "count": 70,
       "items": [
+        {
+          "name": "2026-06-27-neural-lenia-concept",
+          "path": "exploration\\2026-06-27-neural-lenia-concept.md",
+          "size": 5534,
+          "modified": "2026-06-27T17:30:09.603238"
+        },
         {
           "name": "2026-06-27-ecosystem-sweep",
           "path": "exploration\\2026-06-27-ecosystem-sweep.md",
@@ -421,8 +427,14 @@
       ]
     },
     "experiments": {
-      "count": 87,
+      "count": 88,
       "items": [
+        {
+          "name": "neural_lenia",
+          "path": "experiments\\neural_lenia.py",
+          "size": 7343,
+          "modified": "2026-06-27T17:31:42.082994"
+        },
         {
           "name": "lenia_alive_mask",
           "path": "experiments\\lenia_alive_mask.py",
@@ -948,8 +960,26 @@
       ]
     },
     "memory": {
-      "count": 71,
+      "count": 72,
       "items": [
+        {
+          "name": "heartbeat-log",
+          "path": "memory\\heartbeat-log.md",
+          "size": 1989,
+          "modified": "2026-06-27T17:32:26.969866"
+        },
+        {
+          "name": "2026-06-27-heartbeat-summary",
+          "path": "memory\\2026-06-27-heartbeat-summary.md",
+          "size": 1970,
+          "modified": "2026-06-27T17:14:47.178212"
+        },
+        {
+          "name": "2026-06-27-openhands-exploration",
+          "path": "memory\\2026-06-27-openhands-exploration.md",
+          "size": 3604,
+          "modified": "2026-06-27T17:14:07.620164"
+        },
         {
           "name": "2026-06-27",
           "path": "memory\\2026-06-27.md",
@@ -961,12 +991,6 @@
           "path": "memory\\lessons.md",
           "size": 23151,
           "modified": "2026-06-27T16:44:39.649473"
-        },
-        {
-          "name": "2026-06-27-heartbeat-summary",
-          "path": "memory\\2026-06-27-heartbeat-summary.md",
-          "size": 2203,
-          "modified": "2026-06-27T16:42:42.045244"
         },
         {
           "name": "2026-06-27-heartbeat",
@@ -1003,12 +1027,6 @@
           "path": "memory\\2026-06-27-1239.md",
           "size": 3023,
           "modified": "2026-06-27T12:39:36.099330"
-        },
-        {
-          "name": "heartbeat-log",
-          "path": "memory\\heartbeat-log.md",
-          "size": 3416,
-          "modified": "2026-06-27T00:01:20.367975"
         },
         {
           "name": "projects",
