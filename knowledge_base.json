@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T18:20:52.279282",
+  "last_updated": "2026-06-27T18:29:20.720794",
   "categories": {
     "exploration": {
-      "count": 70,
+      "count": 71,
       "items": [
+        {
+          "name": "2026-06-27-the-kiss-nca",
+          "path": "exploration\\2026-06-27-the-kiss-nca.md",
+          "size": 5792,
+          "modified": "2026-06-27T18:22:20.851130"
+        },
         {
           "name": "2026-06-27-neural-lenia-concept",
           "path": "exploration\\2026-06-27-neural-lenia-concept.md",
@@ -963,10 +969,16 @@
       "count": 72,
       "items": [
         {
+          "name": "2026-06-27",
+          "path": "memory\\2026-06-27.md",
+          "size": 2273,
+          "modified": "2026-06-27T18:23:01.823062"
+        },
+        {
           "name": "projects",
           "path": "memory\\projects.md",
-          "size": 7139,
-          "modified": "2026-06-27T17:33:04.811321"
+          "size": 7518,
+          "modified": "2026-06-27T18:22:42.642138"
         },
         {
           "name": "heartbeat-log",
@@ -985,12 +997,6 @@
           "path": "memory\\2026-06-27-openhands-exploration.md",
           "size": 3604,
           "modified": "2026-06-27T17:14:07.620164"
-        },
-        {
-          "name": "2026-06-27",
-          "path": "memory\\2026-06-27.md",
-          "size": 5135,
-          "modified": "2026-06-27T17:10:19.280517"
         },
         {
           "name": "lessons",
