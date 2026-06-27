@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T14:31:08.004424",
+  "last_updated": "2026-06-27T15:00:15.816021",
   "categories": {
     "exploration": {
-      "count": 65,
+      "count": 66,
       "items": [
+        {
+          "name": "2026-06-27-digital-metabolism",
+          "path": "exploration\\2026-06-27-digital-metabolism.md",
+          "size": 5889,
+          "modified": "2026-06-27T15:00:12.721597"
+        },
         {
           "name": "2026-06-27-self-replicating-nn",
           "path": "exploration\\2026-06-27-self-replicating-nn.md",
