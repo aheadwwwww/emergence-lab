@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-26T23:59:43.696757",
+  "last_updated": "2026-06-27T13:04:29.873525",
   "categories": {
     "exploration": {
-      "count": 63,
+      "count": 65,
       "items": [
+        {
+          "name": "2026-06-27-self-replicating-nn",
+          "path": "exploration\\2026-06-27-self-replicating-nn.md",
+          "size": 5253,
+          "modified": "2026-06-27T12:38:25.671650"
+        },
+        {
+          "name": "2026-06-26-biomakerca-analysis",
+          "path": "exploration\\2026-06-26-biomakerca-analysis.md",
+          "size": 4204,
+          "modified": "2026-06-27T00:01:02.578408"
+        },
         {
           "name": "2026-06-26-icl-gradient-descent-experiments",
           "path": "exploration\\2026-06-26-icl-gradient-descent-experiments.md",
@@ -385,8 +397,14 @@
       ]
     },
     "experiments": {
-      "count": 81,
+      "count": 82,
       "items": [
+        {
+          "name": "self_replicating_nn_demo",
+          "path": "experiments\\self_replicating_nn_demo.py",
+          "size": 10963,
+          "modified": "2026-06-27T12:45:21.650372"
+        },
         {
           "name": "mutualistic_lenia_asymmetric",
           "path": "experiments\\mutualistic_lenia_asymmetric.py",
@@ -876,8 +894,38 @@
       ]
     },
     "memory": {
-      "count": 63,
+      "count": 66,
       "items": [
+        {
+          "name": "2026-06-27",
+          "path": "memory\\2026-06-27.md",
+          "size": 1576,
+          "modified": "2026-06-27T12:45:53.854936"
+        },
+        {
+          "name": "2026-06-27-google-self-org-systems",
+          "path": "memory\\2026-06-27-google-self-org-systems.md",
+          "size": 5675,
+          "modified": "2026-06-27T12:42:39.484575"
+        },
+        {
+          "name": "2026-06-27-1239",
+          "path": "memory\\2026-06-27-1239.md",
+          "size": 3023,
+          "modified": "2026-06-27T12:39:36.099330"
+        },
+        {
+          "name": "heartbeat-log",
+          "path": "memory\\heartbeat-log.md",
+          "size": 3416,
+          "modified": "2026-06-27T00:01:20.367975"
+        },
+        {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 6580,
+          "modified": "2026-06-27T00:01:12.490799"
+        },
         {
           "name": "2026-06-26",
           "path": "memory\\2026-06-26.md",
@@ -907,12 +955,6 @@
           "path": "memory\\paper-kg-llm-interface.md",
           "size": 10036,
           "modified": "2026-06-26T23:06:58.714071"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 6221,
-          "modified": "2026-06-26T23:01:36.118227"
         },
         {
           "name": "2026-06-26-micrograd-learning",
@@ -961,12 +1003,6 @@
           "path": "memory\\2026-06-26-graphiti-deep-dive.md",
           "size": 6042,
           "modified": "2026-06-26T19:49:32.758442"
-        },
-        {
-          "name": "heartbeat-log",
-          "path": "memory\\heartbeat-log.md",
-          "size": 2740,
-          "modified": "2026-06-26T19:31:35.483324"
         },
         {
           "name": "2026-06-26-crewai-discovery",

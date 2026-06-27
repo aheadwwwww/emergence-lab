@@ -1,0 +1,642 @@
+[
+  {
+    "R": 10,
+    "mu": 0.12,
+    "sigma": 0.01,
+    "initial_energy": 68.831873639479,
+    "final_energy": 0.111009132593956,
+    "survival_rate": 0.0016127576761786472,
+    "memory_change": 0.019598641691198595,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.12,
+    "sigma": 0.015,
+    "initial_energy": 69.47755747099717,
+    "final_energy": 0.10415883712331334,
+    "survival_rate": 0.0014991724076051734,
+    "memory_change": 0.02332700875145858,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.12,
+    "sigma": 0.02,
+    "initial_energy": 69.99486853149095,
+    "final_energy": 63.17769527924989,
+    "survival_rate": 0.9026046708238329,
+    "memory_change": 0.17529762288362327,
+    "stable": "yes"
+  },
+  {
+    "R": 10,
+    "mu": 0.12,
+    "sigma": 0.03,
+    "initial_energy": 71.02354107047651,
+    "final_energy": 908.0566340580594,
+    "survival_rate": 12.785290908392527,
+    "memory_change": 0.22455431442820245,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.15,
+    "sigma": 0.01,
+    "initial_energy": 69.13288513705744,
+    "final_energy": 0.13381104641255973,
+    "survival_rate": 0.0019355628819471488,
+    "memory_change": 0.0217918060706145,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.15,
+    "sigma": 0.015,
+    "initial_energy": 69.47030669941032,
+    "final_energy": 0.08958469470946849,
+    "survival_rate": 0.0012895393579331,
+    "memory_change": 0.021711213719457736,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.15,
+    "sigma": 0.02,
+    "initial_energy": 69.94827898908144,
+    "final_energy": 0.1698698231700119,
+    "survival_rate": 0.0024285061133847573,
+    "memory_change": 0.023461279203478173,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.15,
+    "sigma": 0.03,
+    "initial_energy": 70.81151920755019,
+    "final_energy": 104.06282029970914,
+    "survival_rate": 1.46957474503552,
+    "memory_change": 0.02551696914495891,
+    "stable": "yes"
+  },
+  {
+    "R": 10,
+    "mu": 0.18,
+    "sigma": 0.01,
+    "initial_energy": 68.09090174106069,
+    "final_energy": 0.10135312144069501,
+    "survival_rate": 0.0014884972710633281,
+    "memory_change": 0.02133015128654534,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.18,
+    "sigma": 0.015,
+    "initial_energy": 68.61956103604683,
+    "final_energy": 0.08185487602920974,
+    "survival_rate": 0.0011928796218075692,
+    "memory_change": 0.02223700269551764,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.18,
+    "sigma": 0.02,
+    "initial_energy": 69.49838613456747,
+    "final_energy": 0.09016106148132558,
+    "survival_rate": 0.0012973115849593477,
+    "memory_change": 0.026299866735285768,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.18,
+    "sigma": 0.03,
+    "initial_energy": 70.43349549935475,
+    "final_energy": 0.053267000638896375,
+    "survival_rate": 0.0007562737054818134,
+    "memory_change": 0.02373165175520329,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.2,
+    "sigma": 0.01,
+    "initial_energy": 69.14505177344051,
+    "final_energy": 0.12710443976120733,
+    "survival_rate": 0.0018382290052987923,
+    "memory_change": 0.021978619628573993,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.2,
+    "sigma": 0.015,
+    "initial_energy": 69.257069922964,
+    "final_energy": 0.11473826570127721,
+    "survival_rate": 0.0016567011254206368,
+    "memory_change": 0.02265248400161616,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.2,
+    "sigma": 0.02,
+    "initial_energy": 69.6799730275713,
+    "final_energy": 0.10934231716569792,
+    "survival_rate": 0.0015692072255358192,
+    "memory_change": 0.02380349605352228,
+    "stable": "no"
+  },
+  {
+    "R": 10,
+    "mu": 0.2,
+    "sigma": 0.03,
+    "initial_energy": 70.76933306934386,
+    "final_energy": 0.16007274640883457,
+    "survival_rate": 0.0022618942336134094,
+    "memory_change": 0.025899943154814153,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.12,
+    "sigma": 0.01,
+    "initial_energy": 114.71117203142234,
+    "final_energy": 0.12543925646633886,
+    "survival_rate": 0.0010935225770428237,
+    "memory_change": 0.02173091667507964,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.12,
+    "sigma": 0.015,
+    "initial_energy": 115.58707551736282,
+    "final_energy": 0.11755787083490167,
+    "survival_rate": 0.0010170503085967628,
+    "memory_change": 0.023509663790622515,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.12,
+    "sigma": 0.02,
+    "initial_energy": 116.57670452191971,
+    "final_energy": 0.09838378900851559,
+    "survival_rate": 0.0008439403858905384,
+    "memory_change": 0.025668672106259362,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.12,
+    "sigma": 0.03,
+    "initial_energy": 118.55069021663718,
+    "final_energy": 841.901643751917,
+    "survival_rate": 7.101617393727751,
+    "memory_change": 0.26233520007604916,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.15,
+    "sigma": 0.01,
+    "initial_energy": 115.32913594541446,
+    "final_energy": 0.07922540168955244,
+    "survival_rate": 0.0006869504486722289,
+    "memory_change": 0.022392885215262646,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.15,
+    "sigma": 0.015,
+    "initial_energy": 116.29434143337187,
+    "final_energy": 0.1200711331326142,
+    "survival_rate": 0.0010324761432273246,
+    "memory_change": 0.028968501048032436,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.15,
+    "sigma": 0.02,
+    "initial_energy": 116.45765861543876,
+    "final_energy": 0.4826141840831436,
+    "survival_rate": 0.004144117181982589,
+    "memory_change": 0.02457341868977624,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.15,
+    "sigma": 0.03,
+    "initial_energy": 118.06864353784766,
+    "final_energy": 922.6018565107083,
+    "survival_rate": 7.814114135535243,
+    "memory_change": 0.1073884810992673,
+    "stable": "yes"
+  },
+  {
+    "R": 13,
+    "mu": 0.18,
+    "sigma": 0.01,
+    "initial_energy": 114.91976632698118,
+    "final_energy": 0.12972852624970155,
+    "survival_rate": 0.0011288617300986882,
+    "memory_change": 0.022868450099163197,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.18,
+    "sigma": 0.015,
+    "initial_energy": 115.81902424228446,
+    "final_energy": 0.10268007299518464,
+    "survival_rate": 0.000886556191075486,
+    "memory_change": 0.02385005150861515,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.18,
+    "sigma": 0.02,
+    "initial_energy": 116.78016396001371,
+    "final_energy": 0.12857849373022642,
+    "survival_rate": 0.001101030255131704,
+    "memory_change": 0.02448825494356754,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.18,
+    "sigma": 0.03,
+    "initial_energy": 118.48357238024175,
+    "final_energy": 0.1440794891159017,
+    "survival_rate": 0.0012160292453147542,
+    "memory_change": 0.02634825343777745,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.2,
+    "sigma": 0.01,
+    "initial_energy": 115.18726888137577,
+    "final_energy": 0.07695420820721754,
+    "survival_rate": 0.0006680791110672754,
+    "memory_change": 0.024033268146482958,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.2,
+    "sigma": 0.015,
+    "initial_energy": 115.67598392469151,
+    "final_energy": 0.09154609400872771,
+    "survival_rate": 0.0007914010401710776,
+    "memory_change": 0.02323642692897678,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.2,
+    "sigma": 0.02,
+    "initial_energy": 116.71865126870021,
+    "final_energy": 0.11942295713332103,
+    "survival_rate": 0.0010231694405734993,
+    "memory_change": 0.02515213156017506,
+    "stable": "no"
+  },
+  {
+    "R": 13,
+    "mu": 0.2,
+    "sigma": 0.03,
+    "initial_energy": 118.77972690641363,
+    "final_energy": 575.5390946102495,
+    "survival_rate": 4.845432040900899,
+    "memory_change": 0.026611049682227137,
+    "stable": "yes"
+  },
+  {
+    "R": 15,
+    "mu": 0.12,
+    "sigma": 0.01,
+    "initial_energy": 152.49336827463065,
+    "final_energy": 0.11800140423823272,
+    "survival_rate": 0.0007738133504794891,
+    "memory_change": 0.02456083079916551,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.12,
+    "sigma": 0.015,
+    "initial_energy": 153.08725570301118,
+    "final_energy": 0.15321957566053582,
+    "survival_rate": 0.0010008643433243893,
+    "memory_change": 0.025797583780080336,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.12,
+    "sigma": 0.02,
+    "initial_energy": 154.0575198577904,
+    "final_energy": 351.6485941002117,
+    "survival_rate": 2.282579872777328,
+    "memory_change": 0.028294128316867128,
+    "stable": "yes"
+  },
+  {
+    "R": 15,
+    "mu": 0.12,
+    "sigma": 0.03,
+    "initial_energy": 156.175757680851,
+    "final_energy": 1034.073247646676,
+    "survival_rate": 6.621214860334584,
+    "memory_change": 0.2829797946347561,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.15,
+    "sigma": 0.01,
+    "initial_energy": 152.4031588440552,
+    "final_energy": 0.16469784968122053,
+    "survival_rate": 0.0010806721522021666,
+    "memory_change": 0.02458592126967942,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.15,
+    "sigma": 0.015,
+    "initial_energy": 152.99685977526173,
+    "final_energy": 0.13675737985266256,
+    "survival_rate": 0.0008938574297839052,
+    "memory_change": 0.024393713902042,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.15,
+    "sigma": 0.02,
+    "initial_energy": 153.87119301587495,
+    "final_energy": 27.227318160081808,
+    "survival_rate": 0.17694876880237917,
+    "memory_change": 0.02546705977567681,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.15,
+    "sigma": 0.03,
+    "initial_energy": 155.96179719335692,
+    "final_energy": 980.7924723239904,
+    "survival_rate": 6.288671263804082,
+    "memory_change": 0.23248428805960536,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.18,
+    "sigma": 0.01,
+    "initial_energy": 152.25461456058275,
+    "final_energy": 0.1534579589310055,
+    "survival_rate": 0.0010079035000930294,
+    "memory_change": 0.024558423519665303,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.18,
+    "sigma": 0.015,
+    "initial_energy": 153.02638545094118,
+    "final_energy": 0.117007382312559,
+    "survival_rate": 0.0007646222705980613,
+    "memory_change": 0.025443400142077185,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.18,
+    "sigma": 0.02,
+    "initial_energy": 154.01875588744923,
+    "final_energy": 0.1304483817254307,
+    "survival_rate": 0.0008469642607182694,
+    "memory_change": 0.026338426851237162,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.18,
+    "sigma": 0.03,
+    "initial_energy": 156.25329256422373,
+    "final_energy": 0.11808773512001414,
+    "survival_rate": 0.0007557455793382394,
+    "memory_change": 0.02713113907324283,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.2,
+    "sigma": 0.01,
+    "initial_energy": 152.48371322093126,
+    "final_energy": 0.15288517711272553,
+    "survival_rate": 0.0010026328312269406,
+    "memory_change": 0.024561446886537414,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.2,
+    "sigma": 0.015,
+    "initial_energy": 153.1726600173443,
+    "final_energy": 0.13493114830987601,
+    "survival_rate": 0.0008809088272397187,
+    "memory_change": 0.02535915204643825,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.2,
+    "sigma": 0.02,
+    "initial_energy": 154.25473468413628,
+    "final_energy": 0.12230746889689367,
+    "survival_rate": 0.0007928928025412692,
+    "memory_change": 0.026631965714929467,
+    "stable": "no"
+  },
+  {
+    "R": 15,
+    "mu": 0.2,
+    "sigma": 0.03,
+    "initial_energy": 156.591890247959,
+    "final_energy": 0.14612781771611083,
+    "survival_rate": 0.0009331761528351797,
+    "memory_change": 0.02772089592460483,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.12,
+    "sigma": 0.01,
+    "initial_energy": 219.49307650745533,
+    "final_energy": 0.14787303145724318,
+    "survival_rate": 0.0006737024866726649,
+    "memory_change": 0.02483762485900956,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.12,
+    "sigma": 0.015,
+    "initial_energy": 220.43454890511595,
+    "final_energy": 0.16204442126851665,
+    "survival_rate": 0.0007351135385357222,
+    "memory_change": 0.026651316901139695,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.12,
+    "sigma": 0.02,
+    "initial_energy": 221.68280035558666,
+    "final_energy": 588.3852070203169,
+    "survival_rate": 2.654176174470845,
+    "memory_change": 0.02759599697003403,
+    "stable": "yes"
+  },
+  {
+    "R": 18,
+    "mu": 0.12,
+    "sigma": 0.03,
+    "initial_energy": 224.3994445171067,
+    "final_energy": 788.2402855912339,
+    "survival_rate": 3.5126659393134867,
+    "memory_change": 0.2134881092585728,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.15,
+    "sigma": 0.01,
+    "initial_energy": 218.94084158629974,
+    "final_energy": 0.10165214762653473,
+    "survival_rate": 0.0004642904763012143,
+    "memory_change": 0.02512006975091989,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.15,
+    "sigma": 0.015,
+    "initial_energy": 220.18720923019936,
+    "final_energy": 0.14062813752348324,
+    "survival_rate": 0.0006386753254594087,
+    "memory_change": 0.025994043430943452,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.15,
+    "sigma": 0.02,
+    "initial_energy": 221.54981130512542,
+    "final_energy": 0.08925922625576205,
+    "survival_rate": 0.00040288558914095647,
+    "memory_change": 0.02629519249492913,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.15,
+    "sigma": 0.03,
+    "initial_energy": 224.4895594612858,
+    "final_energy": 954.1646848585749,
+    "survival_rate": 4.250374436592098,
+    "memory_change": 0.22294284392622774,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.18,
+    "sigma": 0.01,
+    "initial_energy": 219.97732475265605,
+    "final_energy": 0.10254043428438066,
+    "survival_rate": 0.00046614092791162176,
+    "memory_change": 0.024991583279727628,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.18,
+    "sigma": 0.015,
+    "initial_energy": 221.03274880475863,
+    "final_energy": 0.14246170495037042,
+    "survival_rate": 0.0006445275902068412,
+    "memory_change": 0.026949934137136155,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.18,
+    "sigma": 0.02,
+    "initial_energy": 222.1836841877038,
+    "final_energy": 0.11790040706907674,
+    "survival_rate": 0.0005306438566576582,
+    "memory_change": 0.027069999833146674,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.18,
+    "sigma": 0.03,
+    "initial_energy": 225.00190623769868,
+    "final_energy": 0.14763754780506658,
+    "survival_rate": 0.0006561613199958238,
+    "memory_change": 0.028519782622272515,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.2,
+    "sigma": 0.01,
+    "initial_energy": 220.16090498922705,
+    "final_energy": 0.11435456583032726,
+    "survival_rate": 0.000519413589032661,
+    "memory_change": 0.02636277564553112,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.2,
+    "sigma": 0.015,
+    "initial_energy": 221.24146657178642,
+    "final_energy": 0.19823827438381447,
+    "survival_rate": 0.0008960267595700992,
+    "memory_change": 0.02760863837121275,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.2,
+    "sigma": 0.02,
+    "initial_energy": 222.52371150343248,
+    "final_energy": 0.1302768395252516,
+    "survival_rate": 0.0005854514947607618,
+    "memory_change": 0.027283988567631503,
+    "stable": "no"
+  },
+  {
+    "R": 18,
+    "mu": 0.2,
+    "sigma": 0.03,
+    "initial_energy": 225.54353196457953,
+    "final_energy": 0.15953959025137582,
+    "survival_rate": 0.0007073560871138488,
+    "memory_change": 0.029297911835398694,
+    "stable": "no"
+  }
+]
