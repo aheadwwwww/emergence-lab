@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-27T18:29:20.720794",
+  "last_updated": "2026-06-27T18:37:24.587154",
   "categories": {
     "exploration": {
-      "count": 71,
+      "count": 73,
       "items": [
+        {
+          "name": "2026-06-27-heartbeat-progress",
+          "path": "exploration\\2026-06-27-heartbeat-progress.md",
+          "size": 1926,
+          "modified": "2026-06-27T18:34:03.383685"
+        },
+        {
+          "name": "2026-06-27-self-replicating-nn-google",
+          "path": "exploration\\2026-06-27-self-replicating-nn-google.md",
+          "size": 1679,
+          "modified": "2026-06-27T18:30:36.651347"
+        },
         {
           "name": "2026-06-27-the-kiss-nca",
           "path": "exploration\\2026-06-27-the-kiss-nca.md",
@@ -433,8 +445,14 @@
       ]
     },
     "experiments": {
-      "count": 88,
+      "count": 89,
       "items": [
+        {
+          "name": "neural_lenia_gradient",
+          "path": "experiments\\neural_lenia_gradient.py",
+          "size": 8275,
+          "modified": "2026-06-27T18:32:07.042253"
+        },
         {
           "name": "neural_lenia",
           "path": "experiments\\neural_lenia.py",
