@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T13:59:53.244485",
+  "last_updated": "2026-06-27T14:29:28.244064",
   "categories": {
     "exploration": {
       "count": 65,
@@ -900,13 +900,25 @@
       ]
     },
     "memory": {
-      "count": 66,
+      "count": 68,
       "items": [
         {
           "name": "2026-06-27",
           "path": "memory\\2026-06-27.md",
-          "size": 1576,
-          "modified": "2026-06-27T12:45:53.854936"
+          "size": 3144,
+          "modified": "2026-06-27T14:03:51.147295"
+        },
+        {
+          "name": "2026-06-27-particle-lenia-official",
+          "path": "memory\\2026-06-27-particle-lenia-official.md",
+          "size": 5884,
+          "modified": "2026-06-27T14:03:15.212051"
+        },
+        {
+          "name": "2026-06-27-biomaker-ca-analysis",
+          "path": "memory\\2026-06-27-biomaker-ca-analysis.md",
+          "size": 4300,
+          "modified": "2026-06-27T14:01:13.891166"
         },
         {
           "name": "2026-06-27-google-self-org-systems",
