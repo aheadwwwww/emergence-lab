@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T15:00:15.816021",
+  "last_updated": "2026-06-27T15:32:34.789941",
   "categories": {
     "exploration": {
       "count": 66,
@@ -403,8 +403,14 @@
       ]
     },
     "experiments": {
-      "count": 83,
+      "count": 84,
       "items": [
+        {
+          "name": "quick_ecosystem_comparison",
+          "path": "experiments\\quick_ecosystem_comparison.py",
+          "size": 1800,
+          "modified": "2026-06-27T15:32:11.791912"
+        },
         {
           "name": "self_replicating_lenia",
           "path": "experiments\\self_replicating_lenia.py",

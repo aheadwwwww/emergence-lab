@@ -9,7 +9,6 @@ import numpy as np
 import sys
 sys.path.append('D:/openclaw_workspace/experiments')
 
-# Import the mutualistic_lenia module
 from mutualistic_lenia import MutualisticEcosystem
 
 def run_comparison():
@@ -25,20 +24,17 @@ def run_comparison():
     results = {}
     
     for eco_type in types:
-        print(f"\nTesting {type_names[eco_type]} ({eco_type})...", end="", flush=True)
+        print(f"Testing {type_names[eco_type]}...", end=" ", flush=True)
         
         eco = MutualisticEcosystem(size=64, ecosystem_type=eco_type)
+        eco.seed_random(n_seeds=3)
         
         # Run 200 steps
-        diversities = []
         for step in range(200):
             eco.step()
-            if step % 50 == 0:
-                diversity = eco.get_diversity()
-                diversities.append(diversity)
         
-        # Final diversity
-        final_diversity = np.mean(diversities[-3:])
+        # Final stats
+        final_diversity = eco.get_diversity()
         alive_count = eco.get_survival_count(threshold=50)
         
         results[eco_type] = {
@@ -47,20 +43,18 @@ def run_comparison():
             'total_species': len(eco.species)
         }
         
-        print(f" OK
-  Final diversity: {final_diversity:.2f}")
-        print(f"  Alive species: {alive_count}/{len(eco.species)}")
+        print(f"diversity={final_diversity:.2f}, alive={alive_count}/3")
     
     # Print comparison
     print("\n" + "="*50)
     print("COMPARISON RESULTS")
     print("="*50)
     for eco_type, data in results.items():
-        print(f"{type_names[eco_type]:12s}: diversity={data['final_diversity']:.2f}, alive={data['alive_species']}/{data['total_species']}")
+        print(f"{type_names[eco_type]:8s}: diversity={data['final_diversity']:.2f}, alive={data['alive_species']}/3")
     
     # Find winner
     winner = max(results.keys(), key=lambda k: results[k]['final_diversity'])
-    print(f"\nWinner: {winner}")
+    print(f"\nWinner: {type_names[winner]}")
     
     return results
 
