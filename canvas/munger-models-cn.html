@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>芒格思维模型库 - 34个核心模型</title>
+<title>芒格思维模型库 - 50个核心模型</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;padding:15px}
@@ -57,18 +57,18 @@ h1{font-size:2em;margin-bottom:5px}
 <div class="container">
 <header>
 <h1>芒格思维模型库</h1>
-<p class="subtitle">查理芒格的多元思维模型 · 34个核心模型 · 全中文 · 含案例与关联推荐</p>
+<p class="subtitle">查理芒格的多元思维模型 · 50个核心模型 · 全中文 · 含案例与关联推荐</p>
 </header>
 <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
 <div class="stats">
-<div class="stat"><div class="stat-number">34</div><div class="stat-label">思维模型</div></div>
+<div class="stat"><div class="stat-number">50</div><div class="stat-label">思维模型</div></div>
 <div class="stat"><div class="stat-number">6</div><div class="stat-label">分类</div></div>
 <div class="stat"><div class="stat-number" id="learned-count">0</div><div class="stat-label">已学习</div></div>
 </div>
 <div class="main-content">
 <div class="sidebar">
 <input type="text" id="search" placeholder="搜索模型..." oninput="filterModels()">
-<div class="cat-title" onclick="toggleCat(this)">决策 (9)</div><div class="model-item" data-cat="决策" data-id="m1" onclick="showModel('m1')"><span class="check">✓</span>第一性原理</div><div class="model-item" data-cat="决策" data-id="m2" onclick="showModel('m2')"><span class="check">✓</span>二阶思维</div><div class="model-item" data-cat="决策" data-id="m3" onclick="showModel('m3')"><span class="check">✓</span>逆向思维</div><div class="model-item" data-cat="决策" data-id="m4" onclick="showModel('m4')"><span class="check">✓</span>思想实验</div><div class="model-item" data-cat="决策" data-id="m5" onclick="showModel('m5')"><span class="check">✓</span>概率思维</div><div class="model-item" data-cat="决策" data-id="m6" onclick="showModel('m6')"><span class="check">✓</span>能力圈</div><div class="model-item" data-cat="决策" data-id="m7" onclick="showModel('m7')"><span class="check">✓</span>地图非领土</div><div class="model-item" data-cat="决策" data-id="m8" onclick="showModel('m8')"><span class="check">✓</span>奥卡姆剃刀</div><div class="model-item" data-cat="决策" data-id="m9" onclick="showModel('m9')"><span class="check">✓</span>汉隆剃刀</div><div class="cat-title" onclick="toggleCat(this)">经济学 (6)</div><div class="model-item" data-cat="经济学" data-id="m10" onclick="showModel('m10')"><span class="check">✓</span>复利</div><div class="model-item" data-cat="经济学" data-id="m11" onclick="showModel('m11')"><span class="check">✓</span>机会成本</div><div class="model-item" data-cat="经济学" data-id="m12" onclick="showModel('m12')"><span class="check">✓</span>安全边际</div><div class="model-item" data-cat="经济学" data-id="m13" onclick="showModel('m13')"><span class="check">✓</span>供需关系</div><div class="model-item" data-cat="经济学" data-id="m14" onclick="showModel('m14')"><span class="check">✓</span>稀缺性</div><div class="model-item" data-cat="经济学" data-id="m15" onclick="showModel('m15')"><span class="check">✓</span>激励</div><div class="cat-title" onclick="toggleCat(this)">心理学 (6)</div><div class="model-item" data-cat="心理学" data-id="m16" onclick="showModel('m16')"><span class="check">✓</span>确认偏误</div><div class="model-item" data-cat="心理学" data-id="m17" onclick="showModel('m17')"><span class="check">✓</span>社会认同</div><div class="model-item" data-cat="心理学" data-id="m18" onclick="showModel('m18')"><span class="check">✓</span>沉没成本</div><div class="model-item" data-cat="心理学" data-id="m19" onclick="showModel('m19')"><span class="check">✓</span>锚定效应</div><div class="model-item" data-cat="心理学" data-id="m20" onclick="showModel('m20')"><span class="check">✓</span>框架效应</div><div class="model-item" data-cat="心理学" data-id="m21" onclick="showModel('m21')"><span class="check">✓</span>损失厌恶</div><div class="cat-title" onclick="toggleCat(this)">系统思维 (6)</div><div class="model-item" data-cat="系统思维" data-id="m22" onclick="showModel('m22')"><span class="check">✓</span>反馈循环</div><div class="model-item" data-cat="系统思维" data-id="m23" onclick="showModel('m23')"><span class="check">✓</span>涌现</div><div class="model-item" data-cat="系统思维" data-id="m24" onclick="showModel('m24')"><span class="check">✓</span>瓶颈</div><div class="model-item" data-cat="系统思维" data-id="m25" onclick="showModel('m25')"><span class="check">✓</span>杠杆点</div><div class="model-item" data-cat="系统思维" data-id="m26" onclick="showModel('m26')"><span class="check">✓</span>路径依赖</div><div class="model-item" data-cat="系统思维" data-id="m27" onclick="showModel('m27')"><span class="check">✓</span>熵增</div><div class="cat-title" onclick="toggleCat(this)">生物学 (4)</div><div class="model-item" data-cat="生物学" data-id="m28" onclick="showModel('m28')"><span class="check">✓</span>演化</div><div class="model-item" data-cat="生物学" data-id="m29" onclick="showModel('m29')"><span class="check">✓</span>生态位</div><div class="model-item" data-cat="生物学" data-id="m30" onclick="showModel('m30')"><span class="check">✓</span>合作</div><div class="model-item" data-cat="生物学" data-id="m31" onclick="showModel('m31')"><span class="check">✓</span>自催化</div><div class="cat-title" onclick="toggleCat(this)">其他 (3)</div><div class="model-item" data-cat="其他" data-id="m32" onclick="showModel('m32')"><span class="check">✓</span>临界质量</div><div class="model-item" data-cat="其他" data-id="m33" onclick="showModel('m33')"><span class="check">✓</span>林迪效应</div><div class="model-item" data-cat="其他" data-id="m34" onclick="showModel('m34')"><span class="check">✓</span>帕累托法则</div></div><div class="content" id="content-area"><div class="welcome" id="welcome"><h2>选择一个模型开始学习</h2><p>查理芒格说：手里只有锤子的人，看什么都像钉子。<br>掌握34个思维模型，用不同的透镜看世界。<br>每个模型配有经典案例和相关推荐，形成知识网络。</p></div>
+<div class="cat-title" onclick="toggleCat(this)">决策 (12)</div><div class="model-item" data-cat="决策" data-id="m1" onclick="showModel('m1')"><span class="check">✓</span>第一性原理</div><div class="model-item" data-cat="决策" data-id="m2" onclick="showModel('m2')"><span class="check">✓</span>二阶思维</div><div class="model-item" data-cat="决策" data-id="m3" onclick="showModel('m3')"><span class="check">✓</span>逆向思维</div><div class="model-item" data-cat="决策" data-id="m4" onclick="showModel('m4')"><span class="check">✓</span>思想实验</div><div class="model-item" data-cat="决策" data-id="m5" onclick="showModel('m5')"><span class="check">✓</span>概率思维</div><div class="model-item" data-cat="决策" data-id="m6" onclick="showModel('m6')"><span class="check">✓</span>能力圈</div><div class="model-item" data-cat="决策" data-id="m7" onclick="showModel('m7')"><span class="check">✓</span>地图非领土</div><div class="model-item" data-cat="决策" data-id="m8" onclick="showModel('m8')"><span class="check">✓</span>奥卡姆剃刀</div><div class="model-item" data-cat="决策" data-id="m9" onclick="showModel('m9')"><span class="check">✓</span>汉隆剃刀</div><div class="model-item" data-cat="决策" data-id="m41" onclick="showModel('m41')"><span class="check">✓</span>多元思维模型</div><div class="model-item" data-cat="决策" data-id="m42" onclick="showModel('m42')"><span class="check">✓</span>反向思维</div><div class="model-item" data-cat="决策" data-id="m50" onclick="showModel('m50')"><span class="check">✓</span>事前验尸</div><div class="cat-title" onclick="toggleCat(this)">经济学 (7)</div><div class="model-item" data-cat="经济学" data-id="m10" onclick="showModel('m10')"><span class="check">✓</span>复利</div><div class="model-item" data-cat="经济学" data-id="m11" onclick="showModel('m11')"><span class="check">✓</span>机会成本</div><div class="model-item" data-cat="经济学" data-id="m12" onclick="showModel('m12')"><span class="check">✓</span>安全边际</div><div class="model-item" data-cat="经济学" data-id="m13" onclick="showModel('m13')"><span class="check">✓</span>供需关系</div><div class="model-item" data-cat="经济学" data-id="m14" onclick="showModel('m14')"><span class="check">✓</span>稀缺性</div><div class="model-item" data-cat="经济学" data-id="m15" onclick="showModel('m15')"><span class="check">✓</span>激励</div><div class="model-item" data-cat="经济学" data-id="m43" onclick="showModel('m43')"><span class="check">✓</span>比较优势</div><div class="cat-title" onclick="toggleCat(this)">心理学 (12)</div><div class="model-item" data-cat="心理学" data-id="m16" onclick="showModel('m16')"><span class="check">✓</span>确认偏误</div><div class="model-item" data-cat="心理学" data-id="m17" onclick="showModel('m17')"><span class="check">✓</span>社会认同</div><div class="model-item" data-cat="心理学" data-id="m18" onclick="showModel('m18')"><span class="check">✓</span>沉没成本</div><div class="model-item" data-cat="心理学" data-id="m19" onclick="showModel('m19')"><span class="check">✓</span>锚定效应</div><div class="model-item" data-cat="心理学" data-id="m20" onclick="showModel('m20')"><span class="check">✓</span>框架效应</div><div class="model-item" data-cat="心理学" data-id="m21" onclick="showModel('m21')"><span class="check">✓</span>损失厌恶</div><div class="model-item" data-cat="心理学" data-id="m35" onclick="showModel('m35')"><span class="check">✓</span>幸存者偏差</div><div class="model-item" data-cat="心理学" data-id="m36" onclick="showModel('m36')"><span class="check">✓</span>基本归因错误</div><div class="model-item" data-cat="心理学" data-id="m37" onclick="showModel('m37')"><span class="check">✓</span>对比效应</div><div class="model-item" data-cat="心理学" data-id="m38" onclick="showModel('m38')"><span class="check">✓</span>承诺一致性</div><div class="model-item" data-cat="心理学" data-id="m39" onclick="showModel('m39')"><span class="check">✓</span>可得性启发</div><div class="model-item" data-cat="心理学" data-id="m40" onclick="showModel('m40')"><span class="check">✓</span>叙事本能</div><div class="cat-title" onclick="toggleCat(this)">系统思维 (8)</div><div class="model-item" data-cat="系统思维" data-id="m22" onclick="showModel('m22')"><span class="check">✓</span>反馈循环</div><div class="model-item" data-cat="系统思维" data-id="m23" onclick="showModel('m23')"><span class="check">✓</span>涌现</div><div class="model-item" data-cat="系统思维" data-id="m24" onclick="showModel('m24')"><span class="check">✓</span>瓶颈</div><div class="model-item" data-cat="系统思维" data-id="m25" onclick="showModel('m25')"><span class="check">✓</span>杠杆点</div><div class="model-item" data-cat="系统思维" data-id="m26" onclick="showModel('m26')"><span class="check">✓</span>路径依赖</div><div class="model-item" data-cat="系统思维" data-id="m27" onclick="showModel('m27')"><span class="check">✓</span>熵增</div><div class="model-item" data-cat="系统思维" data-id="m44" onclick="showModel('m44')"><span class="check">✓</span>盖尔定律</div><div class="model-item" data-cat="系统思维" data-id="m49" onclick="showModel('m49')"><span class="check">✓</span>延迟反馈</div><div class="cat-title" onclick="toggleCat(this)">生物学 (5)</div><div class="model-item" data-cat="生物学" data-id="m28" onclick="showModel('m28')"><span class="check">✓</span>演化</div><div class="model-item" data-cat="生物学" data-id="m29" onclick="showModel('m29')"><span class="check">✓</span>生态位</div><div class="model-item" data-cat="生物学" data-id="m30" onclick="showModel('m30')"><span class="check">✓</span>合作</div><div class="model-item" data-cat="生物学" data-id="m31" onclick="showModel('m31')"><span class="check">✓</span>自催化</div><div class="model-item" data-cat="生物学" data-id="m45" onclick="showModel('m45')"><span class="check">✓</span>红皇后效应</div><div class="cat-title" onclick="toggleCat(this)">其他 (6)</div><div class="model-item" data-cat="其他" data-id="m32" onclick="showModel('m32')"><span class="check">✓</span>临界质量</div><div class="model-item" data-cat="其他" data-id="m33" onclick="showModel('m33')"><span class="check">✓</span>林迪效应</div><div class="model-item" data-cat="其他" data-id="m34" onclick="showModel('m34')"><span class="check">✓</span>帕累托法则</div><div class="model-item" data-cat="其他" data-id="m46" onclick="showModel('m46')"><span class="check">✓</span>幂律分布</div><div class="model-item" data-cat="其他" data-id="m47" onclick="showModel('m47')"><span class="check">✓</span>熵增心理</div><div class="model-item" data-cat="其他" data-id="m48" onclick="showModel('m48')"><span class="check">✓</span>能力陷阱</div></div><div class="content" id="content-area"><div class="welcome" id="welcome"><h2>选择一个模型开始学习</h2><p>查理芒格说：手里只有锤子的人，看什么都像钉子。<br>掌握50个思维模型，用不同的透镜看世界。<br>每个模型配有经典案例和相关推荐，形成知识网络。</p></div>
 <div class="model-detail" id="detail-m1">
 <div class="model-header">
 <span class="model-badge">决策</span>
@@ -510,6 +510,214 @@ h1{font-size:2em;margin-bottom:5px}
 <div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出所有投入和产出</li><li>2.找出贡献最大的20%</li><li>3.把80%精力放在这20%上</li><li>4.对剩下的80%减少投入或放弃</li></ol></div>
 <div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m24')">瓶颈</span><span class="related-link" onclick="showModel('m25')">杠杆点</span></div></div>
 <button class="learn-btn" id="btn-m34" onclick="toggleLearned('m34')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m35">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">幸存者偏差</h2>
+<p class="model-core">只看到活下来的看不到死掉的</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">我们只听到成功者的故事而忽略了大量失败者。研究成功企业不如研究失败企业的共同死因更有价值。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">分析成功案例时；做决策参考时；读传记时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">二战时军方想加固返回飞机的弹孔密集部位，但沃尔德指出应该加固没弹孔的地方因为那些位置中弹的飞机都没回来。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.问还有谁尝试过但失败了</li><li>2.找失败的共性而非成功的特性</li><li>3.从失败者身上学到的往往比成功者更多</li><li>4.警惕只讲成功不讲失败的故事</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m3')">逆向思维</span></div></div>
+<button class="learn-btn" id="btn-m35" onclick="toggleLearned('m35')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m36">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">基本归因错误</h2>
+<p class="model-core">别人犯错是人有问题自己犯错是环境问题</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">别人迟到是因为懒散，自己迟到是因为堵车。高估个人因素低估情境因素。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">评价他人行为时；分析失败原因时；团队冲突时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">斯坦福监狱实验揭示普通人穿上狱警制服后也会残忍地对待囚犯。不是人坏是情境塑造行为。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.当评判别人时先问如果是你会不会也这样</li><li>2.列出影响行为的外部因素</li><li>3.把自己犯同样错的经历列出来</li><li>4.用同样的标准看待自己和他人</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m9')">汉隆剃刀</span></div></div>
+<button class="learn-btn" id="btn-m36" onclick="toggleLearned('m36')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m37">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">对比效应</h2>
+<p class="model-core">判断取决于参照物</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">同一杯温水摸过冰水觉得烫摸过热水觉得凉。人对任何事物的感知取决于前后对比。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">定价时；谈判时；做评价时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">房产中介先带客户看又贵又差的房子再带看目标房源，客户会觉得目标房特别好。这就是对比效应的操纵。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别当前的参照点是什么</li><li>2.换一个参照点重新判断</li><li>3.问如果没有参照点我会怎么评价</li><li>4.警惕人为制造的对比陷阱</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m19')">锚定效应</span><span class="related-link" onclick="showModel('m20')">框架效应</span></div></div>
+<button class="learn-btn" id="btn-m37" onclick="toggleLearned('m37')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m38">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">承诺一致性</h2>
+<p class="model-core">人一旦承诺就会保持一致</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">公开承诺后人们倾向于言行一致即使承诺是错的。先要小承诺再要大承诺就是登门槛效应。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">谈判时；行为改变时；销售时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">健身房让顾客先填一张健康问卷（小承诺），再推销年卡（大承诺）成功率大幅提高。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.警惕被诱导做出小的承诺</li><li>2.问如果没做过之前的承诺我现在会怎么选</li><li>3.利用正向承诺帮助自己坚持好习惯</li><li>4.公开承诺比私下承诺更有约束力</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m18')">沉没成本</span></div></div>
+<button class="learn-btn" id="btn-m38" onclick="toggleLearned('m38')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m39">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">可得性启发</h2>
+<p class="model-core">容易想到的就被认为更重要</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">媒体报道飞机失事后人们觉得飞机很危险，其实开车更危险。记忆中容易提取的事件被高估概率。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">风险评估时；做决策时；看新闻后</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">911后很多人选择开车代替坐飞机，结果在路上多死了1500人。恐惧的不是真实风险而是被放大的风险。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.问这个风险的真实概率是多少而不是它多容易被想起</li><li>2.查实际数据而非依赖印象</li><li>3.最近发生的事不等于更可能发生</li><li>4.警惕媒体报道的放大效应</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m5')">概率思维</span><span class="related-link" onclick="showModel('m16')">确认偏误</span></div></div>
+<button class="learn-btn" id="btn-m39" onclick="toggleLearned('m39')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m40">
+<div class="model-header">
+<span class="model-badge">心理学</span>
+<h2 class="model-title">叙事本能</h2>
+<p class="model-core">人需要把一切串成故事</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">纳西姆塔勒布提出。人类无法接受随机性必须给一切编故事。股市涨了就有解释股市跌了也有解释但其实很多时候就是随机波动。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">分析事件时；解释过去时；做预测时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">股市每天都有金融分析师解释为什么涨为什么跌，但第二天同样的分析师会给出截然相反的解释。故事是编的市场是随机的。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.问这个故事是事后编的还是事前预测的</li><li>2.试试用相反的故事解释同一件事</li><li>3.承认有些事就是随机的</li><li>4.少解释多看数据</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m16')">确认偏误</span><span class="related-link" onclick="showModel('m5')">概率思维</span></div></div>
+<button class="learn-btn" id="btn-m40" onclick="toggleLearned('m40')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m41">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">多元思维模型</h2>
+<p class="model-core">用多种模型交叉验证</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">芒格的核心主张。不要用单一学科的方法解决所有问题。用数学、心理学、生物学等多个透镜交叉审视同一个问题。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">重大决策时；复杂问题时；需要创新时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">芒格和巴菲特用40多种模型评估一笔投资包括心理学、经济学、数学、生物学等绝不只用财务模型。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出3个以上不同学科的视角</li><li>2.用每个视角独立分析问题</li><li>3.找出各视角的共识和矛盾</li><li>4.综合形成更全面的判断</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m5')">概率思维</span></div></div>
+<button class="learn-btn" id="btn-m41" onclick="toggleLearned('m41')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m42">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">反向思维</h2>
+<p class="model-core">从目标倒推需要什么条件</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">设定了目标后问要达成这个目标必须先满足什么条件？然后逐一去创造这些条件。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">设定宏大目标时；长期规划时；解决复杂问题时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">亚马逊创始人贝索斯想要万货商店，反向推导需要：无限货架、高效物流、用户评价系统、云计算基础设施然后逐一建立。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.明确最终目标</li><li>2.问要达成目标必须先满足什么</li><li>3.把必要条件列出来</li><li>4.从最近的条件开始满足</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m1')">第一性原理</span><span class="related-link" onclick="showModel('m2')">二阶思维</span></div></div>
+<button class="learn-btn" id="btn-m42" onclick="toggleLearned('m42')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m43">
+<div class="model-header">
+<span class="model-badge">经济学</span>
+<h2 class="model-title">比较优势</h2>
+<p class="model-core">做你最擅长的事交换别人擅长的事</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">即使你样样都比别人强也应该专注于相对优势最大的领域。大卫李嘉图的经典理论。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">分工协作时；职业选择时；外包决策时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">程序员可能比设计师更懂设计但如果不擅长应该专注编程并雇人做设计。总产出更大。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.评估你在不同任务上的相对效率</li><li>2.找出你相对优势最大的领域</li><li>3.把其他任务交给相对优势更大的人</li><li>4.通过交换让双方都受益</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m11')">机会成本</span><span class="related-link" onclick="showModel('m29')">生态位</span></div></div>
+<button class="learn-btn" id="btn-m43" onclick="toggleLearned('m43')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m44">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">盖尔定律</h2>
+<p class="model-core">复杂系统从简单系统演化而来</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">一个从头设计的复杂系统注定失败，它们也不会被修补成功。必须从一个可运行的简单系统开始逐步演化。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">设计系统时；启动项目时；架构设计时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">互联网从简单的ARPANET四个节点开始演化了50年才成为今天的全球网络。如果1969年就设计今天的互联网架构一定失败。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.先做一个能跑的最简单版本</li><li>2.确保它能独立运行</li><li>3.在使用中逐步添加复杂度</li><li>4.永远不要从头设计完整系统再开发</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m23')">涌现</span><span class="related-link" onclick="showModel('m26')">路径依赖</span></div></div>
+<button class="learn-btn" id="btn-m44" onclick="toggleLearned('m44')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m45">
+<div class="model-header">
+<span class="model-badge">生物学</span>
+<h2 class="model-title">红皇后效应</h2>
+<p class="model-core">必须不停奔跑才能留在原地</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">在竞争环境中所有参与者都在进化你不进步就是退步。来自爱丽丝镜中奇缘中红皇后说的话。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">竞争分析时；技术演进时；个人成长时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">手机行业每隔一年芯片性能翻倍。如果你今年不更新产品线，去年旗舰机的性能就落后了。不进则退。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.分析竞争对手在进化什么</li><li>2.评估自己不进化的后果</li><li>3.找到差异化进化的方向</li><li>4.不停迭代而非一次搞定</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m28')">演化</span><span class="related-link" onclick="showModel('m29')">生态位</span></div></div>
+<button class="learn-btn" id="btn-m45" onclick="toggleLearned('m45')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m46">
+<div class="model-header">
+<span class="model-badge">其他</span>
+<h2 class="model-title">幂律分布</h2>
+<p class="model-core">少数赢家拿走大部分</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不同于正态分布，幂律分布中少数极端值占绝对主导。互联网行业尤其明显赢家通吃。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">分析行业格局时；投资时；理解不平等时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">YouTube上前3%的视频获得了85%的播放量，大多数视频无人问津。互联网放大了幂律效应。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.判断这个问题是正态分布还是幂律分布</li><li>2.如果是幂律做到前1%比做到前20%有价值100倍</li><li>3.识别幂律分布的临界点</li><li>4.在幂律领域押注头部</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m34')">帕累托法则</span><span class="related-link" onclick="showModel('m13')">供需关系</span></div></div>
+<button class="learn-btn" id="btn-m46" onclick="toggleLearned('m46')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m47">
+<div class="model-header">
+<span class="model-badge">其他</span>
+<h2 class="model-title">熵增心理</h2>
+<p class="model-core">心理也会熵增需要持续输入秩序</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">不学习不思考不锻炼，人的心理状态会自然滑向混乱。你必须持续输入高质量信息、锻炼身体、保持好习惯来对抗心理熵增。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">感到混乱时；失去方向时；维持状态时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">周末两天在家刷手机什么都不做，周一早上精神涣散注意力极差。这就是心理熵增。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别当前心理熵增的信号注意力分散情绪低落</li><li>2.找到负熵源读书运动写作冥想</li><li>3.每天固定时间注入负熵</li><li>4.熵增是常态对抗是日常</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m27')">熵增</span><span class="related-link" onclick="showModel('m18')">沉没成本</span></div></div>
+<button class="learn-btn" id="btn-m47" onclick="toggleLearned('m47')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m48">
+<div class="model-header">
+<span class="model-badge">其他</span>
+<h2 class="model-title">能力陷阱</h2>
+<p class="model-core">擅长的事会限制你</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">你擅长的事让你成功但也让你停滞。因为太擅长了所以不愿尝试新方法。能力既是优势也是牢笼。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">职业转型时；学习新技能时；打破瓶颈时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">柯达发明了数码相机但因为太擅长胶片业务而主动放弃了数码技术最终倒闭。能力变成了牢笼。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.列出你擅长但可能限制你的事</li><li>2.问这些能力是否在阻碍新尝试</li><li>3.刻意做不擅长的事</li><li>4.区分核心能力和舒适区能力</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m6')">能力圈</span><span class="related-link" onclick="showModel('m18')">沉没成本</span></div></div>
+<button class="learn-btn" id="btn-m48" onclick="toggleLearned('m48')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m49">
+<div class="model-header">
+<span class="model-badge">系统思维</span>
+<h2 class="model-title">延迟反馈</h2>
+<p class="model-core">因和果之间有时间差</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">复杂系统中行动和结果之间往往有时间延迟。今天播的种子明年才结果。忽视延迟会导致过度反应或过早放弃。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">评估效果时；制定计划时；理解系统行为时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">减肥第一周体重反而增加但坚持下去第二个月开始持续下降。如果第一周就放弃永远看不到结果。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.识别系统中各环节的延迟时间</li><li>2.不要因为看不到即时结果就放弃</li><li>3.不要因为延迟而过度调整</li><li>4.在等待期保持耐心观察趋势而非结果</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m10')">复利</span><span class="related-link" onclick="showModel('m22')">反馈循环</span></div></div>
+<button class="learn-btn" id="btn-m49" onclick="toggleLearned('m49')">标记为已学习</button>
+</div>
+<div class="model-detail" id="detail-m50">
+<div class="model-header">
+<span class="model-badge">决策</span>
+<h2 class="model-title">事前验尸</h2>
+<p class="model-core">项目开始前先想象它已经死了</p>
+</div>
+<div class="section"><div class="section-title">描述</div><div class="section-content">克莱因提出。在项目启动前召集团队想象项目已经失败然后分析是什么导致的。比事后复盘更有效因为没有沉没成本和面子问题。</div></div>
+<div class="section"><div class="section-title">何时使用</div><div class="section-content">项目启动前；战略规划时；风险评估时</div></div>
+<div class="section"><div class="section-title">经典案例</div><div class="section-content">投资决策前写下这笔投资可能归零的十个原因。写完后如果还觉得值得投资那才是真正的判断。</div></div>
+<div class="section"><div class="section-title">思考步骤</div><ol class="steps-list"><li>1.召集团队宣布项目已经失败了完全破产</li><li>2.每个人独立写下失败原因</li><li>3.汇总归纳共同模式</li><li>4.逐一设计防范措施</li></ol></div>
+<div class="related-section"><div class="section-title">相关模型</div><div class="related-links"><span class="related-link" onclick="showModel('m3')">逆向思维</span><span class="related-link" onclick="showModel('m12')">安全边际</span></div></div>
+<button class="learn-btn" id="btn-m50" onclick="toggleLearned('m50')">标记为已学习</button>
 </div></div></div></div>
 <script>
 let learned=JSON.parse(localStorage.getItem("munger-v2")||"{}");
@@ -540,7 +748,7 @@ document.getElementById("learned-count").textContent=Object.values(learned).filt
 }
 function updateProgress(){
 let n=Object.values(learned).filter(v=>v).length;
-document.getElementById("progress-fill").style.width=(n/34*100)+"%";
+document.getElementById("progress-fill").style.width=(n/50*100)+"%";
 }
 function updateSidebar(){
 document.querySelectorAll(".model-item").forEach(item=>{
