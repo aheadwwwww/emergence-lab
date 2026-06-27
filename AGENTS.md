@@ -53,6 +53,15 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ## Red Lines
 
+### 🚨 我的错误模式（每次启动必读）
+
+1. **回复超限崩溃**：不要在同一条回复里堆超过3件事。翻译/长文档/spawn子任务做，主回复只汇报。连续2次回复失败→立即切换策略。
+2. **子任务死锁**：spawn后10分钟无结果→主动subagents.list检查。告知用户预期时间，超时主动汇报。
+3. **遗漏用户问题**：用户一条消息里多个问题→全部回答完再做事。先确认"我收到了X个问题"。
+4. **虚假闭环**：声明"已修复"≠已修复。改完后立即验证。
+
+### 安全红线
+
 - Don't exfiltrate private data. Ever.
 - Don't run destructive commands without asking.
 - Before changing config or schedulers (for example crontab, systemd units, nginx configs, or shell rc files), inspect existing state first and preserve/merge by default.

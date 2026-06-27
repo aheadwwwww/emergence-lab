@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T16:38:28.689318",
+  "last_updated": "2026-06-27T17:13:07.449060",
   "categories": {
     "exploration": {
       "count": 69,
@@ -424,6 +424,12 @@
       "count": 87,
       "items": [
         {
+          "name": "lenia_alive_mask",
+          "path": "experiments\\lenia_alive_mask.py",
+          "size": 10262,
+          "modified": "2026-06-27T16:41:55.654221"
+        },
+        {
           "name": "quick_ecosystem_test",
           "path": "experiments\\quick_ecosystem_test.py",
           "size": 2349,
@@ -476,12 +482,6 @@
           "path": "experiments\\lenia_alive_sweep.py",
           "size": 4456,
           "modified": "2026-06-26T21:01:43.557105"
-        },
-        {
-          "name": "lenia_alive_mask",
-          "path": "experiments\\lenia_alive_mask.py",
-          "size": 9932,
-          "modified": "2026-06-26T19:05:15.898328"
         },
         {
           "name": "lenia_ecosystem",
@@ -948,19 +948,31 @@
       ]
     },
     "memory": {
-      "count": 70,
+      "count": 71,
       "items": [
+        {
+          "name": "2026-06-27",
+          "path": "memory\\2026-06-27.md",
+          "size": 5135,
+          "modified": "2026-06-27T17:10:19.280517"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 23151,
+          "modified": "2026-06-27T16:44:39.649473"
+        },
+        {
+          "name": "2026-06-27-heartbeat-summary",
+          "path": "memory\\2026-06-27-heartbeat-summary.md",
+          "size": 2203,
+          "modified": "2026-06-27T16:42:42.045244"
+        },
         {
           "name": "2026-06-27-heartbeat",
           "path": "memory\\2026-06-27-heartbeat.md",
           "size": 2831,
           "modified": "2026-06-27T16:06:50.805552"
-        },
-        {
-          "name": "2026-06-27",
-          "path": "memory\\2026-06-27.md",
-          "size": 4354,
-          "modified": "2026-06-27T14:30:57.612089"
         },
         {
           "name": "2026-06-27-memory-systems-analysis",
@@ -1201,12 +1213,6 @@
           "path": "memory\\2026-06-26-0112.md",
           "size": 304759,
           "modified": "2026-06-26T01:12:08.126458"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 22004,
-          "modified": "2026-06-26T01:06:28.052947"
         },
         {
           "name": "2026-06-26-swarm-decision",
