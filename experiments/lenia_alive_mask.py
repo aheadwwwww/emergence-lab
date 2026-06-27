@@ -1,19 +1,20 @@
 """
-Lenia with Alive Mask - Inspired by Isotropic NCA
+Lenia with Alive Mask - Integration of Google Isotropic NCA techniques
 
-Key innovation from Google Research:
-1. Alive mask: Only cells with living neighbors survive
-2. Prevents "ghost structures" from drifting
-3. Combines with stochastic updates for stability
+Key innovations from Google Research:
+1. Stochastic updates (50% update rate) - already implemented
+2. Alive mask: mature cells (>threshold) with live neighbors survive
+3. This creates more robust, self-sustaining patterns
 
-Reference: google-research/self-organising-systems/isotropic_nca
+References:
+- https://github.com/google-research/self-organizing-systems
+- isotropic_nca/blogpost_isonca_single_seed_pytorch.ipynb
 """
 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import convolve
-from PIL import Image
-import os
+from pathlib import Path
 
 def gaussian_kernel(size, sigma):
     """Create a Gaussian kernel"""
@@ -26,268 +27,271 @@ def growth_function(u, mu, sigma):
     """Lenia growth function: Gaussian centered at mu"""
     return np.exp(-((u - mu)**2) / (2 * sigma**2)) * 2 - 1
 
-def get_alive_mask(state, threshold=0.1, nhood_radius=1):
+def get_alive_mask(state, maturity_threshold=0.1, neighbor_kernel_size=3):
     """
-    Compute alive mask: cells with living neighbors survive.
+    Compute alive mask similar to Google Isotropic NCA
     
-    Inspired by Isotropic NCA's get_alive_mask:
-    - Detect mature cells (value > threshold)
-    - Use neighborhood convolution to propagate survival signal
-    - Cell survives if any neighbor is alive
+    A cell is "alive" if:
+    1. It's mature (value > threshold), OR
+    2. It has mature neighbors
     
     Args:
-        state: current state field [H, W]
-        threshold: minimum value for a cell to be "alive"
-        nhood_radius: radius of neighborhood check
+        state: current state field
+        maturity_threshold: minimum value to be considered mature
+        neighbor_kernel_size: size of neighborhood to check
     
     Returns:
-        alive_mask: boolean mask [H, W]
+        boolean mask of alive cells
     """
-    # Detect mature cells
-    mature = (state > threshold).astype(np.float32)
+    # Mature cells
+    mature = (state > maturity_threshold).astype(float)
     
-    # Create neighborhood kernel
-    size = 2 * nhood_radius + 1
-    nhood_kernel = np.ones((size, size))
+    # Count mature neighbors (using simple box kernel)
+    neighbor_kernel = np.ones((neighbor_kernel_size, neighbor_kernel_size))
+    neighbor_kernel /= neighbor_kernel_size**2  # Normalize
     
-    # Convolve: count alive neighbors
-    alive_count = convolve(mature, nhood_kernel, mode='wrap')
+    # Average mature neighbors
+    neighbor_mature = convolve(mature, neighbor_kernel, mode='wrap')
     
-    # Cell survives if it or any neighbor is alive
-    return alive_count > 0.5
+    # Alive if mature neighbors > 0.5 (majority of neighbors are mature)
+    alive = neighbor_mature > 0.5 / neighbor_kernel_size**2
+    
+    return alive
 
-def lenia_alive_mask_step(state, kernel, mu, sigma, 
-                          update_prob=0.5, alive_threshold=0.1,
-                          nhood_radius=1, seed=None):
+def lenia_with_alive_mask_step(state, kernel, mu, sigma, 
+                                update_prob=0.5, 
+                                maturity_threshold=0.1,
+                                use_alive_mask=True,
+                                seed=None):
     """
-    Lenia step with both stochastic updates AND alive mask.
-    
-    Combines two key innovations from Isotropic NCA:
-    1. Stochastic update (50% default)
-    2. Alive mask (prevent ghost structures)
+    Lenia step with stochastic updates and alive mask
     
     Args:
-        state: current state field [H, W]
+        state: current state field
         kernel: convolution kernel
         mu, sigma: growth parameters
-        update_prob: probability each cell updates
-        alive_threshold: threshold for alive detection
-        nhood_radius: neighborhood radius for alive mask
-        seed: random seed
+        update_prob: probability each cell updates (default 0.5)
+        maturity_threshold: minimum value to be considered mature
+        use_alive_mask: whether to apply alive mask
+        seed: random seed for reproducibility
     
     Returns:
-        new_state: updated state field
-        alive_mask: computed alive mask (for visualization)
+        new state field, alive_count, mature_count
     """
     if seed is not None:
         np.random.seed(seed)
     
-    # Step 1: Standard Lenia convolution
+    # Compute alive mask
+    if use_alive_mask:
+        alive = get_alive_mask(state, maturity_threshold)
+    else:
+        alive = np.ones_like(state, dtype=bool)
+    
+    # Convolve with kernel (periodic boundary)
     U = convolve(state, kernel, mode='wrap')
+    
+    # Growth function
     G = growth_function(U, mu, sigma)
     
-    # Step 2: Stochastic update mask
+    # Stochastic update mask
     update_mask = np.random.random(state.shape) < update_prob
     
-    # Step 3: Apply growth only to selected cells
+    # Combine: only update cells that are both alive and selected
+    effective_mask = alive & update_mask
+    
+    # Apply update
     new_state = state.copy()
-    new_state[update_mask] = np.clip(
-        state[update_mask] + G[update_mask], 
+    new_state[effective_mask] = np.clip(
+        state[effective_mask] + G[effective_mask], 
         0, 1
     )
     
-    # Step 4: Apply alive mask (prevent ghost structures)
-    alive_mask = get_alive_mask(new_state, alive_threshold, nhood_radius)
-    new_state = new_state * alive_mask
+    # Clean up dead cells (set to 0 if not alive)
+    if use_alive_mask:
+        new_state[~alive] = 0
     
-    return new_state, alive_mask
+    # Statistics
+    alive_count = np.sum(alive)
+    mature_count = np.sum(state > maturity_threshold)
+    
+    return new_state, alive_count, mature_count
 
-def run_alive_mask_lenia(R=13, mu=0.15, sigma=0.015,
-                         update_prob=0.5, alive_threshold=0.1,
-                         nhood_radius=1, steps=200,
-                         size=64, seed=42):
-    """Run Lenia with alive mask"""
+def run_lenia_alive_mask_experiment(R=13, mu=0.15, sigma=0.015,
+                                     update_probs=[0.3, 0.5, 0.7, 1.0],
+                                     maturity_thresholds=[0.05, 0.1, 0.2],
+                                     steps=500, size=64, seed=42,
+                                     output_dir="output/lenia_alive_mask"):
+    """
+    Compare Lenia with different update rates and alive mask settings
+    """
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+    
     np.random.seed(seed)
     
     # Create kernel
     kernel_size = 2 * R + 1
     kernel = gaussian_kernel(kernel_size, R / 2)
     
-    # Initialize with random seed
-    state = np.zeros((size, size))
+    # Initialize with Orbium-like seed
+    state_init = np.zeros((size, size))
     center = size // 2
     radius = size // 8
     for i in range(size):
         for j in range(size):
             if (i - center)**2 + (j - center)**2 < radius**2:
-                state[i, j] = np.random.random() * 0.5 + 0.25
+                state_init[i, j] = np.random.random() * 0.5 + 0.25
     
-    # Run simulation
-    history = [state.copy()]
-    alive_history = [np.ones_like(state)]
+    results = {}
+    
+    fig, axes = plt.subplots(len(update_probs), len(maturity_thresholds), 
+                              figsize=(4*len(maturity_thresholds), 4*len(update_probs)))
+    
+    for i, update_prob in enumerate(update_probs):
+        for j, maturity_thresh in enumerate(maturity_thresholds):
+            state = state_init.copy()
+            alive_history = []
+            mature_history = []
+            
+            for step in range(steps):
+                state, alive_count, mature_count = lenia_with_alive_mask_step(
+                    state, kernel, mu, sigma, 
+                    update_prob=update_prob,
+                    maturity_threshold=maturity_thresh,
+                    use_alive_mask=True
+                )
+                alive_history.append(alive_count)
+                mature_history.append(mature_count)
+            
+            # Final state
+            ax = axes[i, j] if len(update_probs) > 1 else axes[j]
+            ax.imshow(state, cmap='viridis', vmin=0, vmax=1)
+            ax.set_title(f'p={update_prob}, thresh={maturity_thresh}\nalive={alive_count:.0f}')
+            ax.axis('off')
+            
+            key = f"p{update_prob}_thresh{maturity_thresh}"
+            results[key] = {
+                'final_alive': alive_count,
+                'final_mature': mature_count,
+                'alive_history': alive_history,
+                'mature_history': mature_history,
+                'final_state': state
+            }
+    
+    plt.suptitle(f'Lenia with Alive Mask (R={R}, μ={mu}, σ={sigma}, steps={steps})', 
+                 fontsize=14)
+    plt.tight_layout()
+    plt.savefig(output_path / 'alive_mask_comparison.png', dpi=150, 
+                bbox_inches='tight')
+    plt.close()
+    
+    # Save results
+    import json
+    summary = {k: {'final_alive': int(v['final_alive']), 
+                   'final_mature': int(v['final_mature'])} 
+               for k, v in results.items()}
+    with open(output_path / 'results.json', 'w') as f:
+        json.dump(summary, f, indent=2)
+    
+    print(f"Results saved to {output_path}")
+    return results
+
+def compare_with_without_alive_mask(R=13, mu=0.15, sigma=0.015,
+                                     update_prob=0.5,
+                                     steps=500, size=64, seed=42):
+    """
+    Direct comparison: with vs without alive mask
+    """
+    np.random.seed(seed)
+    
+    # Create kernel
+    kernel_size = 2 * R + 1
+    kernel = gaussian_kernel(kernel_size, R / 2)
+    
+    # Initialize
+    state_init = np.zeros((size, size))
+    center = size // 2
+    radius = size // 8
+    for i in range(size):
+        for j in range(size):
+            if (i - center)**2 + (j - center)**2 < radius**2:
+                state_init[i, j] = np.random.random() * 0.5 + 0.25
+    
+    # Without alive mask
+    state_no_mask = state_init.copy()
+    alive_no_mask = []
     
     for step in range(steps):
-        state, alive_mask = lenia_alive_mask_step(
-            state, kernel, mu, sigma,
-            update_prob, alive_threshold, nhood_radius,
-            seed=seed + step if seed else None
+        state_no_mask, ac, mc = lenia_with_alive_mask_step(
+            state_no_mask, kernel, mu, sigma,
+            update_prob=update_prob,
+            use_alive_mask=False
         )
-        history.append(state.copy())
-        alive_history.append(alive_mask.copy())
+        alive_no_mask.append(ac)
     
-    return np.array(history), np.array(alive_history)
-
-def compare_techniques():
-    """Compare: Standard vs Stochastic vs AliveMask vs Stochastic+AliveMask"""
-    print("=" * 60)
-    print("Lenia: Comparing Update Techniques")
-    print("=" * 60)
+    # With alive mask
+    state_with_mask = state_init.copy()
+    alive_with_mask = []
     
-    configs = [
-        ("Standard (sync)", 1.0, 0.0, 0),     # no alive mask
-        ("Stochastic (50%)", 0.5, 0.0, 0),    # no alive mask
-        ("Alive Mask (sync)", 1.0, 0.1, 1),   # with alive mask
-        ("Stochastic + Alive", 0.5, 0.1, 1),  # both
-    ]
+    for step in range(steps):
+        state_with_mask, ac, mc = lenia_with_alive_mask_step(
+            state_with_mask, kernel, mu, sigma,
+            update_prob=update_prob,
+            maturity_threshold=0.1,
+            use_alive_mask=True
+        )
+        alive_with_mask.append(ac)
     
-    fig, axes = plt.subplots(2, 4, figsize=(18, 10))
+    # Plot comparison
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
     
-    for idx, (name, update_prob, alive_thresh, nhood_r) in enumerate(configs):
-        print(f"\nRunning: {name}")
-        
-        if alive_thresh > 0:
-            history, alive_history = run_alive_mask_lenia(
-                R=13, mu=0.15, sigma=0.015,
-                update_prob=update_prob,
-                alive_threshold=alive_thresh,
-                nhood_radius=nhood_r,
-                steps=200, seed=42
-            )
-        else:
-            # Standard Lenia (no alive mask)
-            from lenia_stochastic import run_stochastic_lenia
-            history = run_stochastic_lenia(
-                R=13, mu=0.15, sigma=0.015,
-                update_prob=update_prob,
-                steps=200, seed=42
-            )
-        
-        # Row 0: step 100
-        axes[0, idx].imshow(history[100], cmap='viridis', vmin=0, vmax=1)
-        axes[0, idx].set_title(f'{name}\nStep 100', fontsize=10)
-        axes[0, idx].axis('off')
-        
-        # Row 1: step 200
-        axes[1, idx].imshow(history[200], cmap='viridis', vmin=0, vmax=1)
-        axes[1, idx].set_title(f'{name}\nStep 200', fontsize=10)
-        axes[1, idx].axis('off')
-        
-        # Metrics
-        alive_ratio = (history[200] > 0.1).sum() / history[200].size
-        mean_value = history[200].mean()
-        print(f"  Alive ratio: {alive_ratio:.3f}")
-        print(f"  Mean value: {mean_value:.4f}")
+    axes[0].imshow(state_no_mask, cmap='viridis', vmin=0, vmax=1)
+    axes[0].set_title(f'Without Alive Mask\nFinal: {alive_no_mask[-1]:.0f} alive')
+    axes[0].axis('off')
     
-    plt.suptitle('Lenia Update Techniques Comparison\n'
-                 'Standard | Stochastic | Alive Mask | Stochastic + Alive Mask',
-                 fontsize=14, fontweight='bold')
+    axes[1].imshow(state_with_mask, cmap='viridis', vmin=0, vmax=1)
+    axes[1].set_title(f'With Alive Mask\nFinal: {alive_with_mask[-1]:.0f} alive')
+    axes[1].axis('off')
+    
+    axes[2].plot(alive_no_mask, label='Without Alive Mask', alpha=0.7)
+    axes[2].plot(alive_with_mask, label='With Alive Mask', alpha=0.7)
+    axes[2].set_xlabel('Step')
+    axes[2].set_ylabel('Alive Cells')
+    axes[2].set_title('Alive Cells Over Time')
+    axes[2].legend()
+    axes[2].grid(True, alpha=0.3)
+    
+    plt.suptitle(f'Lenia Alive Mask Comparison (p={update_prob}, R={R})', fontsize=14)
     plt.tight_layout()
+    plt.savefig('output/lenia_alive_mask/with_vs_without.png', dpi=150, 
+                bbox_inches='tight')
+    plt.close()
     
-    output_dir = 'output'
-    os.makedirs(output_dir, exist_ok=True)
-    path = os.path.join(output_dir, 'lenia_alive_mask_comparison.png')
-    plt.savefig(path, dpi=150, bbox_inches='tight')
-    print(f"\nSaved: {path}")
+    print(f"Without mask: {alive_no_mask[-1]:.0f} alive cells")
+    print(f"With mask: {alive_with_mask[-1]:.0f} alive cells")
     
-    return fig
-
-def alive_mask_analysis():
-    """Detailed analysis of alive mask effect"""
-    print("\n" + "=" * 60)
-    print("Alive Mask Analysis")
-    print("=" * 60)
-    
-    # Run with alive mask
-    print("\n1. Running with alive mask...")
-    history, alive_history = run_alive_mask_lenia(
-        R=13, mu=0.15, sigma=0.015,
-        update_prob=0.5, alive_threshold=0.1,
-        nhood_radius=1, steps=200, seed=42
-    )
-    
-    # Run without alive mask (stochastic only)
-    print("2. Running without alive mask (stochastic only)...")
-    from lenia_stochastic import run_stochastic_lenia
-    history_no_mask = run_stochastic_lenia(
-        R=13, mu=0.15, sigma=0.015,
-        update_prob=0.5, steps=200, seed=42
-    )
-    
-    # Compare metrics
-    steps_to_check = [50, 100, 150, 200]
-    
-    print("\n" + "-" * 40)
-    print(f"{'Step':<8} {'Metric':<20} {'With Mask':<15} {'No Mask':<15}")
-    print("-" * 40)
-    
-    for step in steps_to_check:
-        with_mask = history[step]
-        without_mask = history_no_mask[step]
-        
-        # Alive ratio
-        alive_with = (with_mask > 0.1).sum() / with_mask.size
-        alive_without = (without_mask > 0.1).sum() / without_mask.size
-        
-        # Structure count (connected components)
-        from scipy import ndimage
-        binary_with = (with_mask > 0.1).astype(int)
-        binary_without = (without_mask > 0.1).astype(int)
-        
-        _, n_with = ndimage.label(binary_with)
-        _, n_without = ndimage.label(binary_without)
-        
-        print(f"{step:<8} {'Alive Ratio':<20} {alive_with:<15.4f} {alive_without:<15.4f}")
-        print(f"{step:<8} {'Structures':<20} {n_with:<15} {n_without:<15}")
-    
-    # Visualize alive mask evolution
-    fig, axes = plt.subplots(2, 4, figsize=(16, 8))
-    
-    checkpoints = [0, 25, 50, 100, 150, 200]
-    for i, step in enumerate(checkpoints[:4]):
-        axes[0, i].imshow(history[step], cmap='viridis', vmin=0, vmax=1)
-        axes[0, i].set_title(f'State (step {step})')
-        axes[0, i].axis('off')
-        
-        axes[1, i].imshow(alive_history[step], cmap='gray')
-        axes[1, i].set_title(f'Alive Mask (step {step})')
-        axes[1, i].axis('off')
-    
-    plt.suptitle('Alive Mask Evolution Over Time', fontsize=14)
-    plt.tight_layout()
-    
-    output_dir = 'output'
-    os.makedirs(output_dir, exist_ok=True)
-    path = os.path.join(output_dir, 'lenia_alive_mask_evolution.png')
-    plt.savefig(path, dpi=150, bbox_inches='tight')
-    print(f"\nSaved: {path}")
-    
-    return fig
+    return state_no_mask, state_with_mask, alive_no_mask, alive_with_mask
 
 if __name__ == '__main__':
-    print("=" * 60)
+    print("="*60)
     print("Lenia with Alive Mask Experiment")
-    print("Inspired by Google Research Isotropic NCA")
-    print("=" * 60)
+    print("="*60)
+    print("\nInspired by Google Isotropic NCA techniques:")
+    print("- 50% stochastic update rate")
+    print("- Alive mask: mature cells with live neighbors survive")
+    print("="*60)
     
-    # Experiment 1: Compare all techniques
-    compare_techniques()
+    # Run comparison experiment
+    print("\n[1] Comparing with vs without alive mask...")
+    state_no_mask, state_with_mask, alive_no_mask, alive_with_mask = \
+        compare_with_without_alive_mask(steps=300)
     
-    # Experiment 2: Detailed alive mask analysis
-    alive_mask_analysis()
+    # Run parameter sweep
+    print("\n[2] Running parameter sweep...")
+    results = run_lenia_alive_mask_experiment(
+        update_probs=[0.3, 0.5, 0.7, 1.0],
+        maturity_thresholds=[0.05, 0.1, 0.2],
+        steps=300
+    )
     
-    print("\n" + "=" * 60)
-    print("Key Findings:")
-    print("1. Alive mask prevents ghost structures from drifting")
-    print("2. Stochastic + Alive Mask = most organic patterns")
-    print("3. Neighborhood-based survival creates cleaner boundaries")
-    print("=" * 60)
+    print("\nExperiment complete! Check output/lenia_alive_mask/")
