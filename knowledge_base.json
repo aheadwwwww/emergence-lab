@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T21:29:32.583035",
+  "last_updated": "2026-06-27T21:59:33.749604",
   "categories": {
     "exploration": {
-      "count": 78,
+      "count": 79,
       "items": [
+        {
+          "name": "2026-06-27-lenia-neural-hybrid-ideas",
+          "path": "exploration\\2026-06-27-lenia-neural-hybrid-ideas.md",
+          "size": 2168,
+          "modified": "2026-06-27T21:30:02.234735"
+        },
         {
           "name": "2026-06-27-biomakerca-architecture",
           "path": "exploration\\2026-06-27-biomakerca-architecture.md",
@@ -1049,8 +1055,8 @@
         {
           "name": "2026-06-27",
           "path": "memory\\2026-06-27.md",
-          "size": 3837,
-          "modified": "2026-06-27T20:02:04.171786"
+          "size": 3172,
+          "modified": "2026-06-27T21:32:15.674487"
         },
         {
           "name": "projects",
