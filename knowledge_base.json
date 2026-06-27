@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T21:01:30.355460",
+  "last_updated": "2026-06-27T21:29:32.583035",
   "categories": {
     "exploration": {
       "count": 78,
@@ -475,8 +475,14 @@
       ]
     },
     "experiments": {
-      "count": 93,
+      "count": 94,
       "items": [
+        {
+          "name": "agent_based_lenia",
+          "path": "experiments\\agent_based_lenia.py",
+          "size": 12397,
+          "modified": "2026-06-27T21:03:43.992108"
+        },
         {
           "name": "self_replicating_nn_jax",
           "path": "experiments\\self_replicating_nn_jax.py",
