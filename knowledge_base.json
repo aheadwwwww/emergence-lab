@@ -1,14 +1,20 @@
 {
-  "last_updated": "2026-06-27T20:32:53.111026",
+  "last_updated": "2026-06-27T21:01:30.355460",
   "categories": {
     "exploration": {
-      "count": 77,
+      "count": 78,
       "items": [
+        {
+          "name": "2026-06-27-biomakerca-architecture",
+          "path": "exploration\\2026-06-27-biomakerca-architecture.md",
+          "size": 6454,
+          "modified": "2026-06-27T21:01:25.745371"
+        },
         {
           "name": "2026-06-27-self-replicating-nn-deep-dive",
           "path": "exploration\\2026-06-27-self-replicating-nn-deep-dive.md",
-          "size": 7202,
-          "modified": "2026-06-27T20:00:34.762403"
+          "size": 7873,
+          "modified": "2026-06-27T20:37:04.891567"
         },
         {
           "name": "2026-06-27-google-sos-latest",
@@ -469,8 +475,14 @@
       ]
     },
     "experiments": {
-      "count": 92,
+      "count": 93,
       "items": [
+        {
+          "name": "self_replicating_nn_jax",
+          "path": "experiments\\self_replicating_nn_jax.py",
+          "size": 13824,
+          "modified": "2026-06-27T20:35:40.324746"
+        },
         {
           "name": "neural_lenia_quick_test",
           "path": "experiments\\neural_lenia_quick_test.py",
