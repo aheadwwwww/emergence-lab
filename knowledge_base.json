@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T14:29:28.244064",
+  "last_updated": "2026-06-27T14:31:08.004424",
   "categories": {
     "exploration": {
       "count": 65,
@@ -900,13 +900,19 @@
       ]
     },
     "memory": {
-      "count": 68,
+      "count": 69,
       "items": [
         {
           "name": "2026-06-27",
           "path": "memory\\2026-06-27.md",
-          "size": 3144,
-          "modified": "2026-06-27T14:03:51.147295"
+          "size": 4354,
+          "modified": "2026-06-27T14:30:57.612089"
+        },
+        {
+          "name": "2026-06-27-memory-systems-analysis",
+          "path": "memory\\2026-06-27-memory-systems-analysis.md",
+          "size": 5884,
+          "modified": "2026-06-27T14:30:32.507541"
         },
         {
           "name": "2026-06-27-particle-lenia-official",
