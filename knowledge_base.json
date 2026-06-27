@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T22:59:27.084101",
+  "last_updated": "2026-06-27T23:32:26.231650",
   "categories": {
     "exploration": {
-      "count": 82,
+      "count": 83,
       "items": [
+        {
+          "name": "2026-06-27-agent-lenia-sensing",
+          "path": "exploration\\2026-06-27-agent-lenia-sensing.md",
+          "size": 4171,
+          "modified": "2026-06-27T23:31:54.336020"
+        },
         {
           "name": "2026-06-27-agent-lenia-minimal",
           "path": "exploration\\2026-06-27-agent-lenia-minimal.md",
@@ -499,8 +505,14 @@
       ]
     },
     "experiments": {
-      "count": 95,
+      "count": 96,
       "items": [
+        {
+          "name": "agent_lenia_sensing",
+          "path": "experiments\\agent_lenia_sensing.py",
+          "size": 15141,
+          "modified": "2026-06-27T23:31:20.489887"
+        },
         {
           "name": "agent_lenia_minimal",
           "path": "experiments\\agent_lenia_minimal.py",
@@ -1074,8 +1086,20 @@
       ]
     },
     "memory": {
-      "count": 73,
+      "count": 75,
       "items": [
+        {
+          "name": "2026-06-27-heartbeat-2329",
+          "path": "memory\\2026-06-27-heartbeat-2329.md",
+          "size": 2728,
+          "modified": "2026-06-27T23:32:18.936564"
+        },
+        {
+          "name": "2026-06-27-heartbeat-2259",
+          "path": "memory\\2026-06-27-heartbeat-2259.md",
+          "size": 3289,
+          "modified": "2026-06-27T23:00:12.018117"
+        },
         {
           "name": "2026-06-27-heartbeat-2229",
           "path": "memory\\2026-06-27-heartbeat-2229.md",
@@ -1494,27 +1518,4 @@
           "name": "2026-06-18-2106",
           "path": "memory\\2026-06-18-2106.md",
           "size": 2162,
-          "modified": "2026-06-18T21:06:56.431239"
-        },
-        {
-          "name": "2026-06-18.deep",
-          "path": "memory\\2026-06-18.deep.md",
-          "size": 286,
-          "modified": "2026-06-18T19:30:02.929280"
-        },
-        {
-          "name": "_day1_summary",
-          "path": "memory\\_day1_summary.md",
-          "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+   
