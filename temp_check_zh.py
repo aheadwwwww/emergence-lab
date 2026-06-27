@@ -1,9 +1,10 @@
 import re
 html = open(r'D:\openclaw_workspace\canvas\munger-models-zh.html', 'r', encoding='utf-8').read()
-titles = re.findall(r"title: '([^']+)'", html)
-print(f'Total models: {len(titles)}')
-for t in titles[:5]:
-    print(f'  - {t}')
-# Check if Chinese
-cn_count = sum(1 for t in titles if any('\u4e00' <= c <= '\u9fff' for c in t))
-print(f'Chinese titles: {cn_count}/{len(titles)}')
+count = len(re.findall(r"title:\s*'([^']+)'", html))
+cn_count = len(re.findall(r'[\u4e00-\u9fff]', html))
+print(f'Models: {count}')
+print(f'Chinese chars: {cn_count}')
+idx = html.find('description')
+if idx > 0:
+    snippet = html[idx:idx+200]
+    print(f'Sample: {snippet[:150]}...')
