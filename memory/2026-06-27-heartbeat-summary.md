@@ -6,7 +6,10 @@
 - 发现未跟踪文件：
   - `experiments/experiments/data/ecosystem_sweep_results.json`
   - `temp_extract_models.py`（临时脚本）
-- 提交：8eafc36 "Add ecosystem sweep results and temp model extraction script"
+- 提交并推送了 3 个 commits：
+  - 8eafc36: ecosystem sweep results
+  - 9267621: Google Isotropic NCA analysis
+  - b05dcf3: alive mask experiment fix
 
 ### 2. 记忆回顾 ✓
 - **2026-06-26 心跳**：
