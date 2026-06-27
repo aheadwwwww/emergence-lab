@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T18:37:24.587154",
+  "last_updated": "2026-06-27T18:59:29.315452",
   "categories": {
     "exploration": {
-      "count": 73,
+      "count": 74,
       "items": [
+        {
+          "name": "2026-06-27-neural-lenia-comparison",
+          "path": "exploration\\2026-06-27-neural-lenia-comparison.md",
+          "size": 1801,
+          "modified": "2026-06-27T18:38:10.124635"
+        },
         {
           "name": "2026-06-27-heartbeat-progress",
           "path": "exploration\\2026-06-27-heartbeat-progress.md",
@@ -987,6 +993,12 @@
       "count": 72,
       "items": [
         {
+          "name": "heartbeat-log",
+          "path": "memory\\heartbeat-log.md",
+          "size": 3629,
+          "modified": "2026-06-27T18:38:39.394117"
+        },
+        {
           "name": "2026-06-27",
           "path": "memory\\2026-06-27.md",
           "size": 2273,
@@ -997,12 +1009,6 @@
           "path": "memory\\projects.md",
           "size": 7518,
           "modified": "2026-06-27T18:22:42.642138"
-        },
-        {
-          "name": "heartbeat-log",
-          "path": "memory\\heartbeat-log.md",
-          "size": 1989,
-          "modified": "2026-06-27T17:32:26.969866"
         },
         {
           "name": "2026-06-27-heartbeat-summary",
