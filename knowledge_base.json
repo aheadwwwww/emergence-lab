@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T13:04:29.873525",
+  "last_updated": "2026-06-27T13:29:32.089978",
   "categories": {
     "exploration": {
       "count": 65,
@@ -397,8 +397,14 @@
       ]
     },
     "experiments": {
-      "count": 82,
+      "count": 83,
       "items": [
+        {
+          "name": "self_replicating_lenia",
+          "path": "experiments\\self_replicating_lenia.py",
+          "size": 13899,
+          "modified": "2026-06-27T13:08:10.437436"
+        },
         {
           "name": "self_replicating_nn_demo",
           "path": "experiments\\self_replicating_nn_demo.py",
