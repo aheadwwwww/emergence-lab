@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T17:32:27.299896",
+  "last_updated": "2026-06-27T18:20:52.279282",
   "categories": {
     "exploration": {
       "count": 70,
@@ -963,6 +963,12 @@
       "count": 72,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 7139,
+          "modified": "2026-06-27T17:33:04.811321"
+        },
+        {
           "name": "heartbeat-log",
           "path": "memory\\heartbeat-log.md",
           "size": 1989,
@@ -1027,12 +1033,6 @@
           "path": "memory\\2026-06-27-1239.md",
           "size": 3023,
           "modified": "2026-06-27T12:39:36.099330"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 6580,
-          "modified": "2026-06-27T00:01:12.490799"
         },
         {
           "name": "2026-06-26",

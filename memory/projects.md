@@ -127,3 +127,10 @@
     - 详细笔记：`exploration/symbiote/DISCOVERY.md`
   - 已创建 `_gh_trending.py` 工具，后续可扩展为定期扫描机制
   - 详细笔记：`memory/2026-06-24-discovery-vivarium.md`
+  - 📦 **The-KISS** (mich1803): 神经元胞自动机艺术生成，2026-05 ⭐ NEW
+    - 三阶段NCA流水线：Grow → Improve → Transition
+    - 教师-学生训练防止自污染
+    - 锚点正则化保持生长能力
+    - 解决增长vs持久化困境
+    - 与我们的 Neural Lenia 直接相关
+    - 详细笔记：`exploration/2026-06-27-the-kiss-nca.md`
