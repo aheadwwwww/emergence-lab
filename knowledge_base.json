@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T18:59:29.315452",
+  "last_updated": "2026-06-27T19:03:41.155580",
   "categories": {
     "exploration": {
-      "count": 74,
+      "count": 75,
       "items": [
+        {
+          "name": "2026-06-27-self-replicating-neural-lenia",
+          "path": "exploration\\2026-06-27-self-replicating-neural-lenia.md",
+          "size": 1866,
+          "modified": "2026-06-27T19:03:35.389590"
+        },
         {
           "name": "2026-06-27-neural-lenia-comparison",
           "path": "exploration\\2026-06-27-neural-lenia-comparison.md",
@@ -451,8 +457,20 @@
       ]
     },
     "experiments": {
-      "count": 89,
+      "count": 91,
       "items": [
+        {
+          "name": "neural_lenia_self_replicating_v2",
+          "path": "experiments\\neural_lenia_self_replicating_v2.py",
+          "size": 9083,
+          "modified": "2026-06-27T19:03:19.661871"
+        },
+        {
+          "name": "neural_lenia_self_replicating",
+          "path": "experiments\\neural_lenia_self_replicating.py",
+          "size": 9220,
+          "modified": "2026-06-27T19:01:13.189182"
+        },
         {
           "name": "neural_lenia_gradient",
           "path": "experiments\\neural_lenia_gradient.py",
