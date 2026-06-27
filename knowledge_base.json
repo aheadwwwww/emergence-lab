@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T19:29:21.262172",
+  "last_updated": "2026-06-27T19:59:32.156989",
   "categories": {
     "exploration": {
-      "count": 75,
+      "count": 76,
       "items": [
+        {
+          "name": "2026-06-27-google-sos-latest",
+          "path": "exploration\\2026-06-27-google-sos-latest.md",
+          "size": 3246,
+          "modified": "2026-06-27T19:30:42.378878"
+        },
         {
           "name": "2026-06-27-self-replicating-neural-lenia",
           "path": "exploration\\2026-06-27-self-replicating-neural-lenia.md",
@@ -457,8 +463,14 @@
       ]
     },
     "experiments": {
-      "count": 91,
+      "count": 92,
       "items": [
+        {
+          "name": "neural_lenia_quick_test",
+          "path": "experiments\\neural_lenia_quick_test.py",
+          "size": 2154,
+          "modified": "2026-06-27T19:33:33.535924"
+        },
         {
           "name": "neural_lenia_self_replicating_v2",
           "path": "experiments\\neural_lenia_self_replicating_v2.py",
@@ -1011,6 +1023,12 @@
       "count": 72,
       "items": [
         {
+          "name": "projects",
+          "path": "memory\\projects.md",
+          "size": 7722,
+          "modified": "2026-06-27T19:31:06.030835"
+        },
+        {
           "name": "heartbeat-log",
           "path": "memory\\heartbeat-log.md",
           "size": 3629,
@@ -1021,12 +1039,6 @@
           "path": "memory\\2026-06-27.md",
           "size": 2273,
           "modified": "2026-06-27T18:23:01.823062"
-        },
-        {
-          "name": "projects",
-          "path": "memory\\projects.md",
-          "size": 7518,
-          "modified": "2026-06-27T18:22:42.642138"
         },
         {
           "name": "2026-06-27-heartbeat-summary",

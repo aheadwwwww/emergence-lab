@@ -28,10 +28,10 @@ def lenia_step(grid, kernel):
     # 更新
     return jnp.clip(grid + 0.1 * G, 0, 1)
 
-def simulate(params, key, steps=100):
-    """模拟 Lenia 演化"""
+def simulate(params, key, steps=20):
+    """模拟 Lenia 演化（减少步数避免编译过长）"""
     R = 13
-    size = 64
+    size = 32
     
     # 生成核
     coords = jnp.stack(jnp.meshgrid(
@@ -46,7 +46,7 @@ def simulate(params, key, steps=100):
     # 初始化网格
     grid = jax.random.uniform(key, (size, size))
     
-    # 运行
+    # 运行（减少步数）
     for _ in range(steps):
         grid = lenia_step(grid, kernel)
     
@@ -56,7 +56,7 @@ def simulate(params, key, steps=100):
     
     return alive, variance
 
-@jax.jit
+# 移除 JIT，避免编译卡顿
 def loss_fn(params, key):
     """损失函数：最大化存活，最小化方差"""
     alive, var = simulate(params, key)
@@ -69,15 +69,15 @@ params = jnp.array([13.0, 0.3, 0.05])  # R, mu, sigma
 print("Starting gradient optimization...")
 print(f"Initial params: R={params[0]:.1f}, μ={params[1]:.3f}, σ={params[2]:.3f}")
 
-for i in range(20):
+for i in range(10):
     key, subkey = jax.random.split(key)
     loss, grads = jax.value_and_grad(loss_fn)(params, subkey)
     
     # 梯度下降
     params = params - 0.01 * grads
     
-    if i % 5 == 0:
-        alive, var = simulate(params, key, steps=50)
+    if i % 2 == 0:
+        alive, var = simulate(params, key, steps=20)
         print(f"Iter {i}: loss={loss:.4f}, alive={alive:.3f}, var={var:.4f}")
 
 print(f"\nFinal params: R={params[0]:.1f}, μ={params[1]:.3f}, σ={params[2]:.3f}")
