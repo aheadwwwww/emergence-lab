@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-27T21:59:33.749604",
+  "last_updated": "2026-06-27T22:31:50.582846",
   "categories": {
     "exploration": {
-      "count": 79,
+      "count": 82,
       "items": [
+        {
+          "name": "2026-06-27-agent-lenia-minimal",
+          "path": "exploration\\2026-06-27-agent-lenia-minimal.md",
+          "size": 3169,
+          "modified": "2026-06-27T22:31:44.975521"
+        },
+        {
+          "name": "2026-06-27-heartbeat-progress-evening",
+          "path": "exploration\\2026-06-27-heartbeat-progress-evening.md",
+          "size": 2208,
+          "modified": "2026-06-27T22:00:57.292039"
+        },
+        {
+          "name": "2026-06-27-agent-lenia-hybrid-prototype",
+          "path": "exploration\\2026-06-27-agent-lenia-hybrid-prototype.md",
+          "size": 2845,
+          "modified": "2026-06-27T22:00:25.624676"
+        },
         {
           "name": "2026-06-27-lenia-neural-hybrid-ideas",
           "path": "exploration\\2026-06-27-lenia-neural-hybrid-ideas.md",
@@ -481,8 +499,14 @@
       ]
     },
     "experiments": {
-      "count": 94,
+      "count": 95,
       "items": [
+        {
+          "name": "agent_lenia_minimal",
+          "path": "experiments\\agent_lenia_minimal.py",
+          "size": 8926,
+          "modified": "2026-06-27T22:31:09.484106"
+        },
         {
           "name": "agent_based_lenia",
           "path": "experiments\\agent_based_lenia.py",
@@ -1470,21 +1494,4 @@
           "name": "2026-06-18.deep",
           "path": "memory\\2026-06-18.deep.md",
           "size": 286,
-          "modified": "2026-06-18T19:30:02.929280"
-        },
-        {
-          "name": "_day1_summary",
-          "path": "memory\\_day1_summary.md",
-          "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+          "modified": "20
