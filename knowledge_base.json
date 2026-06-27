@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-27T23:59:38.362455",
+  "last_updated": "2026-06-28T00:01:17.173397",
   "categories": {
     "exploration": {
-      "count": 83,
+      "count": 84,
       "items": [
+        {
+          "name": "2026-06-27-turmites-experiment",
+          "path": "exploration\\2026-06-27-turmites-experiment.md",
+          "size": 2094,
+          "modified": "2026-06-28T00:01:09.700190"
+        },
         {
           "name": "2026-06-27-agent-lenia-sensing",
           "path": "exploration\\2026-06-27-agent-lenia-sensing.md",
