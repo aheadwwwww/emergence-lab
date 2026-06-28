@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-28T00:32:23.834206",
+  "last_updated": "2026-06-28T14:45:01.992065",
   "categories": {
     "exploration": {
-      "count": 84,
+      "count": 87,
       "items": [
+        {
+          "name": "2026-06-28-neuroparticles2-analysis",
+          "path": "exploration\\2026-06-28-neuroparticles2-analysis.md",
+          "size": 6028,
+          "modified": "2026-06-28T14:44:56.042467"
+        },
+        {
+          "name": "2026-06-28-github-supplement",
+          "path": "exploration\\2026-06-28-github-supplement.md",
+          "size": 1749,
+          "modified": "2026-06-28T14:23:34.377408"
+        },
+        {
+          "name": "2026-06-28-github-discovery",
+          "path": "exploration\\2026-06-28-github-discovery.md",
+          "size": 10532,
+          "modified": "2026-06-28T14:19:54.134195"
+        },
         {
           "name": "2026-06-27-turmites-experiment",
           "path": "exploration\\2026-06-27-turmites-experiment.md",
@@ -511,8 +529,32 @@
       ]
     },
     "experiments": {
-      "count": 96,
+      "count": 100,
       "items": [
+        {
+          "name": "analyze_search",
+          "path": "experiments\\analyze_search.py",
+          "size": 3780,
+          "modified": "2026-06-28T14:41:14.829762"
+        },
+        {
+          "name": "lenia_param_search_v2",
+          "path": "experiments\\lenia_param_search_v2.py",
+          "size": 7943,
+          "modified": "2026-06-28T14:21:34.421562"
+        },
+        {
+          "name": "evo_turmite",
+          "path": "experiments\\evo_turmite.py",
+          "size": 6493,
+          "modified": "2026-06-28T00:39:20.628954"
+        },
+        {
+          "name": "neural_turmite",
+          "path": "experiments\\neural_turmite.py",
+          "size": 6949,
+          "modified": "2026-06-28T00:38:26.090199"
+        },
         {
           "name": "agent_lenia_sensing",
           "path": "experiments\\agent_lenia_sensing.py",
@@ -1092,8 +1134,20 @@
       ]
     },
     "memory": {
-      "count": 76,
+      "count": 78,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat",
+          "path": "memory\\2026-06-28-heartbeat.md",
+          "size": 4263,
+          "modified": "2026-06-28T14:43:51.417794"
+        },
+        {
+          "name": "2026-06-28",
+          "path": "memory\\2026-06-28.md",
+          "size": 2234,
+          "modified": "2026-06-28T00:39:50.719912"
+        },
         {
           "name": "2026-06-27-heartbeat-2359",
           "path": "memory\\2026-06-27-heartbeat-2359.md",
