@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T15:29:41.789835",
+  "last_updated": "2026-06-28T15:33:38.096729",
   "categories": {
     "exploration": {
-      "count": 89,
+      "count": 90,
       "items": [
+        {
+          "name": "2026-06-28-homeostatic-lenia",
+          "path": "exploration\\2026-06-28-homeostatic-lenia.md",
+          "size": 2748,
+          "modified": "2026-06-28T15:33:33.448686"
+        },
         {
           "name": "2026-06-28-neuroparticles2-deep",
           "path": "exploration\\2026-06-28-neuroparticles2-deep.md",
@@ -541,8 +547,20 @@
       ]
     },
     "experiments": {
-      "count": 103,
+      "count": 105,
       "items": [
+        {
+          "name": "homeostatic_lenia",
+          "path": "experiments\\homeostatic_lenia.py",
+          "size": 6827,
+          "modified": "2026-06-28T15:32:54.072778"
+        },
+        {
+          "name": "evolutionary_lenia",
+          "path": "experiments\\evolutionary_lenia.py",
+          "size": 19996,
+          "modified": "2026-06-28T15:31:51.307595"
+        },
         {
           "name": "lenia_followup",
           "path": "experiments\\lenia_followup.py",

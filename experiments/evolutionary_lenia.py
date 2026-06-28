@@ -134,7 +134,7 @@ class Genome:
                 if mask[i, j]:
                     inp = np.array([r_norm[i,j], theta_norm[i,j]])
                     h = np.tanh(w1 @ inp + b1)
-                    kernel[i, j] = float(np.tanh(w2 @ h + b2))
+                    kernel[i, j] = float(np.tanh(w2 @ h + b2).item())
 
         # Normalize and pad
         kernel = kernel / (np.abs(kernel).sum() + 1e-8)
