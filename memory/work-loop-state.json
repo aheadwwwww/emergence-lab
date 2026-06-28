@@ -1,24 +1,10 @@
 {
-  "depth": 2,
-  "topic": "evolutionary_lenia_fitness_redesign",
-  "status": "in_progress",
-  "last_insight": "Genome representation is sufficient (loss=0.000004 on Gaussian Ring). Bottleneck is fitness function, not model capacity.",
-  "depth_log": [
-    {
-      "depth": 1,
-      "insight": "Evolution stuck at score 11.67. Hypothesis: genome representation too limited.",
-      "action": "Test if genome can express known-good kernels",
-      "result": "SUCCESS - genome is sufficient. Problem is elsewhere."
-    }
-  ],
-  "direction_reason": "Fitness function rewards stability, not emergent dynamics. Need to redesign what we're optimizing for.",
-  "goal": "Create a fitness function that rewards emergent, dynamic patterns instead of static blobs",
-  "abort_condition": "If 3 consecutive fitness redesigns fail to produce novel patterns, reassess approach",
-  "next_actions": [
-    "Implement pattern diversity metric (entropy over time)",
-    "Implement spatial complexity metric (edge density, fractal dimension)",
-    "Implement temporal dynamics metric (change rate)",
-    "Test new fitness function on known-good kernels (Orbium, Geminium)",
-    "Run evolution with new fitness function"
-  ]
+  "depth": 1,
+  "topic": "evolutionary_lenia_kernel_optimization",
+  "status": "ready",
+  "last_insight": null,
+  "depth_log": [],
+  "direction_reason": "Evolve Lenia kernel via GA to produce novel emergent patterns. Experiment runs in subagent to avoid timeout.",
+  "goal": "Achieve measurable fitness improvement across generations",
+  "abort_condition": "3 consecutive cycles with no fitness improvement → reassess"
 }
