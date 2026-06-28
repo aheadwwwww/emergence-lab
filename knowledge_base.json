@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T14:45:01.992065",
+  "last_updated": "2026-06-28T14:59:32.613141",
   "categories": {
     "exploration": {
       "count": 87,
@@ -1137,16 +1137,16 @@
       "count": 78,
       "items": [
         {
+          "name": "2026-06-28",
+          "path": "memory\\2026-06-28.md",
+          "size": 1331,
+          "modified": "2026-06-28T14:53:38.349038"
+        },
+        {
           "name": "2026-06-28-heartbeat",
           "path": "memory\\2026-06-28-heartbeat.md",
           "size": 4263,
           "modified": "2026-06-28T14:43:51.417794"
-        },
-        {
-          "name": "2026-06-28",
-          "path": "memory\\2026-06-28.md",
-          "size": 2234,
-          "modified": "2026-06-28T00:39:50.719912"
         },
         {
           "name": "2026-06-27-heartbeat-2359",
