@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T18:29:39.443295",
+  "last_updated": "2026-06-28T18:59:24.995906",
   "categories": {
     "exploration": {
-      "count": 96,
+      "count": 97,
       "items": [
+        {
+          "name": "2026-06-28-genome-expressiveness-test",
+          "path": "exploration\\2026-06-28-genome-expressiveness-test.md",
+          "size": 2503,
+          "modified": "2026-06-28T18:32:48.006171"
+        },
         {
           "name": "work-loop-depth-1",
           "path": "exploration\\work-loop-depth-1.md",
@@ -583,8 +589,32 @@
       ]
     },
     "experiments": {
-      "count": 106,
+      "count": 110,
       "items": [
+        {
+          "name": "test_dynamic_fitness_quick",
+          "path": "experiments\\test_dynamic_fitness_quick.py",
+          "size": 6036,
+          "modified": "2026-06-28T18:36:42.619086"
+        },
+        {
+          "name": "test_dynamic_evolution",
+          "path": "experiments\\test_dynamic_evolution.py",
+          "size": 5667,
+          "modified": "2026-06-28T18:35:47.718048"
+        },
+        {
+          "name": "dynamic_fitness",
+          "path": "experiments\\dynamic_fitness.py",
+          "size": 7034,
+          "modified": "2026-06-28T18:34:18.250280"
+        },
+        {
+          "name": "test_genome_expressiveness",
+          "path": "experiments\\test_genome_expressiveness.py",
+          "size": 4549,
+          "modified": "2026-06-28T18:32:07.637224"
+        },
         {
           "name": "scale_free_lenia",
           "path": "experiments\\scale_free_lenia.py",
@@ -1224,8 +1254,14 @@
       ]
     },
     "memory": {
-      "count": 86,
+      "count": 87,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat-1829",
+          "path": "memory\\2026-06-28-heartbeat-1829.md",
+          "size": 2679,
+          "modified": "2026-06-28T18:37:37.180516"
+        },
         {
           "name": "2026-06-28-heartbeat-1759",
           "path": "memory\\2026-06-28-heartbeat-1759.md",
