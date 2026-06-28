@@ -1,0 +1,67 @@
+{
+  "cycle": 1,
+  "timestamp": "2026-06-28T15:53:17.486470",
+  "query": "self-organizing+systems+python",
+  "results": [
+    {
+      "name": "organvm/agentic-titan",
+      "stars": 5,
+      "desc": "Polymorphic Agent Swarm Architecture: model-agnostic, self-organizing multi-agent system with 6 topologies, 1,095+ tests (adversarial, chaos, e2e, integration, performance, MCP, Ray), 18 completed phases.",
+      "url": "https://github.com/organvm/agentic-titan"
+    },
+    {
+      "name": "raxrock/akm",
+      "stars": 1,
+      "desc": "  Adaptive Knowledge Mesh - Python framework combining knowledge graphs, vector databases, and GNNs into a self-organizing knowledge system. Features adaptive links with time-based decay, domain transformers for custom schemas, and LLM-powered semantic queries with reasoning paths.",
+      "url": "https://github.com/raxrock/akm"
+    },
+    {
+      "name": "Champesh94364/MyPA",
+      "stars": 0,
+      "desc": "A self-organizing hierarchical Multi-Agent System. Send a task via Telegram → AI spawns agents dynamically → executes → reports back. Built with Python & Google ADK.",
+      "url": "https://github.com/Champesh94364/MyPA"
+    },
+    {
+      "name": "sugarcode25/financial-anomaly-detector",
+      "stars": 0,
+      "desc": "Unsupervised anomaly detection system for equity markets using Self-Organizing Maps (SOM). Validated across 10 cross-asset tickers spanning 7 asset profiles. Built with Python, scikit-learn, and MiniSom.",
+      "url": "https://github.com/sugarcode25/financial-anomaly-detector"
+    },
+    {
+      "name": "gradrix/dendrite",
+      "stars": 0,
+      "desc": "🧠 Self-organizing AI agent with dendrite spawning - decomposes complex goals into neurons, spawns parallel sub-tasks, and aggregates results. Features smart parameter extraction, context isolation, and automatic data compaction. Built for Strava analytics with extensible tool system.",
+      "url": "https://github.com/gradrix/dendrite"
+    },
+    {
+      "name": "Anshul48/Synapse",
+      "stars": 1,
+      "desc": "Synapse is a hybrid system that turns your Obsidian Vault into an intelligent, self-organizing library. It runs a local Python \"Sidecar\" alongside your vault that watches for new thoughts, restructures them into a tree-based hierarchy, and learns from your feedback.",
+      "url": "https://github.com/Anshul48/Synapse"
+    },
+    {
+      "name": "Phi-losophe/LMC-PoC",
+      "stars": 1,
+      "desc": "Exploring the universe as a self-organizing information system.   > Unified Information Compression Theory (UICT) links cognition, quantum physics, and cosmology through entropy optimization.   > Includes PoC code, predictions for dark matter, and consciousness quantification.",
+      "url": "https://github.com/Phi-losophe/LMC-PoC"
+    },
+    {
+      "name": "Phi-losophe/UICT_PoC",
+      "stars": 0,
+      "desc": "Exploring the universe as a self-organizing information system: compression, entropy & consciousness.",
+      "url": "https://github.com/Phi-losophe/UICT_PoC"
+    },
+    {
+      "name": "roguetrainer/soc-economics-finance",
+      "stars": 1,
+      "desc": "Self-Organized Criticality in economics & finance. Python implementations demonstrating how economic and financial systems self-organize toward critical points where small shocks trigger large disruptions, based on Bouchaud's 2025 paper on Self-Organized Criticality.",
+      "url": "https://github.com/roguetrainer/soc-economics-finance"
+    },
+    {
+      "name": "VICTOR-OMEGA/distributed-iot-systems",
+      "stars": 0,
+      "desc": "A Python-based exploration of autonomous, self-organizing IoT clusters that balance workloads, recover from failures, and adapt in real time through decentralized coordination and peer-to-peer signaling.",
+      "url": "https://github.com/VICTOR-OMEGA/distributed-iot-systems"
+    }
+  ]
+}
