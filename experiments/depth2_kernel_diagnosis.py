@@ -20,6 +20,7 @@ Based on Depth 1 findings:
 import numpy as np
 import jax
 import jax.numpy as jnp
+from jax import jit, vmap
 import matplotlib.pyplot as plt
 from pathlib import Path
 import json
@@ -88,69 +89,80 @@ def make_donut_kernel(R=15, inner_r=0.3, outer_r=0.7):
     kernel[r > 1] = 0
     return kernel / (kernel.sum() + 1e-8)
 
-# ============== Gradient Descent Fitting ==============
+# ============== Gradient Descent Fitting (Vectorized JAX) ==============
 
-def fit_genome_to_kernel(target_kernel, R=15, n_iters=2000, lr=0.05):
-    """Use gradient descent to fit genome weights to match target kernel."""
-    
-    # Precompute grid coordinates (JAX arrays)
+def make_fitter(R=15):
+    """Create a JIT-compiled fitting function for given R."""
     kernel_hw = 2 * R + 1
-    y, x = jnp.ogrid[-R:R+1, -R:R+1]
-    r_grid = jnp.sqrt(x*x + y*y)
-    theta_grid = jnp.arctan2(y, x)
-    r_norm_grid = r_grid / (R + 1e-8)
-    theta_norm_grid = (theta_grid + jnp.pi) / (2 * jnp.pi)
-    mask_grid = r_grid <= R
     
-    # Target as JAX array
-    target_jax = jnp.array(target_kernel, dtype=jnp.float32)
-    target_norm = target_jax / (jnp.abs(target_jax).sum() + 1e-8)
+    # Precompute grid coordinates
+    y, x = np.ogrid[-R:R+1, -R:R+1]
+    r_grid = np.sqrt(x*x + y*y).astype(np.float32)
+    theta_grid = np.arctan2(y, x).astype(np.float32)
+    r_norm_grid = (r_grid / (R + 1e-8)).astype(np.float32)
+    theta_norm_grid = ((theta_grid + np.pi) / (2 * np.pi)).astype(np.float32)
+    mask_grid = (r_grid <= R).astype(np.float32)
     
-    def loss_fn(weights):
-        """Pure JAX loss function."""
+    # Convert to JAX arrays (constants)
+    r_norm_const = jnp.array(r_norm_grid)
+    theta_norm_const = jnp.array(theta_norm_grid)
+    mask_const = jnp.array(mask_grid)
+    
+    @jit
+    def forward_nn(weights, r_vals, theta_vals):
+        """Vectorized forward pass through 2->8->1 NN."""
+        # weights: [33]
+        # r_vals, theta_vals: [H, W]
         w1 = weights[:16].reshape((8, 2))
         b1 = weights[16:24]
         w2 = weights[24:32].reshape((1, 8))
         b2 = weights[32:33]
         
-        # Build kernel via NN evaluation at each grid point
-        kernel = jnp.zeros((kernel_hw, kernel_hw), dtype=jnp.float32)
+        # Stack inputs: [H, W, 2]
+        inp = jnp.stack([r_vals, theta_vals], axis=-1)
         
-        # Vectorized computation over all grid points
-        def compute_pixel(i, j):
-            r_val = r_norm_grid[i, j]
-            theta_val = theta_norm_grid[i, j]
-            inp = jnp.array([r_val, theta_val])
-            h = jnp.tanh(w1 @ inp + b1)
-            return jnp.tanh(w2 @ h + b2)[0]
+        # Hidden layer: [H, W, 2] @ [2, 8]^T + [8] -> [H, W, 8]
+        h = jnp.tanh(jnp.einsum('ijk,lk->ijl', inp, w1) + b1)
         
-        # Use vmap for vectorization
-        i_vals = jnp.arange(kernel_hw)
-        j_vals = jnp.arange(kernel_hw)
+        # Output layer: [H, W, 8] @ [8, 1]^T + [1] -> [H, W, 1] -> [H, W]
+        out = jnp.tanh(jnp.einsum('ijk,lk->ijl', h, w2) + b2)[:, :, 0]
         
-        def row_kernel(i):
-            return jax.vmap(lambda j: compute_pixel(i, j))(j_vals)
-        
-        kernel = jax.vmap(row_kernel)(i_vals)
-        kernel = kernel * mask_grid  # Apply circular mask
-        
-        # Normalize
-        pred_norm = kernel / (jnp.abs(kernel).sum() + 1e-8)
-        
+        return out
+    
+    @jit
+    def loss_fn(weights, target_norm):
+        """Compute MSE loss between predicted and target kernel."""
+        pred = forward_nn(weights, r_norm_const, theta_norm_const)
+        pred = pred * mask_const  # Apply circular mask
+        pred_norm = pred / (jnp.abs(pred).sum() + 1e-8)
         return jnp.mean((pred_norm - target_norm)**2)
     
-    # JAX gradient
-    loss_and_grad = jax.value_and_grad(loss_fn)
+    @jit
+    def loss_and_grad(weights, target_norm):
+        return jax.value_and_grad(loss_fn)(weights, target_norm)
     
-    # Initialize
-    key = jax.random.PRNGKey(42)
-    weights = jax.random.normal(key, (33,)) * 0.5
+    return loss_and_grad
+
+def fit_genome_to_kernel(target_kernel, R=15, n_iters=2000, lr=0.05, seed=42):
+    """Use gradient descent to fit genome weights to match target kernel."""
+    
+    loss_and_grad = make_fitter(R)
+    
+    # Target as JAX array, normalized
+    target_jax = jnp.array(target_kernel, dtype=jnp.float32)
+    target_norm = target_jax / (jnp.abs(target_jax).sum() + 1e-8)
+    
+    # Initialize weights
+    key = jax.random.PRNGKey(seed)
+    weights = jax.random.normal(key, (33,), dtype=jnp.float32) * 0.5
+    
     losses = []
     best_weights = weights
     best_loss = float('inf')
+    current_lr = lr
     
     for i in range(n_iters):
-        loss, grad = loss_and_grad(weights)
+        loss, grad = loss_and_grad(weights, target_norm)
         loss_val = float(loss)
         losses.append(loss_val)
         
@@ -158,11 +170,11 @@ def fit_genome_to_kernel(target_kernel, R=15, n_iters=2000, lr=0.05):
             best_loss = loss_val
             best_weights = weights
         
-        weights = weights - lr * grad
+        weights = weights - current_lr * grad
         
         # Learning rate decay
         if i > 0 and i % 500 == 0:
-            lr *= 0.5
+            current_lr *= 0.5
     
     return Genome(np.array(best_weights)), losses, best_loss
 
@@ -199,8 +211,9 @@ def run_diagnosis():
         all_losses = []
         
         for restart in range(3):
+            print(f"  Restart {restart + 1}/3...", flush=True)
             genome, losses, final_loss = fit_genome_to_kernel(
-                target, R, n_iters=2000, lr=0.05
+                target, R, n_iters=2000, lr=0.05, seed=restart * 1000 + 42
             )
             all_losses.append(losses)
             
@@ -219,13 +232,13 @@ def run_diagnosis():
         print(f"  Best loss: {best_loss:.6f}")
         
         if best_loss < 0.01:
-            print(f"  ✓ EXCELLENT fit - representation is sufficient")
+            print(f"  [EXCELLENT] fit - representation is sufficient")
         elif best_loss < 0.05:
-            print(f"  ○ GOOD fit - representation can approximate")
+            print(f"  [GOOD] fit - representation can approximate")
         elif best_loss < 0.1:
-            print(f"  △ MODERATE fit - representation is limited")
+            print(f"  [MODERATE] fit - representation is limited")
         else:
-            print(f"  ✗ POOR fit - representation cannot express this kernel")
+            print(f"  [POOR] fit - representation cannot express this kernel")
     
     # Visualization
     fig, axes = plt.subplots(3, 4, figsize=(16, 12))
@@ -277,7 +290,7 @@ def run_diagnosis():
     
     for name, res in results.items():
         summary["kernel_results"][name] = {
-            "final_loss": res["loss"],
+            "final_loss": float(res["loss"]),
             "can_express": res["loss"] < 0.1
         }
     

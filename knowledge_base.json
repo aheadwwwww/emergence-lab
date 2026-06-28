@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T18:59:24.995906",
+  "last_updated": "2026-06-28T19:46:00.189413",
   "categories": {
     "exploration": {
-      "count": 97,
+      "count": 98,
       "items": [
+        {
+          "name": "kernel_fitting_results",
+          "path": "exploration\\kernel_fitting_results.md",
+          "size": 4255,
+          "modified": "2026-06-28T19:39:00.662851"
+        },
         {
           "name": "2026-06-28-genome-expressiveness-test",
           "path": "exploration\\2026-06-28-genome-expressiveness-test.md",
@@ -589,8 +595,32 @@
       ]
     },
     "experiments": {
-      "count": 110,
+      "count": 114,
       "items": [
+        {
+          "name": "evo_lenia_dynamic_test",
+          "path": "experiments\\evo_lenia_dynamic_test.py",
+          "size": 16124,
+          "modified": "2026-06-28T19:43:47.533204"
+        },
+        {
+          "name": "evolutionary_lenia_v2",
+          "path": "experiments\\evolutionary_lenia_v2.py",
+          "size": 16866,
+          "modified": "2026-06-28T19:40:37.411956"
+        },
+        {
+          "name": "kernel_fitting_test",
+          "path": "experiments\\kernel_fitting_test.py",
+          "size": 10170,
+          "modified": "2026-06-28T19:36:58.119320"
+        },
+        {
+          "name": "depth2_kernel_diagnosis",
+          "path": "experiments\\depth2_kernel_diagnosis.py",
+          "size": 10763,
+          "modified": "2026-06-28T19:34:23.171696"
+        },
         {
           "name": "test_dynamic_fitness_quick",
           "path": "experiments\\test_dynamic_fitness_quick.py",
@@ -1254,8 +1284,20 @@
       ]
     },
     "memory": {
-      "count": 87,
+      "count": 88,
       "items": [
+        {
+          "name": "2026-06-28",
+          "path": "memory\\2026-06-28.md",
+          "size": 4910,
+          "modified": "2026-06-28T19:45:11.764944"
+        },
+        {
+          "name": "2026-06-28-heartbeat-progress",
+          "path": "memory\\2026-06-28-heartbeat-progress.md",
+          "size": 2271,
+          "modified": "2026-06-28T18:59:55.986688"
+        },
         {
           "name": "2026-06-28-heartbeat-1829",
           "path": "memory\\2026-06-28-heartbeat-1829.md",
@@ -1303,12 +1345,6 @@
           "path": "memory\\auto-loop-log.md",
           "size": 1018,
           "modified": "2026-06-28T15:53:17.486432"
-        },
-        {
-          "name": "2026-06-28",
-          "path": "memory\\2026-06-28.md",
-          "size": 3252,
-          "modified": "2026-06-28T15:36:30.630630"
         },
         {
           "name": "lessons",

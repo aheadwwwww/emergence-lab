@@ -413,12 +413,12 @@ if __name__ == "__main__":
     print("- Novelty-based component")
     print()
     
-    # Run evolution
+    # Run evolution (minimal parameters for faster execution)
     history = evolve_v2(
-        n_generations=10,
-        pop_size=20,
-        seed_types=["orbium", "perturbed", "multi"],
-        sim_steps=500
+        n_generations=3,
+        pop_size=5,
+        seed_types=["orbium"],
+        sim_steps=100
     )
     
     # Save results
