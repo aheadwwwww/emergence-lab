@@ -1,0 +1,19 @@
+{
+  "experiment": "lenia_criticality_sweep",
+  "cycle": 3,
+  "topic": "critical_regime_discovery",
+  "sweep_summary": {
+    "total_combinations": 60,
+    "critical_regime_count": 0,
+    "best_tau": 1.1184231000862987,
+    "best_params": [
+      0.1,
+      0.05
+    ]
+  },
+  "sweep_results": [
+    {
+      "T": 0.05,
+      "sigma": 0.05,
+      "tau": 1.0704906613396457,
+      "in_critical": 
