@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-28T14:59:32.613141",
+  "last_updated": "2026-06-28T15:29:41.789835",
   "categories": {
     "exploration": {
-      "count": 87,
+      "count": 89,
       "items": [
+        {
+          "name": "2026-06-28-neuroparticles2-deep",
+          "path": "exploration\\2026-06-28-neuroparticles2-deep.md",
+          "size": 3136,
+          "modified": "2026-06-28T15:13:14.182769"
+        },
+        {
+          "name": "2026-06-29-xagent-deep-dive",
+          "path": "exploration\\2026-06-29-xagent-deep-dive.md",
+          "size": 8072,
+          "modified": "2026-06-28T15:01:06.687313"
+        },
         {
           "name": "2026-06-28-neuroparticles2-analysis",
           "path": "exploration\\2026-06-28-neuroparticles2-analysis.md",
@@ -529,8 +541,26 @@
       ]
     },
     "experiments": {
-      "count": 100,
+      "count": 103,
       "items": [
+        {
+          "name": "lenia_followup",
+          "path": "experiments\\lenia_followup.py",
+          "size": 3419,
+          "modified": "2026-06-28T15:14:37.406181"
+        },
+        {
+          "name": "neural_lenia_evo",
+          "path": "experiments\\neural_lenia_evo.py",
+          "size": 8579,
+          "modified": "2026-06-28T15:14:22.348880"
+        },
+        {
+          "name": "lenia_fine_search_experiment",
+          "path": "experiments\\lenia_fine_search_experiment.py",
+          "size": 21895,
+          "modified": "2026-06-28T15:13:09.268097"
+        },
         {
           "name": "analyze_search",
           "path": "experiments\\analyze_search.py",
@@ -1134,13 +1164,25 @@
       ]
     },
     "memory": {
-      "count": 78,
+      "count": 79,
       "items": [
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 25633,
+          "modified": "2026-06-28T15:27:27.552437"
+        },
         {
           "name": "2026-06-28",
           "path": "memory\\2026-06-28.md",
-          "size": 1331,
-          "modified": "2026-06-28T14:53:38.349038"
+          "size": 2041,
+          "modified": "2026-06-28T15:13:49.831289"
+        },
+        {
+          "name": "2026-06-29",
+          "path": "memory\\2026-06-29.md",
+          "size": 1185,
+          "modified": "2026-06-28T15:01:18.478780"
         },
         {
           "name": "2026-06-28-heartbeat",
@@ -1201,12 +1243,6 @@
           "path": "memory\\2026-06-27-openhands-exploration.md",
           "size": 3604,
           "modified": "2026-06-27T17:14:07.620164"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 23151,
-          "modified": "2026-06-27T16:44:39.649473"
         },
         {
           "name": "2026-06-27-heartbeat",
