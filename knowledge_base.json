@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T17:59:22.076017",
+  "last_updated": "2026-06-28T18:29:39.443295",
   "categories": {
     "exploration": {
-      "count": 95,
+      "count": 96,
       "items": [
+        {
+          "name": "work-loop-depth-1",
+          "path": "exploration\\work-loop-depth-1.md",
+          "size": 5432,
+          "modified": "2026-06-28T18:13:07.594140"
+        },
         {
           "name": "work-loop-cycle2",
           "path": "exploration\\work-loop-cycle2.md",
@@ -1218,8 +1224,14 @@
       ]
     },
     "memory": {
-      "count": 85,
+      "count": 86,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat-1759",
+          "path": "memory\\2026-06-28-heartbeat-1759.md",
+          "size": 3241,
+          "modified": "2026-06-28T18:00:11.770594"
+        },
         {
           "name": "2026-06-28-heartbeat-1729",
           "path": "memory\\2026-06-28-heartbeat-1729.md",
