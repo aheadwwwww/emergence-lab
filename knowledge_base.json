@@ -1,20 +1,26 @@
 {
-  "last_updated": "2026-06-28T22:38:39.115395",
+  "last_updated": "2026-06-29T01:43:20.316177",
   "categories": {
     "exploration": {
-      "count": 107,
+      "count": 108,
       "items": [
+        {
+          "name": "work-loop-depth-4-diffusion",
+          "path": "exploration\\work-loop-depth-4-diffusion.md",
+          "size": 7181,
+          "modified": "2026-06-28T23:16:43.094825"
+        },
+        {
+          "name": "work-loop-depth-4",
+          "path": "exploration\\work-loop-depth-4.md",
+          "size": 8652,
+          "modified": "2026-06-28T22:39:40.504645"
+        },
         {
           "name": "2026-06-28-lenia-v10-jax-md",
           "path": "exploration\\2026-06-28-lenia-v10-jax-md.md",
           "size": 2856,
           "modified": "2026-06-28T22:38:05.049158"
-        },
-        {
-          "name": "work-loop-depth-4",
-          "path": "exploration\\work-loop-depth-4.md",
-          "size": 5996,
-          "modified": "2026-06-28T21:43:03.741277"
         },
         {
           "name": "work-loop-depth-3",
@@ -649,8 +655,14 @@
       ]
     },
     "experiments": {
-      "count": 128,
+      "count": 129,
       "items": [
+        {
+          "name": "evolutionary_lenia_v9_learnable_gnn",
+          "path": "experiments\\evolutionary_lenia_v9_learnable_gnn.py",
+          "size": 24352,
+          "modified": "2026-06-28T22:55:33.945058"
+        },
         {
           "name": "lenia_v10_jax_md_prototype",
           "path": "experiments\\lenia_v10_jax_md_prototype.py",
@@ -1422,8 +1434,20 @@
       ]
     },
     "memory": {
-      "count": 90,
+      "count": 92,
       "items": [
+        {
+          "name": "core-findings",
+          "path": "memory\\core-findings.md",
+          "size": 3424,
+          "modified": "2026-06-29T00:32:41.756365"
+        },
+        {
+          "name": "2026-06-28-heartbeat-2230",
+          "path": "memory\\2026-06-28-heartbeat-2230.md",
+          "size": 2103,
+          "modified": "2026-06-28T22:38:54.263988"
+        },
         {
           "name": "2026-06-28-heartbeat-2104",
           "path": "memory\\2026-06-28-heartbeat-2104.md",

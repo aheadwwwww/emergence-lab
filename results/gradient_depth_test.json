@@ -1,0 +1,57 @@
+{
+  "depth_results": [
+    {
+      "steps": 4,
+      "grad_norm": NaN,
+      "time": 2.7583532333374023,
+      "survival": 0.119384765625
+    },
+    {
+      "steps": 8,
+      "grad_norm": NaN,
+      "time": 0.5661208629608154,
+      "survival": 0.000732421875
+    },
+    {
+      "steps": 16,
+      "grad_norm": NaN,
+      "time": 0.6096024513244629,
+      "survival": 0.0
+    },
+    {
+      "steps": 32,
+      "grad_norm": NaN,
+      "time": 0.7360823154449463,
+      "survival": 0.0
+    },
+    {
+      "steps": 64,
+      "grad_norm": NaN,
+      "time": 0.6212143898010254,
+      "survival": 0.0
+    },
+    {
+      "steps": 128,
+      "grad_norm": NaN,
+      "time": 0.7581343650817871,
+      "survival": 0.0
+    },
+    {
+      "steps": 256,
+      "grad_norm": NaN,
+      "time": 0.7460019588470459,
+      "survival": 0.0
+    },
+    {
+      "steps": 512,
+      "grad_norm": NaN,
+      "time": 0.8212897777557373,
+      "survival": 0.0
+    }
+  ],
+  "curriculum_results": {
+    "single_256": NaN,
+    "curriculum_16_128": NaN
+  },
+  "verdict": "gradient_depth_analysis"
+}
