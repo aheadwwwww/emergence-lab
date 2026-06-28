@@ -1,0 +1,268 @@
+{
+  "method": "hybrid_evolutionary_learning",
+  "cycle": 4,
+  "generations": 20,
+  "final_best": {
+    "fitness": 1.9851590378829265,
+    "survival": 0.939697265625,
+    "complexity": 0.6008287442549902,
+    "params": {
+      "mu": 0.38182604537366355,
+      "sigma": 0.29429206139750563,
+      "k": 1
+    },
+    "type": "v7_learnable_child_child_child_child_child_child_child_child_child",
+    "learnable_deltas": {
+      "delta_mu": 0.062308556272326836,
+      "delta_sigma": 0.023458426429963115
+    }
+  },
+  "learning_history": [
+    {
+      "generation": 0,
+      "best_fitness": 0.5664376019463631,
+      "best_survival": 0.30511474609375,
+      "best_complexity": 0.2769471358936596,
+      "best_params": {
+        "mu": 0.16229791806363297,
+        "sigma": 0.08332270646793422,
+        "k": 1
+      },
+      "best_type": "random_explore"
+    },
+    {
+      "generation": 1,
+      "best_fitness": 0.6429872807187635,
+      "best_survival": 0.33544921875,
+      "best_complexity": 0.31043639683223995,
+      "best_params": {
+        "mu": 0.1801364099171065,
+        "sigma": 0.0929451971147313,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child"
+    },
+    {
+      "generation": 2,
+      "best_fitness": 0.7602430383165649,
+      "best_survival": 0.3770751953125,
+      "best_complexity": 0.36213506385910194,
+      "best_params": {
+        "mu": 0.2214248937867334,
+        "sigma": 0.09740749106290032,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child"
+    },
+    {
+      "generation": 3,
+      "best_fitness": 1.3175688831530026,
+      "best_survival": 0.7822265625,
+      "best_complexity": 0.3654393950114901,
+      "best_params": {
+        "mu": 0.11458150167493306,
+        "sigma": 0.14798709287604533,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child"
+    },
+    {
+      "generation": 4,
+      "best_fitness": 1.471009727075553,
+      "best_survival": 0.84197998046875,
+      "best_complexity": 0.4070127633628266,
+      "best_params": {
+        "mu": 0.14591960966607223,
+        "sigma": 0.18244691981160013,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child"
+    },
+    {
+      "generation": 5,
+      "best_fitness": 1.5360489600022829,
+      "best_survival": 0.84912109375,
+      "best_complexity": 0.43805128223476736,
+      "best_params": {
+        "mu": 0.17797629181250305,
+        "sigma": 0.2096717836752774,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child"
+    },
+    {
+      "generation": 6,
+      "best_fitness": 1.6204479768081304,
+      "best_survival": 0.88909912109375,
+      "best_complexity": 0.4527190240150958,
+      "best_params": {
+        "mu": 0.2095774507343507,
+        "sigma": 0.2409239715594842,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child"
+    },
+    {
+      "generation": 7,
+      "best_fitness": 1.7379113039073621,
+      "best_survival": 0.79315185546875,
+      "best_complexity": 0.5941129147864299,
+      "best_params": {
+        "mu": 0.2697115105608133,
+        "sigma": 0.2403354702605688,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 8,
+      "best_fitness": 1.9166540633765827,
+      "best_survival": 0.877197265625,
+      "best_complexity": 0.616700984076625,
+      "best_params": {
+        "mu": 0.32489879919332265,
+        "sigma": 0.27478411488223514,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 9,
+      "best_fitness": 1.9840600520101945,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6002899299277847,
+      "best_params": {
+        "mu": 0.3817127033938901,
+        "sigma": 0.29439592438520124,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 10,
+      "best_fitness": 1.9840874736729772,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6003033722239172,
+      "best_params": {
+        "mu": 0.38171726046348275,
+        "sigma": 0.2943917472611778,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 11,
+      "best_fitness": 1.9841404894000538,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6003293606631066,
+      "best_params": {
+        "mu": 0.3817237604455757,
+        "sigma": 0.29438578936322857,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 12,
+      "best_fitness": 1.984216472169279,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.600366607025307,
+      "best_params": {
+        "mu": 0.38173200923515077,
+        "sigma": 0.29437822876874614,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 13,
+      "best_fitness": 1.9843094815375468,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6004121988130229,
+      "best_params": {
+        "mu": 0.3817418321794186,
+        "sigma": 0.29436922574738383,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 14,
+      "best_fitness": 1.9844186925753915,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6004657820733346,
+      "best_params": {
+        "mu": 0.3817530721308263,
+        "sigma": 0.29435892454182966,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 15,
+      "best_fitness": 1.9845450731243872,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6005277286528321,
+      "best_params": {
+        "mu": 0.38176558769839275,
+        "sigma": 0.29434745497050274,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 16,
+      "best_fitness": 1.9846834562278435,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6005955562367123,
+      "best_params": {
+        "mu": 0.38177925165963994,
+        "sigma": 0.29433493386998044,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 17,
+      "best_fitness": 1.9848335882981338,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6006691909138306,
+      "best_params": {
+        "mu": 0.3817939495433733,
+        "sigma": 0.2943214663931822,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 18,
+      "best_fitness": 1.9849898089503752,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6007457559876547,
+      "best_params": {
+        "mu": 0.3818095783401695,
+        "sigma": 0.29430714717773565,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    },
+    {
+      "generation": 19,
+      "best_fitness": 1.9851590378829265,
+      "best_survival": 0.939697265625,
+      "best_complexity": 0.6008287442549902,
+      "best_params": {
+        "mu": 0.38182604537366355,
+        "sigma": 0.29429206139750563,
+        "k": 1
+      },
+      "best_type": "v7_learnable_child_child_child_child_child_child_child_child_child"
+    }
+  ],
+  "convergence": {
+    "improving": true,
+    "param_variance": 4.580942785783518e-10,
+    "final_fitness": 1.9851590378829265,
+    "fitness_gain": 0.0006139647585392538
+  }
+}
