@@ -193,6 +193,138 @@ def visualize_kernel_and_pattern(kernel_params, history, save_path=None):
     return kernel
 
 
+def compute_fitness(history):
+    """
+    计算适应度分数
+    
+    目标: 
+    1. 存活时间长
+    2. 有动态行为（不是静态）
+    3. 有复杂结构（高熵）
+    """
+    # 存活分数: 存活步数 / 总步数
+    alive = jnp.sum(history > 0.1, axis=(1, 2)) > 100
+    alive_score = jnp.sum(alive) / len(history)
+    
+    # 动态分数: 帧间差异的均值
+    if len(history) > 1:
+        diff = jnp.abs(history[1:] - history[:-1])
+        dynamic_score = jnp.mean(diff)
+    else:
+        dynamic_score = 0.0
+    
+    # 复杂度分数: 最终状态的熵
+    final = history[-1]
+    # 离散化到 10 个 bins
+    hist, _ = jnp.histogram(final, bins=10, range=(0, 1))
+    hist = hist / jnp.sum(hist) + 1e-10
+    entropy = -jnp.sum(hist * jnp.log(hist))
+    complexity_score = entropy / 2.3  # 归一化 (max ~2.3 for 10 bins)
+    
+    # 总分
+    total = alive_score * 2.0 + dynamic_score * 5.0 + complexity_score * 1.0
+    
+    return total
+
+
+def gradient_optimization(key, steps=200, iterations=50, lr=0.01):
+    """
+    使用梯度下降优化神经核参数
+    
+    Args:
+        key: 随机 key
+        steps: 每次模拟的步数
+        iterations: 优化迭代次数
+        lr: 学习率
+    
+    Returns:
+        best_params: 最优参数
+        best_score: 最高分数
+        history: 优化历史
+    """
+    print("=" * 60)
+    print("Neural Lenia 梯度优化")
+    print("=" * 60)
+    
+    # 初始化参数
+    k1, k2 = jax.random.split(key)
+    params = init_neural_kernel(k1, hidden_dim=32)
+    
+    best_params = params
+    best_score = 0.0
+    optimization_history = []
+    
+    for i in range(iterations):
+        k1, k2 = jax.random.split(k2)
+        
+        # 运行模拟
+        history, alive_steps = run_lenia(k1, params, steps=steps, size=64)
+        
+        # 计算适应度
+        score = compute_fitness(history)
+        
+        # 计算梯度
+        def loss_fn(p):
+            h, _ = run_lenia(k1, p, steps=steps, size=64)
+            return -compute_fitness(h)  # 负号因为我们要最大化
+        
+        grads = jax.grad(loss_fn)(params)
+        
+        # 更新参数
+        new_w1 = params.w1 - lr * grads.w1
+        new_b1 = params.b1 - lr * grads.b1
+        new_w2 = params.w2 - lr * grads.w2
+        new_b2 = params.b2 - lr * grads.b2
+        
+        params = NeuralKernelParams(new_w1, new_b1, new_w2, new_b2)
+        
+        # 记录
+        optimization_history.append({
+            'iteration': i,
+            'score': float(score),
+            'alive_steps': int(alive_steps),
+        })
+        
+        if score > best_score:
+            best_score = score
+            best_params = params
+        
+        if i % 10 == 0:
+            print(f"Iter {i}: score={score:.3f}, alive={alive_steps}/{steps}, best={best_score:.3f}")
+    
+    print(f"\n优化完成! 最佳分数: {best_score:.3f}")
+    
+    return best_params, best_score, optimization_history
+
+
+def evolve_orbium(key, iterations=100):
+    """
+    进化出类似 Orbium 的生命形式
+    
+    Orbium 参数: R=13, μ=0.15, σ=0.015
+    目标: 学习出类似的核形状
+    """
+    print("=" * 60)
+    print("进化 Orbium-like 生命形式")
+    print("=" * 60)
+    
+    best_params, best_score, history = gradient_optimization(
+        key, steps=300, iterations=iterations, lr=0.005
+    )
+    
+    # 可视化最终结果
+    k1, k2 = jax.random.split(key)
+    final_history, _ = run_lenia(k1, best_params, steps=500, size=128)
+    
+    visualize_kernel_and_pattern(
+        best_params, 
+        final_history[::50],  # 每 50 帧采样
+        save_path='output/neural_lenia_orbium.png'
+    )
+    
+    return best_params, history
+
+
 # 测试函数
 def test_neural_lenia():
     """测试 Neural Lenia"""
