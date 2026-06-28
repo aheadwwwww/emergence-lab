@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-28T20:05:24.490515",
+  "last_updated": "2026-06-28T21:05:28.874599",
   "categories": {
     "exploration": {
-      "count": 101,
+      "count": 103,
       "items": [
+        {
+          "name": "work-loop-depth-2",
+          "path": "exploration\\work-loop-depth-2.md",
+          "size": 2699,
+          "modified": "2026-06-28T20:53:05.894929"
+        },
+        {
+          "name": "work-loop-depth-2-experiment",
+          "path": "exploration\\work-loop-depth-2-experiment.md",
+          "size": 4557,
+          "modified": "2026-06-28T20:47:26.449961"
+        },
+        {
+          "name": "work-loop-depth-1",
+          "path": "exploration\\work-loop-depth-1.md",
+          "size": 2695,
+          "modified": "2026-06-28T20:07:11.955071"
+        },
         {
           "name": "2026-06-28-official-lenia-analysis",
           "path": "exploration\\2026-06-28-official-lenia-analysis.md",
@@ -33,12 +51,6 @@
           "path": "exploration\\2026-06-28-genome-expressiveness-test.md",
           "size": 2503,
           "modified": "2026-06-28T18:32:48.006171"
-        },
-        {
-          "name": "work-loop-depth-1",
-          "path": "exploration\\work-loop-depth-1.md",
-          "size": 5432,
-          "modified": "2026-06-28T18:13:07.594140"
         },
         {
           "name": "work-loop-cycle2",
@@ -613,8 +625,62 @@
       ]
     },
     "experiments": {
-      "count": 114,
+      "count": 123,
       "items": [
+        {
+          "name": "evolutionary_lenia_v6_pareto",
+          "path": "experiments\\evolutionary_lenia_v6_pareto.py",
+          "size": 18978,
+          "modified": "2026-06-28T21:02:07.058356"
+        },
+        {
+          "name": "lenia_kernel_growth_evolution",
+          "path": "experiments\\lenia_kernel_growth_evolution.py",
+          "size": 17549,
+          "modified": "2026-06-28T21:00:58.411864"
+        },
+        {
+          "name": "evolutionary_lenia_v5_joint",
+          "path": "experiments\\evolutionary_lenia_v5_joint.py",
+          "size": 18640,
+          "modified": "2026-06-28T20:51:21.873136"
+        },
+        {
+          "name": "evolutionary_lenia_v4_warmstart",
+          "path": "experiments\\evolutionary_lenia_v4_warmstart.py",
+          "size": 28070,
+          "modified": "2026-06-28T20:46:02.529167"
+        },
+        {
+          "name": "debug_lenia_dying",
+          "path": "experiments\\debug_lenia_dying.py",
+          "size": 2905,
+          "modified": "2026-06-28T20:44:17.244058"
+        },
+        {
+          "name": "test_orbium_params",
+          "path": "experiments\\test_orbium_params.py",
+          "size": 2812,
+          "modified": "2026-06-28T20:42:31.326573"
+        },
+        {
+          "name": "evolutionary_lenia_v4_adaptive",
+          "path": "experiments\\evolutionary_lenia_v4_adaptive.py",
+          "size": 29358,
+          "modified": "2026-06-28T20:29:25.523698"
+        },
+        {
+          "name": "evolutionary_lenia_v4_multiring",
+          "path": "experiments\\evolutionary_lenia_v4_multiring.py",
+          "size": 30078,
+          "modified": "2026-06-28T20:20:23.793742"
+        },
+        {
+          "name": "evolutionary_lenia_v3_hybrid",
+          "path": "experiments\\evolutionary_lenia_v3_hybrid.py",
+          "size": 26249,
+          "modified": "2026-06-28T20:09:40.105683"
+        },
         {
           "name": "evo_lenia_dynamic_test",
           "path": "experiments\\evo_lenia_dynamic_test.py",
@@ -1302,8 +1368,14 @@
       ]
     },
     "memory": {
-      "count": 88,
+      "count": 89,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat-2000",
+          "path": "memory\\2026-06-28-heartbeat-2000.md",
+          "size": 1321,
+          "modified": "2026-06-28T20:06:28.892363"
+        },
         {
           "name": "2026-06-28",
           "path": "memory\\2026-06-28.md",
