@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T15:33:38.096729",
+  "last_updated": "2026-06-28T15:59:32.088238",
   "categories": {
     "exploration": {
       "count": 90,
@@ -550,16 +550,16 @@
       "count": 105,
       "items": [
         {
+          "name": "evolutionary_lenia",
+          "path": "experiments\\evolutionary_lenia.py",
+          "size": 20003,
+          "modified": "2026-06-28T15:35:01.379102"
+        },
+        {
           "name": "homeostatic_lenia",
           "path": "experiments\\homeostatic_lenia.py",
           "size": 6827,
           "modified": "2026-06-28T15:32:54.072778"
-        },
-        {
-          "name": "evolutionary_lenia",
-          "path": "experiments\\evolutionary_lenia.py",
-          "size": 19996,
-          "modified": "2026-06-28T15:31:51.307595"
         },
         {
           "name": "lenia_followup",
@@ -1182,19 +1182,25 @@
       ]
     },
     "memory": {
-      "count": 79,
+      "count": 80,
       "items": [
+        {
+          "name": "auto-loop-log",
+          "path": "memory\\auto-loop-log.md",
+          "size": 1018,
+          "modified": "2026-06-28T15:53:17.486432"
+        },
+        {
+          "name": "2026-06-28",
+          "path": "memory\\2026-06-28.md",
+          "size": 3252,
+          "modified": "2026-06-28T15:36:30.630630"
+        },
         {
           "name": "lessons",
           "path": "memory\\lessons.md",
           "size": 25633,
           "modified": "2026-06-28T15:27:27.552437"
-        },
-        {
-          "name": "2026-06-28",
-          "path": "memory\\2026-06-28.md",
-          "size": 2041,
-          "modified": "2026-06-28T15:13:49.831289"
         },
         {
           "name": "2026-06-29",
