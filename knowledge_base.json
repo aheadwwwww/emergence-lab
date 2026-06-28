@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T16:59:16.222359",
+  "last_updated": "2026-06-28T17:03:12.104080",
   "categories": {
     "exploration": {
-      "count": 92,
+      "count": 93,
       "items": [
+        {
+          "name": "2026-06-28-emergent-pattern-catalog-deep",
+          "path": "exploration\\2026-06-28-emergent-pattern-catalog-deep.md",
+          "size": 6420,
+          "modified": "2026-06-28T17:01:56.560134"
+        },
         {
           "name": "NOTE",
           "path": "exploration\\NOTE.md",
@@ -1194,8 +1200,14 @@
       ]
     },
     "memory": {
-      "count": 83,
+      "count": 84,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat-1659",
+          "path": "memory\\2026-06-28-heartbeat-1659.md",
+          "size": 3563,
+          "modified": "2026-06-28T17:03:11.746852"
+        },
         {
           "name": "2026-06-28-heartbeat-1632",
           "path": "memory\\2026-06-28-heartbeat-1632.md",
