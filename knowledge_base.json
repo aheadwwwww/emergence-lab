@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T15:59:32.088238",
+  "last_updated": "2026-06-28T16:01:47.782350",
   "categories": {
     "exploration": {
-      "count": 90,
+      "count": 91,
       "items": [
+        {
+          "name": "akm-discovery",
+          "path": "exploration\\akm-discovery.md",
+          "size": 4573,
+          "modified": "2026-06-28T16:00:35.133916"
+        },
         {
           "name": "2026-06-28-homeostatic-lenia",
           "path": "exploration\\2026-06-28-homeostatic-lenia.md",
@@ -550,6 +556,12 @@
       "count": 105,
       "items": [
         {
+          "name": "neural_lenia",
+          "path": "experiments\\neural_lenia.py",
+          "size": 11043,
+          "modified": "2026-06-28T16:01:24.617382"
+        },
+        {
           "name": "evolutionary_lenia",
           "path": "experiments\\evolutionary_lenia.py",
           "size": 20003,
@@ -650,12 +662,6 @@
           "path": "experiments\\neural_lenia_gradient.py",
           "size": 8275,
           "modified": "2026-06-27T18:32:07.042253"
-        },
-        {
-          "name": "neural_lenia",
-          "path": "experiments\\neural_lenia.py",
-          "size": 7343,
-          "modified": "2026-06-27T17:31:42.082994"
         },
         {
           "name": "lenia_alive_mask",
