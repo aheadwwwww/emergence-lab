@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-28T16:32:58.077683",
+  "last_updated": "2026-06-28T16:59:16.222359",
   "categories": {
     "exploration": {
-      "count": 91,
+      "count": 92,
       "items": [
+        {
+          "name": "NOTE",
+          "path": "exploration\\NOTE.md",
+          "size": 5964,
+          "modified": "2026-06-28T16:34:34.536982"
+        },
         {
           "name": "akm-discovery",
           "path": "exploration\\akm-discovery.md",
@@ -1188,8 +1194,14 @@
       ]
     },
     "memory": {
-      "count": 82,
+      "count": 83,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat-1632",
+          "path": "memory\\2026-06-28-heartbeat-1632.md",
+          "size": 3866,
+          "modified": "2026-06-28T16:35:38.106178"
+        },
         {
           "name": "2026-06-28-heartbeat-1602",
           "path": "memory\\2026-06-28-heartbeat-1602.md",
