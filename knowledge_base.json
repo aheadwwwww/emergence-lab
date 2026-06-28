@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-28T17:31:26.438274",
+  "last_updated": "2026-06-28T17:59:22.076017",
   "categories": {
     "exploration": {
-      "count": 93,
+      "count": 95,
       "items": [
+        {
+          "name": "work-loop-cycle2",
+          "path": "exploration\\work-loop-cycle2.md",
+          "size": 3401,
+          "modified": "2026-06-28T17:38:06.712355"
+        },
+        {
+          "name": "work-loop-cycle1",
+          "path": "exploration\\work-loop-cycle1.md",
+          "size": 1895,
+          "modified": "2026-06-28T17:34:15.002658"
+        },
         {
           "name": "2026-06-28-emergent-pattern-catalog-deep",
           "path": "exploration\\2026-06-28-emergent-pattern-catalog-deep.md",
@@ -565,8 +577,14 @@
       ]
     },
     "experiments": {
-      "count": 105,
+      "count": 106,
       "items": [
+        {
+          "name": "scale_free_lenia",
+          "path": "experiments\\scale_free_lenia.py",
+          "size": 8468,
+          "modified": "2026-06-28T17:41:13.564348"
+        },
         {
           "name": "neural_lenia",
           "path": "experiments\\neural_lenia.py",
