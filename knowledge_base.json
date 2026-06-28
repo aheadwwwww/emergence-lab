@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-06-28T19:46:00.189413",
+  "last_updated": "2026-06-28T20:05:24.490515",
   "categories": {
     "exploration": {
-      "count": 98,
+      "count": 101,
       "items": [
+        {
+          "name": "2026-06-28-official-lenia-analysis",
+          "path": "exploration\\2026-06-28-official-lenia-analysis.md",
+          "size": 1699,
+          "modified": "2026-06-28T20:05:19.849825"
+        },
+        {
+          "name": "2026-06-28-dynamic-fitness-analysis",
+          "path": "exploration\\2026-06-28-dynamic-fitness-analysis.md",
+          "size": 3858,
+          "modified": "2026-06-28T19:50:43.067695"
+        },
+        {
+          "name": "2026-06-28-fitness-function-design",
+          "path": "exploration\\2026-06-28-fitness-function-design.md",
+          "size": 7887,
+          "modified": "2026-06-28T19:49:04.304628"
+        },
         {
           "name": "kernel_fitting_results",
           "path": "exploration\\kernel_fitting_results.md",
@@ -1289,8 +1307,8 @@
         {
           "name": "2026-06-28",
           "path": "memory\\2026-06-28.md",
-          "size": 4910,
-          "modified": "2026-06-28T19:45:11.764944"
+          "size": 6615,
+          "modified": "2026-06-28T19:51:12.434887"
         },
         {
           "name": "2026-06-28-heartbeat-progress",
@@ -1806,15 +1824,4 @@
           "name": "_day1_summary",
           "path": "memory\\_day1_summary.md",
           "size": 1193,
-          "modified": "2026-06-18T19:29:19.537878"
-        },
-        {
-          "name": "_reflection",
-          "path": "memory\\_reflection.md",
-          "size": 2042,
-          "modified": "2026-06-18T19:18:10.673351"
-        }
-      ]
-    }
-  }
-}
+          "modified": "2026-06-18T
