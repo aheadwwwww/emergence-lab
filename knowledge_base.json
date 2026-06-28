@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T01:43:20.316177",
+  "last_updated": "2026-06-29T02:01:55.910260",
   "categories": {
     "exploration": {
       "count": 108,
@@ -1434,31 +1434,25 @@
       ]
     },
     "memory": {
-      "count": 92,
+      "count": 23,
       "items": [
+        {
+          "name": "2026-06-29",
+          "path": "memory\\2026-06-29.md",
+          "size": 2133,
+          "modified": "2026-06-29T02:00:28.252470"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 1640,
+          "modified": "2026-06-29T01:57:10.077269"
+        },
         {
           "name": "core-findings",
           "path": "memory\\core-findings.md",
           "size": 3424,
           "modified": "2026-06-29T00:32:41.756365"
-        },
-        {
-          "name": "2026-06-28-heartbeat-2230",
-          "path": "memory\\2026-06-28-heartbeat-2230.md",
-          "size": 2103,
-          "modified": "2026-06-28T22:38:54.263988"
-        },
-        {
-          "name": "2026-06-28-heartbeat-2104",
-          "path": "memory\\2026-06-28-heartbeat-2104.md",
-          "size": 3326,
-          "modified": "2026-06-28T21:07:42.827844"
-        },
-        {
-          "name": "2026-06-28-heartbeat-2000",
-          "path": "memory\\2026-06-28-heartbeat-2000.md",
-          "size": 1321,
-          "modified": "2026-06-28T20:06:28.892363"
         },
         {
           "name": "2026-06-28",
@@ -1467,100 +1461,10 @@
           "modified": "2026-06-28T19:51:12.434887"
         },
         {
-          "name": "2026-06-28-heartbeat-progress",
-          "path": "memory\\2026-06-28-heartbeat-progress.md",
-          "size": 2271,
-          "modified": "2026-06-28T18:59:55.986688"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1829",
-          "path": "memory\\2026-06-28-heartbeat-1829.md",
-          "size": 2679,
-          "modified": "2026-06-28T18:37:37.180516"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1759",
-          "path": "memory\\2026-06-28-heartbeat-1759.md",
-          "size": 3241,
-          "modified": "2026-06-28T18:00:11.770594"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1729",
-          "path": "memory\\2026-06-28-heartbeat-1729.md",
-          "size": 3488,
-          "modified": "2026-06-28T17:31:26.119414"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1659",
-          "path": "memory\\2026-06-28-heartbeat-1659.md",
-          "size": 3563,
-          "modified": "2026-06-28T17:03:11.746852"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1632",
-          "path": "memory\\2026-06-28-heartbeat-1632.md",
-          "size": 3866,
-          "modified": "2026-06-28T16:35:38.106178"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1602",
-          "path": "memory\\2026-06-28-heartbeat-1602.md",
-          "size": 3883,
-          "modified": "2026-06-28T16:05:01.423093"
-        },
-        {
-          "name": "2026-06-28-heartbeat-1559",
-          "path": "memory\\2026-06-28-heartbeat-1559.md",
-          "size": 3785,
-          "modified": "2026-06-28T16:02:17.464807"
-        },
-        {
           "name": "auto-loop-log",
           "path": "memory\\auto-loop-log.md",
           "size": 1018,
           "modified": "2026-06-28T15:53:17.486432"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 25633,
-          "modified": "2026-06-28T15:27:27.552437"
-        },
-        {
-          "name": "2026-06-29",
-          "path": "memory\\2026-06-29.md",
-          "size": 1185,
-          "modified": "2026-06-28T15:01:18.478780"
-        },
-        {
-          "name": "2026-06-28-heartbeat",
-          "path": "memory\\2026-06-28-heartbeat.md",
-          "size": 4263,
-          "modified": "2026-06-28T14:43:51.417794"
-        },
-        {
-          "name": "2026-06-27-heartbeat-2359",
-          "path": "memory\\2026-06-27-heartbeat-2359.md",
-          "size": 2546,
-          "modified": "2026-06-28T00:01:36.197149"
-        },
-        {
-          "name": "2026-06-27-heartbeat-2329",
-          "path": "memory\\2026-06-27-heartbeat-2329.md",
-          "size": 2728,
-          "modified": "2026-06-27T23:32:18.936564"
-        },
-        {
-          "name": "2026-06-27-heartbeat-2259",
-          "path": "memory\\2026-06-27-heartbeat-2259.md",
-          "size": 3289,
-          "modified": "2026-06-27T23:00:12.018117"
-        },
-        {
-          "name": "2026-06-27-heartbeat-2229",
-          "path": "memory\\2026-06-27-heartbeat-2229.md",
-          "size": 2593,
-          "modified": "2026-06-27T22:32:15.516138"
         },
         {
           "name": "2026-06-27",
@@ -1575,46 +1479,10 @@
           "modified": "2026-06-27T19:31:06.030835"
         },
         {
-          "name": "heartbeat-log",
-          "path": "memory\\heartbeat-log.md",
-          "size": 3629,
-          "modified": "2026-06-27T18:38:39.394117"
-        },
-        {
-          "name": "2026-06-27-heartbeat-summary",
-          "path": "memory\\2026-06-27-heartbeat-summary.md",
-          "size": 1970,
-          "modified": "2026-06-27T17:14:47.178212"
-        },
-        {
-          "name": "2026-06-27-openhands-exploration",
-          "path": "memory\\2026-06-27-openhands-exploration.md",
-          "size": 3604,
-          "modified": "2026-06-27T17:14:07.620164"
-        },
-        {
-          "name": "2026-06-27-heartbeat",
-          "path": "memory\\2026-06-27-heartbeat.md",
-          "size": 2831,
-          "modified": "2026-06-27T16:06:50.805552"
-        },
-        {
-          "name": "2026-06-27-memory-systems-analysis",
-          "path": "memory\\2026-06-27-memory-systems-analysis.md",
-          "size": 5884,
-          "modified": "2026-06-27T14:30:32.507541"
-        },
-        {
           "name": "2026-06-27-particle-lenia-official",
           "path": "memory\\2026-06-27-particle-lenia-official.md",
           "size": 5884,
           "modified": "2026-06-27T14:03:15.212051"
-        },
-        {
-          "name": "2026-06-27-biomaker-ca-analysis",
-          "path": "memory\\2026-06-27-biomaker-ca-analysis.md",
-          "size": 4300,
-          "modified": "2026-06-27T14:01:13.891166"
         },
         {
           "name": "2026-06-27-google-self-org-systems",
@@ -1635,82 +1503,10 @@
           "modified": "2026-06-26T23:32:17.403171"
         },
         {
-          "name": "2026-06-26-igraph-query-implementation",
-          "path": "memory\\2026-06-26-igraph-query-implementation.md",
-          "size": 2168,
-          "modified": "2026-06-26T23:10:51.996407"
-        },
-        {
-          "name": "2026-06-26-cognee-discovery",
-          "path": "memory\\2026-06-26-cognee-discovery.md",
-          "size": 6907,
-          "modified": "2026-06-26T23:07:44.087830"
-        },
-        {
-          "name": "2026-06-26-heartbeat-2259",
-          "path": "memory\\2026-06-26-heartbeat-2259.md",
-          "size": 1553,
-          "modified": "2026-06-26T23:07:03.336938"
-        },
-        {
-          "name": "paper-kg-llm-interface",
-          "path": "memory\\paper-kg-llm-interface.md",
-          "size": 10036,
-          "modified": "2026-06-26T23:06:58.714071"
-        },
-        {
-          "name": "2026-06-26-micrograd-learning",
-          "path": "memory\\2026-06-26-micrograd-learning.md",
-          "size": 5353,
-          "modified": "2026-06-26T22:01:13.450980"
-        },
-        {
           "name": "2026-06-26-work-operating-system",
           "path": "memory\\2026-06-26-work-operating-system.md",
           "size": 7876,
           "modified": "2026-06-26T21:48:23.551795"
-        },
-        {
-          "name": "2026-06-26-kge-research",
-          "path": "memory\\2026-06-26-kge-research.md",
-          "size": 2749,
-          "modified": "2026-06-26T20:00:48.473414"
-        },
-        {
-          "name": "2026-06-26-igraph-implementation",
-          "path": "memory\\2026-06-26-igraph-implementation.md",
-          "size": 1216,
-          "modified": "2026-06-26T19:57:13.316137"
-        },
-        {
-          "name": "2026-06-26-igraph-quickstart",
-          "path": "memory\\2026-06-26-igraph-quickstart.md",
-          "size": 3514,
-          "modified": "2026-06-26T19:55:43.785006"
-        },
-        {
-          "name": "2026-06-26-hipporag-deep-dive",
-          "path": "memory\\2026-06-26-hipporag-deep-dive.md",
-          "size": 3535,
-          "modified": "2026-06-26T19:54:52.167848"
-        },
-        {
-          "name": "2026-06-26-deep-learning",
-          "path": "memory\\2026-06-26-deep-learning.md",
-          "size": 2844,
-          "modified": "2026-06-26T19:50:20.895361"
-        },
-        {
-          "name": "2026-06-26-graphiti-deep-dive",
-          "path": "memory\\2026-06-26-graphiti-deep-dive.md",
-          "size": 6042,
-          "modified": "2026-06-26T19:49:32.758442"
-        },
-        {
-          "name": "2026-06-26-crewai-discovery",
-          "path": "memory\\2026-06-26-crewai-discovery.md",
-          "size": 3633,
-          "modified": "2026-06-26T19:31:02.232210"
         },
         {
           "name": "2026-06-26-evening",
@@ -1719,76 +1515,10 @@
           "modified": "2026-06-26T19:24:19.472708"
         },
         {
-          "name": "2026-06-26-hipporag-discovery",
-          "path": "memory\\2026-06-26-hipporag-discovery.md",
-          "size": 2318,
-          "modified": "2026-06-26T19:23:51.005611"
-        },
-        {
-          "name": "2026-06-26-graphiti-discovery",
-          "path": "memory\\2026-06-26-graphiti-discovery.md",
-          "size": 4960,
-          "modified": "2026-06-26T19:21:23.555432"
-        },
-        {
-          "name": "2026-06-26-heartbeat",
-          "path": "memory\\2026-06-26-heartbeat.md",
-          "size": 2614,
-          "modified": "2026-06-26T18:32:01.300740"
-        },
-        {
           "name": "2026-06-26-afternoon",
           "path": "memory\\2026-06-26-afternoon.md",
           "size": 4450,
           "modified": "2026-06-26T17:52:39.000525"
-        },
-        {
-          "name": "knowledge-graph-system",
-          "path": "memory\\knowledge-graph-system.md",
-          "size": 4179,
-          "modified": "2026-06-26T17:50:51.685257"
-        },
-        {
-          "name": "reviewer-panel-system",
-          "path": "memory\\reviewer-panel-system.md",
-          "size": 4153,
-          "modified": "2026-06-26T17:50:15.032684"
-        },
-        {
-          "name": "2026-06-26-heartbeat-summary",
-          "path": "memory\\2026-06-26-heartbeat-summary.md",
-          "size": 2134,
-          "modified": "2026-06-26T16:36:14.011844"
-        },
-        {
-          "name": "2026-06-26-memary-discovery",
-          "path": "memory\\2026-06-26-memary-discovery.md",
-          "size": 3243,
-          "modified": "2026-06-26T14:39:16.032301"
-        },
-        {
-          "name": "2026-06-26-24hr-research-discovery",
-          "path": "memory\\2026-06-26-24hr-research-discovery.md",
-          "size": 3778,
-          "modified": "2026-06-26T14:36:47.484035"
-        },
-        {
-          "name": "2026-06-26-plato-agent-discovery",
-          "path": "memory\\2026-06-26-plato-agent-discovery.md",
-          "size": 3904,
-          "modified": "2026-06-26T14:36:04.158440"
-        },
-        {
-          "name": "judgment-frameworks",
-          "path": "memory\\judgment-frameworks.md",
-          "size": 6860,
-          "modified": "2026-06-26T14:20:21.041002"
-        },
-        {
-          "name": "furnace-memory-system",
-          "path": "memory\\furnace-memory-system.md",
-          "size": 6887,
-          "modified": "2026-06-26T14:01:44.191711"
         },
         {
           "name": "2026-06-26-update",
@@ -1797,76 +1527,10 @@
           "modified": "2026-06-26T13:52:01.598089"
         },
         {
-          "name": "2026-06-26-munger-insights",
-          "path": "memory\\2026-06-26-munger-insights.md",
-          "size": 3384,
-          "modified": "2026-06-26T12:33:34.061363"
-        },
-        {
-          "name": "mental-models-library",
-          "path": "memory\\mental-models-library.md",
-          "size": 8310,
-          "modified": "2026-06-26T12:10:11.875080"
-        },
-        {
-          "name": "2026-06-26-shulin-corpus",
-          "path": "memory\\2026-06-26-shulin-corpus.md",
-          "size": 10706,
-          "modified": "2026-06-26T01:33:55.744173"
-        },
-        {
-          "name": "2026-06-26-01-29-heartbeat",
-          "path": "memory\\2026-06-26-01-29-heartbeat.md",
-          "size": 3532,
-          "modified": "2026-06-26T01:32:28.778387"
-        },
-        {
           "name": "2026-06-26-0112",
           "path": "memory\\2026-06-26-0112.md",
           "size": 304759,
           "modified": "2026-06-26T01:12:08.126458"
-        },
-        {
-          "name": "2026-06-26-swarm-decision",
-          "path": "memory\\2026-06-26-swarm-decision.md",
-          "size": 2011,
-          "modified": "2026-06-26T00:37:18.592486"
-        },
-        {
-          "name": "2026-06-25-heartbeat-summary",
-          "path": "memory\\2026-06-25-heartbeat-summary.md",
-          "size": 1614,
-          "modified": "2026-06-26T00:04:20.296169"
-        },
-        {
-          "name": "2026-06-26-jax-md-deep-dive",
-          "path": "memory\\2026-06-26-jax-md-deep-dive.md",
-          "size": 3294,
-          "modified": "2026-06-25T23:31:23.348093"
-        },
-        {
-          "name": "2026-06-25",
-          "path": "memory\\2026-06-25.md",
-          "size": 5246,
-          "modified": "2026-06-25T22:36:19.790942"
-        },
-        {
-          "name": "heartbeat-dashboard-2026-06-25",
-          "path": "memory\\heartbeat-dashboard-2026-06-25.md",
-          "size": 2903,
-          "modified": "2026-06-25T19:33:45.613770"
-        },
-        {
-          "name": "2026-06-24-discovery-vivarium",
-          "path": "memory\\2026-06-24-discovery-vivarium.md",
-          "size": 2575,
-          "modified": "2026-06-24T23:33:16.778345"
-        },
-        {
-          "name": "2026-06-24",
-          "path": "memory\\2026-06-24.md",
-          "size": 1267,
-          "modified": "2026-06-24T21:37:47.986921"
         },
         {
           "name": "persona",
@@ -1875,88 +1539,10 @@
           "modified": "2026-06-24T16:28:11.733750"
         },
         {
-          "name": "2026-06-24-1604",
-          "path": "memory\\2026-06-24-1604.md",
-          "size": 15730,
-          "modified": "2026-06-24T16:04:54.170239"
-        },
-        {
-          "name": "2026-06-23",
-          "path": "memory\\2026-06-23.md",
-          "size": 16480,
-          "modified": "2026-06-23T23:01:51.923481"
-        },
-        {
-          "name": "project_snapshot",
-          "path": "memory\\project_snapshot.md",
-          "size": 1472,
-          "modified": "2026-06-23T22:19:53.269553"
-        },
-        {
-          "name": "desire_fear",
-          "path": "memory\\desire_fear.md",
-          "size": 1177,
-          "modified": "2026-06-23T20:31:13.981916"
-        },
-        {
-          "name": "curiosity_success",
-          "path": "memory\\curiosity_success.md",
-          "size": 367,
-          "modified": "2026-06-23T19:41:31.407734"
-        },
-        {
-          "name": "minimal_emergence_experiment",
-          "path": "memory\\minimal_emergence_experiment.md",
-          "size": 1404,
-          "modified": "2026-06-23T19:39:47.344544"
-        },
-        {
-          "name": "2026-06-22",
-          "path": "memory\\2026-06-22.md",
-          "size": 3778,
-          "modified": "2026-06-23T01:11:41.113655"
-        },
-        {
-          "name": "2026-06-22-micrograd",
-          "path": "memory\\2026-06-22-micrograd.md",
-          "size": 7380,
-          "modified": "2026-06-22T23:03:23.675157"
-        },
-        {
-          "name": "2026-06-22-cryptos",
-          "path": "memory\\2026-06-22-cryptos.md",
-          "size": 3102,
-          "modified": "2026-06-22T20:35:06.346485"
-        },
-        {
-          "name": "anthropic-cookbook-study",
-          "path": "memory\\anthropic-cookbook-study.md",
-          "size": 3480,
-          "modified": "2026-06-22T20:01:10.962618"
-        },
-        {
           "name": "human",
           "path": "memory\\human.md",
           "size": 746,
           "modified": "2026-06-22T15:33:59.556543"
-        },
-        {
-          "name": "2026-06-22-todo",
-          "path": "memory\\2026-06-22-todo.md",
-          "size": 5210,
-          "modified": "2026-06-22T15:12:23.203156"
-        },
-        {
-          "name": "2026-06-21",
-          "path": "memory\\2026-06-21.md",
-          "size": 1579,
-          "modified": "2026-06-21T23:00:19.984792"
-        },
-        {
-          "name": "2026-06-20",
-          "path": "memory\\2026-06-20.md",
-          "size": 2495,
-          "modified": "2026-06-21T00:45:19.201822"
         },
         {
           "name": "2026-06-18",
