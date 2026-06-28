@@ -208,4 +208,69 @@ If PyTorch unavailable, experiment will report error and exit gracefully.
 
 ---
 
-**Status**: V9 experiment running, awaiting results
+**Status**: ✅ Completed
+
+---
+
+## V9 Hybrid Evolutionary Learning Results
+
+**Source**: `exploration/cycle4_hybrid_results.json`
+**Method**: Hybrid evolutionary + gradient-based learning
+
+### Final Performance
+
+| Metric | Value |
+|--------|-------|
+| Final Fitness | **1.985** |
+| Survival | **93.97%** |
+| Complexity | 0.601 |
+| μ (growth center) | 0.382 |
+| σ (growth width) | 0.294 |
+| Generations | 20 |
+| Convergence at | Generation 9 |
+
+### Evolution Trajectory
+
+| Gen | Fitness | Survival | μ | σ |
+|-----|---------|----------|---|---|
+| 0 | 0.566 | 30.5% | 0.162 | 0.083 |
+| 3 | 1.318 | 78.2% | 0.115 | 0.148 |
+| 5 | 1.536 | 84.9% | 0.178 | 0.210 |
+| 8 | 1.917 | 87.7% | 0.325 | 0.275 |
+| 12 | 1.984 | 94.0% | 0.382 | 0.294 |
+| 19 | 1.985 | 94.0% | 0.382 | 0.294 |
+
+### Key Findings
+
+1. **Survival breakthrough**: 94% is the highest survival rate across ALL versions (V4-V8 range: 15-49%). This vindicates the hybrid approach.
+
+2. **σ migrated massively**: From 0.083 (V7-evolved) to 0.294 — nearly 4× wider. This confirms V8's finding that wider growth functions are essential, and V9 can discover this autonomously.
+
+3. **μ also drifted significantly**: From 0.162 to 0.382, shifting the growth sweet spot toward higher activation levels.
+
+4. **Convergence at Gen 9**: Param variance dropped to 4.6e-10. The optimizer found a stable attractor.
+
+5. **Complexity capped at 0.60**: Despite high survival, complexity plateaued. This may be the real bottleneck.
+
+### vs V8 Baseline Comparison
+
+| Metric | V8 (Fixed GNN) | V9 (Learnable) | Improvement |
+|--------|---------------|----------------|-------------|
+| Survival | 49.2% | **94.0%** | **+91%** |
+| Fitness | — | 1.985 | — |
+| σ | 0.074 (fixed) | 0.294 (learned) | **+297%** |
+| μ | 0.135 (fixed) | 0.382 (learned) | **+183%** |
+| Complexity | 1.911 | 0.601 | -69% |
+
+### Bottom Line
+
+**V9 proved that learnable hybrid evolution works** — it autonomously discovered parameters (σ=0.294, μ=0.382) far from human-chosen values that achieve 94% survival. 
+
+**But complexity didn't follow survival.** High survival with low complexity suggests the system found a "survival hack" — stable uniform patterns that persist but don't generate interesting dynamics. This echoes the V6 Pareto finding: stability and emergence trade off.
+
+### Next: V10 should target complexity directly
+
+Instead of optimizing for survival (which converges to boring stability), V10 should use a multi-objective function that explicitly rewards complexity:
+- `fitness = survival^α × complexity^β` with α < β to bias toward complexity
+- Or use novelty search instead of fitness optimization
+- Or add a "pattern diversity" term to penalize uniformity

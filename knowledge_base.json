@@ -1,9 +1,33 @@
 {
-  "last_updated": "2026-06-28T21:05:28.874599",
+  "last_updated": "2026-06-28T22:38:39.115395",
   "categories": {
     "exploration": {
-      "count": 103,
+      "count": 107,
       "items": [
+        {
+          "name": "2026-06-28-lenia-v10-jax-md",
+          "path": "exploration\\2026-06-28-lenia-v10-jax-md.md",
+          "size": 2856,
+          "modified": "2026-06-28T22:38:05.049158"
+        },
+        {
+          "name": "work-loop-depth-4",
+          "path": "exploration\\work-loop-depth-4.md",
+          "size": 5996,
+          "modified": "2026-06-28T21:43:03.741277"
+        },
+        {
+          "name": "work-loop-depth-3",
+          "path": "exploration\\work-loop-depth-3.md",
+          "size": 8816,
+          "modified": "2026-06-28T21:35:54.493981"
+        },
+        {
+          "name": "2026-06-28-graphcast-weather-ai",
+          "path": "exploration\\2026-06-28-graphcast-weather-ai.md",
+          "size": 5050,
+          "modified": "2026-06-28T21:06:39.743437"
+        },
         {
           "name": "work-loop-depth-2",
           "path": "exploration\\work-loop-depth-2.md",
@@ -625,8 +649,38 @@
       ]
     },
     "experiments": {
-      "count": 123,
+      "count": 128,
       "items": [
+        {
+          "name": "lenia_v10_jax_md_prototype",
+          "path": "experiments\\lenia_v10_jax_md_prototype.py",
+          "size": 16930,
+          "modified": "2026-06-28T22:37:35.457988"
+        },
+        {
+          "name": "evolutionary_lenia_v9_learnable",
+          "path": "experiments\\evolutionary_lenia_v9_learnable.py",
+          "size": 16519,
+          "modified": "2026-06-28T21:40:46.122831"
+        },
+        {
+          "name": "evolutionary_lenia_v7_gnl",
+          "path": "experiments\\evolutionary_lenia_v7_gnl.py",
+          "size": 27574,
+          "modified": "2026-06-28T21:35:45.617027"
+        },
+        {
+          "name": "evolutionary_lenia_v7_adaptive",
+          "path": "experiments\\evolutionary_lenia_v7_adaptive.py",
+          "size": 32472,
+          "modified": "2026-06-28T21:33:07.583361"
+        },
+        {
+          "name": "evolutionary_lenia_v8_graph_neural",
+          "path": "experiments\\evolutionary_lenia_v8_graph_neural.py",
+          "size": 19569,
+          "modified": "2026-06-28T21:15:18.023590"
+        },
         {
           "name": "evolutionary_lenia_v6_pareto",
           "path": "experiments\\evolutionary_lenia_v6_pareto.py",
@@ -1368,8 +1422,14 @@
       ]
     },
     "memory": {
-      "count": 89,
+      "count": 90,
       "items": [
+        {
+          "name": "2026-06-28-heartbeat-2104",
+          "path": "memory\\2026-06-28-heartbeat-2104.md",
+          "size": 3326,
+          "modified": "2026-06-28T21:07:42.827844"
+        },
         {
           "name": "2026-06-28-heartbeat-2000",
           "path": "memory\\2026-06-28-heartbeat-2000.md",
