@@ -1,0 +1,204 @@
+{
+  "config": {
+    "grid_size": 64,
+    "coarse_size": 16,
+    "generations": 10,
+    "population_size": 6,
+    "steps_per_eval": 150,
+    "dt": 0.1,
+    "init_mu": 0.2,
+    "init_sigma": 0.1,
+    "mutation_rate": 0.15,
+    "mutation_strength": 0.05,
+    "output_path": "D:\\openclaw_workspace\\experiments\\v10_hybrid_results.json"
+  },
+  "generations": [
+    {
+      "generation": 1,
+      "best_fitness": 1.1631542463262337,
+      "mean_fitness": 0.976716023459851,
+      "survival_rate": 0.8333333333333334,
+      "mean_complexity": 1.2449006330411356,
+      "mean_stability": 0.9952967941316011,
+      "best_params": {
+        "mu": 0.20656974032175043,
+        "sigma": 0.11309434071729305,
+        "w_conv": 0.5324431529645854,
+        "w_gnn": 0.4675568470354145,
+        "gnn_edge_weight": 0.5095635968677616,
+        "fitness": 1.1631542463262337
+      }
+    },
+    {
+      "generation": 2,
+      "best_fitness": 1.1577301297638598,
+      "mean_fitness": 1.1339343904597479,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.5383812144373896,
+      "mean_stability": 0.9973563474016012,
+      "best_params": {
+        "mu": 0.22026978613933634,
+        "sigma": 0.11230407744113816,
+        "w_conv": 0.5930792453490585,
+        "w_gnn": 0.4069207546509416,
+        "gnn_edge_weight": 0.4134915211762212,
+        "fitness": 1.1577301297638598
+      }
+    },
+    {
+      "generation": 3,
+      "best_fitness": 1.1753618658259835,
+      "mean_fitness": 1.1242348431648372,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.4998107936835703,
+      "mean_stability": 0.997128578975778,
+      "best_params": {
+        "mu": 0.22026978613933634,
+        "sigma": 0.12145283281072874,
+        "w_conv": 0.5930792453490585,
+        "w_gnn": 0.4069207546509416,
+        "gnn_edge_weight": 0.4134915211762212,
+        "fitness": 1.1753618658259835
+      }
+    },
+    {
+      "generation": 4,
+      "best_fitness": 1.1697009442040085,
+      "mean_fitness": 1.16148037017659,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.6477445943797564,
+      "mean_stability": 0.9981768863266027,
+      "best_params": {
+        "mu": 0.22049512534628254,
+        "sigma": 0.12048276488057051,
+        "w_conv": 0.5940765915734555,
+        "w_gnn": 0.4059234084265446,
+        "gnn_edge_weight": 0.41191132169117867,
+        "fitness": 1.1697009442040085
+      }
+    },
+    {
+      "generation": 5,
+      "best_fitness": 1.1701463491001451,
+      "mean_fitness": 1.1565179984578258,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.6279934352231828,
+      "mean_stability": 0.9980785586081208,
+      "best_params": {
+        "mu": 0.22216384834346803,
+        "sigma": 0.11329904090361706,
+        "w_conv": 0.6014623217504705,
+        "w_gnn": 0.3985376782495294,
+        "gnn_edge_weight": 0.40020934023590293,
+        "fitness": 1.1701463491001451
+      }
+    },
+    {
+      "generation": 6,
+      "best_fitness": 1.1689590820073879,
+      "mean_fitness": 1.1486844738171638,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.5973173234746796,
+      "mean_stability": 0.9974205717939748,
+      "best_params": {
+        "mu": 0.2221939356054875,
+        "sigma": 0.11316951755796013,
+        "w_conv": 0.6015954872904767,
+        "w_gnn": 0.39840451270952326,
+        "gnn_edge_weight": 0.3979533474463016,
+        "fitness": 1.1689590820073879
+      }
+    },
+    {
+      "generation": 7,
+      "best_fitness": 1.1688192070734624,
+      "mean_fitness": 1.1350582747713343,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.542341232356633,
+      "mean_stability": 0.997891866728704,
+      "best_params": {
+        "mu": 0.2221939356054875,
+        "sigma": 0.11316951755796013,
+        "w_conv": 0.6015954872904767,
+        "w_gnn": 0.39840451270952326,
+        "gnn_edge_weight": 0.37771496314265796,
+        "fitness": 1.1688192070734624
+      }
+    },
+    {
+      "generation": 8,
+      "best_fitness": 1.1652099913038465,
+      "mean_fitness": 1.1299393279755237,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.5217191625485775,
+      "mean_stability": 0.9980381493535169,
+      "best_params": {
+        "mu": 0.2221939356054875,
+        "sigma": 0.11316951755796013,
+        "w_conv": 0.6015954872904767,
+        "w_gnn": 0.39840451270952326,
+        "gnn_edge_weight": 0.3979533474463016,
+        "fitness": 1.1652099913038465
+      }
+    },
+    {
+      "generation": 9,
+      "best_fitness": 1.1585941484502174,
+      "mean_fitness": 1.1412395783112055,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.5669605572083671,
+      "mean_stability": 0.9979977560364551,
+      "best_params": {
+        "mu": 0.2221939356054875,
+        "sigma": 0.11316951755796013,
+        "w_conv": 0.6015954872904767,
+        "w_gnn": 0.39840451270952326,
+        "gnn_edge_weight": 0.42596741064021815,
+        "fitness": 1.1585941484502174
+      }
+    },
+    {
+      "generation": 10,
+      "best_fitness": 1.1665458570050067,
+      "mean_fitness": 1.1593533233294513,
+      "survival_rate": 1.0,
+      "mean_complexity": 1.6391913540224952,
+      "mean_stability": 0.9982219392953097,
+      "best_params": {
+        "mu": 0.2221939356054875,
+        "sigma": 0.11316951755796015,
+        "w_conv": 0.6015954872904767,
+        "w_gnn": 0.39840451270952326,
+        "gnn_edge_weight": 0.40606543394926575,
+        "fitness": 1.1665458570050067
+      }
+    }
+  ],
+  "best_individual": {
+    "mu": 0.22026978613933634,
+    "sigma": 0.12145283281072874,
+    "w_conv": 0.5930792453490585,
+    "w_gnn": 0.4069207546509416,
+    "gnn_edge_weight": 0.4134915211762212,
+    "fitness": 1.1753618658259835,
+    "metrics": {
+      "final_mean": 0.4240324413398335,
+      "final_std": 0.4879359688414227,
+      "survival": 1.0,
+      "complexity": 1.7022334952497267,
+      "stability": 0.9992139680542076,
+      "fitness": 1.1753618658259835
+    }
+  },
+  "final_stats": {
+    "best_fitness": 1.1753618658259835,
+    "best_mu": 0.22026978613933634,
+    "best_sigma": 0.12145283281072874,
+    "best_w_conv": 0.5930792453490585,
+    "best_w_gnn": 0.4069207546509416,
+    "best_gnn_edge_weight": 0.4134915211762212,
+    "final_survival_rate": 1.0,
+    "final_complexity": 1.6391913540224952,
+    "target_met": true
+  }
+}

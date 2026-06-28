@@ -1,0 +1,1523 @@
+{
+  "method": "enhanced_diffusion_kernel_generation_v2",
+  "timestamp": "2026-06-28 23:15:34",
+  "n_kernels_generated": 20,
+  "training_data": [
+    {
+      "mu": 0.135,
+      "sigma": 0.074,
+      "R": 13,
+      "growth_mu": 0.135,
+      "growth_sigma": 0.074,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.382,
+      "sigma": 0.294,
+      "R": 13,
+      "growth_mu": 0.382,
+      "growth_sigma": 0.294,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.15,
+      "sigma": 0.014,
+      "R": 13,
+      "growth_mu": 0.15,
+      "growth_sigma": 0.014,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.11,
+      "sigma": 0.028,
+      "R": 12,
+      "growth_mu": 0.11,
+      "growth_sigma": 0.028,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.18,
+      "sigma": 0.05,
+      "R": 15,
+      "growth_mu": 0.18,
+      "growth_sigma": 0.05,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.1,
+      "sigma": 0.025,
+      "R": 12,
+      "growth_mu": 0.1,
+      "growth_sigma": 0.025,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.15,
+      "sigma": 0.08,
+      "R": 13,
+      "growth_mu": 0.15,
+      "growth_sigma": 0.08,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.14,
+      "sigma": 0.03,
+      "R": 14,
+      "growth_mu": 0.14,
+      "growth_sigma": 0.03,
+      "asymmetry_x": 0.0,
+      "asymmetry_y": 0.0,
+      "n_rings": 2,
+      "ring_spacing": 0.1,
+      "ring_decay": 0.5
+    },
+    {
+      "mu": 0.15,
+      "sigma": 0.04,
+      "R": 13,
+      "growth_mu": 0.15,
+      "growth_sigma": 0.04,
+      "asymmetry_x": 0.1,
+      "asymmetry_y": 0.0,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.5
+    }
+  ],
+  "baselines": {
+    "v6_stability_max": 0.517,
+    "v6_emergence_max": 1.328,
+    "v8_survival": 0.492,
+    "v8_complexity": 1.911,
+    "v9_survival": 0.959,
+    "v9_fitness": 2.026
+  },
+  "results": [
+    {
+      "kernel_id": 1,
+      "params": {
+        "mu": 0.25,
+        "sigma": 0.06345768958074233,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.05013928458575072,
+        "asymmetry_x": 0.052066018922220646,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1040.2263114417422,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 2,
+      "params": {
+        "mu": 0.25,
+        "sigma": 0.06601083710346137,
+        "R": 15,
+        "growth_mu": 0.23115144799658438,
+        "growth_sigma": 0.02128006064977243,
+        "asymmetry_x": -0.012501624569001609,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.03283076319358612,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1015.1241112129615,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 3,
+      "params": {
+        "mu": 0.08,
+        "sigma": 0.02900450624496152,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.15,
+        "asymmetry_x": -0.05348139940780496,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.9393389925084159,
+        "stability": 0.0026170182115421,
+        "complexity": 0.3803459539746414,
+        "emergence": 0.31809398465859684,
+        "dynamics": 0.9231977191197275
+      },
+      "fitness": 3.389245261632324,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 0.7573559700336638,
+          "stability": 0.0002610001219773229,
+          "complexity": 0.5238455428463596,
+          "emergence": 0.4745267649811122,
+          "dynamics": 1.0,
+          "final_mass": 775.362382156708,
+          "initial_mass": 1023.775361689788,
+          "n_blobs": 8
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.006441061195854288,
+          "complexity": 0.21346915684744,
+          "emergence": 0.2705935594445951,
+          "dynamics": 0.6927908764789099,
+          "final_mass": 294.67235694391854,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.002844846639624209,
+          "complexity": 0.407386923863504,
+          "emergence": 0.21189846490154002,
+          "dynamics": 1.0,
+          "final_mass": 766.8226575204237,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0009211648887125803,
+          "complexity": 0.376682192341262,
+          "emergence": 0.31535714930714,
+          "dynamics": 1.0,
+          "final_mass": 687.7469905988014,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 3
+        }
+      ]
+    },
+    {
+      "kernel_id": 4,
+      "params": {
+        "mu": 0.16345708458588706,
+        "sigma": 0.15,
+        "R": 15,
+        "growth_mu": 0.2125552565059443,
+        "growth_sigma": 0.13273193527141441,
+        "asymmetry_x": -0.01028293126791151,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.050113199500443704,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 0.75,
+        "stability": 0.25157311477454114,
+        "complexity": NaN,
+        "emergence": 0.2406384489956353,
+        "dynamics": 0.6841121155201276
+      },
+      "fitness": NaN,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1011.8503428451718,
+          "n_blobs": 0
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.004284656693559972,
+          "complexity": 0.25994489371014673,
+          "emergence": 0.3090542863443949,
+          "dynamics": 0.7364484620805106,
+          "final_mass": 426.1868809020777,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0012253958423831483,
+          "complexity": 0.48650769241472974,
+          "emergence": 0.24967772070095573,
+          "dynamics": 1.0,
+          "final_mass": 1014.7670921058124,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0007824065622214476,
+          "complexity": 0.5175277604585189,
+          "emergence": 0.40382178893719056,
+          "dynamics": 1.0,
+          "final_mass": 1000.5276925078078,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 4
+        }
+      ]
+    },
+    {
+      "kernel_id": 5,
+      "params": {
+        "mu": 0.2034888313644669,
+        "sigma": 0.08875401842725057,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.01,
+        "asymmetry_x": 0.04460060973406378,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1029.7617188035724,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 6,
+      "params": {
+        "mu": 0.25,
+        "sigma": 0.02,
+        "R": 15,
+        "growth_mu": 0.24905487399261642,
+        "growth_sigma": 0.15,
+        "asymmetry_x": 0.07123297037045903,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 0.75,
+        "stability": 0.2553629545443713,
+        "complexity": NaN,
+        "emergence": 0.21262513492299373,
+        "dynamics": 0.5879877032721991
+      },
+      "fitness": NaN,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1032.7903485830868,
+          "n_blobs": 0
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.015290211873969867,
+          "complexity": 0.27948637113735164,
+          "emergence": 0.276947025455353,
+          "dynamics": 0.5339507412097917,
+          "final_mass": 293.6777823687741,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0038371627953150697,
+          "complexity": 0.4396640763001268,
+          "emergence": 0.24136188507221285,
+          "dynamics": 0.8180000718790047,
+          "final_mass": 827.0798288943711,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.002324443508200064,
+          "complexity": 0.4475456470491034,
+          "emergence": 0.33219162916440914,
+          "dynamics": 1.0,
+          "final_mass": 727.703612309329,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 3
+        }
+      ]
+    },
+    {
+      "kernel_id": 7,
+      "params": {
+        "mu": 0.22397361353892223,
+        "sigma": 0.0654218153814491,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.15,
+        "asymmetry_x": 0.009001609522346705,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.75,
+        "stability": 0.2546622878092289,
+        "complexity": NaN,
+        "emergence": 0.2141101782105097,
+        "dynamics": 0.5818736260128476
+      },
+      "fitness": NaN,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1039.7507211441393,
+          "n_blobs": 0
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.01338408549299261,
+          "complexity": 0.24922993709757346,
+          "emergence": 0.28126760412918445,
+          "dynamics": 0.3274945040513904,
+          "final_mass": 312.2544980392658,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0033915448532275093,
+          "complexity": 0.43356637251557684,
+          "emergence": 0.238994947454722,
+          "dynamics": 1.0,
+          "final_mass": 845.5689050032381,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.00187352089069538,
+          "complexity": 0.4545332000210455,
+          "emergence": 0.3361781612581324,
+          "dynamics": 1.0,
+          "final_mass": 782.0670559812747,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 3
+        }
+      ]
+    },
+    {
+      "kernel_id": 8,
+      "params": {
+        "mu": 0.25,
+        "sigma": 0.07773922312829445,
+        "R": 15,
+        "growth_mu": 0.15697639808614902,
+        "growth_sigma": 0.11920896034519865,
+        "asymmetry_x": -0.06667116472897613,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.010888732285514825,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 1.0,
+        "stability": 0.001558058641584389,
+        "complexity": 0.6177356139222165,
+        "emergence": 0.40948918417627944,
+        "dynamics": 0.9025810731178217
+      },
+      "fitness": 3.992906763027447,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 1.0,
+          "stability": 0.005187104645128407,
+          "complexity": 0.7756411709023868,
+          "emergence": 0.5665210350421924,
+          "dynamics": 1.0,
+          "final_mass": 1745.0645760571601,
+          "initial_mass": 1006.292102954688,
+          "n_blobs": 8
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0005205840176275271,
+          "complexity": 0.3332698198521989,
+          "emergence": 0.3666579508088711,
+          "dynamics": 0.6103242924712868,
+          "final_mass": 852.0362701730828,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.00017085750132819205,
+          "complexity": 0.6292981392199586,
+          "emergence": 0.24282814221830923,
+          "dynamics": 1.0,
+          "final_mass": 1689.0319696294146,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.00035368840225342946,
+          "complexity": 0.732733325714322,
+          "emergence": 0.4619496086357451,
+          "dynamics": 1.0,
+          "final_mass": 1629.5764822945794,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 5
+        }
+      ]
+    },
+    {
+      "kernel_id": 9,
+      "params": {
+        "mu": 0.20585029169160618,
+        "sigma": 0.15,
+        "R": 15,
+        "growth_mu": 0.18835573693567972,
+        "growth_sigma": 0.15,
+        "asymmetry_x": -0.004031734595958157,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.03083124310324063,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 1.0,
+        "stability": 0.008045281172946487,
+        "complexity": 0.5083722695634917,
+        "emergence": 0.40165411977277843,
+        "dynamics": 0.8501726917109278
+      },
+      "fitness": 3.794148570446342,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 1.0,
+          "stability": 0.031018850475736416,
+          "complexity": 0.6830547003593117,
+          "emergence": 0.5165613592840661,
+          "dynamics": 0.7175771116695163,
+          "final_mass": 1707.4536598786976,
+          "initial_mass": 1015.5704688106787,
+          "n_blobs": 8
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.000559428166014413,
+          "complexity": 0.3149926088196558,
+          "emergence": 0.35837364314253684,
+          "dynamics": 0.6831136551741948,
+          "final_mass": 768.1125433713471,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0002609699128817803,
+          "complexity": 0.5172439897620681,
+          "emergence": 0.26071215146673704,
+          "dynamics": 1.0,
+          "final_mass": 1539.70127316953,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0003418761371533399,
+          "complexity": 0.5181977793129312,
+          "emergence": 0.4709693251977738,
+          "dynamics": 1.0,
+          "final_mass": 1528.2367213255861,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 5
+        }
+      ]
+    },
+    {
+      "kernel_id": 10,
+      "params": {
+        "mu": 0.1458483004888482,
+        "sigma": 0.09788303851804626,
+        "R": 15,
+        "growth_mu": 0.2162313880190945,
+        "growth_sigma": 0.01,
+        "asymmetry_x": -0.005214065447935779,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0667050940423014,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1006.8213087243724,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 11,
+      "params": {
+        "mu": 0.23431613896967718,
+        "sigma": 0.02,
+        "R": 15,
+        "growth_mu": 0.2425810069181529,
+        "growth_sigma": 0.01,
+        "asymmetry_x": 0.047919896234947135,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1018.423025999061,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 12,
+      "params": {
+        "mu": 0.12377751651094812,
+        "sigma": 0.14394853477697092,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.01737144078852148,
+        "asymmetry_x": 0.0014696282688082662,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.10539501526931745,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1006.9253729056875,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 13,
+      "params": {
+        "mu": 0.16929435607084026,
+        "sigma": 0.10074419738237994,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.04082629545981696,
+        "asymmetry_x": 0.053039369292760256,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0010293735505337172,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1023.351613960825,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 14,
+      "params": {
+        "mu": 0.24140388383826253,
+        "sigma": 0.02,
+        "R": 15,
+        "growth_mu": 0.11215448749801499,
+        "growth_sigma": 0.07838543716499603,
+        "asymmetry_x": 0.07059076891933047,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.012041420590764957,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 1.0,
+        "stability": 0.006610199547825893,
+        "complexity": 0.9097995700798576,
+        "emergence": 0.46770289339885496,
+        "dynamics": 1.0
+      },
+      "fitness": 4.569558794991981,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 1.0,
+          "stability": 0.023059540874804343,
+          "complexity": 1.0,
+          "emergence": 0.5871355479081067,
+          "dynamics": 1.0,
+          "final_mass": 1516.3329330546856,
+          "initial_mass": 1024.7023444190997,
+          "n_blobs": 22
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.00011692200724013539,
+          "complexity": 0.6391982803194304,
+          "emergence": 0.355936574641173,
+          "dynamics": 1.0,
+          "final_mass": 1272.3123999683803,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0019459468598341837,
+          "complexity": 1.0,
+          "emergence": 0.2877941343177952,
+          "dynamics": 1.0,
+          "final_mass": 1680.5785511659983,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 3
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0013183884494249118,
+          "complexity": 1.0,
+          "emergence": 0.6399453167283448,
+          "dynamics": 1.0,
+          "final_mass": 1536.9857596983445,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 14
+        }
+      ]
+    },
+    {
+      "kernel_id": 15,
+      "params": {
+        "mu": 0.14688915202913247,
+        "sigma": 0.07794859965526281,
+        "R": 15,
+        "growth_mu": 0.23200156836150476,
+        "growth_sigma": 0.07542230148819631,
+        "asymmetry_x": 0.04829262566714643,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.08531445362939151,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 0.75,
+        "stability": 0.306134930991283,
+        "complexity": NaN,
+        "emergence": 0.13689720243631687,
+        "dynamics": 0.6824817589983896
+      },
+      "fitness": NaN,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1022.4472574407403,
+          "n_blobs": 0
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.026779491826559414,
+          "complexity": 0.43837671190620026,
+          "emergence": 0.1843926046718034,
+          "dynamics": 0.7299270359935583,
+          "final_mass": 135.3521956002059,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.19663207647599085,
+          "complexity": 0.6037030067466341,
+          "emergence": 0.13011143383451645,
+          "dynamics": 1.0,
+          "final_mass": 388.91464259425345,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0011281556625818657,
+          "complexity": 0.6571643739796178,
+          "emergence": 0.2330847712389476,
+          "dynamics": 1.0,
+          "final_mass": 275.83838130190315,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 3
+        }
+      ]
+    },
+    {
+      "kernel_id": 16,
+      "params": {
+        "mu": 0.25,
+        "sigma": 0.144387635296546,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.09166259180429734,
+        "asymmetry_x": -0.07299930055748702,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.09581652952551586,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.46975668531996045,
+        "stability": 0.7522501742714204,
+        "complexity": NaN,
+        "emergence": 0.09013887610471394,
+        "dynamics": 0.25978541340946054
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1015.1438810602915,
+          "n_blobs": 0
+        },
+        {
+          "survival": 1.0,
+          "stability": 1.0,
+          "complexity": 0.2015926657898636,
+          "emergence": 0.15390665231025624,
+          "dynamics": 0.039141653637842215,
+          "final_mass": 94.2624874047746,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 0.8790267412798418,
+          "stability": 0.00900069708568142,
+          "complexity": 0.4749399240294659,
+          "emergence": 0.2066488521085995,
+          "dynamics": 1.0,
+          "final_mass": 319.6141231381407,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 2
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 17,
+      "params": {
+        "mu": 0.150171805143764,
+        "sigma": 0.15,
+        "R": 15,
+        "growth_mu": 0.21283839410065744,
+        "growth_sigma": 0.01,
+        "asymmetry_x": 0.01486941189236868,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1009.3766277190416,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 18,
+      "params": {
+        "mu": 0.19823290211122097,
+        "sigma": 0.13874891258741784,
+        "R": 15,
+        "growth_mu": 0.21234399942830437,
+        "growth_sigma": 0.025091489779926916,
+        "asymmetry_x": 0.00792339358864197,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.0,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0
+      },
+      "fitness": NaN,
+      "exceeds_pareto": false,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1023.8826573431667,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 0
+        },
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 0
+        }
+      ]
+    },
+    {
+      "kernel_id": 19,
+      "params": {
+        "mu": 0.08,
+        "sigma": 0.032930972262938694,
+        "R": 15,
+        "growth_mu": 0.15924584360538518,
+        "growth_sigma": 0.15,
+        "asymmetry_x": -0.08317279304709523,
+        "asymmetry_y": 3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.016217796952620878,
+        "ring_decay": 0.500003
+      },
+      "avg_metrics": {
+        "survival": 1.0,
+        "stability": 0.06256323409551265,
+        "complexity": 0.6628815747074948,
+        "emergence": 0.39930274532001114,
+        "dynamics": 1.0
+      },
+      "fitness": 4.124558097089015,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 1.0,
+          "stability": 0.2389015503554121,
+          "complexity": 0.7011165439792596,
+          "emergence": 0.365573093482519,
+          "dynamics": 1.0,
+          "final_mass": 2171.900229047076,
+          "initial_mass": 1025.1320521916168,
+          "n_blobs": 4
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0053881659998353286,
+          "complexity": 0.6280192400996372,
+          "emergence": 0.39368572850446437,
+          "dynamics": 1.0,
+          "final_mass": 2129.0803956617674,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 7
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0035762589911955693,
+          "complexity": 0.6098466352356993,
+          "emergence": 0.3193346340952371,
+          "dynamics": 1.0,
+          "final_mass": 2185.1488770258147,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 5
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0023869610356075884,
+          "complexity": 0.7125438795153827,
+          "emergence": 0.518617525197824,
+          "dynamics": 1.0,
+          "final_mass": 2125.504266681207,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 6
+        }
+      ]
+    },
+    {
+      "kernel_id": 20,
+      "params": {
+        "mu": 0.1795411606928252,
+        "sigma": 0.15,
+        "R": 15,
+        "growth_mu": 0.25,
+        "growth_sigma": 0.15,
+        "asymmetry_x": -0.028855729492056677,
+        "asymmetry_y": -3e-06,
+        "n_rings": 1,
+        "ring_spacing": 0.04716975672415499,
+        "ring_decay": 0.499997
+      },
+      "avg_metrics": {
+        "survival": 0.75,
+        "stability": 0.2535003424314684,
+        "complexity": NaN,
+        "emergence": 0.2162719102228816,
+        "dynamics": 0.5673232213605377
+      },
+      "fitness": NaN,
+      "exceeds_pareto": true,
+      "seed_results": [
+        {
+          "survival": 0.0,
+          "stability": 1.0,
+          "complexity": NaN,
+          "emergence": 0.0,
+          "dynamics": 0.0,
+          "final_mass": 0.0,
+          "initial_mass": 1033.9449852089224,
+          "n_blobs": 0
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.009980654992510392,
+          "complexity": 0.2612157747256365,
+          "emergence": 0.28692752864641063,
+          "dynamics": 0.5848655357587413,
+          "final_mass": 327.6865869233651,
+          "initial_mass": 66.97217451846807,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0026209363832556763,
+          "complexity": 0.4207853427616472,
+          "emergence": 0.24275430190401864,
+          "dynamics": 0.6844273496834097,
+          "final_mass": 876.4566291987308,
+          "initial_mass": 363.59999999999997,
+          "n_blobs": 1
+        },
+        {
+          "survival": 1.0,
+          "stability": 0.0013997783501075872,
+          "complexity": 0.4558895161665717,
+          "emergence": 0.3354058103410972,
+          "dynamics": 1.0,
+          "final_mass": 805.1996338440777,
+          "initial_mass": 78.15945993183033,
+          "n_blobs": 3
+        }
+      ]
+    }
+  ],
+  "breakthrough_count": 10,
+  "best_kernel": {
+    "kernel_id": 1,
+    "params": {
+      "mu": 0.25,
+      "sigma": 0.06345768958074233,
+      "R": 15,
+      "growth_mu": 0.25,
+      "growth_sigma": 0.05013928458575072,
+      "asymmetry_x": 0.052066018922220646,
+      "asymmetry_y": -3e-06,
+      "n_rings": 1,
+      "ring_spacing": 0.0,
+      "ring_decay": 0.499997
+    },
+    "avg_metrics": {
+      "survival": 0.0,
+      "stability": 1.0,
+      "complexity": NaN,
+      "emergence": 0.0,
+      "dynamics": 0.0
+    },
+    "fitness": NaN,
+    "exceeds_pareto": false,
+    "seed_results": [
+      {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0,
+        "final_mass": 0.0,
+        "initial_mass": 1040.2263114417422,
+        "n_blobs": 0
+      },
+      {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0,
+        "final_mass": 0.0,
+        "initial_mass": 66.97217451846807,
+        "n_blobs": 0
+      },
+      {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0,
+        "final_mass": 0.0,
+        "initial_mass": 363.59999999999997,
+        "n_blobs": 0
+      },
+      {
+        "survival": 0.0,
+        "stability": 1.0,
+        "complexity": NaN,
+        "emergence": 0.0,
+        "dynamics": 0.0,
+        "final_mass": 0.0,
+        "initial_mass": 78.15945993183033,
+        "n_blobs": 0
+      }
+    ]
+  },
+  "analysis": {
+    "avg_survival_best": 0.0,
+    "avg_complexity_best": NaN,
+    "avg_emergence_best": 0.0,
+    "best_fitness": NaN,
+    "novel_params": {
+      "avg_mu_high_survival": 0.17145083510597373,
+      "avg_sigma_high_survival": 0.06193494032723893,
+      "avg_growth_sigma_high_survival": 0.12951887950203894
+    }
+  }
+}

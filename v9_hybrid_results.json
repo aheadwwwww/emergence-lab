@@ -1,0 +1,2019 @@
+{
+  "experiment": "V9 Hybrid Conv+GNN Lenia",
+  "timestamp": "2026-06-28T23:11:38.901011",
+  "environment": {
+    "jax": true,
+    "torch": true,
+    "pyg": false
+  },
+  "results": {
+    "Pure Conv (\u03c3=0.014)": {
+      "config": {
+        "sigma": 0.014,
+        "mu": 0.135,
+        "alpha": 1.0
+      },
+      "trials": [
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 42,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26413602332654335,
+          "pattern_complexity": 3.895604372024536,
+          "emergence_score": 1.095922774898139,
+          "computation_time": 3.029331922531128,
+          "final_mass": 546.0,
+          "final_variance": 0.11553168296813965,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 43,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26028304898775567,
+          "pattern_complexity": 3.8987340927124023,
+          "emergence_score": 1.1501058985986445,
+          "computation_time": 1.9759576320648193,
+          "final_mass": 553.0,
+          "final_variance": 0.11678211390972137,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 44,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.263406859200293,
+          "pattern_complexity": 3.885714292526245,
+          "emergence_score": 1.1566187732555404,
+          "computation_time": 2.1485321521759033,
+          "final_mass": 560.0,
+          "final_variance": 0.1180267333984375,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 45,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.2661657444715727,
+          "pattern_complexity": 3.899817943572998,
+          "emergence_score": 1.10801053076306,
+          "computation_time": 2.6211371421813965,
+          "final_mass": 549.0,
+          "final_variance": 0.1160682886838913,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 46,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.2676649027741109,
+          "pattern_complexity": 3.889087677001953,
+          "emergence_score": 1.1313406762938234,
+          "computation_time": 1.9813129901885986,
+          "final_mass": 559.0,
+          "final_variance": 0.11784927546977997,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 47,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26435747112988145,
+          "pattern_complexity": 3.885509729385376,
+          "emergence_score": 1.1378813648425532,
+          "computation_time": 2.1851837635040283,
+          "final_mass": 559.0,
+          "final_variance": 0.11784927546977997,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 48,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.2801838750814946,
+          "pattern_complexity": 3.892674684524536,
+          "emergence_score": 1.1756458475952052,
+          "computation_time": 2.21490216255188,
+          "final_mass": 587.0,
+          "final_variance": 0.12277261167764664,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 49,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26770571995288855,
+          "pattern_complexity": 3.8846848011016846,
+          "emergence_score": 1.1227908542536318,
+          "computation_time": 2.5167288780212402,
+          "final_mass": 555.0,
+          "final_variance": 0.11713831126689911,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 50,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.2587125066022439,
+          "pattern_complexity": 3.8947367668151855,
+          "emergence_score": 1.1465013565135496,
+          "computation_time": 2.4696152210235596,
+          "final_mass": 551.0,
+          "final_variance": 0.11642543971538544,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 51,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26753245187264896,
+          "pattern_complexity": 3.909747362136841,
+          "emergence_score": 1.108414016310974,
+          "computation_time": 2.4674720764160156,
+          "final_mass": 554.0,
+          "final_variance": 0.11696028709411621,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 52,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.2685373429184404,
+          "pattern_complexity": 3.881720542907715,
+          "emergence_score": 1.1245896969599538,
+          "computation_time": 2.329817533493042,
+          "final_mass": 558.0,
+          "final_variance": 0.11767172813415527,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 53,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26878181725750255,
+          "pattern_complexity": 3.8881118297576904,
+          "emergence_score": 1.163165644607368,
+          "computation_time": 2.821007490158081,
+          "final_mass": 572.0,
+          "final_variance": 0.1201467514038086,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 54,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.276104801990821,
+          "pattern_complexity": 3.897212505340576,
+          "emergence_score": 1.1485712626903506,
+          "computation_time": 2.8929338455200195,
+          "final_mass": 574.0,
+          "final_variance": 0.1204984188079834,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 55,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26580599795114873,
+          "pattern_complexity": 3.8987340927124023,
+          "emergence_score": 1.1360628679254368,
+          "computation_time": 2.324537992477417,
+          "final_mass": 553.0,
+          "final_variance": 0.11678211390972137,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 56,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26230011318567265,
+          "pattern_complexity": 3.884891986846924,
+          "emergence_score": 1.1388050406949657,
+          "computation_time": 2.5885202884674072,
+          "final_mass": 556.0,
+          "final_variance": 0.11731624603271484,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 57,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.27061579151744447,
+          "pattern_complexity": 3.904761791229248,
+          "emergence_score": 1.1476003598743485,
+          "computation_time": 2.2686102390289307,
+          "final_mass": 567.0,
+          "final_variance": 0.11926547437906265,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 58,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26912662956110484,
+          "pattern_complexity": 3.8896796703338623,
+          "emergence_score": 1.137694103134206,
+          "computation_time": 2.125746965408325,
+          "final_mass": 562.0,
+          "final_variance": 0.11838126182556152,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 59,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.25813496681341686,
+          "pattern_complexity": 3.890909194946289,
+          "emergence_score": 1.1419985237799792,
+          "computation_time": 2.134624481201172,
+          "final_mass": 550.0,
+          "final_variance": 0.11624693870544434,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 60,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.26584521510417847,
+          "pattern_complexity": 3.8880865573883057,
+          "emergence_score": 1.1337618434733978,
+          "computation_time": 1.9387242794036865,
+          "final_mass": 554.0,
+          "final_variance": 0.11696028709411621,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure Conv (\u03c3=0.014)",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 1.0,
+            "seed": 61,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.2769040943404187,
+          "pattern_complexity": 3.901960849761963,
+          "emergence_score": 1.1031423677540624,
+          "computation_time": 2.1731925010681152,
+          "final_mass": 561.0,
+          "final_variance": 0.1182040423154831,
+          "pattern_detected": true
+        }
+      ],
+      "summary": {
+        "survival_rate_mean": 0.2671152687019791,
+        "survival_rate_std": 0.005589832860440435,
+        "complexity_mean": 3.8931190371513367,
+        "complexity_std": 0.0073781913176644166,
+        "emergence_mean": 1.1354311902109595,
+        "emergence_std": 0.0199275591961977,
+        "computation_time_mean": 2.3603944778442383,
+        "patterns_detected": 20,
+        "pattern_detection_rate": 1.0
+      }
+    },
+    "Pure GNN (\u03c3=0.025)": {
+      "config": {
+        "sigma": 0.025,
+        "mu": 0.135,
+        "alpha": 0.0
+      },
+      "trials": [
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 42,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07833745267560695,
+          "pattern_complexity": 3.092048542940139,
+          "emergence_score": 1.012512834669976,
+          "computation_time": 12.696587085723877,
+          "final_mass": 161.93266114256352,
+          "final_variance": 0.02719899203455077,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 43,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.066886459784365,
+          "pattern_complexity": 3.1661357370023926,
+          "emergence_score": 0.9451144486293297,
+          "computation_time": 2.3807404041290283,
+          "final_mass": 142.1076493632663,
+          "final_variance": 0.023364146619606528,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 44,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07884158063528315,
+          "pattern_complexity": 3.0250552585407244,
+          "emergence_score": 1.1155545551005475,
+          "computation_time": 2.1532113552093506,
+          "final_mass": 167.61630767627884,
+          "final_variance": 0.027876701317015792,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 45,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07341217285912492,
+          "pattern_complexity": 3.0828026580372923,
+          "emergence_score": 0.9719593835046879,
+          "computation_time": 2.277207612991333,
+          "final_mass": 151.4217503070313,
+          "final_variance": 0.02543395003493823,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 46,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.0652471869653617,
+          "pattern_complexity": 3.1201685465160263,
+          "emergence_score": 0.9654578332986785,
+          "computation_time": 2.076056480407715,
+          "final_mass": 136.2643257880463,
+          "final_variance": 0.021493717905173657,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 47,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08762257035590261,
+          "pattern_complexity": 3.0790616543056593,
+          "emergence_score": 1.1761164577143894,
+          "computation_time": 2.358140707015991,
+          "final_mass": 185.28327048825753,
+          "final_variance": 0.03155403181020212,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 48,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07210294607190408,
+          "pattern_complexity": 3.0359325749792494,
+          "emergence_score": 0.9070217429370198,
+          "computation_time": 3.2102792263031006,
+          "final_mass": 151.05947596697763,
+          "final_variance": 0.026438798393716746,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 49,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08696952962012969,
+          "pattern_complexity": 3.0855322624565003,
+          "emergence_score": 1.0748489793513654,
+          "computation_time": 2.3287763595581055,
+          "final_mass": 180.30279273698858,
+          "final_variance": 0.031356778755563364,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 50,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07905311004269946,
+          "pattern_complexity": 3.0737662933599696,
+          "emergence_score": 1.1280580410675918,
+          "computation_time": 2.3393852710723877,
+          "final_mass": 168.36551199473251,
+          "final_variance": 0.0283102840994505,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 51,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08302947431131323,
+          "pattern_complexity": 3.074229481507708,
+          "emergence_score": 0.9533093632963422,
+          "computation_time": 2.5791077613830566,
+          "final_mass": 171.93551080062505,
+          "final_variance": 0.030511933950330795,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 52,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07563838981056972,
+          "pattern_complexity": 3.0419641666325057,
+          "emergence_score": 0.9531437988107169,
+          "computation_time": 2.557281017303467,
+          "final_mass": 157.17077206322358,
+          "final_variance": 0.027290951260479625,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 53,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07317347402482163,
+          "pattern_complexity": 3.0326259709007606,
+          "emergence_score": 1.030173233653718,
+          "computation_time": 2.629706859588623,
+          "final_mass": 155.7219441748888,
+          "final_variance": 0.025605234864210055,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 54,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.0760286866991131,
+          "pattern_complexity": 3.0907838252889634,
+          "emergence_score": 0.9928778572259289,
+          "computation_time": 2.724184513092041,
+          "final_mass": 158.05761381412603,
+          "final_variance": 0.02745440009047886,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 55,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07247127868519562,
+          "pattern_complexity": 3.086079698072862,
+          "emergence_score": 0.9896490491606895,
+          "computation_time": 2.166764736175537,
+          "final_mass": 150.77393821744639,
+          "final_variance": 0.025830435045178075,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 56,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07502298472053812,
+          "pattern_complexity": 3.0775263941371893,
+          "emergence_score": 0.999583057188245,
+          "computation_time": 2.732757806777954,
+          "final_mass": 159.02692148322575,
+          "final_variance": 0.027486463836530826,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 57,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07961744519664572,
+          "pattern_complexity": 3.0716379280565484,
+          "emergence_score": 1.1141946948514392,
+          "computation_time": 2.1327126026153564,
+          "final_mass": 166.81617570565206,
+          "final_variance": 0.027968763355625346,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 58,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07736935397825978,
+          "pattern_complexity": 3.1104701431768786,
+          "emergence_score": 1.0427220576054952,
+          "computation_time": 2.095308303833008,
+          "final_mass": 161.56549430538448,
+          "final_variance": 0.02690446625660507,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 59,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.07658530601265137,
+          "pattern_complexity": 3.0315341745308504,
+          "emergence_score": 1.0594517609236411,
+          "computation_time": 1.7722764015197754,
+          "final_mass": 163.1778864635743,
+          "final_variance": 0.027573548483802193,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 60,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08984717781158733,
+          "pattern_complexity": 3.1269042150690134,
+          "emergence_score": 1.229428465899735,
+          "computation_time": 2.055366039276123,
+          "final_mass": 187.2342764872168,
+          "final_variance": 0.03098489172014304,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Pure GNN (\u03c3=0.025)",
+            "sigma": 0.025,
+            "mu": 0.135,
+            "alpha": 0.0,
+            "seed": 61,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08574560462739811,
+          "pattern_complexity": 3.0980245991833177,
+          "emergence_score": 1.043076123097993,
+          "computation_time": 2.2846624851226807,
+          "final_mass": 173.7182121143843,
+          "final_variance": 0.030082122876016946,
+          "pattern_detected": true
+        }
+      ],
+      "summary": {
+        "survival_rate_mean": 0.07765010924442357,
+        "survival_rate_std": 0.00639275481307397,
+        "complexity_mean": 3.0801142062347275,
+        "complexity_std": 0.034621325056893054,
+        "emergence_mean": 1.0352126868993763,
+        "emergence_std": 0.08176273218908667,
+        "computation_time_mean": 2.8775256514549254,
+        "patterns_detected": 20,
+        "pattern_detection_rate": 1.0
+      }
+    },
+    "Hybrid \u03b1=0.3": {
+      "config": {
+        "sigma": 0.014,
+        "mu": 0.135,
+        "alpha": 0.3
+      },
+      "trials": [
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 42,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.010630784716847985,
+          "pattern_complexity": 3.2915093085703946,
+          "emergence_score": 0.13607985946167075,
+          "computation_time": 2.0629525184631348,
+          "final_mass": 21.97507323044379,
+          "final_variance": 0.004085681001219439,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 43,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.009625947514786919,
+          "pattern_complexity": 3.615419700898903,
+          "emergence_score": 0.12303000564246103,
+          "computation_time": 1.8572957515716553,
+          "final_mass": 20.451385506582028,
+          "final_variance": 0.003782889165716641,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 44,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.008477526563367808,
+          "pattern_complexity": 3.648767254765312,
+          "emergence_score": 0.1115993101634049,
+          "computation_time": 3.409162998199463,
+          "final_mass": 18.023125479340944,
+          "final_variance": 0.0033687314683718593,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 45,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.007897228859800468,
+          "pattern_complexity": 3.5950929140935104,
+          "emergence_score": 0.09938403307887725,
+          "computation_time": 1.879242181777954,
+          "final_mass": 16.289018155352856,
+          "final_variance": 0.0028634976885638297,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 46,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.007580421774635551,
+          "pattern_complexity": 3.617932144774705,
+          "emergence_score": 0.10410056755105719,
+          "computation_time": 1.9526371955871582,
+          "final_mass": 15.831196873791733,
+          "final_variance": 0.0027615022988388255,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 47,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.009707845012413884,
+          "pattern_complexity": 3.6983901772603933,
+          "emergence_score": 0.12864262729028755,
+          "computation_time": 1.838266372680664,
+          "final_mass": 20.527830512015967,
+          "final_variance": 0.003778204766077286,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 48,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.009588957940276274,
+          "pattern_complexity": 3.6357283752893825,
+          "emergence_score": 0.11666664839137128,
+          "computation_time": 1.857412338256836,
+          "final_mass": 20.089372771024017,
+          "final_variance": 0.0038260092822995874,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 49,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.010030761748360394,
+          "pattern_complexity": 3.711378674003992,
+          "emergence_score": 0.126036221686142,
+          "computation_time": 1.7753398418426514,
+          "final_mass": 20.795494288727653,
+          "final_variance": 0.003945494372942067,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 50,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.004782577794177932,
+          "pattern_complexity": 3.536488544860035,
+          "emergence_score": 0.06454085413028327,
+          "computation_time": 2.468143939971924,
+          "final_mass": 10.185825181785724,
+          "final_variance": 0.0015334768666607898,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 51,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.0076752678565376545,
+          "pattern_complexity": 3.6137166966229293,
+          "emergence_score": 0.10048354462200774,
+          "computation_time": 1.949652910232544,
+          "final_mass": 15.89376676645549,
+          "final_variance": 0.002862335904455823,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 52,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01265490311908012,
+          "pattern_complexity": 3.4217328635487125,
+          "emergence_score": 0.18248416152605373,
+          "computation_time": 2.297534942626953,
+          "final_mass": 26.295917966952516,
+          "final_variance": 0.004572398996609509,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 53,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.011826061665882626,
+          "pattern_complexity": 3.458602260536646,
+          "emergence_score": 0.17024353935085398,
+          "computation_time": 1.925675868988037,
+          "final_mass": 25.167280070899377,
+          "final_variance": 0.004627753045206356,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 54,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.008457117918920223,
+          "pattern_complexity": 3.45287440262794,
+          "emergence_score": 0.10641750497351925,
+          "computation_time": 1.9553766250610352,
+          "final_mass": 17.581677864558074,
+          "final_variance": 0.003225355600174693,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 55,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.007369523345923051,
+          "pattern_complexity": 3.530781899929024,
+          "emergence_score": 0.09731613084642665,
+          "computation_time": 3.672269105911255,
+          "final_mass": 15.332033293862828,
+          "final_variance": 0.0027058503668147076,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 56,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.011316191290556773,
+          "pattern_complexity": 3.475528291338146,
+          "emergence_score": 0.13828595047392336,
+          "computation_time": 4.609397888183594,
+          "final_mass": 23.987036380330604,
+          "final_variance": 0.004464296474762736,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 57,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.012676087264044384,
+          "pattern_complexity": 3.742937723396181,
+          "emergence_score": 0.178673009302614,
+          "computation_time": 5.541449308395386,
+          "final_mass": 26.55920941793914,
+          "final_variance": 0.004894928008696866,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 58,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.009867095105147104,
+          "pattern_complexity": 3.5852200874283944,
+          "emergence_score": 0.1380353970847948,
+          "computation_time": 3.460144281387329,
+          "final_mass": 20.604826278752242,
+          "final_variance": 0.003688380137957233,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 59,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.007223661765028124,
+          "pattern_complexity": 3.49201989276005,
+          "emergence_score": 0.09645005038323569,
+          "computation_time": 3.0591514110565186,
+          "final_mass": 15.39122738701732,
+          "final_variance": 0.0026299656340234884,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 60,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.012103953220927204,
+          "pattern_complexity": 3.519729264699072,
+          "emergence_score": 0.1709469212747279,
+          "computation_time": 3.100332260131836,
+          "final_mass": 25.223662881296953,
+          "final_variance": 0.004564035698016505,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.3",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.3,
+            "seed": 61,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.011260088197825365,
+          "pattern_complexity": 3.530133172732275,
+          "emergence_score": 0.1322780851963724,
+          "computation_time": 3.469736337661743,
+          "final_mass": 22.81262577220756,
+          "final_variance": 0.00420822360563244,
+          "pattern_detected": false
+        }
+      ],
+      "summary": {
+        "survival_rate_mean": 0.009537600133726992,
+        "survival_rate_std": 0.002050042181699039,
+        "complexity_mean": 3.5586991825068006,
+        "complexity_std": 0.10698927695264923,
+        "emergence_mean": 0.12608472112150423,
+        "emergence_std": 0.030319415027007364,
+        "computation_time_mean": 2.7070587038993836,
+        "patterns_detected": 0,
+        "pattern_detection_rate": 0.0
+      }
+    },
+    "Hybrid \u03b1=0.5": {
+      "config": {
+        "sigma": 0.014,
+        "mu": 0.135,
+        "alpha": 0.5
+      },
+      "trials": [
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 42,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01666333421170106,
+          "pattern_complexity": 3.853319827374583,
+          "emergence_score": 0.12213152082874973,
+          "computation_time": 2.949918746948242,
+          "final_mass": 34.445057379927974,
+          "final_variance": 0.007766503153180261,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 43,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.010864046471456805,
+          "pattern_complexity": 3.869114463476622,
+          "emergence_score": 0.06371388139224257,
+          "computation_time": 2.927260160446167,
+          "final_mass": 23.081863079751443,
+          "final_variance": 0.005346840006634166,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 44,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.02079325043842126,
+          "pattern_complexity": 3.8562618869380128,
+          "emergence_score": 0.14920502083517218,
+          "computation_time": 2.954379081726074,
+          "final_mass": 44.20621498190262,
+          "final_variance": 0.010134447673835013,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 45,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.017671773550534488,
+          "pattern_complexity": 3.7789974259058043,
+          "emergence_score": 0.127898854838841,
+          "computation_time": 2.983966588973999,
+          "final_mass": 36.4502340393379,
+          "final_variance": 0.008227448115833456,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 46,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01634656354139248,
+          "pattern_complexity": 3.808350422680538,
+          "emergence_score": 0.09131071363178113,
+          "computation_time": 3.0338525772094727,
+          "final_mass": 34.13868955150221,
+          "final_variance": 0.007749041061403577,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 47,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.02408413338807365,
+          "pattern_complexity": 3.8730664660441554,
+          "emergence_score": 0.18253265480404401,
+          "computation_time": 2.9669339656829834,
+          "final_mass": 50.92736931697553,
+          "final_variance": 0.0115805486971428,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 48,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01717003263513624,
+          "pattern_complexity": 3.8870196057494106,
+          "emergence_score": 0.11999175192316411,
+          "computation_time": 3.2972147464752197,
+          "final_mass": 35.97212421269225,
+          "final_variance": 0.008210826056833145,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 49,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01627662174188477,
+          "pattern_complexity": 3.8518644788545635,
+          "emergence_score": 0.11385557836215937,
+          "computation_time": 3.438528299331665,
+          "final_mass": 33.74423627681839,
+          "final_variance": 0.007662826905542911,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 50,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.013968955219630812,
+          "pattern_complexity": 3.7372433331531822,
+          "emergence_score": 0.09575973885058876,
+          "computation_time": 2.9227988719940186,
+          "final_mass": 29.750762447097795,
+          "final_variance": 0.006796773099690962,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 51,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.022510450028558816,
+          "pattern_complexity": 3.8502608092269353,
+          "emergence_score": 0.1613423473119515,
+          "computation_time": 2.9088287353515625,
+          "final_mass": 46.61411813232266,
+          "final_variance": 0.010634335496181882,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 52,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.017365794175186328,
+          "pattern_complexity": 3.811574820266422,
+          "emergence_score": 0.12149104405993318,
+          "computation_time": 2.867185115814209,
+          "final_mass": 36.08478822514093,
+          "final_variance": 0.008236549691450913,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 53,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.02005790449268749,
+          "pattern_complexity": 3.742094986625193,
+          "emergence_score": 0.1628071095726448,
+          "computation_time": 3.1691741943359375,
+          "final_mass": 42.68563062368756,
+          "final_variance": 0.009678547796831628,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 54,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.019326612069019807,
+          "pattern_complexity": 3.8896842514102494,
+          "emergence_score": 0.13252884044475133,
+          "computation_time": 2.977529764175415,
+          "final_mass": 40.17849471515591,
+          "final_variance": 0.009181241936488279,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 55,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01643523076073981,
+          "pattern_complexity": 3.7795496740238983,
+          "emergence_score": 0.10528076436354628,
+          "computation_time": 2.9028539657592773,
+          "final_mass": 34.19291769465444,
+          "final_variance": 0.007756669357800998,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 56,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.01618024083207362,
+          "pattern_complexity": 3.837393669555255,
+          "emergence_score": 0.11777647194983867,
+          "computation_time": 2.437001943588257,
+          "final_mass": 34.29740762736477,
+          "final_variance": 0.007765098393345392,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 57,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.012322235617804034,
+          "pattern_complexity": 3.8149474132553673,
+          "emergence_score": 0.08670083257600247,
+          "computation_time": 2.8903157711029053,
+          "final_mass": 25.81781187312755,
+          "final_variance": 0.005834586013776865,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 58,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.014042959289640458,
+          "pattern_complexity": 3.8874513098156287,
+          "emergence_score": 0.0799231102271672,
+          "computation_time": 2.5895066261291504,
+          "final_mass": 29.325017496962474,
+          "final_variance": 0.006794557720764777,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 59,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.017077474008893142,
+          "pattern_complexity": 3.8179929613927532,
+          "emergence_score": 0.11115326317669506,
+          "computation_time": 2.2470717430114746,
+          "final_mass": 36.38643311613155,
+          "final_variance": 0.008236459955400042,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 60,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.019291097268974978,
+          "pattern_complexity": 3.8573901681151326,
+          "emergence_score": 0.1216424567721639,
+          "computation_time": 1.9919943809509277,
+          "final_mass": 40.201091762453004,
+          "final_variance": 0.009185110877708152,
+          "pattern_detected": false
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.5",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.5,
+            "seed": 61,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.014686810451813368,
+          "pattern_complexity": 3.7921611378906315,
+          "emergence_score": 0.08050174235957995,
+          "computation_time": 1.8305284976959229,
+          "final_mass": 29.7550698305606,
+          "final_variance": 0.0067980241214977595,
+          "pattern_detected": false
+        }
+      ],
+      "summary": {
+        "survival_rate_mean": 0.01715677600968117,
+        "survival_rate_std": 0.003161869309468819,
+        "complexity_mean": 3.8297869555877164,
+        "complexity_std": 0.04500728034961917,
+        "emergence_mean": 0.11737738491405084,
+        "emergence_std": 0.029654414136425104,
+        "computation_time_mean": 2.814342188835144,
+        "patterns_detected": 3,
+        "pattern_detection_rate": 0.15
+      }
+    },
+    "Hybrid \u03b1=0.7": {
+      "config": {
+        "sigma": 0.014,
+        "mu": 0.135,
+        "alpha": 0.7
+      },
+      "trials": [
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 42,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.0977240980149958,
+          "pattern_complexity": 3.930636771382481,
+          "emergence_score": 0.4967185904885446,
+          "computation_time": 2.382843017578125,
+          "final_mass": 202.00712058961994,
+          "final_variance": 0.04688412689942542,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 43,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08754835948269277,
+          "pattern_complexity": 3.9461822895539305,
+          "emergence_score": 0.4754357362909947,
+          "computation_time": 2.7270307540893555,
+          "final_mass": 186.00613056521644,
+          "final_variance": 0.043347938050969065,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 44,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08984357206315456,
+          "pattern_complexity": 3.916177680615337,
+          "emergence_score": 0.4864827566924999,
+          "computation_time": 2.600273609161377,
+          "final_mass": 191.00641687204248,
+          "final_variance": 0.0444562740271512,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 45,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09987618785379472,
+          "pattern_complexity": 3.9465492489928753,
+          "emergence_score": 0.5039729646228697,
+          "computation_time": 2.3757452964782715,
+          "final_mass": 206.00707743437482,
+          "final_variance": 0.047763412285275114,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 46,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.1024722034381251,
+          "pattern_complexity": 3.9158394970696344,
+          "emergence_score": 0.5305537607564877,
+          "computation_time": 2.2766544818878174,
+          "final_mass": 214.00624859006487,
+          "final_variance": 0.04951628005837716,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 47,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.10924680835296278,
+          "pattern_complexity": 3.92634751404905,
+          "emergence_score": 0.5700358082273609,
+          "computation_time": 2.2719004154205322,
+          "final_mass": 231.0090409334503,
+          "final_variance": 0.053215672075996874,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 48,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.08639716040620866,
+          "pattern_complexity": 3.9502155552295775,
+          "emergence_score": 0.45766335054802887,
+          "computation_time": 2.7127795219421387,
+          "final_mass": 181.00660911943424,
+          "final_variance": 0.042236602787743084,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 49,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09165038431825914,
+          "pattern_complexity": 3.9262571324796114,
+          "emergence_score": 0.4738905206576545,
+          "computation_time": 2.0111029148101807,
+          "final_mass": 190.00700958345354,
+          "final_variance": 0.04423483236245019,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 50,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09484899264623006,
+          "pattern_complexity": 3.9207362236680803,
+          "emergence_score": 0.5139168747453186,
+          "computation_time": 2.230886459350586,
+          "final_mass": 202.00722274482996,
+          "final_variance": 0.04688412443354148,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 51,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.0985171056733022,
+          "pattern_complexity": 3.9411195569841286,
+          "emergence_score": 0.5028458704771096,
+          "computation_time": 2.1137924194335938,
+          "final_mass": 204.00693882546227,
+          "final_variance": 0.04732401189327749,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 52,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09529051523758061,
+          "pattern_complexity": 3.9191397174510203,
+          "emergence_score": 0.49103575226191537,
+          "computation_time": 2.421354055404663,
+          "final_mass": 198.00638125297644,
+          "final_variance": 0.04600295266995354,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 53,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09304328225184072,
+          "pattern_complexity": 3.9292413571570317,
+          "emergence_score": 0.5038005971037939,
+          "computation_time": 2.384779691696167,
+          "final_mass": 198.00728334634897,
+          "final_variance": 0.046002807386026086,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 54,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09284012161323342,
+          "pattern_complexity": 3.937768212519404,
+          "emergence_score": 0.48052684200612894,
+          "computation_time": 2.027343273162842,
+          "final_mass": 193.0072545705583,
+          "final_variance": 0.044898760354958205,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 55,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09229028739968287,
+          "pattern_complexity": 3.9686951984097707,
+          "emergence_score": 0.47982627930764027,
+          "computation_time": 1.6613054275512695,
+          "final_mass": 192.0066865511605,
+          "final_variance": 0.044677581368445296,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 56,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.10143261282754985,
+          "pattern_complexity": 3.9348327640253946,
+          "emergence_score": 0.5363696175752264,
+          "computation_time": 1.9626264572143555,
+          "final_mass": 215.00765686744737,
+          "final_variance": 0.04973481350938675,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 57,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.10070886425257133,
+          "pattern_complexity": 3.957289644648341,
+          "emergence_score": 0.5236375438702912,
+          "computation_time": 1.8192486763000488,
+          "final_mass": 211.00736845775327,
+          "final_variance": 0.04885982819919663,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 58,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09434112075276335,
+          "pattern_complexity": 3.9238036054462855,
+          "emergence_score": 0.4914425084431139,
+          "computation_time": 1.759021282196045,
+          "final_mass": 197.00655393900718,
+          "final_variance": 0.04578235258294703,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 59,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.0840142511096924,
+          "pattern_complexity": 3.9440744156882563,
+          "emergence_score": 0.46091211466516013,
+          "computation_time": 1.9296033382415771,
+          "final_mass": 179.00650454585806,
+          "final_variance": 0.041791240688276665,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 60,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09357677615197132,
+          "pattern_complexity": 3.928154054742315,
+          "emergence_score": 0.4895942835068174,
+          "computation_time": 1.863182783126831,
+          "final_mass": 195.00645880677837,
+          "final_variance": 0.04534080515136503,
+          "pattern_detected": true
+        },
+        {
+          "config": {
+            "name": "Hybrid \u03b1=0.7",
+            "sigma": 0.014,
+            "mu": 0.135,
+            "alpha": 0.7,
+            "seed": 61,
+            "grid_size": 64,
+            "steps": 200,
+            "dt": 0.1
+          },
+          "survival_rate": 0.09872131750360041,
+          "pattern_complexity": 3.9499454791334045,
+          "emergence_score": 0.4831680554545244,
+          "computation_time": 2.1551403999328613,
+          "final_mass": 200.00664580796638,
+          "final_variance": 0.04644378079251041,
+          "pattern_detected": true
+        }
+      ],
+      "summary": {
+        "survival_rate_mean": 0.0952192010675106,
+        "survival_rate_std": 0.005897730849770778,
+        "complexity_mean": 3.9356502959622963,
+        "complexity_std": 0.014171571534357755,
+        "emergence_mean": 0.49759149138507397,
+        "emergence_std": 0.026425583353843863,
+        "computation_time_mean": 2.184330713748932,
+        "patterns_detected": 20,
+        "pattern_detection_rate": 1.0
+      }
+    }
+  },
+  "analysis": {
+    "best_survival": "Pure Conv (\u03c3=0.014)",
+    "best_complexity": "Hybrid \u03b1=0.7",
+    "best_emergence": "Pure Conv (\u03c3=0.014)",
+    "best_detection": "Pure Conv (\u03c3=0.014)",
+    "conv_baseline": 1.1354311902109595,
+    "gnn_baseline": 1.0352126868993763
+  }
+}

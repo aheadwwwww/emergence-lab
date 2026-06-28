@@ -1,0 +1,522 @@
+{
+  "experiment": "V10_Hybrid_Conv_GNN_Lenia",
+  "best_strategy": "fixed",
+  "comparison": [
+    {
+      "strategy": "fixed",
+      "fitness": 0.0001,
+      "survival": 0.01,
+      "complexity": 0.01,
+      "best_fitness": 0.0001
+    },
+    {
+      "strategy": "learnable_global",
+      "fitness": 0.0001,
+      "survival": 0.01,
+      "complexity": 0.01,
+      "best_fitness": 0.0001
+    },
+    {
+      "strategy": "spatial_attention",
+      "fitness": 0.0001,
+      "survival": 0.01,
+      "complexity": 0.01,
+      "best_fitness": 0.0001
+    },
+    {
+      "strategy": "pattern_density",
+      "fitness": 0.0001,
+      "survival": 0.01,
+      "complexity": 0.01,
+      "best_fitness": 0.0001
+    },
+    {
+      "strategy": "adaptive",
+      "fitness": 0.0001,
+      "survival": 0.01,
+      "complexity": 0.01,
+      "best_fitness": 0.0001
+    }
+  ],
+  "detailed_results": {
+    "fixed": {
+      "results": [
+        {
+          "run": 0,
+          "seed": 42,
+          "fusion_strategy": "fixed",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 1,
+          "seed": 142,
+          "fusion_strategy": "fixed",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 2,
+          "seed": 242,
+          "fusion_strategy": "fixed",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 3,
+          "seed": 342,
+          "fusion_strategy": "fixed",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 4,
+          "seed": 442,
+          "fusion_strategy": "fixed",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        }
+      ],
+      "best_result": {
+        "config": 0,
+        "mu": 0.17489178527000296,
+        "sigma_conv": 0.010493489467884398,
+        "sigma_gnn": 0.03378665695081044,
+        "fitness": 0.0001,
+        "survival": 0.01,
+        "complexity": 0.01,
+        "diversity": 0.0,
+        "conv_survival": 0.0,
+        "conv_complexity": 0.0,
+        "gnn_survival": 0.0,
+        "gnn_complexity": 0.0
+      },
+      "avg_fitness": 0.0001,
+      "avg_survival": 0.01,
+      "avg_complexity": 0.01
+    },
+    "learnable_global": {
+      "results": [
+        {
+          "run": 0,
+          "seed": 42,
+          "fusion_strategy": "learnable_global",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 1,
+          "seed": 142,
+          "fusion_strategy": "learnable_global",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 2,
+          "seed": 242,
+          "fusion_strategy": "learnable_global",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 3,
+          "seed": 342,
+          "fusion_strategy": "learnable_global",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 4,
+          "seed": 442,
+          "fusion_strategy": "learnable_global",
+          "final_alpha": 0.5,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        }
+      ],
+      "best_result": {
+        "config": 0,
+        "mu": 0.17489178527000296,
+        "sigma_conv": 0.010493489467884398,
+        "sigma_gnn": 0.03378665695081044,
+        "fitness": 0.0001,
+        "survival": 0.01,
+        "complexity": 0.01,
+        "diversity": 0.0,
+        "conv_survival": 0.0,
+        "conv_complexity": 0.0,
+        "gnn_survival": 0.0,
+        "gnn_complexity": 0.0
+      },
+      "avg_fitness": 0.0001,
+      "avg_survival": 0.01,
+      "avg_complexity": 0.01
+    },
+    "spatial_attention": {
+      "results": [
+        {
+          "run": 0,
+          "seed": 42,
+          "fusion_strategy": "spatial_attention",
+          "final_alpha": 0.49940081408922965,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 1,
+          "seed": 142,
+          "fusion_strategy": "spatial_attention",
+          "final_alpha": 0.4993944646887543,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 2,
+          "seed": 242,
+          "fusion_strategy": "spatial_attention",
+          "final_alpha": 0.49940478852368464,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 3,
+          "seed": 342,
+          "fusion_strategy": "spatial_attention",
+          "final_alpha": 0.49940163158918405,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 4,
+          "seed": 442,
+          "fusion_strategy": "spatial_attention",
+          "final_alpha": 0.4994094982309424,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        }
+      ],
+      "best_result": {
+        "config": 0,
+        "mu": 0.17489178527000296,
+        "sigma_conv": 0.010493489467884398,
+        "sigma_gnn": 0.03378665695081044,
+        "fitness": 0.0001,
+        "survival": 0.01,
+        "complexity": 0.01,
+        "diversity": 0.0,
+        "conv_survival": 0.0,
+        "conv_complexity": 0.0,
+        "gnn_survival": 0.0,
+        "gnn_complexity": 0.0
+      },
+      "avg_fitness": 0.0001,
+      "avg_survival": 0.01,
+      "avg_complexity": 0.01
+    },
+    "pattern_density": {
+      "results": [
+        {
+          "run": 0,
+          "seed": 42,
+          "fusion_strategy": "pattern_density",
+          "final_alpha": 0.5023631923674112,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 1,
+          "seed": 142,
+          "fusion_strategy": "pattern_density",
+          "final_alpha": 0.5022892653951142,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 2,
+          "seed": 242,
+          "fusion_strategy": "pattern_density",
+          "final_alpha": 0.5023736050121947,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 3,
+          "seed": 342,
+          "fusion_strategy": "pattern_density",
+          "final_alpha": 0.5023279526527008,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 4,
+          "seed": 442,
+          "fusion_strategy": "pattern_density",
+          "final_alpha": 0.5023481125219404,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        }
+      ],
+      "best_result": {
+        "config": 0,
+        "mu": 0.17489178527000296,
+        "sigma_conv": 0.010493489467884398,
+        "sigma_gnn": 0.03378665695081044,
+        "fitness": 0.0001,
+        "survival": 0.01,
+        "complexity": 0.01,
+        "diversity": 0.0,
+        "conv_survival": 0.0,
+        "conv_complexity": 0.0,
+        "gnn_survival": 0.0,
+        "gnn_complexity": 0.0
+      },
+      "avg_fitness": 0.0001,
+      "avg_survival": 0.01,
+      "avg_complexity": 0.01
+    },
+    "adaptive": {
+      "results": [
+        {
+          "run": 0,
+          "seed": 42,
+          "fusion_strategy": "adaptive",
+          "final_alpha": 0.5489999999999999,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 1,
+          "seed": 142,
+          "fusion_strategy": "adaptive",
+          "final_alpha": 0.5489999999999999,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 2,
+          "seed": 242,
+          "fusion_strategy": "adaptive",
+          "final_alpha": 0.5489999999999999,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 3,
+          "seed": 342,
+          "fusion_strategy": "adaptive",
+          "final_alpha": 0.5489999999999999,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        },
+        {
+          "run": 4,
+          "seed": 442,
+          "fusion_strategy": "adaptive",
+          "final_alpha": 0.5489999999999999,
+          "fitness": 0.0001,
+          "survival": 0.01,
+          "complexity": 0.01,
+          "diversity": 0.0,
+          "conv_survival": 0.0,
+          "conv_complexity": 0.0,
+          "gnn_survival": 0.0,
+          "gnn_complexity": 0.0
+        }
+      ],
+      "best_result": {
+        "config": 0,
+        "mu": 0.17489178527000296,
+        "sigma_conv": 0.010493489467884398,
+        "sigma_gnn": 0.03378665695081044,
+        "fitness": 0.0001,
+        "survival": 0.01,
+        "complexity": 0.01,
+        "diversity": 0.0,
+        "conv_survival": 0.0,
+        "conv_complexity": 0.0,
+        "gnn_survival": 0.0,
+        "gnn_complexity": 0.0
+      },
+      "avg_fitness": 0.0001,
+      "avg_survival": 0.01,
+      "avg_complexity": 0.01
+    }
+  },
+  "baseline_comparison": {
+    "V8_GNN": {
+      "survival": 0.492,
+      "complexity": 0.5
+    },
+    "V9_Learnable": {
+      "survival": 0.94,
+      "complexity": 0.6
+    },
+    "Diffusion_kernels": {
+      "survival": 1.0,
+      "complexity": 0.8,
+      "fitness": 4.57
+    }
+  },
+  "key_findings": [
+    "Best fusion strategy: fixed",
+    "Average survival: 1.0%",
+    "Average complexity: 0.01",
+    "V8 sigma constraint (\u22650.025) maintained in GNN branch",
+    "Convolution uses standard Lenia dynamics",
+    "GNN uses normalized adjacency message passing",
+    "Cross-coupling synchronizes branches every 20 steps"
+  ]
+}

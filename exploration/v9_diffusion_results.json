@@ -1,0 +1,55 @@
+{
+  "num_total": 25,
+  "num_pareto": 1,
+  "mean_fitness": 0.4133386838507491,
+  "std_fitness": 0.040983115339390176,
+  "mean_survival": 0.2752197265625,
+  "std_survival": 0.017193576432201003,
+  "mean_complexity": 0.19550964875729387,
+  "best_fitness": {
+    "sample_idx": 1,
+    "mu": 0.15199400382261383,
+    "sigma": 0.049175480040635655,
+    "fitness": 0.4645548209211328,
+    "survival": 0.29296875,
+    "complexity": 0.22975766824758856,
+    "stability": 0.9147612452507019,
+    "latent_norm": 20.644636154174805,
+    "ensemble_idx": 2
+  },
+  "best_survival": {
+    "sample_idx": 1,
+    "mu": 0.15199400382261383,
+    "sigma": 0.049175480040635655,
+    "fitness": 0.4645548209211328,
+    "survival": 0.29296875,
+    "complexity": 0.22975766824758856,
+    "stability": 0.9147612452507019,
+    "latent_norm": 20.644636154174805,
+    "ensemble_idx": 2
+  },
+  "best_complexity": {
+    "sample_idx": 1,
+    "mu": 0.15199400382261383,
+    "sigma": 0.049175480040635655,
+    "fitness": 0.4645548209211328,
+    "survival": 0.29296875,
+    "complexity": 0.22975766824758856,
+    "stability": 0.9147612452507019,
+    "latent_norm": 20.644636154174805,
+    "ensemble_idx": 2
+  },
+  "pareto_front": [
+    {
+      "sample_idx": 1,
+      "mu": 0.15199400382261383,
+      "sigma": 0.049175480040635655,
+      "fitness": 0.4645548209211328,
+      "survival": 0.29296875,
+      "complexity": 0.22975766824758856,
+      "stability": 0.9147612452507019,
+      "latent_norm": 20.644636154174805,
+      "ensemble_idx": 2
+    }
+  ]
+}
