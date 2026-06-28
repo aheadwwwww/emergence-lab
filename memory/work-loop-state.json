@@ -1,10 +1,10 @@
 {
-  "cycle": 2,
-  "status": "complete",
-  "last_topic": "self-organized criticality",
-  "last_experiment": "lenia_criticality",
-  "next_topic": "scale-free networks",
-  "topics_done": ["emergence", "self-organized criticality"],
-  "findings_summary": "Tested Lenia for SOC via avalanche analysis. Detected 683 avalanches with power law exponent τ=0.313 (weak SOC signature). System shows fragmented clusters rather than critical scale-free structures.",
-  "updated_at": "2026-06-28T17:36:45+08:00"
+  "depth": 1,
+  "topic": "evolutionary_lenia_kernel_optimization",
+  "status": "ready",
+  "last_insight": null,
+  "depth_log": [],
+  "direction_reason": "Starting from today's best foundation: evolutionary_lenia.py framework + neuroparticles2 gene-to-behavior pattern",
+  "goal": "Evolve a Lenia kernel that produces novel, stable emergent patterns (not just validating known results)",
+  "abort_condition": "If 3 consecutive cycles produce no measurable improvement in fitness or pattern novelty, reassess direction"
 }
