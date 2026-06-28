@@ -1,0 +1,1 @@
+import{b as u,K as t}from"./index-D18_q29a.js";function s(){const e=u(),{showLoginModal:n}=t();async function r(){return e.isLoggedIn?!0:n()}async function o(){return!!await r()}return{requireLogin:r,requireShrimp:o}}export{s as u};

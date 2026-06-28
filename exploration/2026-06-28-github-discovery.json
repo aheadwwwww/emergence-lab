@@ -1,0 +1,518 @@
+{
+  "timestamp": "2026-06-28T14:22:26.813815",
+  "repos": [
+    {
+      "name": "hoangsonww/AI-Agents-Orchestrator",
+      "stars": 64,
+      "description": "🪈 Intelligent orchestration system that coordinates multiple AI coding assistants (Claude, Codex, Gemini CLI, Copilot CLI) to collaborate on complex software development tasks via REPL or a Vue/Nuxt U",
+      "url": "https://github.com/hoangsonww/AI-Agents-Orchestrator",
+      "updated": "2026-06-28T04:08:00Z",
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "claude",
+        "codex",
+        "copilot",
+        "docker",
+        "flake8",
+        "flask",
+        "gemini",
+        "kubernetes",
+        "makefile",
+        "mcp-server",
+        "openai",
+        "prometheus",
+        "pytest",
+        "python",
+        "socket-io",
+        "tailwindcss",
+        "vue",
+        "websocket"
+      ]
+    },
+    {
+      "name": "kozlov4/UpCity",
+      "stars": 4,
+      "description": "Python/FastAPI Backend for a city management system. Features: complex SQL queries, REST API",
+      "url": "https://github.com/kozlov4/UpCity",
+      "updated": "2026-06-26T22:17:58Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "Kquant03/genesis-phase-transition",
+      "stars": 3,
+      "description": "A real-time, browser-based artificial life laboratory implementing five distinct simulation substrates — Ising model phase transitions with dual Monte Carlo algorithms and Tsarev social mapping, Parti",
+      "url": "https://github.com/Kquant03/genesis-phase-transition",
+      "updated": "2026-06-15T07:18:12Z",
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "frnkptrln/systems-and-intelligence",
+      "stars": 2,
+      "description": "Experiments, simulations and reflections on emergent behavior, self-organization, and the nature of intelligence. A living thought experiment.",
+      "url": "https://github.com/frnkptrln/systems-and-intelligence",
+      "updated": "2026-06-11T15:02:46Z",
+      "language": "Python",
+      "topics": [
+        "ai-research",
+        "artificial-life",
+        "cellular-automata",
+        "complex-systems",
+        "emergence",
+        "intelligence",
+        "knowledge-base",
+        "multi-agent-systems",
+        "self-organization",
+        "simluation",
+        "systems-theory"
+      ]
+    },
+    {
+      "name": "HuichanKIM/SelfOrganization-Simulation",
+      "stars": 2,
+      "description": "Self-Organization Simulation 1.0",
+      "url": "https://github.com/HuichanKIM/SelfOrganization-Simulation",
+      "updated": "2026-03-25T00:29:05Z",
+      "language": "Pascal",
+      "topics": []
+    },
+    {
+      "name": "fless-lab/bio-inspired-swarm-coordination",
+      "stars": 2,
+      "description": "A Python-based simulation demonstrating dynamic self-organization (Flocking/Boids) and coordinated engagement (Threat Encircling) for distributed systems.",
+      "url": "https://github.com/fless-lab/bio-inspired-swarm-coordination",
+      "updated": "2026-03-26T19:04:26Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "emixde12/InsightFlow",
+      "stars": 2,
+      "description": "🌊 Elevate knowledge retrieval with InsightFlow, an intelligent Q&A system that improves accuracy and manages complex conversations in enterprise settings.",
+      "url": "https://github.com/emixde12/InsightFlow",
+      "updated": "2026-06-28T04:45:16Z",
+      "language": "Python",
+      "topics": [
+        "arcface",
+        "chatbot",
+        "data-visualization",
+        "database-gui",
+        "face-alignment",
+        "face-recognition",
+        "langchain",
+        "llm",
+        "medical",
+        "no-code",
+        "paddlepaddle",
+        "pandas",
+        "prophet",
+        "python",
+        "react",
+        "redis-gui",
+        "redis-gui-client",
+        "retinaface"
+      ]
+    },
+    {
+      "name": "dipeshrayg/2026-06-06-emergent-behavior-exploration",
+      "stars": 1,
+      "description": "Algorithmic exploration of emergent behavior in cellular automata",
+      "url": "https://github.com/dipeshrayg/2026-06-06-emergent-behavior-exploration",
+      "updated": "2026-06-06T07:13:04Z",
+      "language": "HTML",
+      "topics": []
+    },
+    {
+      "name": "sencere/tinyfin-nca",
+      "stars": 1,
+      "description": "Small, educational neural cellular automata framework in C built on Tinyfin, designed to be used with reinforcement learning for training self-organizing grid systems through learned local update rule",
+      "url": "https://github.com/sencere/tinyfin-nca",
+      "updated": "2026-05-27T02:33:27Z",
+      "language": null,
+      "topics": []
+    },
+    {
+      "name": "Lucas-OConnor/Evolutionary-Automata",
+      "stars": 1,
+      "description": "A C-based project that originated from experiments with cellular automata and grow into three dimensions and more constrained rules, but aims to support emergent behaviors.",
+      "url": "https://github.com/Lucas-OConnor/Evolutionary-Automata",
+      "updated": "2026-05-24T13:52:47Z",
+      "language": "C",
+      "topics": []
+    },
+    {
+      "name": "bibi593/Conway_GameofLife_Simulation",
+      "stars": 1,
+      "description": "Implementation and simulation of Conway’s Game of Life using cellular automata concepts, illustrating emergent behavior based on simple evolution rules.",
+      "url": "https://github.com/bibi593/Conway_GameofLife_Simulation",
+      "updated": "2026-01-17T08:44:32Z",
+      "language": "Jupyter Notebook",
+      "topics": []
+    },
+    {
+      "name": "CharlieCooper58/Artificial-Life",
+      "stars": 1,
+      "description": "Artificial life including Conway, Smoothlife, and Lenia",
+      "url": "https://github.com/CharlieCooper58/Artificial-Life",
+      "updated": "2026-05-20T15:18:33Z",
+      "language": "C#",
+      "topics": []
+    },
+    {
+      "name": "Vansh140507/Vansh140507",
+      "stars": 1,
+      "description": "I’m a developer on a mission to master System Design. My toolkit includes Node.js, C++, and Python, but my real passion lies in understanding how data flows through complex architectures. I'm currentl",
+      "url": "https://github.com/Vansh140507/Vansh140507",
+      "updated": "2026-06-27T09:16:34Z",
+      "language": null,
+      "topics": []
+    },
+    {
+      "name": "DaveGerson/agent-baton",
+      "stars": 1,
+      "description": "Multi-agent orchestration system for Claude Code — intelligent planning, delegation, and governance for complex software engineering tasks",
+      "url": "https://github.com/DaveGerson/agent-baton",
+      "updated": "2026-06-27T08:19:29Z",
+      "language": "Python",
+      "topics": [
+        "agent-framework",
+        "ai-agents",
+        "ai-tools",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "llm-orchestration",
+        "multi-agent",
+        "python"
+      ]
+    },
+    {
+      "name": "jayjay1509/Hana-no-saku-ki",
+      "stars": 0,
+      "description": "2D fluid simulation in C++ using cellular automata. Each grid cell follows simple rules (gravity, flow, pressure) to create realistic fluid behavior. Lightweight, real-time, CPU-based prototype with S",
+      "url": "https://github.com/jayjay1509/Hana-no-saku-ki",
+      "updated": "2026-06-26T10:38:41Z",
+      "language": "C++",
+      "topics": []
+    },
+    {
+      "name": "menukahansda/Langton-s-Ant",
+      "stars": 0,
+      "description": "A visual Langton's Ant simulator demonstrating emergent cellular automata behavior.",
+      "url": "https://github.com/menukahansda/Langton-s-Ant",
+      "updated": "2026-06-21T19:11:54Z",
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "lucasbixby/Game-of-Life-Simulation",
+      "stars": 0,
+      "description": "Developed an interactive Conway’s Game of Life simulation featuring dynamic grid updates, customizable rules, and real-time visualization. Built with a focus on efficient state management and responsi",
+      "url": "https://github.com/lucasbixby/Game-of-Life-Simulation",
+      "updated": "2026-05-20T23:04:48Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "yinmute/ants",
+      "stars": 0,
+      "description": "Agentic ants in a Cellular Automata Environment for running emergent behavior experiments",
+      "url": "https://github.com/yinmute/ants",
+      "updated": "2026-04-18T07:08:09Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "asborn971/noyau-epm",
+      "stars": 0,
+      "description": "EPM is a programmable discrete field framework that generates physical behaviors through local interactions. Field gradients produce emergent dynamics such as motion, resistance, and inertia, inspired",
+      "url": "https://github.com/asborn971/noyau-epm",
+      "updated": "2026-04-01T17:57:27Z",
+      "language": null,
+      "topics": []
+    },
+    {
+      "name": "willow788/conways-game-of-life",
+      "stars": 0,
+      "description": "An interactive Python implementation of Conway’s Game of Life featuring real-time animation, user controls, and age-based visualization to demonstrate emergent behavior in cellular automata.",
+      "url": "https://github.com/willow788/conways-game-of-life",
+      "updated": "2025-12-17T05:52:16Z",
+      "language": "Python",
+      "topics": [
+        "conways-game-of-life",
+        "matplotlib-pyplot",
+        "numpy",
+        "python",
+        "scipy",
+        "visualization"
+      ]
+    },
+    {
+      "name": "DavidWise01/artificial-life",
+      "stars": 0,
+      "description": "ARTIFICIAL LIFE (ALI) - a UD0 life-science sphere: life-like in pure software. Boids flock, Lenia creatures self-heal, digital organisms evolve - life as a process, not a substance. Strong vs weak ALi",
+      "url": "https://github.com/DavidWise01/artificial-life",
+      "updated": "2026-06-27T01:57:08Z",
+      "language": "HTML",
+      "topics": []
+    },
+    {
+      "name": "ichirohasegawa07557/neural-cellular-automata-alife",
+      "stars": 0,
+      "description": "Artificial Life experiments with Neural Cellular Automata, regeneration, evolutionary search, Lenia-style dynamics, and visualization.",
+      "url": "https://github.com/ichirohasegawa07557/neural-cellular-automata-alife",
+      "updated": "2026-06-26T13:41:53Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "ichirohasegawa07557/open-ended-alife-search",
+      "stars": 0,
+      "description": "Open-ended artificial life experiments with Lenia, Neural Cellular Automata, CMA-ES, NEAT-inspired agents, novelty search, and ASAL-style interestingness evaluation.",
+      "url": "https://github.com/ichirohasegawa07557/open-ended-alife-search",
+      "updated": "2026-06-26T10:40:19Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "ikkeseb/vivarium",
+      "stars": 0,
+      "description": "Client-side artificial-life sandbox: a deterministic, seedable gallery of cellular-automata and life systems. TypeScript + Vite, no backend, no GPU.",
+      "url": "https://github.com/ikkeseb/vivarium",
+      "updated": "2026-06-20T19:09:16Z",
+      "language": "TypeScript",
+      "topics": [
+        "artificial-life",
+        "canvas",
+        "cellular-automata",
+        "conways-game-of-life",
+        "lenia",
+        "simulation",
+        "typescript",
+        "vite"
+      ]
+    },
+    {
+      "name": "blg21231/lenia-life",
+      "stars": 0,
+      "description": "Artificial life that self-organizes from a local rule — a Lenia exploratorium (TS + Three.js + WebGPU).",
+      "url": "https://github.com/blg21231/lenia-life",
+      "updated": "2026-06-14T22:11:42Z",
+      "language": "TypeScript",
+      "topics": []
+    },
+    {
+      "name": "Artem1bar/morphogen",
+      "stars": 0,
+      "description": "A studio of 12 generative & artificial-life systems — flow fields, reaction-diffusion, Lenia, particle life and more. Seedable, tunable, shareable. Zero dependencies.",
+      "url": "https://github.com/Artem1bar/morphogen",
+      "updated": "2026-06-04T05:41:58Z",
+      "language": "JavaScript",
+      "topics": []
+    },
+    {
+      "name": "railstracks/kestrel-flowlenia",
+      "stars": 0,
+      "description": "Mass-conservative, parameter-localized Lenia — an artificial life platform for emergent self-organization and multi-species ecosystems",
+      "url": "https://github.com/railstracks/kestrel-flowlenia",
+      "updated": "2026-04-24T14:08:12Z",
+      "language": "HTML",
+      "topics": []
+    },
+    {
+      "name": "memess2001/lenia-playground",
+      "stars": 0,
+      "description": "Interactive browser-based Lenia simulator — watch artificial life emerge from math",
+      "url": "https://github.com/memess2001/lenia-playground",
+      "updated": "2026-03-12T15:49:53Z",
+      "language": "JavaScript",
+      "topics": [
+        "alife",
+        "artificial-life",
+        "cellular-automata",
+        "creative-coding",
+        "emergence",
+        "generative-art",
+        "interactive",
+        "lenia",
+        "simulation",
+        "webgl"
+      ]
+    },
+    {
+      "name": "rudiansahganteng/cyber-prevention-tool",
+      "stars": 0,
+      "description": "🛡️ Protect your organization with this self-hosted phishing awareness training tool, designed to enhance cybersecurity through realistic simulations.",
+      "url": "https://github.com/rudiansahganteng/cyber-prevention-tool",
+      "updated": "2026-06-28T04:01:53Z",
+      "language": "HTML",
+      "topics": [
+        "ai",
+        "cyber",
+        "employee",
+        "enterprise",
+        "open-source",
+        "open-source-project",
+        "phising",
+        "prevention",
+        "report",
+        "tool"
+      ]
+    },
+    {
+      "name": "gradence100/society20-public-docs",
+      "stars": 0,
+      "description": "Society 20 experiment — public documentation: narrative, findings, energy analysis, and structural maps from a multi-agent self-organization simulation.",
+      "url": "https://github.com/gradence100/society20-public-docs",
+      "updated": "2026-06-01T08:33:12Z",
+      "language": "Shell",
+      "topics": []
+    },
+    {
+      "name": "edugoyu/Rock-Paper-Scissors-Dynamics-in-a-2-Dimensional-Cellular-Automata",
+      "stars": 0,
+      "description": "This repository contains a collection of Python-based simulations investigating the dynamics of biodiversity and pattern formation in cyclic competition games. By utilizing Two-Dimensional Cellular Au",
+      "url": "https://github.com/edugoyu/Rock-Paper-Scissors-Dynamics-in-a-2-Dimensional-Cellular-Automata",
+      "updated": "2026-03-24T09:23:30Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "masayafukui/actin-filament-simulation",
+      "stars": 0,
+      "description": "Code for the paper: \"Filament-resolved simulations reproduce self-organization of lamellipodia and filopodia\"",
+      "url": "https://github.com/masayafukui/actin-filament-simulation",
+      "updated": "2026-03-15T05:15:49Z",
+      "language": "C",
+      "topics": []
+    },
+    {
+      "name": "ShrutiBachal/Paxos_Simulation",
+      "stars": 0,
+      "description": "Simulating self organization of agents in a linear topology using Paxos agreement protocol.",
+      "url": "https://github.com/ShrutiBachal/Paxos_Simulation",
+      "updated": "2026-02-23T09:35:28Z",
+      "language": "Python",
+      "topics": []
+    },
+    {
+      "name": "pranay-chakraborty/cyclic-cellular-automata",
+      "stars": 0,
+      "description": "A Python simulation of Cyclic Cellular Automata demonstrating emergent spiral waves and self-organization. Investigates phase transitions based on state space size (N).",
+      "url": "https://github.com/pranay-chakraborty/cyclic-cellular-automata",
+      "updated": "2026-02-18T18:52:08Z",
+      "language": "Jupyter Notebook",
+      "topics": []
+    },
+    {
+      "name": "SunWolf77/RPCM-3I-ATLAS-Plasma-Simulation",
+      "stars": 0,
+      "description": "# RPCM Plasma Simulation (3I/ATLAS Analogue) Simulate plasma self-organization and solar wind elongation for interstellar comet 3I/ATLAS. Demonstrates clustering and sheaths consistent with the Resona",
+      "url": "https://github.com/SunWolf77/RPCM-3I-ATLAS-Plasma-Simulation",
+      "updated": "2025-10-18T21:38:05Z",
+      "language": "Jupyter Notebook",
+      "topics": []
+    },
+    {
+      "name": "Unladylike-gatekeeper954/claude-workflow-library",
+      "stars": 0,
+      "description": "Organize Claude workflows for non-technical users with step-by-step systems that turn complex tasks into repeatable results",
+      "url": "https://github.com/Unladylike-gatekeeper954/claude-workflow-library",
+      "updated": "2026-06-28T05:27:33Z",
+      "language": null,
+      "topics": [
+        "agent-skills",
+        "agentic-skills",
+        "ai",
+        "ai-coding",
+        "antigravity-skills",
+        "chatgpt",
+        "citation-analysis",
+        "claude-code-skills",
+        "cursor",
+        "cursor-skills",
+        "developer-tools",
+        "gemini-cli",
+        "learning",
+        "llm",
+        "mcp",
+        "productivity",
+        "python",
+        "research",
+        "research-workflows",
+        "skills-library"
+      ]
+    },
+    {
+      "name": "Apshaxma/agentic-ai-system",
+      "stars": 0,
+      "description": "A production-ready Agentic AI System built with FastAPI and AsyncIO that manually orchestrates specialized AI agents to decompose complex tasks, execute dependency-aware pipelines, stream real-time pr",
+      "url": "https://github.com/Apshaxma/agentic-ai-system",
+      "updated": "2026-06-27T17:57:00Z",
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "asyncio",
+        "fastapi",
+        "llm",
+        "multi-agent",
+        "ollama",
+        "python"
+      ]
+    },
+    {
+      "name": "JimmYCHUU/Simulation-and-Modelling",
+      "stars": 0,
+      "description": "A repository for simulation and modeling projects, covering mathematical, computational, and statistical techniques to analyze complex systems. Includes implementations of discrete-event simulation, a",
+      "url": "https://github.com/JimmYCHUU/Simulation-and-Modelling",
+      "updated": "2026-06-27T17:41:25Z",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "data-visualization",
+        "jupyter-notebook",
+        "matplotlib",
+        "matrix-operations",
+        "modelling",
+        "monte-carlo",
+        "numerical-computing",
+        "numpy",
+        "python",
+        "seaborn",
+        "simulation",
+        "statistical-analysis"
+      ]
+    },
+    {
+      "name": "Michail-Marakis/Performance-Analysis-Complex-Networked-Systems",
+      "stars": 0,
+      "description": "Federated Learning performance evaluation with Flower and PyTorch, comparing Full Fine-Tuning and LoRA in local and distributed environments.",
+      "url": "https://github.com/Michail-Marakis/Performance-Analysis-Complex-Networked-Systems",
+      "updated": "2026-06-26T20:21:40Z",
+      "language": "Python",
+      "topics": [
+        "client-server-architecture",
+        "distributed-systems",
+        "federated-learning",
+        "fine-tuning",
+        "flower",
+        "lora",
+        "python",
+        "pytorch",
+        "tinybert"
+      ]
+    },
+    {
+      "name": "Luvyansh/multi-step-agent-system",
+      "stars": 0,
+      "description": "Agentic AI system that decomposes complex requests into discrete steps, runs simulated batch retrieval, and streams results in real-time. Built with LangGraph, FastAPI, and Python asyncio to demonstra",
+      "url": "https://github.com/Luvyansh/multi-step-agent-system",
+      "updated": "2026-06-26T09:41:59Z",
+      "language": "Python",
+      "topics": []
+    }
+  ]
+}

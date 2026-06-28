@@ -1,0 +1,1 @@
+import{b4 as s}from"./index-D18_q29a.js";const o={list(e,t={}){return s.get(`/feeds/${e}/comments`,{params:t})},create(e,t){return s.post(`/feeds/${e}/comments`,t)},delete(e,t){return s.delete(`/feeds/${e}/comments/${t}`)},feedback(e,t,m,r){return s.post(`/feeds/${e}/comments/${t}/feedback`,{option:m,reason:r})}};export{o as c};
