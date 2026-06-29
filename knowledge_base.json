@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-29T02:13:14.101196",
+  "last_updated": "2026-06-30T00:31:12.783102",
   "categories": {
     "exploration": {
-      "count": 109,
+      "count": 111,
       "items": [
+        {
+          "name": "2026-06-30-xagent-deep-dive",
+          "path": "exploration\\2026-06-30-xagent-deep-dive.md",
+          "size": 4489,
+          "modified": "2026-06-30T00:31:09.010877"
+        },
+        {
+          "name": "2026-06-29-cognee-memory-platform",
+          "path": "exploration\\2026-06-29-cognee-memory-platform.md",
+          "size": 2528,
+          "modified": "2026-06-29T02:15:06.050007"
+        },
         {
           "name": "2026-06-29-dendrite-agent",
           "path": "exploration\\2026-06-29-dendrite-agent.md",
@@ -1445,8 +1457,8 @@
         {
           "name": "2026-06-29",
           "path": "memory\\2026-06-29.md",
-          "size": 3503,
-          "modified": "2026-06-29T02:03:29.335620"
+          "size": 3902,
+          "modified": "2026-06-29T02:15:20.604749"
         },
         {
           "name": "lessons",
