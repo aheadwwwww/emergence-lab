@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-30T00:31:12.783102",
+  "last_updated": "2026-06-30T01:00:56.438786",
   "categories": {
     "exploration": {
-      "count": 111,
+      "count": 112,
       "items": [
+        {
+          "name": "2026-06-30-mneme-bioelectric-memory",
+          "path": "exploration\\2026-06-30-mneme-bioelectric-memory.md",
+          "size": 3764,
+          "modified": "2026-06-30T01:00:29.250914"
+        },
         {
           "name": "2026-06-30-xagent-deep-dive",
           "path": "exploration\\2026-06-30-xagent-deep-dive.md",
@@ -673,8 +679,14 @@
       ]
     },
     "experiments": {
-      "count": 129,
+      "count": 130,
       "items": [
+        {
+          "name": "neural_lenia_v2",
+          "path": "experiments\\neural_lenia_v2.py",
+          "size": 14088,
+          "modified": "2026-06-30T00:36:12.282148"
+        },
         {
           "name": "evolutionary_lenia_v9_learnable_gnn",
           "path": "experiments\\evolutionary_lenia_v9_learnable_gnn.py",
@@ -1452,8 +1464,14 @@
       ]
     },
     "memory": {
-      "count": 23,
+      "count": 24,
       "items": [
+        {
+          "name": "2026-06-30",
+          "path": "memory\\2026-06-30.md",
+          "size": 1085,
+          "modified": "2026-06-30T00:33:32.097295"
+        },
         {
           "name": "2026-06-29",
           "path": "memory\\2026-06-29.md",
