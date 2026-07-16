@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-06-30T01:00:56.438786",
+  "last_updated": "2026-07-16T13:22:00.000000",
   "categories": {
     "exploration": {
-      "count": 112,
+      "count": 114,
       "items": [
+        {
+          "name": "2026-07-16-graphcast-deep-dive",
+          "path": "exploration\\2026-07-16-graphcast-deep-dive.md",
+          "size": 3674,
+          "modified": "2026-07-16T13:22:00.000000"
+        },
+        {
+          "name": "2026-07-16-particle-life-deep-dive",
+          "path": "exploration\\2026-07-16-particle-life-deep-dive.md",
+          "size": 4600,
+          "modified": "2026-07-16T13:22:00.000000"
+        },
         {
           "name": "2026-06-30-mneme-bioelectric-memory",
           "path": "exploration\\2026-06-30-mneme-bioelectric-memory.md",
