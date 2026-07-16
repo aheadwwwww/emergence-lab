@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-07-16T06:00:00.000000",
+  "last_updated": "2026-07-16T18:00:00.000000",
   "categories": {
     "exploration": {
-      "count": 116,
+      "count": 117,
       "items": [
+        {
+          "name": "2026-07-17-cax-deep-dive",
+          "path": "exploration/2026-07-17-cax-deep-dive.md",
+          "size": 7108,
+          "modified": "2026-07-16T18:00:00.000000"
+        },
         {
           "name": "2026-07-16-fungal-light-deep-dive",
           "path": "exploration\\2026-07-16-fungal-light-deep-dive.md",
