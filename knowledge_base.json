@@ -1,8 +1,14 @@
 {
     "categories":  {
                        "memory":  {
-                                      "count":  97,
+                                      "count":  98,
                                       "items":  [
+                                                    {
+                                                        "path":  "memory\\archive\\2026-06-27-biomaker-ca-analysis.md",
+                                                        "name":  "2026-06-27-biomaker-ca-analysis",
+                                                        "size":  4300,
+                                                        "modified":  "2026-06-27T14:01:13.8911665+08:00"
+                                                    },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-27-heartbeat-2229.md",
                                                         "name":  "2026-06-27-heartbeat-2229",
@@ -16,10 +22,10 @@
                                                         "modified":  "2026-06-27T23:00:12.0181169+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-27-heartbeat-2329.md",
-                                                        "name":  "2026-06-27-heartbeat-2329",
-                                                        "size":  2728,
-                                                        "modified":  "2026-06-27T23:32:18.9365639+08:00"
+                                                        "path":  "memory\\archive\\2026-06-26-plato-agent-discovery.md",
+                                                        "name":  "2026-06-26-plato-agent-discovery",
+                                                        "size":  3904,
+                                                        "modified":  "2026-06-26T14:36:04.1584398+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-26-shulin-corpus.md",
@@ -34,10 +40,10 @@
                                                         "modified":  "2026-06-26T00:37:18.5924861+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-27-biomaker-ca-analysis.md",
-                                                        "name":  "2026-06-27-biomaker-ca-analysis",
-                                                        "size":  4300,
-                                                        "modified":  "2026-06-27T14:01:13.8911665+08:00"
+                                                        "path":  "memory\\archive\\2026-06-27-heartbeat.md",
+                                                        "name":  "2026-06-27-heartbeat",
+                                                        "size":  2831,
+                                                        "modified":  "2026-06-27T16:06:50.8055523+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-27-memory-systems-analysis.md",
@@ -52,10 +58,10 @@
                                                         "modified":  "2026-06-27T17:14:07.6201642+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-28-heartbeat-1559.md",
-                                                        "name":  "2026-06-28-heartbeat-1559",
-                                                        "size":  3785,
-                                                        "modified":  "2026-06-28T16:02:17.4648071+08:00"
+                                                        "path":  "memory\\archive\\2026-06-27-heartbeat-2329.md",
+                                                        "name":  "2026-06-27-heartbeat-2329",
+                                                        "size":  2728,
+                                                        "modified":  "2026-06-27T23:32:18.9365639+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-27-heartbeat-2359.md",
@@ -70,10 +76,10 @@
                                                         "modified":  "2026-06-27T17:14:47.1782124+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-27-heartbeat.md",
-                                                        "name":  "2026-06-27-heartbeat",
-                                                        "size":  2831,
-                                                        "modified":  "2026-06-27T16:06:50.8055523+08:00"
+                                                        "path":  "memory\\archive\\2026-06-26-hipporag-discovery.md",
+                                                        "name":  "2026-06-26-hipporag-discovery",
+                                                        "size":  2318,
+                                                        "modified":  "2026-06-26T19:23:51.0056114+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-26-igraph-implementation.md",
@@ -88,10 +94,10 @@
                                                         "modified":  "2026-06-26T23:10:51.9964072+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-26-igraph-quickstart.md",
-                                                        "name":  "2026-06-26-igraph-quickstart",
-                                                        "size":  3514,
-                                                        "modified":  "2026-06-26T19:55:43.7850061+08:00"
+                                                        "path":  "memory\\archive\\2026-06-26-heartbeat-summary.md",
+                                                        "name":  "2026-06-26-heartbeat-summary",
+                                                        "size":  2134,
+                                                        "modified":  "2026-06-26T16:36:14.0118436+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-26-heartbeat.md",
@@ -106,10 +112,10 @@
                                                         "modified":  "2026-06-26T19:54:52.1678480+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-26-hipporag-discovery.md",
-                                                        "name":  "2026-06-26-hipporag-discovery",
-                                                        "size":  2318,
-                                                        "modified":  "2026-06-26T19:23:51.0056114+08:00"
+                                                        "path":  "memory\\archive\\2026-06-26-memary-discovery.md",
+                                                        "name":  "2026-06-26-memary-discovery",
+                                                        "size":  3243,
+                                                        "modified":  "2026-06-26T14:39:16.0323006+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-26-micrograd-learning.md",
@@ -124,10 +130,10 @@
                                                         "modified":  "2026-06-26T12:33:34.0613626+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-26-plato-agent-discovery.md",
-                                                        "name":  "2026-06-26-plato-agent-discovery",
-                                                        "size":  3904,
-                                                        "modified":  "2026-06-26T14:36:04.1584398+08:00"
+                                                        "path":  "memory\\archive\\2026-06-26-igraph-quickstart.md",
+                                                        "name":  "2026-06-26-igraph-quickstart",
+                                                        "size":  3514,
+                                                        "modified":  "2026-06-26T19:55:43.7850061+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-26-jax-md-deep-dive.md",
@@ -142,10 +148,10 @@
                                                         "modified":  "2026-06-26T20:00:48.4734136+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-26-memary-discovery.md",
-                                                        "name":  "2026-06-26-memary-discovery",
-                                                        "size":  3243,
-                                                        "modified":  "2026-06-26T14:39:16.0323006+08:00"
+                                                        "path":  "memory\\archive\\2026-06-28-heartbeat-1559.md",
+                                                        "name":  "2026-06-28-heartbeat-1559",
+                                                        "size":  3785,
+                                                        "modified":  "2026-06-28T16:02:17.4648071+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\heartbeat-dashboard-2026-06-25.md",
@@ -292,12 +298,6 @@
                                                         "modified":  "2026-06-28T22:38:54.2639875+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\archive\\2026-06-26-heartbeat-summary.md",
-                                                        "name":  "2026-06-26-heartbeat-summary",
-                                                        "size":  2134,
-                                                        "modified":  "2026-06-26T16:36:14.0118436+08:00"
-                                                    },
-                                                    {
                                                         "path":  "memory\\2026-06-30.md",
                                                         "name":  "2026-06-30",
                                                         "size":  1981,
@@ -334,6 +334,12 @@
                                                         "modified":  "2026-06-29T02:15:20.6047494+08:00"
                                                     },
                                                     {
+                                                        "path":  "memory\\auto-loop-log.md",
+                                                        "name":  "auto-loop-log",
+                                                        "size":  1018,
+                                                        "modified":  "2026-06-28T15:53:17.4864322+08:00"
+                                                    },
+                                                    {
                                                         "path":  "memory\\core-findings.md",
                                                         "name":  "core-findings",
                                                         "size":  3424,
@@ -344,12 +350,6 @@
                                                         "name":  "human",
                                                         "size":  746,
                                                         "modified":  "2026-06-22T15:33:59.5565428+08:00"
-                                                    },
-                                                    {
-                                                        "path":  "memory\\lessons.md",
-                                                        "name":  "lessons",
-                                                        "size":  1640,
-                                                        "modified":  "2026-06-29T01:57:10.0772690+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\2026-07-17.md",
@@ -364,10 +364,10 @@
                                                         "modified":  "2026-07-19T00:01:59.2037776+08:00"
                                                     },
                                                     {
-                                                        "path":  "memory\\auto-loop-log.md",
-                                                        "name":  "auto-loop-log",
-                                                        "size":  1018,
-                                                        "modified":  "2026-06-28T15:53:17.4864322+08:00"
+                                                        "path":  "memory\\2026-07-19.md",
+                                                        "name":  "2026-07-19",
+                                                        "size":  980,
+                                                        "modified":  "2026-07-19T00:30:14.8002583+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\2026-06-26-0112.md",
@@ -440,6 +440,12 @@
                                                         "name":  "2026-06-26",
                                                         "size":  2352,
                                                         "modified":  "2026-06-26T23:32:17.4031714+08:00"
+                                                    },
+                                                    {
+                                                        "path":  "memory\\lessons.md",
+                                                        "name":  "lessons",
+                                                        "size":  1640,
+                                                        "modified":  "2026-06-29T01:57:10.0772690+08:00"
                                                     },
                                                     {
                                                         "path":  "memory\\archive\\2026-06-25.md",
@@ -588,8 +594,14 @@
                                                 ]
                                   },
                        "exploration":  {
-                                           "count":  121,
+                                           "count":  123,
                                            "items":  [
+                                                         {
+                                                             "path":  "exploration\\digital_evolution.md",
+                                                             "name":  "digital_evolution",
+                                                             "size":  4554,
+                                                             "modified":  "2026-06-24T16:02:51.2836251+08:00"
+                                                         },
                                                          {
                                                              "path":  "exploration\\edge_of_chaos.md",
                                                              "name":  "edge_of_chaos",
@@ -603,16 +615,16 @@
                                                              "modified":  "2026-06-24T17:03:26.4418061+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\emergence_metrics.md",
-                                                             "name":  "emergence_metrics",
-                                                             "size":  5493,
-                                                             "modified":  "2026-06-23T15:32:31.9355178+08:00"
+                                                             "path":  "exploration\\creativity.md",
+                                                             "name":  "creativity",
+                                                             "size":  2818,
+                                                             "modified":  "2026-06-24T13:03:30.2083143+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\digital_evolution.md",
-                                                             "name":  "digital_evolution",
-                                                             "size":  4554,
-                                                             "modified":  "2026-06-24T16:02:51.2836251+08:00"
+                                                             "path":  "exploration\\attention.md",
+                                                             "name":  "attention",
+                                                             "size":  4446,
+                                                             "modified":  "2026-06-24T17:34:00.5074563+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\carles_game.md",
@@ -627,16 +639,16 @@
                                                              "modified":  "2026-06-24T14:05:41.7164716+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\creativity.md",
-                                                             "name":  "creativity",
-                                                             "size":  2818,
-                                                             "modified":  "2026-06-24T13:03:30.2083143+08:00"
+                                                             "path":  "exploration\\emergence_metrics.md",
+                                                             "name":  "emergence_metrics",
+                                                             "size":  5493,
+                                                             "modified":  "2026-06-23T15:32:31.9355178+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\emergence_sixth_element.md",
-                                                             "name":  "emergence_sixth_element",
-                                                             "size":  4955,
-                                                             "modified":  "2026-06-23T18:35:04.1098937+08:00"
+                                                             "path":  "exploration\\golden_zone_proof.md",
+                                                             "name":  "golden_zone_proof",
+                                                             "size":  5230,
+                                                             "modified":  "2026-06-23T22:02:19.5106904+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\grokking.md",
@@ -651,16 +663,16 @@
                                                              "modified":  "2026-06-24T15:01:56.5210331+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\hard_problem.md",
-                                                             "name":  "hard_problem",
-                                                             "size":  4612,
-                                                             "modified":  "2026-06-24T18:41:11.1046778+08:00"
+                                                             "path":  "exploration\\golden_zone_analysis.md",
+                                                             "name":  "golden_zone_analysis",
+                                                             "size":  9271,
+                                                             "modified":  "2026-06-23T21:36:42.9051412+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\golden_zone_proof.md",
-                                                             "name":  "golden_zone_proof",
-                                                             "size":  5230,
-                                                             "modified":  "2026-06-23T22:02:19.5106904+08:00"
+                                                             "path":  "exploration\\emergence_sixth_element.md",
+                                                             "name":  "emergence_sixth_element",
+                                                             "size":  4955,
+                                                             "modified":  "2026-06-23T18:35:04.1098937+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\equinox_note.md",
@@ -675,18 +687,6 @@
                                                              "modified":  "2026-06-23T13:31:33.0373672+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\golden_zone_analysis.md",
-                                                             "name":  "golden_zone_analysis",
-                                                             "size":  9271,
-                                                             "modified":  "2026-06-23T21:36:42.9051412+08:00"
-                                                         },
-                                                         {
-                                                             "path":  "exploration\\2026-07-16-fungal-light-deep-dive.md",
-                                                             "name":  "2026-07-16-fungal-light-deep-dive",
-                                                             "size":  8285,
-                                                             "modified":  "2026-07-16T14:01:58.4926797+08:00"
-                                                         },
-                                                         {
                                                              "path":  "exploration\\2026-07-16-graphcast-deep-dive.md",
                                                              "name":  "2026-07-16-graphcast-deep-dive",
                                                              "size":  5840,
@@ -699,16 +699,16 @@
                                                              "modified":  "2026-07-16T03:24:16.8447648+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-07-16-alien-deep-dive.md",
-                                                             "name":  "2026-07-16-alien-deep-dive",
-                                                             "size":  8071,
-                                                             "modified":  "2026-07-16T13:32:32.2083881+08:00"
+                                                             "path":  "exploration\\2026-07-17-cax-deep-dive.md",
+                                                             "name":  "2026-07-17-cax-deep-dive",
+                                                             "size":  7157,
+                                                             "modified":  "2026-07-17T02:01:11.5757748+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-29-xagent-deep-dive.md",
-                                                             "name":  "2026-06-29-xagent-deep-dive",
-                                                             "size":  8072,
-                                                             "modified":  "2026-06-28T15:01:06.6873134+08:00"
+                                                             "path":  "exploration\\2026-07-16-fungal-light-deep-dive.md",
+                                                             "name":  "2026-07-16-fungal-light-deep-dive",
+                                                             "size":  8285,
+                                                             "modified":  "2026-07-16T14:01:58.4926797+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-30-mneme-bioelectric-memory.md",
@@ -723,10 +723,22 @@
                                                              "modified":  "2026-06-30T00:31:09.0108773+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-07-17-cax-deep-dive.md",
-                                                             "name":  "2026-07-17-cax-deep-dive",
-                                                             "size":  7157,
-                                                             "modified":  "2026-07-17T02:01:11.5757748+08:00"
+                                                             "path":  "exploration\\2026-07-16-alien-deep-dive.md",
+                                                             "name":  "2026-07-16-alien-deep-dive",
+                                                             "size":  8071,
+                                                             "modified":  "2026-07-16T13:32:32.2083881+08:00"
+                                                         },
+                                                         {
+                                                             "path":  "exploration\\2026-07-17-selforg-systems-deep-dive.md",
+                                                             "name":  "2026-07-17-selforg-systems-deep-dive",
+                                                             "size":  8841,
+                                                             "modified":  "2026-07-17T03:01:32.5173137+08:00"
+                                                         },
+                                                         {
+                                                             "path":  "exploration\\2026-07-19-openclaw-memory-wiki-plugin.md",
+                                                             "name":  "2026-07-19-openclaw-memory-wiki-plugin",
+                                                             "size":  6529,
+                                                             "modified":  "2026-07-19T01:01:28.2717879+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\agent_based_models.md",
@@ -741,22 +753,10 @@
                                                              "modified":  "2026-06-28T16:00:35.1339158+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\attention.md",
-                                                             "name":  "attention",
-                                                             "size":  4446,
-                                                             "modified":  "2026-06-24T17:34:00.5074563+08:00"
-                                                         },
-                                                         {
-                                                             "path":  "exploration\\2026-07-18-hipporag2-memory-framework.md",
-                                                             "name":  "2026-07-18-hipporag2-memory-framework",
-                                                             "size":  5281,
-                                                             "modified":  "2026-07-18T23:02:11.2107990+08:00"
-                                                         },
-                                                         {
-                                                             "path":  "exploration\\2026-07-17-selforg-systems-deep-dive.md",
-                                                             "name":  "2026-07-17-selforg-systems-deep-dive",
-                                                             "size":  8841,
-                                                             "modified":  "2026-07-17T03:01:32.5173137+08:00"
+                                                             "path":  "exploration\\2026-07-19-active-memory-plugin.md",
+                                                             "name":  "2026-07-19-active-memory-plugin",
+                                                             "size":  1943,
+                                                             "modified":  "2026-07-19T00:30:14.7991861+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-07-18-agentsilex-deep-dive.md",
@@ -769,6 +769,18 @@
                                                              "name":  "2026-07-18-cadCAD-complex-systems-simulation",
                                                              "size":  6949,
                                                              "modified":  "2026-07-19T00:01:39.5837078+08:00"
+                                                         },
+                                                         {
+                                                             "path":  "exploration\\2026-07-18-hipporag2-memory-framework.md",
+                                                             "name":  "2026-07-18-hipporag2-memory-framework",
+                                                             "size":  5281,
+                                                             "modified":  "2026-07-18T23:02:11.2107990+08:00"
+                                                         },
+                                                         {
+                                                             "path":  "exploration\\hard_problem.md",
+                                                             "name":  "hard_problem",
+                                                             "size":  4612,
+                                                             "modified":  "2026-06-24T18:41:11.1046778+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\strange_loops.md",
@@ -951,10 +963,10 @@
                                                              "modified":  "2026-06-24T21:45:28.8534067+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-29-dendrite-agent.md",
-                                                             "name":  "2026-06-29-dendrite-agent",
-                                                             "size":  2881,
-                                                             "modified":  "2026-06-29T02:02:38.5046784+08:00"
+                                                             "path":  "exploration\\2026-06-29-xagent-deep-dive.md",
+                                                             "name":  "2026-06-29-xagent-deep-dive",
+                                                             "size":  8072,
+                                                             "modified":  "2026-06-28T15:01:06.6873134+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-26-biomakerca-analysis.md",
@@ -1137,10 +1149,10 @@
                                                              "modified":  "2026-06-25T18:57:16.1597875+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-28-fitness-function-design.md",
-                                                             "name":  "2026-06-28-fitness-function-design",
-                                                             "size":  7887,
-                                                             "modified":  "2026-06-28T19:49:04.3046284+08:00"
+                                                             "path":  "exploration\\2026-06-27-agent-lenia-sensing.md",
+                                                             "name":  "2026-06-27-agent-lenia-sensing",
+                                                             "size":  4171,
+                                                             "modified":  "2026-06-27T23:31:54.3360198+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-28-genome-expressiveness-test.md",
@@ -1155,16 +1167,16 @@
                                                              "modified":  "2026-06-28T14:19:54.1341947+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-28-emergent-pattern-catalog-deep.md",
-                                                             "name":  "2026-06-28-emergent-pattern-catalog-deep",
-                                                             "size":  6420,
-                                                             "modified":  "2026-06-28T17:01:56.5601340+08:00"
+                                                             "path":  "exploration\\2026-06-28-github-supplement.md",
+                                                             "name":  "2026-06-28-github-supplement",
+                                                             "size":  1749,
+                                                             "modified":  "2026-06-28T14:23:34.3774083+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-the-kiss-nca.md",
-                                                             "name":  "2026-06-27-the-kiss-nca",
-                                                             "size":  5792,
-                                                             "modified":  "2026-06-27T18:22:20.8511303+08:00"
+                                                             "path":  "exploration\\2026-06-28-fitness-function-design.md",
+                                                             "name":  "2026-06-28-fitness-function-design",
+                                                             "size":  7887,
+                                                             "modified":  "2026-06-28T19:49:04.3046284+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-27-turmites-experiment.md",
@@ -1179,16 +1191,16 @@
                                                              "modified":  "2026-06-28T19:50:43.0676951+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-28-github-supplement.md",
-                                                             "name":  "2026-06-28-github-supplement",
-                                                             "size":  1749,
-                                                             "modified":  "2026-06-28T14:23:34.3774083+08:00"
+                                                             "path":  "exploration\\2026-06-28-emergent-pattern-catalog-deep.md",
+                                                             "name":  "2026-06-28-emergent-pattern-catalog-deep",
+                                                             "size":  6420,
+                                                             "modified":  "2026-06-28T17:01:56.5601340+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-28-neuroparticles2-deep.md",
-                                                             "name":  "2026-06-28-neuroparticles2-deep",
-                                                             "size":  3136,
-                                                             "modified":  "2026-06-28T15:13:14.1827693+08:00"
+                                                             "path":  "exploration\\2026-06-28-graphcast-weather-ai.md",
+                                                             "name":  "2026-06-28-graphcast-weather-ai",
+                                                             "size":  5050,
+                                                             "modified":  "2026-06-28T21:06:39.7434371+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-28-official-lenia-analysis.md",
@@ -1203,16 +1215,16 @@
                                                              "modified":  "2026-06-29T02:15:06.0500073+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-28-neuroparticles2-analysis.md",
-                                                             "name":  "2026-06-28-neuroparticles2-analysis",
-                                                             "size":  6028,
-                                                             "modified":  "2026-06-28T14:44:56.0424667+08:00"
+                                                             "path":  "exploration\\2026-06-29-dendrite-agent.md",
+                                                             "name":  "2026-06-29-dendrite-agent",
+                                                             "size":  2881,
+                                                             "modified":  "2026-06-29T02:02:38.5046784+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-28-graphcast-weather-ai.md",
-                                                             "name":  "2026-06-28-graphcast-weather-ai",
-                                                             "size":  5050,
-                                                             "modified":  "2026-06-28T21:06:39.7434371+08:00"
+                                                             "path":  "exploration\\2026-06-28-neuroparticles2-deep.md",
+                                                             "name":  "2026-06-28-neuroparticles2-deep",
+                                                             "size":  3136,
+                                                             "modified":  "2026-06-28T15:13:14.1827693+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-28-homeostatic-lenia.md",
@@ -1227,10 +1239,10 @@
                                                              "modified":  "2026-06-28T22:38:05.0491578+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-google-sos-latest.md",
-                                                             "name":  "2026-06-27-google-sos-latest",
-                                                             "size":  3246,
-                                                             "modified":  "2026-06-27T19:30:42.3788776+08:00"
+                                                             "path":  "exploration\\2026-06-28-neuroparticles2-analysis.md",
+                                                             "name":  "2026-06-28-neuroparticles2-analysis",
+                                                             "size":  6028,
+                                                             "modified":  "2026-06-28T14:44:56.0424667+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-27-heartbeat-note.md",
@@ -1245,16 +1257,16 @@
                                                              "modified":  "2026-06-27T22:00:57.2920395+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-ecosystem-sweep.md",
-                                                             "name":  "2026-06-27-ecosystem-sweep",
-                                                             "size":  2669,
-                                                             "modified":  "2026-06-27T16:06:07.9178484+08:00"
+                                                             "path":  "exploration\\2026-06-27-heartbeat-progress.md",
+                                                             "name":  "2026-06-27-heartbeat-progress",
+                                                             "size":  1926,
+                                                             "modified":  "2026-06-27T18:34:03.3836852+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-agent-lenia-sensing.md",
-                                                             "name":  "2026-06-27-agent-lenia-sensing",
-                                                             "size":  4171,
-                                                             "modified":  "2026-06-27T23:31:54.3360198+08:00"
+                                                             "path":  "exploration\\2026-06-27-google-sos-latest.md",
+                                                             "name":  "2026-06-27-google-sos-latest",
+                                                             "size":  3246,
+                                                             "modified":  "2026-06-27T19:30:42.3788776+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-27-biomakerca-architecture.md",
@@ -1269,16 +1281,16 @@
                                                              "modified":  "2026-06-27T15:00:12.7215966+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-heartbeat-progress.md",
-                                                             "name":  "2026-06-27-heartbeat-progress",
-                                                             "size":  1926,
-                                                             "modified":  "2026-06-27T18:34:03.3836852+08:00"
+                                                             "path":  "exploration\\2026-06-27-ecosystem-sweep.md",
+                                                             "name":  "2026-06-27-ecosystem-sweep",
+                                                             "size":  2669,
+                                                             "modified":  "2026-06-27T16:06:07.9178484+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-self-replicating-nn-deep-dive.md",
-                                                             "name":  "2026-06-27-self-replicating-nn-deep-dive",
-                                                             "size":  7873,
-                                                             "modified":  "2026-06-27T20:37:04.8915668+08:00"
+                                                             "path":  "exploration\\2026-06-27-lenia-neural-hybrid-ideas.md",
+                                                             "name":  "2026-06-27-lenia-neural-hybrid-ideas",
+                                                             "size":  2168,
+                                                             "modified":  "2026-06-27T21:30:02.2347349+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-27-self-replicating-nn-google.md",
@@ -1293,16 +1305,16 @@
                                                              "modified":  "2026-06-27T12:38:25.6716498+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-self-replicating-neural-lenia.md",
-                                                             "name":  "2026-06-27-self-replicating-neural-lenia",
-                                                             "size":  1866,
-                                                             "modified":  "2026-06-27T19:03:35.3895901+08:00"
+                                                             "path":  "exploration\\2026-06-27-the-kiss-nca.md",
+                                                             "name":  "2026-06-27-the-kiss-nca",
+                                                             "size":  5792,
+                                                             "modified":  "2026-06-27T18:22:20.8511303+08:00"
                                                          },
                                                          {
-                                                             "path":  "exploration\\2026-06-27-lenia-neural-hybrid-ideas.md",
-                                                             "name":  "2026-06-27-lenia-neural-hybrid-ideas",
-                                                             "size":  2168,
-                                                             "modified":  "2026-06-27T21:30:02.2347349+08:00"
+                                                             "path":  "exploration\\2026-06-27-self-replicating-nn-deep-dive.md",
+                                                             "name":  "2026-06-27-self-replicating-nn-deep-dive",
+                                                             "size":  7873,
+                                                             "modified":  "2026-06-27T20:37:04.8915668+08:00"
                                                          },
                                                          {
                                                              "path":  "exploration\\2026-06-27-neural-lenia-comparison.md",
@@ -1315,6 +1327,12 @@
                                                              "name":  "2026-06-27-neural-lenia-concept",
                                                              "size":  5534,
                                                              "modified":  "2026-06-27T17:30:09.6032383+08:00"
+                                                         },
+                                                         {
+                                                             "path":  "exploration\\2026-06-27-self-replicating-neural-lenia.md",
+                                                             "name":  "2026-06-27-self-replicating-neural-lenia",
+                                                             "size":  1866,
+                                                             "modified":  "2026-06-27T19:03:35.3895901+08:00"
                                                          }
                                                      ]
                                        },
@@ -2110,5 +2128,5 @@
                                                      ]
                                        }
                    },
-    "last_updated":  "2026-07-19T00:29:43.8895028+08:00"
+    "last_updated":  "2026-07-19T01:02:20.8453541+08:00"
 }
