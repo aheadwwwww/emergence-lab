@@ -2,8 +2,14 @@
   "last_updated": "2026-07-18T23:02:13.199211",
   "categories": {
     "exploration": {
-      "count": 119,
+      "count": 120,
       "items": [
+        {
+          "name": "2026-07-18-agentsilex-deep-dive",
+          "path": "exploration\\2026-07-18-agentsilex-deep-dive.md",
+          "size": 7410,
+          "modified": "2026-07-18T23:30:14.000000"
+        },
         {
           "name": "2026-07-18-hipporag2-memory-framework",
           "path": "exploration\\2026-07-18-hipporag2-memory-framework.md",
