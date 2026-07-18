@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-07-18T23:00:38.316259",
+  "last_updated": "2026-07-18T23:02:13.199211",
   "categories": {
     "exploration": {
-      "count": 118,
+      "count": 119,
       "items": [
+        {
+          "name": "2026-07-18-hipporag2-memory-framework",
+          "path": "exploration\\2026-07-18-hipporag2-memory-framework.md",
+          "size": 5281,
+          "modified": "2026-07-18T23:02:11.210799"
+        },
         {
           "name": "2026-07-17-selforg-systems-deep-dive",
           "path": "exploration\\2026-07-17-selforg-systems-deep-dive.md",
