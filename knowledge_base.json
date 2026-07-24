@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T13:33:48.183120",
+  "last_updated": "2026-07-24T14:06:27.379914",
   "categories": {
     "exploration": {
       "count": 124,
@@ -756,8 +756,8 @@
         {
           "name": "neural_lenia_v3_energy",
           "path": "experiments\\neural_lenia_v3_energy.py",
-          "size": 18926,
-          "modified": "2026-07-16T13:34:32.303992"
+          "size": 20825,
+          "modified": "2026-07-24T14:06:07.616698"
         },
         {
           "name": "neural_lenia_v2",

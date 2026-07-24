@@ -120,13 +120,13 @@ def create_energy_landscape(size, landscape_type='uniform'):
         return jnp.ones((size, size)) * 0.5
     
     elif landscape_type == 'rich_center':
-        y, x = jnp.ogrid[:size, :size]
+        y, x = jnp.mgrid[:size, :size]
         center = size // 2
         dist = jnp.sqrt((x - center)**2 + (y - center)**2) / (size // 2)
         return 0.8 - 0.6 * jnp.clip(dist, 0, 1)  # 中心高，边缘低
     
     elif landscape_type == 'gradient':
-        y, x = jnp.ogrid[:size, :size]
+        _, x = jnp.mgrid[:size, :size]
         return 0.3 + 0.4 * (x / size)  # 左→右梯度
     
     elif landscape_type == 'patches':
