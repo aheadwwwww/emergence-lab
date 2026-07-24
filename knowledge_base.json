@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-07-24T18:00:00.269409",
+  "last_updated": "2026-07-24T18:30:10.946240",
   "categories": {
     "exploration": {
-      "count": 129,
+      "count": 130,
       "items": [
+        {
+          "name": "2026-07-24-openclaw-hooks-system",
+          "path": "exploration\\2026-07-24-openclaw-hooks-system.md",
+          "size": 3806,
+          "modified": "2026-07-24T18:30:07.359077"
+        },
         {
           "name": "2026-07-24-epc-internals",
           "path": "exploration\\2026-07-24-epc-internals.md",
@@ -1577,8 +1583,8 @@
         {
           "name": "2026-07-24",
           "path": "memory\\2026-07-24.md",
-          "size": 4867,
-          "modified": "2026-07-24T17:31:32.995248"
+          "size": 5742,
+          "modified": "2026-07-24T18:01:44.588485"
         },
         {
           "name": "lesson-activation-log",
