@@ -33,15 +33,17 @@ from neural_lenia import (
 # Part 1: 能量感知的 Lenia
 # ══════════════════════════════════════════════
 
-def energy_lenia_step(field, energy, kernel, dt=0.1, growth_cost=0.05, base_decay=0.001):
+def energy_lenia_step(field, energy, kernel, dt=0.1, growth_cost=0.05, 
+                       maintenance_cost=0.02, base_decay=0.001, energy_leak=0.01):
     """
-    带能量约束的 Lenia 步进
+    带能量约束的 Lenia 步进 (v2 — 真正的选择压力)
     
     规则:
     - 生长消耗能量: field 增加需要消耗 energy
-    - 没有能量的区域无法增长
+    - 维持费: 每个活细胞每步消耗少量能量
+    - 无能量时细胞死亡 (能量饥饿)
     - 能量从高浓度向低浓度扩散
-    - 死亡区域释放能量回环境
+    - 死亡区域释放部分能量回环境
     
     Args:
         field: (H, W) 场值 [0, 1]
@@ -49,33 +51,65 @@ def energy_lenia_step(field, energy, kernel, dt=0.1, growth_cost=0.05, base_deca
         kernel: 核
         dt: 时间步长
         growth_cost: 单位生长消耗的能量
+        maintenance_cost: 每个存活细胞的维持费
         base_decay: 基础能量衰减
+        energy_leak: 能量泄漏系数
     
     Returns:
         new_field, new_energy
     """
-    # 标准 Lenia 计算 (但添加能量门控)
+    # 标准 Lenia 计算
     potential = jax.scipy.signal.convolve2d(field, kernel, mode='same')
     growth = jnp.clip(potential, 0, 1)
     
-    # 能量门控: 只有在能量充足时才能生长
-    energy_gate = jnp.clip(energy / growth_cost, 0, 1)
+    # === 能量门控生长 ===
+    # 生长量受能量约束 (连续门控，非二元)
+    energy_factor = jnp.clip(energy / (growth_cost + 1e-6), 0, 1)
+    # 平滑 sigmoid 门控，更自然的过渡
+    energy_gate = jax.nn.sigmoid(10 * (energy_factor - 0.3))
     
-    # 场更新
-    df = dt * growth * energy_gate
+    # === 场更新 ===
+    # 生长: 能量充足时增长
+    growth_amount = dt * growth * energy_gate
+    # 饥饿死亡: 能量不足时强制死亡 (与 energy_factor 成反比)
+    # 放大饥饿效应: 场值高 + 能量低 → 快速死亡
+    starvation = dt * field * jnp.maximum(0, 1 - 2 * energy_factor) * 0.3
+    # 总变化
+    df = growth_amount - starvation
     new_field = jnp.clip(field + df, 0, 1)
     
-    # 能量更新: 消耗 = 生长量, 释放 = 死亡量
-    energy_consumed = dt * growth * field * growth_cost  # 生长消耗
-    death_release = dt * jnp.maximum(0, field - new_field) * 0.5  # 死亡释放50%
+    # === 能量更新 ===
+    # 1) 生长消耗: 实际的生长量 × 生长成本
+    actual_growth = jnp.maximum(0, new_field - field)
+    energy_consumed = actual_growth * growth_cost
     
-    # 能量扩散 (简单拉普拉斯)
-    kernel_lap = jnp.array([[0, 0.25, 0],
-                             [0.25, -1, 0.25],
-                             [0, 0.25, 0]])
-    diffusion = 0.1 * jax.scipy.signal.convolve2d(energy, kernel_lap, mode='same')
+    # 2) 维持费: 存活细胞持续消耗能量 (与场值成正比)
+    maintenance = dt * field * maintenance_cost
     
-    new_energy = jnp.clip(energy - energy_consumed + death_release + diffusion - base_decay, 0, 1)
+    # 3) 死亡释放: 死亡区域释放部分能量
+    cell_death = jnp.maximum(0, field - new_field)
+    death_release = cell_death * 0.3  # 30% 回收
+    
+    # 4) 能量扩散 (手动拉普拉斯，避免 JAX convolve2d 兼容性问题)
+    # 使用 roll 实现四邻域差分
+    diffusion = 0.15 * (
+        jnp.roll(energy, 1, axis=0) + jnp.roll(energy, -1, axis=0) +
+        jnp.roll(energy, 1, axis=1) + jnp.roll(energy, -1, axis=1) -
+        4 * energy
+    )
+    
+    # 5) 自然能量恢复 (环境补给)
+    # 空区域缓慢恢复能量，满区域不恢复
+    # 增强恢复: 空区域更快恢复至环境容量
+    recovery_rate = 0.01 * (1 - field)
+    recovery = recovery_rate * (0.4 - energy)  # 向 0.4 趋近
+    
+    # 总能量变化
+    new_energy = energy - energy_consumed - maintenance + death_release 
+    new_energy = new_energy + diffusion + recovery - base_decay
+    # 能量泄漏: 防止在边界聚集
+    new_energy = new_energy * (1 - energy_leak)
+    new_energy = jnp.clip(new_energy, 0, 1)
     
     return new_field, new_energy
 
@@ -115,7 +149,8 @@ def create_energy_landscape(size, landscape_type='uniform'):
 # ══════════════════════════════════════════════
 
 def multi_kernel_competition(key, kernel_params_list, steps=500, size=128, 
-                              landscape='uniform', growth_cost=0.05):
+                              landscape='uniform', growth_cost=0.05,
+                              maintenance_cost=0.02, energy_leak=0.01):
     """
     多核竞争: 多个核共享同一个能量场和空间
     
@@ -159,8 +194,9 @@ def multi_kernel_competition(key, kernel_params_list, steps=500, size=128,
         total_released = jnp.zeros((size, size))
         
         for i, (field, kernel) in enumerate(zip(fields, kernels)):
-            new_f, new_e = energy_lenia_step(field, energy, kernel, 
-                                              growth_cost=growth_cost)
+            new_f, new_e = energy_lenia_step(
+                field, energy, kernel, growth_cost=growth_cost,
+                maintenance_cost=maintenance_cost, energy_leak=energy_leak)
             new_fields.append(new_f)
         
         # 合并死亡释放
@@ -234,7 +270,8 @@ def energy_efficiency_fitness(history, energy_history):
 # ══════════════════════════════════════════════
 
 def energy_based_evolution(key, population_size=20, generations=50, 
-                            landscape='scarce', growth_cost=0.08):
+                            landscape='scarce', growth_cost=0.08,
+                            maintenance_cost=0.02, energy_leak=0.01):
     """
     基于能量效率的进化
     
@@ -262,7 +299,8 @@ def energy_based_evolution(key, population_size=20, generations=50,
             kp, k1 = jax.random.split(k1)
             history, energy_hist, survival = multi_kernel_competition(
                 kp, [params], steps=200, size=64, 
-                landscape=landscape, growth_cost=growth_cost
+                landscape=landscape, growth_cost=growth_cost,
+                maintenance_cost=maintenance_cost, energy_leak=energy_leak
             )
             score = energy_efficiency_fitness(history[0], energy_hist)
             scores.append(float(score))
@@ -391,7 +429,8 @@ def visualize_competition(histories, energy_history, survivals, save_path=None):
 # ══════════════════════════════════════════════
 
 def run_energy_lenia(params, steps=500, size=128, landscape='uniform', 
-                      growth_cost=0.05, seed=42):
+                      growth_cost=0.05, seed=42,
+                      maintenance_cost=0.02, energy_leak=0.01):
     """
     运行单个能量约束 Lenia，返回场和能量历史
     """
@@ -411,7 +450,9 @@ def run_energy_lenia(params, steps=500, size=128, landscape='uniform',
     
     def step_fn(carry, _):
         f, e = carry
-        new_f, new_e = energy_lenia_step(f, e, kernel, growth_cost=growth_cost)
+        new_f, new_e = energy_lenia_step(
+            f, e, kernel, growth_cost=growth_cost,
+            maintenance_cost=maintenance_cost, energy_leak=energy_leak)
         return (new_f, new_e), (new_f, new_e)
     
     (_, _), (field_hist, energy_hist) = jax.lax.scan(
