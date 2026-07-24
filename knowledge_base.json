@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-07-24T14:31:13.391032",
+  "last_updated": "2026-07-24T15:04:03.710767",
   "categories": {
     "exploration": {
-      "count": 124,
+      "count": 126,
       "items": [
+        {
+          "name": "edge_of_chaos_in_agent_memory",
+          "path": "exploration\\edge_of_chaos_in_agent_memory.md",
+          "size": 2506,
+          "modified": "2026-07-24T15:03:52.520791"
+        },
+        {
+          "name": "2026-07-24-symbiote-architecture-deep-dive",
+          "path": "exploration\\2026-07-24-symbiote-architecture-deep-dive.md",
+          "size": 6738,
+          "modified": "2026-07-24T14:31:30.100254"
+        },
         {
           "name": "2026-07-24-openclaw-maturity-framework",
           "path": "exploration\\2026-07-24-openclaw-maturity-framework.md",
@@ -756,8 +768,8 @@
         {
           "name": "neural_lenia_v3_energy",
           "path": "experiments\\neural_lenia_v3_energy.py",
-          "size": 20825,
-          "modified": "2026-07-24T14:06:07.616698"
+          "size": 21857,
+          "modified": "2026-07-24T14:32:33.424476"
         },
         {
           "name": "neural_lenia_v2",
@@ -1542,13 +1554,37 @@
       ]
     },
     "memory": {
-      "count": 30,
+      "count": 33,
       "items": [
+        {
+          "name": "lesson-activation-log",
+          "path": "memory\\lesson-activation-log.md",
+          "size": 895,
+          "modified": "2026-07-24T15:01:22.639331"
+        },
+        {
+          "name": "test-agent-loop-2026-07-24",
+          "path": "memory\\test-agent-loop-2026-07-24.md",
+          "size": 3054,
+          "modified": "2026-07-24T15:01:03.526682"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 6048,
+          "modified": "2026-07-24T15:00:45.617500"
+        },
+        {
+          "name": "memory-lifecycle",
+          "path": "memory\\memory-lifecycle.md",
+          "size": 5891,
+          "modified": "2026-07-24T14:59:48.921097"
+        },
         {
           "name": "2026-07-24",
           "path": "memory\\2026-07-24.md",
-          "size": 957,
-          "modified": "2026-07-24T13:02:17.876559"
+          "size": 2459,
+          "modified": "2026-07-24T14:34:39.903424"
         },
         {
           "name": "2026-07-19",
@@ -1591,12 +1627,6 @@
           "path": "memory\\2026-06-29.md",
           "size": 3902,
           "modified": "2026-06-29T02:15:20.604749"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 1640,
-          "modified": "2026-06-29T01:57:10.077269"
         },
         {
           "name": "core-findings",
