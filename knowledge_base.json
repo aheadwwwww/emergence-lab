@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-07-24T17:00:27.589947",
+  "last_updated": "2026-07-24T17:32:16.384925",
   "categories": {
     "exploration": {
-      "count": 127,
+      "count": 129,
       "items": [
+        {
+          "name": "2026-07-24-epc-internals",
+          "path": "exploration\\2026-07-24-epc-internals.md",
+          "size": 5116,
+          "modified": "2026-07-24T17:32:11.754616"
+        },
+        {
+          "name": "2026-07-24-epc-deep-dive",
+          "path": "exploration\\2026-07-24-epc-deep-dive.md",
+          "size": 4010,
+          "modified": "2026-07-24T17:31:04.659601"
+        },
         {
           "name": "2026-07-24-openclaw-acp-agents",
           "path": "exploration\\2026-07-24-openclaw-acp-agents.md",
@@ -1563,6 +1575,12 @@
       "count": 33,
       "items": [
         {
+          "name": "2026-07-24",
+          "path": "memory\\2026-07-24.md",
+          "size": 4867,
+          "modified": "2026-07-24T17:31:32.995248"
+        },
+        {
           "name": "lesson-activation-log",
           "path": "memory\\lesson-activation-log.md",
           "size": 983,
@@ -1585,12 +1603,6 @@
           "path": "memory\\memory-lifecycle.md",
           "size": 5891,
           "modified": "2026-07-24T14:59:48.921097"
-        },
-        {
-          "name": "2026-07-24",
-          "path": "memory\\2026-07-24.md",
-          "size": 2459,
-          "modified": "2026-07-24T14:34:39.903424"
         },
         {
           "name": "2026-07-19",
