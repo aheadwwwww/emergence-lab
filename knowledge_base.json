@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-07-24T12:59:48.979581",
+  "last_updated": "2026-07-24T13:33:48.183120",
   "categories": {
     "exploration": {
-      "count": 123,
+      "count": 124,
       "items": [
+        {
+          "name": "2026-07-24-openclaw-maturity-framework",
+          "path": "exploration\\2026-07-24-openclaw-maturity-framework.md",
+          "size": 1653,
+          "modified": "2026-07-24T13:02:29.813969"
+        },
         {
           "name": "2026-07-19-openclaw-memory-wiki-plugin",
           "path": "exploration\\2026-07-19-openclaw-memory-wiki-plugin.md",
@@ -1536,8 +1542,14 @@
       ]
     },
     "memory": {
-      "count": 29,
+      "count": 30,
       "items": [
+        {
+          "name": "2026-07-24",
+          "path": "memory\\2026-07-24.md",
+          "size": 957,
+          "modified": "2026-07-24T13:02:17.876559"
+        },
         {
           "name": "2026-07-19",
           "path": "memory\\2026-07-19.md",
