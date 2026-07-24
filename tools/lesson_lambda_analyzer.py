@@ -84,7 +84,7 @@ def count_available_lessons():
     # Count lesson IDs in each severity section
     current_sev = None
     for line in text.split("\n"):
-        sev_match = re.match(r"^### (RED|YELLOW|GREEN)", line)
+        sev_match = re.match(r"^###[^RGY]*(RED|YELLOW|GREEN)", line)
         if sev_match:
             current_sev = sev_match.group(1)
             continue

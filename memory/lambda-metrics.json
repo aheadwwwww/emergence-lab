@@ -1,46 +1,46 @@
 {
-  "last_updated": "2026-07-24T16:32:59.635414",
+  "last_updated": "2026-07-24T18:01:02.643413",
   "total_days_tracked": 2,
   "days": {
     "_available_lessons": {
-      "RED": 0,
-      "YELLOW": 0,
-      "GREEN": 0,
-      "total": 0
+      "RED": 7,
+      "YELLOW": 4,
+      "GREEN": 4,
+      "total": 15
     },
     "2026-07-24": {
       "total_log_entries": 7,
       "unique_activated": 4,
-      "available_lessons": 0,
+      "available_lessons": 15,
       "activated": 7,
       "executed": 7,
       "verified": 7,
-      "lambda": 0,
+      "lambda": 0.2667,
       "activation_intensity": 1.75,
-      "edge_of_chaos": false,
+      "edge_of_chaos": true,
       "by_severity": {
         "RED": {
           "entries": 5,
           "activated": 5,
-          "available": 0,
-          "rate": 0
+          "available": 7,
+          "rate": 0.7143
         },
         "YELLOW": {
           "entries": 0,
           "activated": 0,
-          "available": 0,
-          "rate": 0
+          "available": 4,
+          "rate": 0.0
         },
         "GREEN": {
           "entries": 2,
           "activated": 2,
-          "available": 0,
-          "rate": 0
+          "available": 4,
+          "rate": 0.5
         }
       },
       "execution_fidelity": 1.0,
       "verification_fidelity": 1.0,
-      "interpretation": "CRITICAL: Too ordered — lessons are rarely checked, likely ignored in practice"
+      "interpretation": "EDGE+: Adaptive zone — structured with room for exploration"
     }
   }
 }
