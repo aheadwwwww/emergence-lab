@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T15:04:03.710767",
+  "last_updated": "2026-07-24T16:29:55.756472",
   "categories": {
     "exploration": {
       "count": 126,
@@ -1559,20 +1559,20 @@
         {
           "name": "lesson-activation-log",
           "path": "memory\\lesson-activation-log.md",
-          "size": 895,
-          "modified": "2026-07-24T15:01:22.639331"
+          "size": 983,
+          "modified": "2026-07-24T15:32:36.589704"
+        },
+        {
+          "name": "lessons",
+          "path": "memory\\lessons.md",
+          "size": 6677,
+          "modified": "2026-07-24T15:06:25.758146"
         },
         {
           "name": "test-agent-loop-2026-07-24",
           "path": "memory\\test-agent-loop-2026-07-24.md",
           "size": 3054,
           "modified": "2026-07-24T15:01:03.526682"
-        },
-        {
-          "name": "lessons",
-          "path": "memory\\lessons.md",
-          "size": 6048,
-          "modified": "2026-07-24T15:00:45.617500"
         },
         {
           "name": "memory-lifecycle",
