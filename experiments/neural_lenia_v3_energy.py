@@ -33,6 +33,7 @@ from neural_lenia import (
 # Part 1: 能量感知的 Lenia
 # ══════════════════════════════════════════════
 
+@partial(jax.jit, static_argnums=(3, 4, 5, 6, 7))
 def energy_lenia_step(field, energy, kernel, dt=0.1, growth_cost=0.05, 
                        maintenance_cost=0.02, base_decay=0.001, energy_leak=0.01):
     """
@@ -478,7 +479,17 @@ if __name__ == "__main__":
     parser.add_argument('--landscape', default='scarce')
     parser.add_argument('--growth_cost', type=float, default=0.08)
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--quick', action='store_true',
+                        help='快速模式: size=32, steps=50 (用于测试编译)')
     args = parser.parse_args()
+    
+    # 快速模式: 减小规模以加速 JAX 编译
+    if args.quick:
+        args.size = 32
+        args.steps = 50
+        args.generations = min(args.generations, 5)
+        args.pop_size = min(args.pop_size, 8)
+        print("[Quick] size=32, steps=50, pop=8, gens=5")
     
     key = jax.random.PRNGKey(args.seed)
     
